@@ -108,7 +108,7 @@ int main(int argc, char **argv)
     int major_ver, minor_ver;
     VADisplay va_dpy;
     VAStatus va_status;
-    int putsurface = 0;
+    int putsurface = 1;
 
     va_init_display_args(&argc, argv);
 
@@ -215,7 +215,40 @@ int main(int argc, char **argv)
     va_status = vaSyncSurface(va_dpy, surface_id);
     CHECK_VASTATUS(va_status, "vaSyncSurface");
 
-    if (putsurface)
+    if(1)
+    {
+        uint8_t* buffer = NULL;
+        VAImage image = {};
+        VASurfaceStatus surf_status = VASurfaceSkipped;
+
+        for(;;)
+        {
+            vaQuerySurfaceStatus(va_dpy, surface_id, &surf_status);
+            if (surf_status != VASurfaceRendering &&
+                surf_status != VASurfaceDisplaying)
+                break;
+        }
+
+        if (surf_status != VASurfaceReady)
+        {
+            printf("Surface is not ready by vaQueryStatusSurface");
+            return -1;
+        }
+
+        va_status = vaDeriveImage(va_dpy, surface_id, &image);
+        CHECK_VASTATUS(va_status, "vaDeriveImage");
+
+        va_status = vaMapBuffer(va_dpy, image.buf, (void**)&buffer);
+        CHECK_VASTATUS(va_status, "vaDeriveImage");
+
+        va_status = vaUnmapBuffer(va_dpy, image.buf);
+        CHECK_VASTATUS(va_status, "vaUnmapBuffer");
+
+        va_status = vaDestroyImage(va_dpy, image.image_id);
+        CHECK_VASTATUS(va_status, "vaDestroyImage");
+    }
+
+    if (0)
     {
         VARectangle src_rect, dst_rect;
 
