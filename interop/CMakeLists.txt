@@ -11,7 +11,10 @@ set (SOURCE_FILES
 )
 
 include_directories (vaocl /usr/local/include)
+include_directories (vaocl ${CMAKE_CURRENT_LIST_DIR}/../../compute-runtime/third_party/opencl_headers)
+
 link_directories(/usr/local/lib/)
+link_directories(/usr/lib/x86_64-linux-gnu)
 
 add_executable(vaocl ${SOURCE_FILES})
-target_link_libraries(vaocl va va-x11 X11)
+target_link_libraries(vaocl va va-x11 X11 OpenCL)

@@ -6,14 +6,10 @@
 #include <stdlib.h>
 #include <sys/types.h>
 
-#ifdef MAC
-#include <OpenCL/cl.h>
-#else  
 #include <CL/cl.h>
-#endif
 
-int main() {
-
+int main() 
+{
    /* Host/device data structures */
    cl_platform_id platform;
    cl_device_id device;
