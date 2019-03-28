@@ -11,7 +11,7 @@
 #include "va_display.h"
 
 #include <CL/cl.h>
-//#include <CL/va_ext.h>
+#include <CL/cl_va_api_media_sharing_intel.h>
 
 #define CHECK_VASTATUS(va_status, func)                                        \
     if (va_status != VA_STATUS_SUCCESS)                                        \
@@ -103,6 +103,8 @@ static VASliceParameterBufferMPEG2 slice_param = {
 #define PROGRAM_FILE "matvec.cl"
 #define KERNEL_FUNC "matvec_mult"
 
+clGetDeviceIDsFromVA_APIMediaAdapterINTEL_fn clGetDeviceIDsFromVA = NULL;
+
 int compute()
 {
     /* Host/device data structures */
@@ -172,6 +174,17 @@ int compute()
     //get string with extension names
     clGetPlatformInfo(platform, CL_PLATFORM_EXTENSIONS, len, str, NULL);
     printf("%s\n", str);
+
+    //get pointer to the function and store it in the variable
+    clGetDeviceIDsFromVA = (clGetDeviceIDsFromVA_APIMediaAdapterINTEL_fn)clGetExtensionFunctionAddressForPlatform(
+        platform, "clGetDeviceIDsFromVA_APIMediaAdapterINTEL");
+
+    //check that returned pointer is not NULL
+    if (NULL == clGetDeviceIDsFromVA_APIMediaAdapterINTEL)
+    {
+        printf("ERROR: Cannot get pointer to clGetDeviceIDsFromVA_APIMediaAdapterINTEL\n");
+        return -1;
+    }
 
     /* Read program file and place content into buffer */
     program_handle = fopen(PROGRAM_FILE, "r");
