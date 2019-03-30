@@ -23,6 +23,9 @@
 #define CHECK_NULL_AND_RETURN(ptr) \
     if ((ptr) == NULL) return -1;
 
+#define CHECK_OCL_ERROR(err, msg) \
+    if (err < 0) { printf("ERROR: %s\n", msg); return -1; }
+
 static unsigned char mpeg2_clip[] = {
     0x00, 0x00, 0x01, 0xb3, 0x01, 0x00, 0x10, 0x13, 0xff, 0xff, 0xe0, 0x18, 0x00, 0x00, 0x01, 0xb5,
     0x14, 0x8a, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x01, 0xb8, 0x00, 0x08, 0x00, 0x00, 0x00, 0x00,
@@ -179,11 +182,7 @@ int oclProcessDecodeOutput(VADisplay vaDpy, VASurfaceID* vaSurfID)
     }
 
     err = clGetPlatformIDs(1, &platform, NULL);
-    if (err < 0)
-    {
-        perror("Couldn't find any platforms");
-        exit(1);
-    }
+    CHECK_OCL_ERROR(err, "ERROR: Couldn't find any platforms");
 
     if (getVASharingFunc(platform) != 0) 
     {
@@ -196,22 +195,14 @@ int oclProcessDecodeOutput(VADisplay vaDpy, VASurfaceID* vaSurfID)
 
     err = clGetDeviceIDsFromVA(platform, CL_VA_API_DISPLAY_INTEL, vaDpy,
         CL_PREFERRED_DEVICES_FOR_VA_API_INTEL, NULL, NULL, &device_num);
-    if (CL_SUCCESS != err || 0 == device_num)
-    {
-        printf("ERROR: Can’t get OpenCL device for media sharing");
-        return -1;
-    }
+    CHECK_OCL_ERROR(err, "ERROR: Can’t get OpenCL device for media sharing");
 
     devices = (cl_device_id *)malloc(sizeof(cl_device_id) * device_num);
     CHECK_NULL_AND_RETURN(devices);
 
     err = clGetDeviceIDsFromVA(platform, CL_VA_API_DISPLAY_INTEL, vaDpy, 
         CL_PREFERRED_DEVICES_FOR_VA_API_INTEL, device_num, devices, NULL);
-    if (CL_SUCCESS != err)
-    {
-        printf("ERROR: Can’t get OpenCL device for media sharing\n");
-        return -1;
-    }
+    CHECK_OCL_ERROR(err, "ERROR: Can’t get OpenCL device for media sharing");
 
     cl_context_properties props[] = 
     {
@@ -223,18 +214,11 @@ int oclProcessDecodeOutput(VADisplay vaDpy, VASurfaceID* vaSurfID)
     };
 
     context = clCreateContext(props, device_num, devices, NULL, NULL, &err);
-    if (CL_SUCCESS != err)
-    {
-        printf("ERROR: Can’t create OpenCL context\n");
-        return -1;
-    }
+    CHECK_OCL_ERROR(err, "ERROR: Can’t create OpenCL context");
 
-    cl_mem surfY = clCreateFromVA(context, CL_MEM_READ_ONLY, vaSurfID, 0, &err);
-    if (CL_SUCCESS != err)
-    {
-        printf("ERROR: Can’t create clImage\n");
-        return -1;
-    }
+    cl_mem surfY = clCreateFromVA(context, CL_MEM_READ_WRITE, vaSurfID, 0, &err);
+    CHECK_OCL_ERROR(err, "ERROR: Can’t create clImage");
+
 
 #if 0
     /* Access a device */
