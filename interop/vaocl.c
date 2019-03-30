@@ -142,7 +142,7 @@ int getVASharingFunc(cl_platform_id platform)
 }
 
 
-int compute(VADisplay vaDpy, VASurfaceID* vaSurfID)
+int oclProcessDecodeOutput(VADisplay vaDpy, VASurfaceID* vaSurfID)
 {
     /* Host/device data structures */
     cl_platform_id platform;
@@ -546,7 +546,7 @@ int main(int argc, char **argv)
         CHECK_VASTATUS(va_status, "vaPutSurface");
     }
 
-    compute(va_dpy, &surface_id);
+    oclProcessDecodeOutput(va_dpy, &surface_id);
 
     vaDestroySurfaces(va_dpy, &surface_id, 1);
     vaDestroyConfig(va_dpy, config_id);
