@@ -20,6 +20,9 @@
         exit(1);                                                               \
     }
 
+#define CHECK_NULL_AND_RETURN(ptr) \
+    if ((ptr) == NULL) return -1;
+
 static unsigned char mpeg2_clip[] = {
     0x00, 0x00, 0x01, 0xb3, 0x01, 0x00, 0x10, 0x13, 0xff, 0xff, 0xe0, 0x18, 0x00, 0x00, 0x01, 0xb5,
     0x14, 0x8a, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x01, 0xb8, 0x00, 0x08, 0x00, 0x00, 0x00, 0x00,
@@ -103,7 +106,41 @@ static VASliceParameterBufferMPEG2 slice_param = {
 #define PROGRAM_FILE "matvec.cl"
 #define KERNEL_FUNC "matvec_mult"
 
-clGetDeviceIDsFromVA_APIMediaAdapterINTEL_fn clGetDeviceIDsFromVA = NULL;
+clGetDeviceIDsFromVA_APIMediaAdapterINTEL_fn    clGetDeviceIDsFromVA = NULL;
+clCreateFromVA_APIMediaSurfaceINTEL_fn          clCreateFromVA = NULL;
+clEnqueueAcquireVA_APIMediaSurfacesINTEL_fn     clEnqueueAcquireVA = NULL;
+clEnqueueReleaseVA_APIMediaSurfacesINTEL_fn     clEnqueueReleaseVA = NULL;
+
+int getVAInterface(cl_platform_id platform)
+{
+    size_t len = 0; 
+    clGetPlatformInfo(platform, CL_PLATFORM_EXTENSIONS, 0, NULL, &len);
+
+    char *str = (char *)malloc(len);
+    CHECK_NULL_AND_RETURN(str);
+    clGetPlatformInfo(platform, CL_PLATFORM_EXTENSIONS, len, str, NULL);
+    printf("%s\n", str);
+
+    clGetDeviceIDsFromVA = (clGetDeviceIDsFromVA_APIMediaAdapterINTEL_fn)clGetExtensionFunctionAddressForPlatform(
+        platform, "clGetDeviceIDsFromVA_APIMediaAdapterINTEL");
+    CHECK_NULL_AND_RETURN(clGetDeviceIDsFromVA);
+
+    clCreateFromVA = (clCreateFromVA_APIMediaSurfaceINTEL_fn)clGetExtensionFunctionAddressForPlatform(
+        platform, "clCreateFromVA_APIMediaSurfaceINTEL");
+    CHECK_NULL_AND_RETURN(clGetDeviceIDsFromVA);
+
+    clEnqueueAcquireVA = (clEnqueueAcquireVA_APIMediaSurfacesINTEL_fn)clGetExtensionFunctionAddressForPlatform(
+        platform, "clEnqueueAcquireVA_APIMediaSurfacesINTEL");
+    CHECK_NULL_AND_RETURN(clGetDeviceIDsFromVA);
+
+
+    clEnqueueReleaseVA = (clEnqueueReleaseVA_APIMediaSurfacesINTEL_fn)clGetExtensionFunctionAddressForPlatform(
+        platform, "clEnqueueReleaseVA_APIMediaSurfacesINTEL");
+    CHECK_NULL_AND_RETURN(clGetDeviceIDsFromVA);
+
+    return 0;
+}
+
 
 int compute()
 {
@@ -157,33 +194,18 @@ int compute()
         exit(1);
     }
 
+    if (getVAInterface(platform) != 0) 
+    {
+        printf("ERROR: cannot get CL VA sharing extension interface!\n");
+        return -1;
+    }
+
     /* Create the context */
     context = clCreateContext(NULL, 1, &device, NULL, NULL, &err);
     if (err < 0)
     {
         perror("Couldn't create a context");
         exit(1);
-    }
-
-    size_t len = 0; 
-    clGetPlatformInfo(platform, CL_PLATFORM_EXTENSIONS, 0, NULL, &len);
-
-    // allocate buffer to store extensions names
-    char *str = (char *)malloc(len);
-
-    //get string with extension names
-    clGetPlatformInfo(platform, CL_PLATFORM_EXTENSIONS, len, str, NULL);
-    printf("%s\n", str);
-
-    //get pointer to the function and store it in the variable
-    clGetDeviceIDsFromVA = (clGetDeviceIDsFromVA_APIMediaAdapterINTEL_fn)clGetExtensionFunctionAddressForPlatform(
-        platform, "clGetDeviceIDsFromVA_APIMediaAdapterINTEL");
-
-    //check that returned pointer is not NULL
-    if (NULL == clGetDeviceIDsFromVA_APIMediaAdapterINTEL)
-    {
-        printf("ERROR: Cannot get pointer to clGetDeviceIDsFromVA_APIMediaAdapterINTEL\n");
-        return -1;
     }
 
     /* Read program file and place content into buffer */
