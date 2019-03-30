@@ -24,7 +24,7 @@
     if ((ptr) == NULL) return -1;
 
 #define CHECK_OCL_ERROR(err, msg) \
-    if (err < 0) { printf("ERROR: %s\n", msg); return -1; }
+    if ((err) < 0) { printf("ERROR: %s\n", (msg)); return -1; }
 
 static unsigned char mpeg2_clip[] = {
     0x00, 0x00, 0x01, 0xb3, 0x01, 0x00, 0x10, 0x13, 0xff, 0xff, 0xe0, 0x18, 0x00, 0x00, 0x01, 0xb5,
@@ -116,6 +116,15 @@ clCreateFromVA_APIMediaSurfaceINTEL_fn          clCreateFromVA = NULL;
 clEnqueueAcquireVA_APIMediaSurfacesINTEL_fn     clEnqueueAcquireVA = NULL;
 clEnqueueReleaseVA_APIMediaSurfacesINTEL_fn     clEnqueueReleaseVA = NULL;
 
+char kernel_code[] = 
+"__kernel void scale(__read_write image2d_t image) \
+{ \
+    int2 coord = (int2)(get_global_id(0), get_global_id(1)); \
+    float4 pixel = read_imagef(image, coord); \
+    float4 pixel2 = pixel/1; \
+    write_imagef(image, coord, pixel2); \
+}";
+
 int getVASharingFunc(cl_platform_id platform)
 {
     size_t len = 0; 
@@ -124,7 +133,7 @@ int getVASharingFunc(cl_platform_id platform)
     char *str = (char *)malloc(len);
     CHECK_NULL_AND_RETURN(str);
     clGetPlatformInfo(platform, CL_PLATFORM_EXTENSIONS, len, str, NULL);
-    printf("%s\n", str);
+    //printf("%s\n", str);
 
     clGetDeviceIDsFromVA = (clGetDeviceIDsFromVA_APIMediaAdapterINTEL_fn)clGetExtensionFunctionAddressForPlatform(
         platform, "clGetDeviceIDsFromVA_APIMediaAdapterINTEL");
@@ -164,20 +173,20 @@ int oclProcessDecodeOutput(VADisplay vaDpy, VASurfaceID* vaSurfID)
 
     cl_uint num_platforms = 0;
     err = clGetPlatformIDs(0, NULL, &num_platforms);
-    CHECK_OCL_ERROR(err, "ERROR: clGetPlatformIDs failed");
+    CHECK_OCL_ERROR(err, "clGetPlatformIDs failed");
     printf("INFO: platform nubmer = %d\n", num_platforms);
 
     err = clGetPlatformIDs(1, &platform, NULL);
-    CHECK_OCL_ERROR(err, "ERROR: clGetPlatformIDs failed");
+    CHECK_OCL_ERROR(err, "clGetPlatformIDs failed");
 
     char platform_info[CL_STR_LEN] = {};
     err = clGetPlatformInfo(platform, CL_PLATFORM_NAME, CL_STR_LEN, platform_info, NULL);
-    CHECK_OCL_ERROR(err, "ERROR: clGetPlatformInfo - CL_PLATFORM_NAME failed");
+    CHECK_OCL_ERROR(err, "clGetPlatformInfo - CL_PLATFORM_NAME failed");
     printf("INFO: %s\n", platform_info);
 
     char platform_version[CL_STR_LEN] = {};
     err = clGetPlatformInfo(platform, CL_PLATFORM_VERSION, CL_STR_LEN, platform_version, NULL);
-    CHECK_OCL_ERROR(err, "ERROR: clGetPlatformInfo - CL_PLATFORM_VERSION failed");
+    CHECK_OCL_ERROR(err, "clGetPlatformInfo - CL_PLATFORM_VERSION failed");
     printf("INFO: %s\n", platform_version);
 
     if (getVASharingFunc(platform) != 0) 
@@ -191,14 +200,14 @@ int oclProcessDecodeOutput(VADisplay vaDpy, VASurfaceID* vaSurfID)
 
     err = clGetDeviceIDsFromVA(platform, CL_VA_API_DISPLAY_INTEL, vaDpy,
         CL_PREFERRED_DEVICES_FOR_VA_API_INTEL, NULL, NULL, &device_num);
-    CHECK_OCL_ERROR(err, "ERROR: clGetDeviceIDsFromVA failed");
+    CHECK_OCL_ERROR(err, "clGetDeviceIDsFromVA failed");
 
     device_list = (cl_device_id *)malloc(sizeof(cl_device_id) * device_num);
     CHECK_NULL_AND_RETURN(device_list);
 
     err = clGetDeviceIDsFromVA(platform, CL_VA_API_DISPLAY_INTEL, vaDpy, 
         CL_PREFERRED_DEVICES_FOR_VA_API_INTEL, device_num, device_list, NULL);
-    CHECK_OCL_ERROR(err, "ERROR: Can’t get OpenCL device for media sharing");
+    CHECK_OCL_ERROR(err, "Can’t get OpenCL device for media sharing");
 
     // use the first device by default
     device = device_list[0];
@@ -211,27 +220,14 @@ int oclProcessDecodeOutput(VADisplay vaDpy, VASurfaceID* vaSurfID)
     };
 
     context = clCreateContext(props, device_num, device_list, NULL, NULL, &err);
-    CHECK_OCL_ERROR(err, "ERROR: Can’t create OpenCL context");
+    CHECK_OCL_ERROR(err, "clCreateContext failed");
 
-    /* Read program file and place content into buffer */
-    program_handle = fopen(PROGRAM_FILE, "r");
-    if (program_handle == NULL)
-    {
-        perror("Couldn't find the program file");
-        return -1;
-    }
-    fseek(program_handle, 0, SEEK_END);
-    program_size = ftell(program_handle);
-    rewind(program_handle);
-    program_buffer = (char *)malloc(program_size + 1);
+    program_size = sizeof(kernel_code) + 1;
+    program_buffer = (char *)malloc(program_size);
     memset(program_buffer, 0, program_size + 1);
-    //program_buffer[program_size] = '\0';
-    fread(program_buffer, sizeof(char), program_size, program_handle);
-    fclose(program_handle);
-
-    /* Create program from file */
+    memcpy(program_buffer, kernel_code, program_size);
     program = clCreateProgramWithSource(context, 1, (const char **)&program_buffer, &program_size, &err);
-    CHECK_OCL_ERROR(err, "ERROR: Couldn't create the program");
+    CHECK_OCL_ERROR(err, "clCreateProgramWithSource failed");
     free(program_buffer);
 
     // NOTE: in order to use __read_write qualifier for image2d_t in kernel, need to specifiy build 
@@ -252,36 +248,36 @@ int oclProcessDecodeOutput(VADisplay vaDpy, VASurfaceID* vaSurfID)
     }
 
     queue = clCreateCommandQueue(context, device, 0, &err);
-    CHECK_OCL_ERROR(err, "ERROR: clCreateCommandQueue failed");
+    CHECK_OCL_ERROR(err, "clCreateCommandQueue failed");
 
     cl_mem sharedSurfY = clCreateFromVA(context, CL_MEM_READ_WRITE, vaSurfID, 0, &err);
-    CHECK_OCL_ERROR(err, "ERROR: clCreateFromVA failed");
+    CHECK_OCL_ERROR(err, "clCreateFromVA failed");
 
     err = clEnqueueAcquireVA(queue, 1, &sharedSurfY, 0,  NULL, NULL);
-    CHECK_OCL_ERROR(err, "ERROR: clEnqueueAcquireVA failed");
+    CHECK_OCL_ERROR(err, "clEnqueueAcquireVA failed");
 
     kernel = clCreateKernel(program, KERNEL_FUNC, &err);
-    CHECK_OCL_ERROR(err, "ERROR: clCreateKernel failed");
+    CHECK_OCL_ERROR(err, "clCreateKernel failed");
 
     err = clSetKernelArg(kernel, 0, sizeof(cl_mem), &sharedSurfY);
-    CHECK_OCL_ERROR(err, "ERROR: clSetKernelArg failed");
+    CHECK_OCL_ERROR(err, "clSetKernelArg failed");
 
     size_t global_size[2] = {CLIP_WIDTH, CLIP_HEIGHT};
     err = clEnqueueNDRangeKernel(queue, kernel, 2, NULL, global_size, NULL, 0, NULL, NULL);
-    CHECK_OCL_ERROR(err, "ERROR: clEnqueueNDRangeKernel failed");
+    CHECK_OCL_ERROR(err, "clEnqueueNDRangeKernel failed");
 
     // Wait until the queued kernel is completed by the device
     err = clFinish(queue);
-    CHECK_OCL_ERROR(err, "ERROR: clFinish failed");
+    CHECK_OCL_ERROR(err, "clFinish failed");
 
     size_t origin[3] = {0, 0, 0};
     size_t region[3] = {CLIP_WIDTH, CLIP_HEIGHT, 1};
     char hostMem[CLIP_WIDTH * CLIP_HEIGHT] = {};
     err = clEnqueueReadImage(queue, sharedSurfY, CL_TRUE, origin, region, 0, 0, (void*)&hostMem[0], 0, NULL, NULL);
-    CHECK_OCL_ERROR(err, "ERROR: clEnqueueReadImage failed");
+    CHECK_OCL_ERROR(err, "clEnqueueReadImage failed");
 
     err = clEnqueueReleaseVA(queue, 1, &sharedSurfY, 0, NULL, NULL);
-    CHECK_OCL_ERROR(err, "ERROR: clEnqueueReleaseVA failed");
+    CHECK_OCL_ERROR(err, "clEnqueueReleaseVA failed");
 
     clReleaseKernel(kernel);
     clReleaseCommandQueue(queue);
@@ -461,8 +457,12 @@ int main(int argc, char **argv)
         CHECK_VASTATUS(va_status, "vaPutSurface");
     }
 
-    oclProcessDecodeOutput(va_dpy, &surface_id);
-
+    if (oclProcessDecodeOutput(va_dpy, &surface_id) != 0) 
+    {
+        printf("ERROR: OCL execution failed\n");
+        return -1;
+    }
+    
     vaDestroySurfaces(va_dpy, &surface_id, 1);
     vaDestroyConfig(va_dpy, config_id);
     vaDestroyContext(va_dpy, context_id);
