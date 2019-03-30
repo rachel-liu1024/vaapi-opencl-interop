@@ -164,6 +164,8 @@ int oclProcessDecodeOutput(VADisplay vaDpy, VASurfaceID* vaSurfID)
 
     cl_uint num_platforms = 0;
     err = clGetPlatformIDs(0, NULL, &num_platforms);
+    CHECK_OCL_ERROR(err, "ERROR: clGetPlatformIDs failed");
+    printf("INFO: platform nubmer = %d\n", num_platforms);
 
     err = clGetPlatformIDs(1, &platform, NULL);
     CHECK_OCL_ERROR(err, "ERROR: clGetPlatformIDs failed");
@@ -184,21 +186,22 @@ int oclProcessDecodeOutput(VADisplay vaDpy, VASurfaceID* vaSurfID)
         return -1;
     }
 
-    cl_device_id *devices = NULL;
+    cl_device_id *device_list = NULL;
     cl_uint device_num = 0;
 
     err = clGetDeviceIDsFromVA(platform, CL_VA_API_DISPLAY_INTEL, vaDpy,
         CL_PREFERRED_DEVICES_FOR_VA_API_INTEL, NULL, NULL, &device_num);
-    CHECK_OCL_ERROR(err, "ERROR: Can’t get OpenCL device for media sharing");
+    CHECK_OCL_ERROR(err, "ERROR: clGetDeviceIDsFromVA failed");
 
-    devices = (cl_device_id *)malloc(sizeof(cl_device_id) * device_num);
-    CHECK_NULL_AND_RETURN(devices);
+    device_list = (cl_device_id *)malloc(sizeof(cl_device_id) * device_num);
+    CHECK_NULL_AND_RETURN(device_list);
 
     err = clGetDeviceIDsFromVA(platform, CL_VA_API_DISPLAY_INTEL, vaDpy, 
-        CL_PREFERRED_DEVICES_FOR_VA_API_INTEL, device_num, devices, NULL);
+        CL_PREFERRED_DEVICES_FOR_VA_API_INTEL, device_num, device_list, NULL);
     CHECK_OCL_ERROR(err, "ERROR: Can’t get OpenCL device for media sharing");
 
-    device = devices[0];
+    // use the first device by default
+    device = device_list[0];
 
     cl_context_properties props[] = 
     {
@@ -207,7 +210,7 @@ int oclProcessDecodeOutput(VADisplay vaDpy, VASurfaceID* vaSurfID)
         0
     };
 
-    context = clCreateContext(props, device_num, devices, NULL, NULL, &err);
+    context = clCreateContext(props, device_num, device_list, NULL, NULL, &err);
     CHECK_OCL_ERROR(err, "ERROR: Can’t create OpenCL context");
 
     /* Read program file and place content into buffer */
@@ -231,7 +234,8 @@ int oclProcessDecodeOutput(VADisplay vaDpy, VASurfaceID* vaSurfID)
     CHECK_OCL_ERROR(err, "ERROR: Couldn't create the program");
     free(program_buffer);
 
-    /* Build program */
+    // NOTE: in order to use __read_write qualifier for image2d_t in kernel, need to specifiy build 
+    // option as OpenCL2.0 or clBuildProgram will fail
     char build_options[] = "-cl-std=CL2.0";
     err = clBuildProgram(program, 1, &device, build_options, NULL, NULL);
     if (err < 0)
