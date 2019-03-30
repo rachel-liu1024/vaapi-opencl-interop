@@ -144,7 +144,6 @@ int getVASharingFunc(cl_platform_id platform)
     return 0;
 }
 
-
 int oclProcessDecodeOutput(VADisplay vaDpy, VASurfaceID* vaSurfID)
 {
     /* Host/device data structures */
@@ -216,33 +215,12 @@ int oclProcessDecodeOutput(VADisplay vaDpy, VASurfaceID* vaSurfID)
     context = clCreateContext(props, device_num, devices, NULL, NULL, &err);
     CHECK_OCL_ERROR(err, "ERROR: Can’t create OpenCL context");
 
-    cl_mem surfY = clCreateFromVA(context, CL_MEM_READ_WRITE, vaSurfID, 0, &err);
-    CHECK_OCL_ERROR(err, "ERROR: Can’t create clImage");
-
-
-#if 0
-    /* Access a device */
-    err = clGetDeviceIDs(platform, CL_DEVICE_TYPE_GPU, 1, &device, NULL);
-    if (err < 0)
-    {
-        perror("Couldn't find any devices");
-        exit(1);
-    }
-
-    /* Create the context */
-    context = clCreateContext(NULL, 1, &device, NULL, NULL, &err);
-    if (err < 0)
-    {
-        perror("Couldn't create a context");
-        exit(1);
-    }
-
     /* Read program file and place content into buffer */
     program_handle = fopen(PROGRAM_FILE, "r");
     if (program_handle == NULL)
     {
         perror("Couldn't find the program file");
-        exit(1);
+        return -1;
     }
     fseek(program_handle, 0, SEEK_END);
     program_size = ftell(program_handle);
@@ -254,13 +232,8 @@ int oclProcessDecodeOutput(VADisplay vaDpy, VASurfaceID* vaSurfID)
     fclose(program_handle);
 
     /* Create program from file */
-    program = clCreateProgramWithSource(context, 1,
-                                        (const char **)&program_buffer, &program_size, &err);
-    if (err < 0)
-    {
-        perror("Couldn't create the program");
-        exit(1);
-    }
+    program = clCreateProgramWithSource(context, 1, (const char **)&program_buffer, &program_size, &err);
+    CHECK_OCL_ERROR(err, "ERROR: Couldn't create the program");
     free(program_buffer);
 
     /* Build program */
@@ -283,59 +256,39 @@ int oclProcessDecodeOutput(VADisplay vaDpy, VASurfaceID* vaSurfID)
 
     /* Create kernel for the mat_vec_mult function */
     kernel = clCreateKernel(program, KERNEL_FUNC, &err);
-    if (err < 0)
-    {
-        perror("Couldn't create the kernel");
-        exit(1);
-    }
+    CHECK_OCL_ERROR(err, "ERROR: Couldn't create the kernel");
 
     /* Create CL buffers to hold input and output data */
     mat_buff = clCreateBuffer(context, CL_MEM_READ_ONLY | CL_MEM_COPY_HOST_PTR, sizeof(float) * 16, mat, &err);
-    if (err < 0)
-    {
-        perror("Couldn't create a buffer object");
-        exit(1);
-    }
+    CHECK_OCL_ERROR(err, "ERROR: Couldn't create a buffer object");
+
     vec_buff = clCreateBuffer(context, CL_MEM_READ_ONLY | CL_MEM_COPY_HOST_PTR, sizeof(float) * 4, vec, NULL);
-    res_buff = clCreateBuffer(context, CL_MEM_WRITE_ONLY,
-                              sizeof(float) * 4, NULL, NULL);
+    res_buff = clCreateBuffer(context, CL_MEM_WRITE_ONLY, sizeof(float) * 4, NULL, NULL);
 
     /* Create kernel arguments from the CL buffers */
     err = clSetKernelArg(kernel, 0, sizeof(cl_mem), &mat_buff);
-    if (err < 0)
-    {
-        perror("Couldn't set the kernel argument");
-        exit(1);
-    }
+    CHECK_OCL_ERROR(err, "ERROR: Couldn't set the kernel argument");
+
     clSetKernelArg(kernel, 1, sizeof(cl_mem), &vec_buff);
     clSetKernelArg(kernel, 2, sizeof(cl_mem), &res_buff);
 
     /* Create a CL command queue for the device*/
     queue = clCreateCommandQueue(context, device, 0, &err);
-    if (err < 0)
-    {
-        perror("Couldn't create the command queue");
-        exit(1);
-    }
+    CHECK_OCL_ERROR(err, "ERROR: Couldn't create the command queue");
+
+    cl_mem sharedSurfY = clCreateFromVA(context, CL_MEM_READ_WRITE, vaSurfID, 0, &err);
+    CHECK_OCL_ERROR(err, "ERROR: Can’t create clImage");
+
+    clEnqueueAcquireVA(queue, 1, &sharedSurfY, 0,  NULL, NULL); 
 
     /* Enqueue the command queue to the device */
     work_units_per_kernel = 4; /* 4 work-units per kernel */
-    err = clEnqueueNDRangeKernel(queue, kernel, 1, NULL, &work_units_per_kernel,
-                                 NULL, 0, NULL, NULL);
-    if (err < 0)
-    {
-        perror("Couldn't enqueue the kernel execution command");
-        exit(1);
-    }
+    err = clEnqueueNDRangeKernel(queue, kernel, 1, NULL, &work_units_per_kernel, NULL, 0, NULL, NULL);
+    CHECK_OCL_ERROR(err, "ERROR: Couldn't enqueue the kernel execution command");
 
     /* Read the result */
-    err = clEnqueueReadBuffer(queue, res_buff, CL_TRUE, 0, sizeof(float) * 4,
-                              result, 0, NULL, NULL);
-    if (err < 0)
-    {
-        perror("Couldn't enqueue the read buffer command");
-        exit(1);
-    }
+    err = clEnqueueReadBuffer(queue, res_buff, CL_TRUE, 0, sizeof(float) * 4, result, 0, NULL, NULL);
+    CHECK_OCL_ERROR(err, "ERROR: Couldn't enqueue the read buffer command");
 
     /* Test the result */
     if ((result[0] == correct[0]) && (result[1] == correct[1]) && (result[2] == correct[2]) && (result[3] == correct[3]))
@@ -355,7 +308,6 @@ int oclProcessDecodeOutput(VADisplay vaDpy, VASurfaceID* vaSurfID)
     clReleaseCommandQueue(queue);
     clReleaseProgram(program);
     clReleaseContext(context);
-#endif
 
     return 0;
 }
