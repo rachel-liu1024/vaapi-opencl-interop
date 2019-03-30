@@ -111,7 +111,7 @@ clCreateFromVA_APIMediaSurfaceINTEL_fn          clCreateFromVA = NULL;
 clEnqueueAcquireVA_APIMediaSurfacesINTEL_fn     clEnqueueAcquireVA = NULL;
 clEnqueueReleaseVA_APIMediaSurfacesINTEL_fn     clEnqueueReleaseVA = NULL;
 
-int getVAInterface(cl_platform_id platform)
+int getVASharingFunc(cl_platform_id platform)
 {
     size_t len = 0; 
     clGetPlatformInfo(platform, CL_PLATFORM_EXTENSIONS, 0, NULL, &len);
@@ -186,18 +186,18 @@ int compute()
         exit(1);
     }
 
+    if (getVASharingFunc(platform) != 0) 
+    {
+        printf("ERROR: cannot get CL VA sharing extension interface!\n");
+        return -1;
+    }
+
     /* Access a device */
     err = clGetDeviceIDs(platform, CL_DEVICE_TYPE_GPU, 1, &device, NULL);
     if (err < 0)
     {
         perror("Couldn't find any devices");
         exit(1);
-    }
-
-    if (getVAInterface(platform) != 0) 
-    {
-        printf("ERROR: cannot get CL VA sharing extension interface!\n");
-        return -1;
     }
 
     /* Create the context */
