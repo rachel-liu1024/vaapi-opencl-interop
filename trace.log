@@ -1,0 +1,1403 @@
+cpus=8
+            code-4146  [001] 19010.200710: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423595, flags=0x0
+            code-4146  [001] 19010.200761: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423595, global=0
+            code-4146  [001] 19010.202421: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423596, flags=0x0
+            code-4146  [001] 19010.202483: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423596, global=0
+          <idle>-0     [006] 19010.203587: intel_engine_notify:  dev=0, ring=0, seqno=1704524, waiters=1
+   kworker/u16:3-23049 [005] 19010.203644: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3434f, 0x0)
+   kworker/u16:3-23049 [005] 19010.203649: i915_pipe_update_start: pipe >c<, frame=0, scanline=213839, min=660, max=1073
+   kworker/u16:3-23049 [005] 19010.203653: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3434f, 0x0)
+   kworker/u16:3-23049 [005] 19010.203654: i915_pipe_update_vblank_evaded: pipe >c<, frame=0, scanline=213839, min=661, max=1073
+   kworker/u16:3-23049 [005] 19010.203655: i915_reg_rw:          write reg=0x68180, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [005] 19010.203656: i915_reg_rw:          write reg=0x68170, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [005] 19010.203657: i915_reg_rw:          write reg=0x68174, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [005] 19010.203658: i915_reg_rw:          write reg=0x68280, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [005] 19010.203658: i915_reg_rw:          write reg=0x68270, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [005] 19010.203659: i915_reg_rw:          write reg=0x68274, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [005] 19010.203662: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3434f, 0x0)
+   kworker/u16:3-23049 [005] 19010.203664: intel_update_plane:   [FAILED TO PARSE] pipe=0 name=0xffff8b0de4fce190 frame=213839 scanline=661 src=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04] dst=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04, 00, 00]
+   kworker/u16:3-23049 [005] 19010.203671: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3434f, 0x0)
+   kworker/u16:3-23049 [005] 19010.203673: i915_pipe_update_end: pipe >c<, frame=0, scanline=213839
+   kworker/u16:3-23049 [005] 19010.203675: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3434f, 0x0)
+   kworker/u16:3-23049 [005] 19010.203678: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3434f, 0x0)
+          <idle>-0     [006] 19010.204109: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+          <idle>-0     [006] 19010.204118: intel_engine_notify:  dev=0, ring=0, seqno=1704525, waiters=0
+          <idle>-0     [006] 19010.210019: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19010.210022: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19010.210025: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34350, 0x0)
+          <idle>-0     [006] 19010.210028: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34350, 0x0)
+            Xorg-1255  [004] 19010.210282: i915_request_queue:   dev=0, hw_id=4, ring=0, ctx=23, seqno=259826, flags=0x0
+            Xorg-1255  [004] 19010.210304: i915_request_add:     dev=0, hw_id=4, ring=0, ctx=23, seqno=259826, global=0
+            Xorg-1255  [004] 19010.210312: i915_request_retire:  dev=0, hw_id=4, ring=0, ctx=23, seqno=259825, global=1704523
+     gnome-shell-1394  [005] 19010.214787: i915_request_queue:   dev=0, hw_id=19, ring=0, ctx=26, seqno=244641, flags=0x0
+     gnome-shell-1394  [005] 19010.214807: i915_request_add:     dev=0, hw_id=19, ring=0, ctx=26, seqno=244641, global=0
+     gnome-shell-1394  [005] 19010.214816: i915_request_retire:  dev=0, hw_id=19, ring=0, ctx=26, seqno=244640, global=1704524
+            Xorg-1255  [006] 19010.215070: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+            code-4146  [001] 19010.218181: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423594, global=1704525
+            code-4146  [001] 19010.218231: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423597, flags=0x0
+            code-4146  [001] 19010.218262: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423597, global=0
+            code-4146  [001] 19010.218272: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423595, global=1704526
+            code-4146  [001] 19010.218302: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423596, global=1704527
+            code-4146  [001] 19010.218993: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423598, flags=0x0
+            code-4146  [001] 19010.219025: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423598, global=0
+          <idle>-0     [006] 19010.219695: intel_engine_notify:  dev=0, ring=0, seqno=1704529, waiters=1
+   kworker/u16:3-23049 [005] 19010.219720: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34350, 0x0)
+   kworker/u16:3-23049 [005] 19010.219725: i915_pipe_update_start: pipe >c<, frame=0, scanline=213840, min=621, max=1073
+   kworker/u16:3-23049 [005] 19010.219728: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34350, 0x0)
+   kworker/u16:3-23049 [005] 19010.219729: i915_pipe_update_vblank_evaded: pipe >c<, frame=0, scanline=213840, min=622, max=1073
+   kworker/u16:3-23049 [005] 19010.219731: i915_reg_rw:          write reg=0x68180, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [005] 19010.219731: i915_reg_rw:          write reg=0x68170, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [005] 19010.219732: i915_reg_rw:          write reg=0x68174, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [005] 19010.219733: i915_reg_rw:          write reg=0x68280, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [005] 19010.219734: i915_reg_rw:          write reg=0x68270, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [005] 19010.219735: i915_reg_rw:          write reg=0x68274, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [005] 19010.219738: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34350, 0x0)
+   kworker/u16:3-23049 [005] 19010.219739: intel_update_plane:   [FAILED TO PARSE] pipe=0 name=0xffff8b0de4fce190 frame=213840 scanline=622 src=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04] dst=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04, 00, 00]
+   kworker/u16:3-23049 [005] 19010.219747: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34350, 0x0)
+   kworker/u16:3-23049 [005] 19010.219748: i915_pipe_update_end: pipe >c<, frame=0, scanline=213840
+   kworker/u16:3-23049 [005] 19010.219751: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34350, 0x0)
+   kworker/u16:3-23049 [005] 19010.219754: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34350, 0x0)
+          <idle>-0     [006] 19010.220267: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+          <idle>-0     [006] 19010.220274: intel_engine_notify:  dev=0, ring=0, seqno=1704530, waiters=0
+            code-4146  [001] 19010.220720: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423597, global=1704530
+            code-4146  [001] 19010.220755: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423599, flags=0x0
+            code-4146  [001] 19010.220806: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423599, global=0
+          <idle>-0     [006] 19010.226749: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19010.226751: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19010.226755: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34351, 0x0)
+          <idle>-0     [006] 19010.226758: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34351, 0x0)
+            Xorg-1255  [006] 19010.226995: i915_request_queue:   dev=0, hw_id=4, ring=0, ctx=23, seqno=259827, flags=0x0
+            Xorg-1255  [006] 19010.227006: i915_request_add:     dev=0, hw_id=4, ring=0, ctx=23, seqno=259827, global=0
+            Xorg-1255  [006] 19010.227015: i915_request_retire:  dev=0, hw_id=4, ring=0, ctx=23, seqno=259826, global=1704528
+     gnome-shell-1394  [005] 19010.231481: i915_request_queue:   dev=0, hw_id=19, ring=0, ctx=26, seqno=244642, flags=0x0
+     gnome-shell-1394  [005] 19010.231501: i915_request_add:     dev=0, hw_id=19, ring=0, ctx=26, seqno=244642, global=0
+     gnome-shell-1394  [005] 19010.231509: i915_request_retire:  dev=0, hw_id=19, ring=0, ctx=26, seqno=244641, global=1704529
+            Xorg-1255  [006] 19010.231765: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+            code-4146  [001] 19010.234659: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423598, global=1704531
+            code-4146  [001] 19010.234699: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423600, flags=0x0
+            code-4146  [001] 19010.234736: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423600, global=0
+            code-4146  [001] 19010.234748: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423599, global=1704532
+            code-4146  [001] 19010.235499: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423601, flags=0x0
+            code-4146  [001] 19010.235531: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423601, global=0
+          <idle>-0     [006] 19010.236320: intel_engine_notify:  dev=0, ring=0, seqno=1704534, waiters=1
+   kworker/u16:3-23049 [000] 19010.236571: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34351, 0x0)
+   kworker/u16:3-23049 [000] 19010.236576: i915_pipe_update_start: pipe >c<, frame=0, scanline=213841, min=634, max=1073
+   kworker/u16:3-23049 [000] 19010.236579: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34351, 0x0)
+   kworker/u16:3-23049 [000] 19010.236580: i915_pipe_update_vblank_evaded: pipe >c<, frame=0, scanline=213841, min=634, max=1073
+   kworker/u16:3-23049 [000] 19010.236581: i915_reg_rw:          write reg=0x68180, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [000] 19010.236582: i915_reg_rw:          write reg=0x68170, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [000] 19010.236583: i915_reg_rw:          write reg=0x68174, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [000] 19010.236584: i915_reg_rw:          write reg=0x68280, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [000] 19010.236584: i915_reg_rw:          write reg=0x68270, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [000] 19010.236585: i915_reg_rw:          write reg=0x68274, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [000] 19010.236587: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34351, 0x0)
+   kworker/u16:3-23049 [000] 19010.236589: intel_update_plane:   [FAILED TO PARSE] pipe=0 name=0xffff8b0de4fce190 frame=213841 scanline=635 src=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04] dst=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04, 00, 00]
+   kworker/u16:3-23049 [000] 19010.236596: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34351, 0x0)
+   kworker/u16:3-23049 [000] 19010.236598: i915_pipe_update_end: pipe >c<, frame=0, scanline=213841
+   kworker/u16:3-23049 [000] 19010.236600: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34351, 0x0)
+   kworker/u16:3-23049 [000] 19010.236602: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34351, 0x0)
+          <idle>-0     [006] 19010.236882: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+          <idle>-0     [006] 19010.236889: intel_engine_notify:  dev=0, ring=0, seqno=1704535, waiters=0
+            code-4146  [001] 19010.237105: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423600, global=1704535
+            code-4146  [001] 19010.237137: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423602, flags=0x0
+            code-4146  [001] 19010.237180: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423602, global=0
+          <idle>-0     [006] 19010.243313: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19010.243316: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19010.243319: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34352, 0x0)
+          <idle>-0     [006] 19010.243322: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34352, 0x0)
+            Xorg-1255  [006] 19010.243564: i915_request_queue:   dev=0, hw_id=4, ring=0, ctx=23, seqno=259828, flags=0x0
+            Xorg-1255  [006] 19010.243575: i915_request_add:     dev=0, hw_id=4, ring=0, ctx=23, seqno=259828, global=0
+            Xorg-1255  [006] 19010.243582: i915_request_retire:  dev=0, hw_id=4, ring=0, ctx=23, seqno=259827, global=1704533
+     gnome-shell-1394  [005] 19010.248096: i915_request_queue:   dev=0, hw_id=19, ring=0, ctx=26, seqno=244643, flags=0x0
+     gnome-shell-1394  [005] 19010.248116: i915_request_add:     dev=0, hw_id=19, ring=0, ctx=26, seqno=244643, global=0
+     gnome-shell-1394  [005] 19010.248124: i915_request_retire:  dev=0, hw_id=19, ring=0, ctx=26, seqno=244642, global=1704534
+            Xorg-1255  [006] 19010.248411: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+            code-4146  [001] 19010.251361: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423601, global=1704536
+            code-4146  [001] 19010.251421: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423603, flags=0x0
+            code-4146  [001] 19010.251463: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423603, global=0
+            code-4146  [001] 19010.251473: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423602, global=1704537
+            code-4146  [001] 19010.252189: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423604, flags=0x0
+            code-4146  [001] 19010.252218: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423604, global=0
+          <idle>-0     [006] 19010.252992: intel_engine_notify:  dev=0, ring=0, seqno=1704539, waiters=1
+   kworker/u16:3-23049 [000] 19010.253049: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34352, 0x0)
+   kworker/u16:3-23049 [000] 19010.253053: i915_pipe_update_start: pipe >c<, frame=0, scanline=213842, min=622, max=1073
+   kworker/u16:3-23049 [000] 19010.253056: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34352, 0x0)
+   kworker/u16:3-23049 [000] 19010.253057: i915_pipe_update_vblank_evaded: pipe >c<, frame=0, scanline=213842, min=622, max=1073
+   kworker/u16:3-23049 [000] 19010.253058: i915_reg_rw:          write reg=0x68180, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [000] 19010.253059: i915_reg_rw:          write reg=0x68170, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [000] 19010.253060: i915_reg_rw:          write reg=0x68174, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [000] 19010.253061: i915_reg_rw:          write reg=0x68280, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [000] 19010.253061: i915_reg_rw:          write reg=0x68270, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [000] 19010.253062: i915_reg_rw:          write reg=0x68274, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [000] 19010.253065: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34352, 0x0)
+   kworker/u16:3-23049 [000] 19010.253066: intel_update_plane:   [FAILED TO PARSE] pipe=0 name=0xffff8b0de4fce190 frame=213842 scanline=623 src=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04] dst=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04, 00, 00]
+   kworker/u16:3-23049 [000] 19010.253074: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34352, 0x0)
+   kworker/u16:3-23049 [000] 19010.253075: i915_pipe_update_end: pipe >c<, frame=0, scanline=213842
+   kworker/u16:3-23049 [000] 19010.253077: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34352, 0x0)
+   kworker/u16:3-23049 [000] 19010.253079: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34352, 0x0)
+          <idle>-0     [006] 19010.253601: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+          <idle>-0     [006] 19010.253609: intel_engine_notify:  dev=0, ring=0, seqno=1704540, waiters=0
+            code-4146  [001] 19010.253934: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423603, global=1704540
+            code-4146  [001] 19010.253965: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423605, flags=0x0
+            code-4146  [001] 19010.254006: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423605, global=0
+          <idle>-0     [006] 19010.259988: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19010.259990: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19010.259994: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34353, 0x0)
+          <idle>-0     [006] 19010.259996: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34353, 0x0)
+            Xorg-1255  [006] 19010.260564: i915_request_queue:   dev=0, hw_id=4, ring=0, ctx=23, seqno=259829, flags=0x0
+            Xorg-1255  [006] 19010.260575: i915_request_add:     dev=0, hw_id=4, ring=0, ctx=23, seqno=259829, global=0
+            Xorg-1255  [006] 19010.260584: i915_request_retire:  dev=0, hw_id=4, ring=0, ctx=23, seqno=259828, global=1704538
+     gnome-shell-1394  [007] 19010.265741: i915_request_queue:   dev=0, hw_id=19, ring=0, ctx=26, seqno=244644, flags=0x0
+     gnome-shell-1394  [007] 19010.265774: i915_request_add:     dev=0, hw_id=19, ring=0, ctx=26, seqno=244644, global=0
+     gnome-shell-1394  [007] 19010.265783: i915_request_retire:  dev=0, hw_id=19, ring=0, ctx=26, seqno=244643, global=1704539
+            Xorg-1255  [006] 19010.266055: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+            code-4146  [001] 19010.270015: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423604, global=1704541
+            code-4146  [001] 19010.270053: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423606, flags=0x0
+            code-4146  [001] 19010.270090: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423606, global=0
+            code-4146  [001] 19010.270100: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423605, global=1704542
+          <idle>-0     [006] 19010.270660: intel_engine_notify:  dev=0, ring=0, seqno=1704544, waiters=1
+   kworker/u16:3-23049 [006] 19010.270690: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34353, 0x0)
+   kworker/u16:3-23049 [006] 19010.270693: i915_pipe_update_start: pipe >c<, frame=0, scanline=213843, min=687, max=1073
+   kworker/u16:3-23049 [006] 19010.270695: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34353, 0x0)
+   kworker/u16:3-23049 [006] 19010.270697: i915_pipe_update_vblank_evaded: pipe >c<, frame=0, scanline=213843, min=687, max=1073
+   kworker/u16:3-23049 [006] 19010.270697: i915_reg_rw:          write reg=0x68180, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19010.270698: i915_reg_rw:          write reg=0x68170, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19010.270699: i915_reg_rw:          write reg=0x68174, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19010.270700: i915_reg_rw:          write reg=0x68280, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19010.270700: i915_reg_rw:          write reg=0x68270, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19010.270701: i915_reg_rw:          write reg=0x68274, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19010.270703: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34353, 0x0)
+   kworker/u16:3-23049 [006] 19010.270705: intel_update_plane:   [FAILED TO PARSE] pipe=0 name=0xffff8b0de4fce190 frame=213843 scanline=688 src=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04] dst=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04, 00, 00]
+   kworker/u16:3-23049 [006] 19010.270712: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34353, 0x0)
+   kworker/u16:3-23049 [006] 19010.270713: i915_pipe_update_end: pipe >c<, frame=0, scanline=213843
+   kworker/u16:3-23049 [006] 19010.270716: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34353, 0x0)
+   kworker/u16:3-23049 [006] 19010.270718: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34353, 0x0)
+            code-4146  [001] 19010.270804: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423607, flags=0x0
+            code-4146  [001] 19010.270831: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423607, global=0
+          <idle>-0     [006] 19010.271202: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+          <idle>-0     [006] 19010.271212: intel_engine_notify:  dev=0, ring=0, seqno=1704545, waiters=0
+            code-4146  [001] 19010.272536: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423606, global=1704545
+            code-4146  [001] 19010.272573: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423608, flags=0x0
+            code-4146  [001] 19010.272620: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423608, global=0
+            code-4146  [001] 19010.272629: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423607, global=1704546
+          <idle>-0     [006] 19010.276654: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19010.276656: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19010.276659: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34354, 0x0)
+          <idle>-0     [006] 19010.276662: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34354, 0x0)
+            Xorg-1255  [006] 19010.276865: i915_request_queue:   dev=0, hw_id=4, ring=0, ctx=23, seqno=259830, flags=0x0
+            Xorg-1255  [006] 19010.276876: i915_request_add:     dev=0, hw_id=4, ring=0, ctx=23, seqno=259830, global=0
+            Xorg-1255  [006] 19010.276883: i915_request_retire:  dev=0, hw_id=4, ring=0, ctx=23, seqno=259829, global=1704543
+     gnome-shell-1394  [007] 19010.281362: i915_request_queue:   dev=0, hw_id=19, ring=0, ctx=26, seqno=244645, flags=0x0
+     gnome-shell-1394  [007] 19010.281383: i915_request_add:     dev=0, hw_id=19, ring=0, ctx=26, seqno=244645, global=0
+     gnome-shell-1394  [007] 19010.281391: i915_request_retire:  dev=0, hw_id=19, ring=0, ctx=26, seqno=244644, global=1704544
+            Xorg-1255  [006] 19010.281647: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+          <idle>-0     [006] 19010.286284: intel_engine_notify:  dev=0, ring=0, seqno=1704549, waiters=1
+   kworker/u16:3-23049 [000] 19010.286336: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34354, 0x0)
+   kworker/u16:3-23049 [000] 19010.286340: i915_pipe_update_start: pipe >c<, frame=0, scanline=213844, min=620, max=1073
+   kworker/u16:3-23049 [000] 19010.286343: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34354, 0x0)
+   kworker/u16:3-23049 [000] 19010.286344: i915_pipe_update_vblank_evaded: pipe >c<, frame=0, scanline=213844, min=620, max=1073
+   kworker/u16:3-23049 [000] 19010.286345: i915_reg_rw:          write reg=0x68180, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [000] 19010.286346: i915_reg_rw:          write reg=0x68170, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [000] 19010.286347: i915_reg_rw:          write reg=0x68174, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [000] 19010.286348: i915_reg_rw:          write reg=0x68280, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [000] 19010.286348: i915_reg_rw:          write reg=0x68270, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [000] 19010.286349: i915_reg_rw:          write reg=0x68274, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [000] 19010.286351: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34354, 0x0)
+   kworker/u16:3-23049 [000] 19010.286353: intel_update_plane:   [FAILED TO PARSE] pipe=0 name=0xffff8b0de4fce190 frame=213844 scanline=620 src=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04] dst=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04, 00, 00]
+   kworker/u16:3-23049 [000] 19010.286360: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34354, 0x0)
+   kworker/u16:3-23049 [000] 19010.286361: i915_pipe_update_end: pipe >c<, frame=0, scanline=213844
+   kworker/u16:3-23049 [000] 19010.286363: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34354, 0x0)
+   kworker/u16:3-23049 [000] 19010.286366: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34354, 0x0)
+   kworker/u16:0-19287 [005] 19010.287513: i915_gem_object_destroy: obj=0xffff8b0d2fadad00
+   kworker/u16:0-19287 [005] 19010.287517: i915_vma_unbind:      obj=0xffff8b0d2fadad00, offset=0x0000000003e00000 size=0x800000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287624: i915_gem_object_destroy: obj=0xffff8b0de9bac600
+   kworker/u16:0-19287 [005] 19010.287625: i915_vma_unbind:      obj=0xffff8b0de9bac600, offset=0x0000000001200000 size=0x800000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287701: i915_gem_object_destroy: obj=0xffff8b0de6262a00
+   kworker/u16:0-19287 [005] 19010.287702: i915_vma_unbind:      obj=0xffff8b0de6262a00, offset=0x0000000007380000 size=0x40000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287710: i915_gem_object_destroy: obj=0xffff8b0cffcb5500
+   kworker/u16:0-19287 [005] 19010.287719: i915_reg_rw:          write reg=0x1000c8, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.287720: i915_reg_rw:          write reg=0x1000cc, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.287721: i915_reg_rw:          write reg=0x1000c8, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.287722: i915_vma_unbind:      obj=0xffff8b0cffcb5500, offset=0x00000000020d4000 size=0x7000 vm=0xffff8b0de7dcd740
+   kworker/u16:0-19287 [005] 19010.287727: i915_vma_unbind:      obj=0xffff8b0cffcb5500, offset=0x000000000abb2000 size=0x7000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287736: i915_gem_object_destroy: obj=0xffff8b0d08048000
+   kworker/u16:0-19287 [005] 19010.287737: i915_vma_unbind:      obj=0xffff8b0d08048000, offset=0x00000000001e6000 size=0x6000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287741: i915_gem_object_destroy: obj=0xffff8b0cffcb7300
+   kworker/u16:0-19287 [005] 19010.287742: i915_vma_unbind:      obj=0xffff8b0cffcb7300, offset=0x00000000034da000 size=0x6000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287746: i915_gem_object_destroy: obj=0xffff8b0de6262d00
+   kworker/u16:0-19287 [005] 19010.287746: i915_vma_unbind:      obj=0xffff8b0de6262d00, offset=0x00000000000d6000 size=0x2000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287756: i915_gem_object_destroy: obj=0xffff8b0b7a13b000
+   kworker/u16:0-19287 [005] 19010.287757: i915_vma_unbind:      obj=0xffff8b0b7a13b000, offset=0x00000000001f8000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287768: i915_gem_object_destroy: obj=0xffff8b0cc9047900
+   kworker/u16:0-19287 [005] 19010.287768: i915_vma_unbind:      obj=0xffff8b0cc9047900, offset=0x00000000001f7000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287771: i915_gem_object_destroy: obj=0xffff8b0cc9044000
+   kworker/u16:0-19287 [005] 19010.287772: i915_vma_unbind:      obj=0xffff8b0cc9044000, offset=0x00000000001f6000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287774: i915_gem_object_destroy: obj=0xffff8b0cc9045800
+   kworker/u16:0-19287 [005] 19010.287775: i915_vma_unbind:      obj=0xffff8b0cc9045800, offset=0x00000000001f5000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287778: i915_gem_object_destroy: obj=0xffff8b0cc9046d00
+   kworker/u16:0-19287 [005] 19010.287779: i915_vma_unbind:      obj=0xffff8b0cc9046d00, offset=0x00000000001f4000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287781: i915_gem_object_destroy: obj=0xffff8b0cc9044300
+   kworker/u16:0-19287 [005] 19010.287781: i915_vma_unbind:      obj=0xffff8b0cc9044300, offset=0x00000000001f3000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287784: i915_gem_object_destroy: obj=0xffff8b0cc9044600
+   kworker/u16:0-19287 [005] 19010.287788: i915_reg_rw:          write reg=0x1000d8, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.287789: i915_reg_rw:          write reg=0x1000dc, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.287790: i915_reg_rw:          write reg=0x1000d8, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.287791: i915_vma_unbind:      obj=0xffff8b0cc9044600, offset=0x000000000103e000 size=0x1000 vm=0xffff8b0de7dcd740
+   kworker/u16:0-19287 [005] 19010.287794: i915_vma_unbind:      obj=0xffff8b0cc9044600, offset=0x00000000000ec000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287799: i915_gem_object_destroy: obj=0xffff8b0d2f862400
+   kworker/u16:0-19287 [005] 19010.287799: i915_vma_unbind:      obj=0xffff8b0d2f862400, offset=0x00000000000eb000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287803: i915_gem_object_destroy: obj=0xffff8b0d2f862700
+   kworker/u16:0-19287 [005] 19010.287803: i915_vma_unbind:      obj=0xffff8b0d2f862700, offset=0x00000000000ea000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287806: i915_gem_object_destroy: obj=0xffff8b0d2f862100
+   kworker/u16:0-19287 [005] 19010.287807: i915_vma_unbind:      obj=0xffff8b0d2f862100, offset=0x00000000000e9000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287809: i915_gem_object_destroy: obj=0xffff8b0d2f860900
+   kworker/u16:0-19287 [005] 19010.287810: i915_vma_unbind:      obj=0xffff8b0d2f860900, offset=0x00000000000e8000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287812: i915_gem_object_destroy: obj=0xffff8b0d2f863900
+   kworker/u16:0-19287 [005] 19010.287813: i915_vma_unbind:      obj=0xffff8b0d2f863900, offset=0x00000000000e7000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287815: i915_gem_object_destroy: obj=0xffff8b0d2f860c00
+   kworker/u16:0-19287 [005] 19010.287816: i915_vma_unbind:      obj=0xffff8b0d2f860c00, offset=0x00000000000e6000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287819: i915_gem_object_destroy: obj=0xffff8b0d2f863c00
+   kworker/u16:0-19287 [005] 19010.287819: i915_vma_unbind:      obj=0xffff8b0d2f863c00, offset=0x00000000000e5000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287822: i915_gem_object_destroy: obj=0xffff8b0b5e65b300
+   kworker/u16:0-19287 [005] 19010.287823: i915_vma_unbind:      obj=0xffff8b0b5e65b300, offset=0x00000000000e4000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287825: i915_gem_object_destroy: obj=0xffff8b0b5e658f00
+   kworker/u16:0-19287 [005] 19010.287826: i915_vma_unbind:      obj=0xffff8b0b5e658f00, offset=0x00000000000e3000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287828: i915_gem_object_destroy: obj=0xffff8b0b5e658900
+   kworker/u16:0-19287 [005] 19010.287830: i915_reg_rw:          write reg=0x1000e0, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.287831: i915_reg_rw:          write reg=0x1000e4, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.287832: i915_reg_rw:          write reg=0x1000e0, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.287833: i915_vma_unbind:      obj=0xffff8b0b5e658900, offset=0x0000000001038000 size=0x1000 vm=0xffff8b0de7dcd740
+   kworker/u16:0-19287 [005] 19010.287836: i915_vma_unbind:      obj=0xffff8b0b5e658900, offset=0x00000000000e2000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287839: i915_gem_object_destroy: obj=0xffff8b0b6eb5f000
+   kworker/u16:0-19287 [005] 19010.287845: i915_gem_object_destroy: obj=0xffff8b0d53a61e00
+   kworker/u16:0-19287 [005] 19010.287846: i915_vma_unbind:      obj=0xffff8b0d53a61e00, offset=0x00000000000ea000 size=0x3000 vm=0xffff8b0db87ec000
+   kworker/u16:0-19287 [005] 19010.287854: i915_gem_object_destroy: obj=0xffff8b0b5e65bc00
+   kworker/u16:0-19287 [005] 19010.287855: i915_vma_unbind:      obj=0xffff8b0b5e65bc00, offset=0x0000000000030000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287859: i915_gem_object_destroy: obj=0xffff8b0b5e65a100
+   kworker/u16:0-19287 [005] 19010.287860: i915_vma_unbind:      obj=0xffff8b0b5e65a100, offset=0x000000000002f000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287862: i915_gem_object_destroy: obj=0xffff8b0b5e5e4000
+   kworker/u16:0-19287 [005] 19010.287863: i915_vma_unbind:      obj=0xffff8b0b5e5e4000, offset=0x000000000004d000 size=0x1000 vm=0xffff8b0db87ec000
+   kworker/u16:0-19287 [005] 19010.287869: i915_gem_object_destroy: obj=0xffff8b0b5e65aa00
+   kworker/u16:0-19287 [005] 19010.287869: i915_vma_unbind:      obj=0xffff8b0b5e65aa00, offset=0x000000000002e000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287872: i915_gem_object_destroy: obj=0xffff8b0b6e9c4000
+   kworker/u16:0-19287 [005] 19010.287873: i915_vma_unbind:      obj=0xffff8b0b6e9c4000, offset=0x000000000002d000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287875: i915_gem_object_destroy: obj=0xffff8b0d906a0c00
+   kworker/u16:0-19287 [005] 19010.287876: i915_vma_unbind:      obj=0xffff8b0d906a0c00, offset=0x000000000003e000 size=0x1000 vm=0xffff8b0db87ec000
+   kworker/u16:0-19287 [005] 19010.287880: i915_gem_object_destroy: obj=0xffff8b0b7bb00300
+   kworker/u16:0-19287 [005] 19010.287882: i915_reg_rw:          write reg=0x100088, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.287884: i915_reg_rw:          write reg=0x10008c, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.287884: i915_reg_rw:          write reg=0x100088, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.287885: i915_vma_unbind:      obj=0xffff8b0b7bb00300, offset=0x0000000001007000 size=0x1000 vm=0xffff8b0de7dcd740
+   kworker/u16:0-19287 [005] 19010.287888: i915_vma_unbind:      obj=0xffff8b0b7bb00300, offset=0x000000000a0a1000 size=0x1000 vm=0xffff8b0db87ec000
+   kworker/u16:0-19287 [005] 19010.287895: i915_gem_object_destroy: obj=0xffff8b0b6e9c7600
+   kworker/u16:0-19287 [005] 19010.287896: i915_vma_unbind:      obj=0xffff8b0b6e9c7600, offset=0x000000000002c000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287899: i915_gem_object_destroy: obj=0xffff8b0b6e9c7000
+   kworker/u16:0-19287 [005] 19010.287899: i915_vma_unbind:      obj=0xffff8b0b6e9c7000, offset=0x000000000002b000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287902: i915_gem_object_destroy: obj=0xffff8b0d994e4300
+   kworker/u16:0-19287 [005] 19010.287903: i915_vma_unbind:      obj=0xffff8b0d994e4300, offset=0x000000000002a000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287919: i915_gem_object_destroy: obj=0xffff8b0d90677900
+   kworker/u16:0-19287 [005] 19010.287920: i915_vma_unbind:      obj=0xffff8b0d90677900, offset=0x00000000000dc000 size=0x1000 vm=0xffff8b0db87ec000
+   kworker/u16:0-19287 [005] 19010.287925: i915_gem_object_destroy: obj=0xffff8b0d994e4f00
+   kworker/u16:0-19287 [005] 19010.287926: i915_vma_unbind:      obj=0xffff8b0d994e4f00, offset=0x0000000000029000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287928: i915_gem_object_destroy: obj=0xffff8b0d994e7600
+   kworker/u16:0-19287 [005] 19010.287929: i915_vma_unbind:      obj=0xffff8b0d994e7600, offset=0x0000000006384000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287932: i915_gem_object_destroy: obj=0xffff8b0db27d7c00
+   kworker/u16:0-19287 [005] 19010.287933: i915_vma_unbind:      obj=0xffff8b0db27d7c00, offset=0x0000000001bdc000 size=0x1000 vm=0xffff8b0db87ec000
+   kworker/u16:0-19287 [005] 19010.287937: i915_gem_object_destroy: obj=0xffff8b0de6263900
+   kworker/u16:0-19287 [005] 19010.287938: i915_vma_unbind:      obj=0xffff8b0de6263900, offset=0x0000000006381000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287941: i915_gem_object_destroy: obj=0xffff8b0de6261b00
+   kworker/u16:0-19287 [005] 19010.287942: i915_vma_unbind:      obj=0xffff8b0de6261b00, offset=0x0000000006380000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287945: i915_gem_object_destroy: obj=0xffff8b0d2ed26700
+   kworker/u16:0-19287 [005] 19010.287946: i915_vma_unbind:      obj=0xffff8b0d2ed26700, offset=0x000000000017a000 size=0x1000 vm=0xffff8b0db87ec000
+   kworker/u16:0-19287 [005] 19010.287949: i915_gem_object_destroy: obj=0xffff8b0d994e7000
+   kworker/u16:0-19287 [005] 19010.287952: i915_reg_rw:          write reg=0x1000f0, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.287954: i915_reg_rw:          write reg=0x1000f4, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.287954: i915_reg_rw:          write reg=0x1000f0, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.287955: i915_vma_unbind:      obj=0xffff8b0d994e7000, offset=0x0000000001034000 size=0x1000 vm=0xffff8b0de7dcd740
+   kworker/u16:0-19287 [005] 19010.287958: i915_vma_unbind:      obj=0xffff8b0d994e7000, offset=0x0000000006383000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287962: i915_gem_object_destroy: obj=0xffff8b0d994e7c00
+   kworker/u16:0-19287 [005] 19010.287962: i915_vma_unbind:      obj=0xffff8b0d994e7c00, offset=0x0000000006382000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287966: i915_gem_object_destroy: obj=0xffff8b0de6260000
+   kworker/u16:0-19287 [005] 19010.287966: i915_vma_unbind:      obj=0xffff8b0de6260000, offset=0x00000000000d5000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287969: i915_gem_object_destroy: obj=0xffff8b0d2f6f8c00
+   kworker/u16:0-19287 [005] 19010.287973: i915_reg_rw:          write reg=0x100050, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.287974: i915_reg_rw:          write reg=0x100054, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.287975: i915_reg_rw:          write reg=0x100050, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.287976: i915_vma_unbind:      obj=0xffff8b0d2f6f8c00, offset=0x00000000007ff000 size=0x1000 vm=0xffff8b0de7dcd740
+   kworker/u16:0-19287 [005] 19010.287978: i915_vma_unbind:      obj=0xffff8b0d2f6f8c00, offset=0x0000000000054000 size=0x1000 vm=0xffff8b0db87ec000
+   kworker/u16:0-19287 [005] 19010.287984: i915_gem_object_destroy: obj=0xffff8b0de6261500
+   kworker/u16:0-19287 [005] 19010.287984: i915_vma_unbind:      obj=0xffff8b0de6261500, offset=0x00000000001f1000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287987: i915_gem_object_destroy: obj=0xffff8b0d3243d800
+   kworker/u16:0-19287 [005] 19010.287988: i915_vma_unbind:      obj=0xffff8b0d3243d800, offset=0x00000000001f0000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.287991: i915_gem_object_destroy: obj=0xffff8b0d3243e100
+   kworker/u16:0-19287 [005] 19010.287994: i915_reg_rw:          write reg=0x1000d0, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.287995: i915_reg_rw:          write reg=0x1000d4, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.287995: i915_reg_rw:          write reg=0x1000d0, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.287997: i915_vma_unbind:      obj=0xffff8b0d3243e100, offset=0x0000000001033000 size=0x1000 vm=0xffff8b0de7dcd740
+   kworker/u16:0-19287 [005] 19010.287999: i915_vma_unbind:      obj=0xffff8b0d3243e100, offset=0x00000000001ef000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.288002: i915_gem_object_destroy: obj=0xffff8b0d3243f900
+   kworker/u16:0-19287 [005] 19010.288003: i915_vma_unbind:      obj=0xffff8b0d3243f900, offset=0x00000000001e3000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.288006: i915_gem_object_destroy: obj=0xffff8b0d3243f000
+   kworker/u16:0-19287 [005] 19010.288007: i915_vma_unbind:      obj=0xffff8b0d3243f000, offset=0x00000000001e2000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.288009: i915_gem_object_destroy: obj=0xffff8b0d3243ea00
+   kworker/u16:0-19287 [005] 19010.288010: i915_vma_unbind:      obj=0xffff8b0d3243ea00, offset=0x00000000001ed000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.288013: i915_gem_object_destroy: obj=0xffff8b0b5e50ad00
+   kworker/u16:0-19287 [005] 19010.288013: i915_vma_unbind:      obj=0xffff8b0b5e50ad00, offset=0x00000000001ec000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.288017: i915_gem_object_destroy: obj=0xffff8b0b5e509e00
+   kworker/u16:0-19287 [005] 19010.288018: i915_vma_unbind:      obj=0xffff8b0b5e509e00, offset=0x000000000000c000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.288020: i915_gem_object_destroy: obj=0xffff8b0b5e50bc00
+   kworker/u16:0-19287 [005] 19010.288021: i915_vma_unbind:      obj=0xffff8b0b5e50bc00, offset=0x000000000000b000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.288024: i915_gem_object_destroy: obj=0xffff8b0b5e509800
+   kworker/u16:0-19287 [005] 19010.288026: i915_reg_rw:          write reg=0x1000f8, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.288027: i915_reg_rw:          write reg=0x1000fc, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.288028: i915_reg_rw:          write reg=0x1000f8, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.288029: i915_vma_unbind:      obj=0xffff8b0b5e509800, offset=0x0000000001015000 size=0x1000 vm=0xffff8b0de7dcd740
+   kworker/u16:0-19287 [005] 19010.288032: i915_vma_unbind:      obj=0xffff8b0b5e509800, offset=0x00000000000da000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.288036: i915_gem_object_destroy: obj=0xffff8b0b5e50b300
+   kworker/u16:0-19287 [005] 19010.288037: i915_vma_unbind:      obj=0xffff8b0b5e50b300, offset=0x00000000000d9000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.288040: i915_gem_object_destroy: obj=0xffff8b0d08140300
+   kworker/u16:0-19287 [005] 19010.288041: i915_vma_unbind:      obj=0xffff8b0d08140300, offset=0x00000000034e0000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.288044: i915_gem_object_destroy: obj=0xffff8b0d08141200
+   kworker/u16:0-19287 [005] 19010.288045: i915_vma_unbind:      obj=0xffff8b0d08141200, offset=0x0000000000026000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.288048: i915_gem_object_destroy: obj=0xffff8b0d08142a00
+   kworker/u16:0-19287 [005] 19010.288049: i915_vma_unbind:      obj=0xffff8b0d08142a00, offset=0x0000000000001000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.288052: i915_gem_object_destroy: obj=0xffff8b0d08142400
+   kworker/u16:0-19287 [005] 19010.288052: i915_vma_unbind:      obj=0xffff8b0d08142400, offset=0x00000000000ce000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.288055: i915_gem_object_destroy: obj=0xffff8b0d907f2a00
+   kworker/u16:0-19287 [005] 19010.288056: i915_vma_unbind:      obj=0xffff8b0d907f2a00, offset=0x00000000000f1000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.288059: i915_gem_object_destroy: obj=0xffff8b0b7a06b000
+   kworker/u16:0-19287 [005] 19010.288062: i915_reg_rw:          write reg=0x100020, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.288063: i915_reg_rw:          write reg=0x100024, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.288064: i915_reg_rw:          write reg=0x100020, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.288065: i915_vma_unbind:      obj=0xffff8b0b7a06b000, offset=0x0000000001013000 size=0x1000 vm=0xffff8b0de7dcd740
+   kworker/u16:0-19287 [005] 19010.288068: i915_vma_unbind:      obj=0xffff8b0b7a06b000, offset=0x00000000001ee000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.288073: i915_gem_object_destroy: obj=0xffff8b0b7e994000
+   kworker/u16:0-19287 [005] 19010.288074: i915_vma_unbind:      obj=0xffff8b0b7e994000, offset=0x0000000000038000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.288078: i915_gem_object_destroy: obj=0xffff8b0db2488f00
+   kworker/u16:0-19287 [005] 19010.288080: i915_reg_rw:          write reg=0x1000b0, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.288081: i915_reg_rw:          write reg=0x1000b4, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.288082: i915_reg_rw:          write reg=0x1000b0, len=4, val=(0x0, 0x0)
+   kworker/u16:0-19287 [005] 19010.288083: i915_vma_unbind:      obj=0xffff8b0db2488f00, offset=0x0000000001010000 size=0x1000 vm=0xffff8b0de7dcd740
+   kworker/u16:0-19287 [005] 19010.288085: i915_vma_unbind:      obj=0xffff8b0db2488f00, offset=0x00000000034d8000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.288090: i915_gem_object_destroy: obj=0xffff8b0b66781500
+   kworker/u16:0-19287 [005] 19010.288091: i915_vma_unbind:      obj=0xffff8b0b66781500, offset=0x00000000063af000 size=0x1000 vm=0xffff8b0db7fe8000
+   kworker/u16:0-19287 [005] 19010.288094: i915_gem_object_destroy: obj=0xffff8b0d9004b900
+   kworker/u16:0-19287 [005] 19010.288095: i915_vma_unbind:      obj=0xffff8b0d9004b900, offset=0x000000000a1bf000 size=0x1000 vm=0xffff8b0db87ec000
+   kworker/u16:0-19287 [005] 19010.291626: i915_gem_object_destroy: obj=0xffff8b0db2523900
+   kworker/u16:0-19287 [005] 19010.291631: i915_vma_unbind:      obj=0xffff8b0db2523900, offset=0x0000000000054000 size=0x14000 vm=0xffff8b0de337e000
+          <idle>-0     [006] 19010.293375: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19010.293377: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19010.293381: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34355, 0x0)
+          <idle>-0     [006] 19010.293384: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34355, 0x0)
+            Xorg-1255  [006] 19010.293646: i915_request_queue:   dev=0, hw_id=4, ring=0, ctx=23, seqno=259831, flags=0x0
+            Xorg-1255  [006] 19010.293659: i915_request_add:     dev=0, hw_id=4, ring=0, ctx=23, seqno=259831, global=0
+            Xorg-1255  [006] 19010.293668: i915_request_retire:  dev=0, hw_id=4, ring=0, ctx=23, seqno=259830, global=1704548
+          <idle>-0     [006] 19010.295228: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+          <idle>-0     [006] 19010.295238: intel_engine_notify:  dev=0, ring=0, seqno=1704550, waiters=0
+     gnome-shell-1394  [007] 19010.298246: i915_request_queue:   dev=0, hw_id=19, ring=0, ctx=26, seqno=244646, flags=0x0
+     gnome-shell-1394  [007] 19010.298268: i915_request_add:     dev=0, hw_id=19, ring=0, ctx=26, seqno=244646, global=0
+     gnome-shell-1394  [007] 19010.298277: i915_request_retire:  dev=0, hw_id=19, ring=0, ctx=26, seqno=244645, global=1704549
+            Xorg-1255  [006] 19010.298657: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+          <idle>-0     [006] 19010.303127: intel_engine_notify:  dev=0, ring=0, seqno=1704551, waiters=1
+   kworker/u16:3-23049 [001] 19010.303185: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34355, 0x0)
+   kworker/u16:3-23049 [001] 19010.303190: i915_pipe_update_start: pipe >c<, frame=0, scanline=213845, min=632, max=1073
+   kworker/u16:3-23049 [001] 19010.303193: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34355, 0x0)
+   kworker/u16:3-23049 [001] 19010.303195: i915_pipe_update_vblank_evaded: pipe >c<, frame=0, scanline=213845, min=632, max=1073
+   kworker/u16:3-23049 [001] 19010.303196: i915_reg_rw:          write reg=0x68180, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [001] 19010.303196: i915_reg_rw:          write reg=0x68170, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [001] 19010.303197: i915_reg_rw:          write reg=0x68174, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [001] 19010.303198: i915_reg_rw:          write reg=0x68280, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [001] 19010.303199: i915_reg_rw:          write reg=0x68270, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [001] 19010.303200: i915_reg_rw:          write reg=0x68274, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [001] 19010.303202: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34355, 0x0)
+   kworker/u16:3-23049 [001] 19010.303204: intel_update_plane:   [FAILED TO PARSE] pipe=0 name=0xffff8b0de4fce190 frame=213845 scanline=633 src=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04] dst=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04, 00, 00]
+   kworker/u16:3-23049 [001] 19010.303212: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34355, 0x0)
+   kworker/u16:3-23049 [001] 19010.303215: i915_pipe_update_end: pipe >c<, frame=0, scanline=213845
+   kworker/u16:3-23049 [001] 19010.303219: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34355, 0x0)
+   kworker/u16:3-23049 [001] 19010.303222: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34355, 0x0)
+          <idle>-0     [006] 19010.310051: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19010.310054: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19010.310057: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34356, 0x0)
+          <idle>-0     [006] 19010.310061: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34356, 0x0)
+          <idle>-0     [006] 19010.326709: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19010.326712: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19010.326716: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34357, 0x0)
+          <idle>-0     [006] 19010.326719: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34357, 0x0)
+     kworker/1:4-20261 [001] 19010.326781: i915_reg_rw:          read reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/1:4-20261 [001] 19010.326784: i915_reg_rw:          write reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/1:4-20261 [001] 19010.326785: i915_reg_rw:          write reg=0x100100, len=4, val=(0x20000000, 0x0)
+     kworker/1:4-20261 [001] 19010.326786: i915_reg_rw:          write reg=0x100104, len=4, val=(0x0, 0x0)
+     kworker/1:4-20261 [001] 19010.326786: i915_reg_rw:          write reg=0x43208, len=4, val=(0x90000000, 0x0)
+     kworker/1:4-20261 [001] 19010.326787: i915_reg_rw:          write reg=0x50380, len=4, val=(0x4, 0x0)
+          <idle>-0     [006] 19010.343381: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19010.343384: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19010.343388: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34358, 0x0)
+          <idle>-0     [006] 19010.343391: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34358, 0x0)
+          <idle>-0     [006] 19010.343394: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34358, 0x0)
+          <idle>-0     [006] 19010.343395: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34358, 0x0)
+          <idle>-0     [006] 19010.343397: i915_reg_rw:          write reg=0x44404, len=4, val=(0x6ffff07f, 0x0)
+            code-4146  [001] 19010.687541: i915_gem_object_pwrite: obj=0xffff8b0d53bfc600, offset=0x0, len=0x60
+            code-4146  [001] 19010.687631: i915_gem_object_pwrite: obj=0xffff8b0d52989500, offset=0x0, len=0xff0
+            code-4146  [001] 19010.687657: i915_gem_object_pwrite: obj=0xffff8b0cfe745b00, offset=0x0, len=0x4b0
+            code-4146  [001] 19010.687674: i915_gem_object_pwrite: obj=0xffff8b0d53bff300, offset=0x0, len=0xb4
+            code-4146  [001] 19010.688653: i915_vma_bind:        obj=0xffff8b0b5e6ea100, offset=0x000000000aeb9000 size=0x5000 vm=0xffff8b0d5197a000
+            code-4146  [001] 19010.688663: i915_vma_bind:        obj=0xffff8b0d996d5b00, offset=0x0000000003f70000 size=0x10000 vm=0xffff8b0d5197a000
+            code-4146  [001] 19010.688668: i915_vma_bind:        obj=0xffff8b0cfe745b00, offset=0x000000000e3fb000 size=0x1000 vm=0xffff8b0d5197a000
+            code-4146  [001] 19010.688670: i915_vma_bind:        obj=0xffff8b0d9004a700, offset=0x00000000001e2000 size=0x4000 vm=0xffff8b0d5197a000
+            code-4146  [001] 19010.688676: i915_request_queue:   dev=0, hw_id=31, ring=0, ctx=38, seqno=9996, flags=0x0
+            code-4146  [001] 19010.688684: i915_request_add:     dev=0, hw_id=31, ring=0, ctx=38, seqno=9996, global=0
+            code-4146  [001] 19010.688687: i915_request_retire:  dev=0, hw_id=31, ring=0, ctx=38, seqno=9995, global=1704413
+            code-4146  [001] 19010.689295: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423609, flags=0x0
+            code-4146  [001] 19010.689313: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423609, global=0
+            code-4146  [001] 19010.689316: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423608, global=1704547
+          <idle>-0     [006] 19010.689461: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+          <idle>-0     [006] 19010.689465: intel_engine_notify:  dev=0, ring=0, seqno=1704552, waiters=0
+            code-4146  [001] 19010.689572: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423610, flags=0x0
+            code-4146  [001] 19010.689586: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423610, global=0
+            Xorg-1255  [002] 19010.689956: i915_reg_rw:          write reg=0x44404, len=4, val=(0x6ffff07e, 0x0)
+            Xorg-1255  [002] 19010.689958: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3436c, 0x0)
+            Xorg-1255  [002] 19010.689960: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3436c, 0x0)
+            Xorg-1255  [002] 19010.689960: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3436c, 0x0)
+            Xorg-1255  [002] 19010.689961: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3436c, 0x0)
+            code-4146  [001] 19010.690593: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423609, global=1704553
+            code-4146  [001] 19010.690610: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423611, flags=0x0
+            code-4146  [001] 19010.690633: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423611, global=0
+          <idle>-0     [006] 19010.693172: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19010.693173: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19010.693174: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3436d, 0x0)
+          <idle>-0     [006] 19010.693176: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3436d, 0x0)
+            Xorg-1255  [002] 19010.693293: i915_request_queue:   dev=0, hw_id=4, ring=0, ctx=23, seqno=259832, flags=0x0
+            Xorg-1255  [002] 19010.693307: i915_request_add:     dev=0, hw_id=4, ring=0, ctx=23, seqno=259832, global=0
+            Xorg-1255  [002] 19010.693312: i915_request_retire:  dev=0, hw_id=4, ring=0, ctx=23, seqno=259831, global=1704550
+     gnome-shell-1394  [007] 19010.696627: i915_request_queue:   dev=0, hw_id=19, ring=0, ctx=26, seqno=244647, flags=0x0
+     gnome-shell-1394  [007] 19010.696639: i915_request_add:     dev=0, hw_id=19, ring=0, ctx=26, seqno=244647, global=0
+     gnome-shell-1394  [007] 19010.696643: i915_request_retire:  dev=0, hw_id=19, ring=0, ctx=26, seqno=244646, global=1704551
+            Xorg-1255  [002] 19010.696827: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+          <idle>-0     [006] 19010.701532: intel_engine_notify:  dev=0, ring=0, seqno=1704557, waiters=1
+   kworker/u16:3-23049 [006] 19010.701556: i915_reg_rw:          read reg=0x43208, len=4, val=(0x90000000, 0x0)
+   kworker/u16:3-23049 [006] 19010.701556: i915_reg_rw:          write reg=0x43208, len=4, val=(0x10000000, 0x0)
+   kworker/u16:3-23049 [006] 19010.701559: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3436d, 0x0)
+   kworker/u16:3-23049 [006] 19010.701561: i915_pipe_update_start: pipe >c<, frame=0, scanline=213869, min=533, max=1073
+   kworker/u16:3-23049 [006] 19010.701562: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3436d, 0x0)
+   kworker/u16:3-23049 [006] 19010.701563: i915_pipe_update_vblank_evaded: pipe >c<, frame=0, scanline=213869, min=533, max=1073
+   kworker/u16:3-23049 [006] 19010.701563: i915_reg_rw:          write reg=0x68180, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19010.701564: i915_reg_rw:          write reg=0x68170, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19010.701564: i915_reg_rw:          write reg=0x68174, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19010.701565: i915_reg_rw:          write reg=0x68280, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19010.701565: i915_reg_rw:          write reg=0x68270, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19010.701566: i915_reg_rw:          write reg=0x68274, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19010.701567: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3436d, 0x0)
+   kworker/u16:3-23049 [006] 19010.701568: intel_update_plane:   [FAILED TO PARSE] pipe=0 name=0xffff8b0de4fce190 frame=213869 scanline=533 src=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04] dst=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04, 00, 00]
+   kworker/u16:3-23049 [006] 19010.701573: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3436d, 0x0)
+   kworker/u16:3-23049 [006] 19010.701573: i915_pipe_update_end: pipe >c<, frame=0, scanline=213869
+   kworker/u16:3-23049 [006] 19010.701575: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3436d, 0x0)
+   kworker/u16:3-23049 [006] 19010.701576: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3436d, 0x0)
+          <idle>-0     [006] 19010.709921: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19010.709922: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19010.709924: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3436e, 0x0)
+          <idle>-0     [006] 19010.709926: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3436e, 0x0)
+          <idle>-0     [006] 19010.726563: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19010.726565: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19010.726569: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3436f, 0x0)
+          <idle>-0     [006] 19010.726572: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3436f, 0x0)
+     kworker/6:0-20814 [006] 19010.726602: i915_reg_rw:          read reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/6:0-20814 [006] 19010.726604: i915_reg_rw:          write reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/6:0-20814 [006] 19010.726605: i915_reg_rw:          write reg=0x100100, len=4, val=(0x20000010, 0x0)
+     kworker/6:0-20814 [006] 19010.726606: i915_reg_rw:          write reg=0x100104, len=4, val=(0x0, 0x0)
+     kworker/6:0-20814 [006] 19010.726606: i915_reg_rw:          write reg=0x43208, len=4, val=(0x90000000, 0x0)
+     kworker/6:0-20814 [006] 19010.726607: i915_reg_rw:          write reg=0x50380, len=4, val=(0x4, 0x0)
+          <idle>-0     [006] 19010.743240: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19010.743243: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19010.743246: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34370, 0x0)
+          <idle>-0     [006] 19010.743250: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34370, 0x0)
+          <idle>-0     [006] 19010.743255: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34370, 0x0)
+          <idle>-0     [006] 19010.743257: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34370, 0x0)
+          <idle>-0     [006] 19010.743258: i915_reg_rw:          write reg=0x44404, len=4, val=(0x6ffff07f, 0x0)
+   kworker/u16:3-23049 [006] 19011.027570: i915_request_retire:  dev=0, hw_id=31, ring=0, ctx=38, seqno=9996, global=1704552
+   kworker/u16:3-23049 [006] 19011.027611: i915_request_retire:  dev=0, hw_id=4, ring=0, ctx=23, seqno=259832, global=1704556
+   kworker/u16:3-23049 [006] 19011.027623: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423610, global=1704554
+   kworker/u16:3-23049 [006] 19011.027652: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423611, global=1704555
+   kworker/u16:3-23049 [006] 19011.027698: i915_request_retire:  dev=0, hw_id=22, ring=0, ctx=30, seqno=363402, global=1704414
+   kworker/u16:3-23049 [006] 19011.027706: i915_request_retire:  dev=0, hw_id=22, ring=0, ctx=30, seqno=363403, global=1704415
+   kworker/u16:3-23049 [006] 19011.027712: i915_request_retire:  dev=0, hw_id=22, ring=0, ctx=30, seqno=363404, global=1704416
+   kworker/u16:3-23049 [006] 19011.027716: i915_request_retire:  dev=0, hw_id=22, ring=0, ctx=30, seqno=363405, global=1704417
+   kworker/u16:3-23049 [006] 19011.027720: i915_request_retire:  dev=0, hw_id=22, ring=0, ctx=30, seqno=363406, global=1704418
+   kworker/u16:3-23049 [006] 19011.027724: i915_request_retire:  dev=0, hw_id=22, ring=0, ctx=30, seqno=363407, global=1704419
+   kworker/u16:3-23049 [006] 19011.027730: i915_request_retire:  dev=0, hw_id=19, ring=0, ctx=26, seqno=244647, global=1704557
+           vaocl-23226 [001] 19011.120267: i915_ppgtt_create:    dev=0, vm=0xffff8b0d90632000
+           vaocl-23226 [001] 19011.120270: i915_context_create:  dev=0, ctx=0xffff8b0cffd09c00, ctx_vm=0xffff8b0d90632000, hw_id=28
+           vaocl-23226 [001] 19011.124004: i915_reg_rw:          read reg=0xd3b0, len=4, val=(0x6000, 0x0)
+           vaocl-23226 [001] 19011.124040: i915_reg_rw:          read reg=0xd3b0, len=4, val=(0x6000, 0x0)
+           vaocl-23226 [001] 19011.124183: i915_ppgtt_create:    dev=0, vm=0xffff8b0d90630000
+           vaocl-23226 [001] 19011.124184: i915_context_create:  dev=0, ctx=0xffff8b0cffd08a00, ctx_vm=0xffff8b0d90630000, hw_id=35
+           vaocl-23226 [001] 19011.124200: i915_gem_object_create: obj=0xffff8b0cfe6cde00, size=0x4000
+           vaocl-23226 [001] 19011.124206: i915_gem_object_create: obj=0xffff8b0cfe6cd800, size=0x4000
+           vaocl-23226 [001] 19011.124212: i915_gem_object_create: obj=0xffff8b0cfe6ce400, size=0x4000
+           vaocl-23226 [001] 19011.124217: i915_gem_object_create: obj=0xffff8b0cfe6cfc00, size=0x4000
+           vaocl-23226 [001] 19011.124223: i915_gem_object_create: obj=0xffff8b0d51b1b900, size=0x4000
+           vaocl-23226 [001] 19011.124229: i915_gem_object_create: obj=0xffff8b0d51b1aa00, size=0x4000
+           vaocl-23226 [001] 19011.124234: i915_gem_object_create: obj=0xffff8b0d51b18f00, size=0x4000
+           vaocl-23226 [001] 19011.124239: i915_gem_object_create: obj=0xffff8b0d51b1bc00, size=0x4000
+           vaocl-23226 [001] 19011.124246: i915_gem_object_create: obj=0xffff8b0d51b1b300, size=0x4000
+           vaocl-23226 [001] 19011.124251: i915_gem_object_create: obj=0xffff8b0d51b19b00, size=0x4000
+           vaocl-23226 [001] 19011.124256: i915_gem_object_create: obj=0xffff8b0d51b1ad00, size=0x4000
+           vaocl-23226 [001] 19011.124263: i915_gem_object_create: obj=0xffff8b0d51b18600, size=0x4000
+           vaocl-23226 [001] 19011.124268: i915_gem_object_create: obj=0xffff8b0d51b1a100, size=0x4000
+           vaocl-23226 [001] 19011.124273: i915_gem_object_create: obj=0xffff8b0d51b19200, size=0x4000
+           vaocl-23226 [001] 19011.124277: i915_gem_object_create: obj=0xffff8b0d51b18c00, size=0x4000
+           vaocl-23226 [001] 19011.124282: i915_gem_object_create: obj=0xffff8b0d51b18000, size=0x4000
+           vaocl-23226 [001] 19011.124286: i915_gem_object_create: obj=0xffff8b0ce9b90f00, size=0x4000
+           vaocl-23226 [001] 19011.124290: i915_gem_object_create: obj=0xffff8b0ce9b91500, size=0x4000
+           vaocl-23226 [001] 19011.124295: i915_gem_object_create: obj=0xffff8b0ce9b91b00, size=0x4000
+           vaocl-23226 [001] 19011.124301: i915_gem_object_create: obj=0xffff8b0ce9b92400, size=0x4000
+           vaocl-23226 [001] 19011.124306: i915_gem_object_create: obj=0xffff8b0ce9b92d00, size=0x4000
+           vaocl-23226 [001] 19011.124310: i915_gem_object_create: obj=0xffff8b0ce9b90c00, size=0x4000
+           vaocl-23226 [001] 19011.124315: i915_gem_object_create: obj=0xffff8b0ce9b91e00, size=0x4000
+           vaocl-23226 [001] 19011.124319: i915_gem_object_create: obj=0xffff8b0ce9b93900, size=0x4000
+           vaocl-23226 [001] 19011.124325: i915_gem_object_create: obj=0xffff8b0ce9b90600, size=0x4000
+           vaocl-23226 [001] 19011.124329: i915_gem_object_create: obj=0xffff8b0ce9b93300, size=0x4000
+           vaocl-23226 [001] 19011.124333: i915_gem_object_create: obj=0xffff8b0ce9b90000, size=0x4000
+           vaocl-23226 [001] 19011.124338: i915_gem_object_create: obj=0xffff8b0b7eb91e00, size=0x4000
+           vaocl-23226 [001] 19011.124343: i915_gem_object_create: obj=0xffff8b0b7eb90600, size=0x4000
+           vaocl-23226 [001] 19011.124348: i915_gem_object_create: obj=0xffff8b0b7eb90f00, size=0x4000
+           vaocl-23226 [001] 19011.124352: i915_gem_object_create: obj=0xffff8b0b7eb90300, size=0x4000
+           vaocl-23226 [001] 19011.124357: i915_gem_object_create: obj=0xffff8b0b7eb92a00, size=0x4000
+           vaocl-23226 [001] 19011.124378: i915_gem_object_create: obj=0xffff8b0b7eb91b00, size=0x2000
+           vaocl-23226 [001] 19011.124427: i915_ppgtt_create:    dev=0, vm=0xffff8b0d49514000
+           vaocl-23226 [001] 19011.124432: i915_context_create:  dev=0, ctx=0xffff8b0cffd08600, ctx_vm=0xffff8b0d49514000, hw_id=36
+           vaocl-23226 [001] 19011.124506: i915_gem_object_create: obj=0xffff8b0b7eb93600, size=0x50000
+           vaocl-23226 [001] 19011.124684: i915_gem_object_create: obj=0xffff8b0b7eb91200, size=0x1000
+           vaocl-23226 [001] 19011.124869: i915_gem_object_create: obj=0xffff8b0b7eb90c00, size=0x1000
+           vaocl-23226 [001] 19011.124876: i915_gem_object_create: obj=0xffff8b0d907ea400, size=0x1000
+           vaocl-23226 [001] 19011.124881: i915_gem_object_create: obj=0xffff8b0d907e9e00, size=0x1000
+           vaocl-23226 [001] 19011.124887: i915_gem_object_create: obj=0xffff8b0d907eb000, size=0x1000
+           vaocl-23226 [001] 19011.124892: i915_gem_object_create: obj=0xffff8b0d907ead00, size=0x1000
+           vaocl-23226 [001] 19011.124897: i915_gem_object_create: obj=0xffff8b0d907e9b00, size=0x1000
+           vaocl-23226 [001] 19011.124916: i915_gem_object_create: obj=0xffff8b0d907e8900, size=0x1000
+           vaocl-23226 [001] 19011.124942: i915_gem_object_create: obj=0xffff8b0d907e8000, size=0x1000
+           vaocl-23226 [001] 19011.124981: i915_gem_object_create: obj=0xffff8b0d907ea700, size=0x3000
+           vaocl-23226 [001] 19011.124993: i915_gem_object_pwrite: obj=0xffff8b0d907ea700, offset=0x0, len=0x96
+           vaocl-23226 [001] 19011.125016: i915_gem_object_create: obj=0xffff8b0d907e8600, size=0x8000
+           vaocl-23226 [001] 19011.125071: i915_vma_bind:        obj=0xffff8b0b7eb93600, offset=0x0000000000000000 size=0x50000 vm=0xffff8b0d49514000
+           vaocl-23226 [001] 19011.125082: i915_vma_bind:        obj=0xffff8b0b7eb91b00, offset=0x0000000000050000 size=0x2000 vm=0xffff8b0d49514000
+           vaocl-23226 [001] 19011.125083: i915_vma_bind:        obj=0xffff8b0d907eb000, offset=0x0000000000052000 size=0x1000 vm=0xffff8b0d49514000
+           vaocl-23226 [001] 19011.125083: i915_vma_bind:        obj=0xffff8b0d907ea700, offset=0x0000000000053000 size=0x3000 vm=0xffff8b0d49514000
+           vaocl-23226 [001] 19011.125084: i915_vma_bind:        obj=0xffff8b0d907ead00, offset=0x0000000000056000 size=0x1000 vm=0xffff8b0d49514000
+           vaocl-23226 [001] 19011.125084: i915_vma_bind:        obj=0xffff8b0b7eb90c00, offset=0x0000000000057000 size=0x1000 vm=0xffff8b0d49514000
+           vaocl-23226 [001] 19011.125085: i915_vma_bind:        obj=0xffff8b0d907e8600, offset=0x0000000000058000 size=0x8000 vm=0xffff8b0d49514000
+           vaocl-23226 [001] 19011.125090: i915_gem_object_create: obj=0xffff8b0d51a24f00, size=0x3000
+           vaocl-23226 [001] 19011.125133: i915_vma_bind:        obj=0xffff8b0d51a24f00, offset=0x00000000fff13000 size=0x3000 vm=0xffff8b0de7dcd740
+           vaocl-23226 [001] 19011.125134: i915_reg_rw:          write reg=0x101008, len=4, val=(0x1, 0x0)
+           vaocl-23226 [001] 19011.125137: i915_vma_bind:        obj=0xffff8b0d51a24000, offset=0x000000000189c000 size=0x4000 vm=0xffff8b0de7dcd740
+           vaocl-23226 [001] 19011.125137: i915_reg_rw:          write reg=0x101008, len=4, val=(0x1, 0x0)
+           vaocl-23226 [001] 19011.125139: i915_request_queue:   dev=0, hw_id=36, ring=2, ctx=494, seqno=1, flags=0x0
+           vaocl-23226 [001] 19011.125142: i915_request_add:     dev=0, hw_id=36, ring=2, ctx=494, seqno=1, global=0
+           vaocl-23226 [001] 19011.125169: i915_request_retire:  dev=0, hw_id=36, ring=2, ctx=494, seqno=1, global=50
+           vaocl-23226 [001] 19011.125172: i915_context_free:    dev=0, ctx=0xffff8b0deca9aa00, ctx_vm=0xffff8b0dec9c0000, hw_id=39
+   kworker/u16:3-23049 [006] 19011.125185: i915_ppgtt_release:   dev=0, vm=0xffff8b0dec9c0000
+            code-4146  [003] 19011.130132: i915_gem_object_pwrite: obj=0xffff8b0d53bfc600, offset=0x0, len=0xaf0
+           vaocl-23226 [001] 19011.130211: i915_ppgtt_create:    dev=0, vm=0xffff8b0d2f9f4000
+           vaocl-23226 [001] 19011.130213: i915_context_create:  dev=0, ctx=0xffff8b0cffd0bc00, ctx_vm=0xffff8b0d2f9f4000, hw_id=39
+            code-4146  [003] 19011.130281: i915_gem_object_pwrite: obj=0xffff8b0d52989500, offset=0x0, len=0xff0
+            code-4146  [003] 19011.130300: i915_gem_object_pwrite: obj=0xffff8b0cfe745b00, offset=0x0, len=0xff0
+            code-4146  [003] 19011.130311: i915_gem_object_pwrite: obj=0xffff8b0b74ac9200, offset=0x0, len=0xff0
+            code-4146  [003] 19011.130319: i915_gem_object_pwrite: obj=0xffff8b0d53bff300, offset=0x0, len=0xff0
+            code-4146  [003] 19011.130334: i915_gem_object_create: obj=0xffff8b0b72962700, size=0x1000
+            code-4146  [003] 19011.130344: i915_gem_object_pwrite: obj=0xffff8b0b72962700, offset=0x0, len=0xff0
+            code-4146  [003] 19011.130354: i915_gem_object_create: obj=0xffff8b0b72960f00, size=0x1000
+            code-4146  [003] 19011.130358: i915_gem_object_pwrite: obj=0xffff8b0b72960f00, offset=0x0, len=0xff0
+            code-4146  [003] 19011.130368: i915_gem_object_create: obj=0xffff8b0db27e4900, size=0x1000
+            code-4146  [003] 19011.130372: i915_gem_object_pwrite: obj=0xffff8b0db27e4900, offset=0x0, len=0xff0
+            code-4146  [003] 19011.130381: i915_gem_object_create: obj=0xffff8b0db27e7900, size=0x1000
+            code-4146  [003] 19011.130385: i915_gem_object_pwrite: obj=0xffff8b0db27e7900, offset=0x0, len=0xff0
+            code-4146  [003] 19011.130401: i915_gem_object_create: obj=0xffff8b0db27e4c00, size=0x1000
+            code-4146  [003] 19011.130405: i915_gem_object_pwrite: obj=0xffff8b0db27e4c00, offset=0x0, len=0xbe0
+            code-4146  [003] 19011.130434: i915_gem_object_create: obj=0xffff8b0db27e6400, size=0x1000
+            code-4146  [003] 19011.130438: i915_gem_object_pwrite: obj=0xffff8b0db27e6400, offset=0x0, len=0xb4
+            code-4146  [003] 19011.130528: i915_vma_bind:        obj=0xffff8b0d52911e00, offset=0x000000000259b000 size=0x10000 vm=0xffff8b0d5197a000
+            code-4146  [003] 19011.130539: i915_vma_bind:        obj=0xffff8b0db25faa00, offset=0x0000000000e77000 size=0x4000 vm=0xffff8b0d5197a000
+            code-4146  [003] 19011.130541: i915_vma_bind:        obj=0xffff8b0b74ac9200, offset=0x000000000013f000 size=0x1000 vm=0xffff8b0d5197a000
+            code-4146  [003] 19011.130542: i915_vma_bind:        obj=0xffff8b0b72962700, offset=0x0000000000127000 size=0x1000 vm=0xffff8b0d5197a000
+            code-4146  [003] 19011.130543: i915_vma_bind:        obj=0xffff8b0b72960f00, offset=0x00000000001f0000 size=0x1000 vm=0xffff8b0d5197a000
+            code-4146  [003] 19011.130544: i915_vma_bind:        obj=0xffff8b0db27e4900, offset=0x00000000001f1000 size=0x1000 vm=0xffff8b0d5197a000
+            code-4146  [003] 19011.130545: i915_vma_bind:        obj=0xffff8b0db27e7900, offset=0x0000000000168000 size=0x1000 vm=0xffff8b0d5197a000
+            code-4146  [003] 19011.130546: i915_vma_bind:        obj=0xffff8b0db27e4c00, offset=0x0000000000169000 size=0x1000 vm=0xffff8b0d5197a000
+            code-4146  [003] 19011.130547: i915_vma_bind:        obj=0xffff8b0db27e6400, offset=0x00000000000e6000 size=0x1000 vm=0xffff8b0d5197a000
+            code-4146  [003] 19011.130556: i915_request_queue:   dev=0, hw_id=31, ring=0, ctx=38, seqno=9997, flags=0x0
+            code-4146  [003] 19011.130566: i915_request_add:     dev=0, hw_id=31, ring=0, ctx=38, seqno=9997, global=0
+ Chrome_ChildIOT-4182  [006] 19011.131168: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+ Chrome_ChildIOT-4182  [006] 19011.131172: intel_engine_notify:  dev=0, ring=0, seqno=1704558, waiters=0
+            code-4146  [003] 19011.131396: i915_gem_object_pwrite: obj=0xffff8b0cd5253300, offset=0x0, len=0x80000
+           vaocl-23226 [001] 19011.131502: i915_ppgtt_create:    dev=0, vm=0xffff8b0d2f9f0000
+           vaocl-23226 [001] 19011.131504: i915_context_create:  dev=0, ctx=0xffff8b0cffd0b000, ctx_vm=0xffff8b0d2f9f0000, hw_id=40
+           vaocl-23226 [001] 19011.131531: i915_ppgtt_create:    dev=0, vm=0xffff8b0c011b6000
+           vaocl-23226 [001] 19011.131531: i915_context_create:  dev=0, ctx=0xffff8b0cffd09800, ctx_vm=0xffff8b0c011b6000, hw_id=41
+           vaocl-23226 [001] 19011.131540: i915_reg_rw:          read reg=0x235c, len=4, val=(0x9, 0x0)
+           vaocl-23226 [001] 19011.131540: i915_reg_rw:          read reg=0x2358, len=4, val=(0xf7bf0da9, 0x0)
+           vaocl-23226 [001] 19011.131541: i915_reg_rw:          read reg=0x235c, len=4, val=(0x9, 0x0)
+            code-4146  [003] 19011.131559: i915_vma_bind:        obj=0xffff8b0b72961e00, offset=0x0000000001087000 size=0x5000 vm=0xffff8b0de337e000
+            code-4146  [003] 19011.131566: i915_request_queue:   dev=0, hw_id=22, ring=0, ctx=30, seqno=363408, flags=0x0
+            code-4146  [003] 19011.131570: i915_request_add:     dev=0, hw_id=22, ring=0, ctx=30, seqno=363408, global=0
+            code-4146  [003] 19011.131674: i915_gem_object_pwrite: obj=0xffff8b0d2f2bbc00, offset=0x0, len=0x80000
+            code-4146  [003] 19011.131830: i915_vma_bind:        obj=0xffff8b0d53bfc600, offset=0x0000000001298000 size=0x1000 vm=0xffff8b0de337e000
+            code-4146  [003] 19011.131835: i915_request_queue:   dev=0, hw_id=22, ring=0, ctx=30, seqno=363409, flags=0x0
+            code-4146  [003] 19011.131839: i915_request_add:     dev=0, hw_id=22, ring=0, ctx=30, seqno=363409, global=0
+            code-4146  [003] 19011.131842: i915_request_retire:  dev=0, hw_id=22, ring=0, ctx=30, seqno=363408, global=1704559
+            code-4146  [003] 19011.131934: i915_gem_object_create: obj=0xffff8b0db24b1500, size=0x80000
+            code-4146  [003] 19011.132036: i915_gem_object_pwrite: obj=0xffff8b0db24b1500, offset=0x0, len=0x80000
+            code-4146  [003] 19011.132163: i915_vma_bind:        obj=0xffff8b0d52989500, offset=0x0000000000080000 size=0x1000 vm=0xffff8b0de337e000
+            code-4146  [003] 19011.132166: i915_vma_bind:        obj=0xffff8b0db24b1500, offset=0x00000000020c0000 size=0x80000 vm=0xffff8b0de337e000
+            code-4146  [003] 19011.132170: i915_request_queue:   dev=0, hw_id=22, ring=0, ctx=30, seqno=363410, flags=0x0
+            code-4146  [003] 19011.132173: i915_request_add:     dev=0, hw_id=22, ring=0, ctx=30, seqno=363410, global=0
+            code-4146  [003] 19011.132176: i915_request_retire:  dev=0, hw_id=22, ring=0, ctx=30, seqno=363409, global=1704560
+            code-4146  [003] 19011.133045: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423612, flags=0x0
+            code-4146  [003] 19011.133061: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423612, global=0
+            code-4146  [003] 19011.133291: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423613, flags=0x0
+            code-4146  [003] 19011.133303: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423613, global=0
+            Xorg-1255  [002] 19011.133567: i915_reg_rw:          write reg=0x44404, len=4, val=(0x6ffff07e, 0x0)
+            Xorg-1255  [002] 19011.133569: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34387, 0x0)
+            Xorg-1255  [002] 19011.133571: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34387, 0x0)
+            Xorg-1255  [002] 19011.133571: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34387, 0x0)
+            Xorg-1255  [002] 19011.133572: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34387, 0x0)
+            code-4146  [003] 19011.133722: i915_vma_bind:        obj=0xffff8b0d52989500, offset=0x0000000000080000 size=0x1000 vm=0xffff8b0de583e000
+            code-4146  [003] 19011.133727: i915_vma_bind:        obj=0xffff8b0d53bfc600, offset=0x0000000001298000 size=0x1000 vm=0xffff8b0de583e000
+            code-4146  [003] 19011.133735: i915_vma_bind:        obj=0xffff8b0cd5253300, offset=0x0000000001d70000 size=0x80000 vm=0xffff8b0de583e000
+            code-4146  [003] 19011.133737: i915_vma_bind:        obj=0xffff8b0d52abed00, offset=0x000000000270c000 size=0x80000 vm=0xffff8b0de583e000
+            code-4146  [003] 19011.133744: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423614, flags=0x0
+            code-4146  [003] 19011.133767: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423614, global=0
+          <idle>-0     [006] 19011.142955: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.142956: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.142958: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34388, 0x0)
+          <idle>-0     [006] 19011.142959: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34388, 0x0)
+            Xorg-1255  [004] 19011.143076: i915_request_queue:   dev=0, hw_id=4, ring=0, ctx=23, seqno=259833, flags=0x0
+            Xorg-1255  [004] 19011.143081: i915_request_add:     dev=0, hw_id=4, ring=0, ctx=23, seqno=259833, global=0
+     gnome-shell-1394  [007] 19011.144062: i915_request_queue:   dev=0, hw_id=19, ring=0, ctx=26, seqno=244648, flags=0x0
+     gnome-shell-1394  [007] 19011.144083: i915_request_add:     dev=0, hw_id=19, ring=0, ctx=26, seqno=244648, global=0
+            Xorg-1255  [004] 19011.144292: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+          <idle>-0     [006] 19011.144596: intel_engine_notify:  dev=0, ring=0, seqno=1704565, waiters=1
+   kworker/u16:0-19287 [005] 19011.147385: i915_gem_object_destroy: obj=0xffff8b0d495aa400
+   kworker/u16:0-19287 [005] 19011.147389: i915_vma_unbind:      obj=0xffff8b0d495aa400, offset=0x00000000fff2d000 size=0x3000 vm=0xffff8b0de7dcd740
+   kworker/u16:0-19287 [005] 19011.147402: i915_gem_object_destroy: obj=0xffff8b0db8514600
+   kworker/u16:0-19287 [005] 19011.147403: i915_vma_unbind:      obj=0xffff8b0db8514600, offset=0x00000000018b6000 size=0x4000 vm=0xffff8b0de7dcd740
+          <idle>-0     [006] 19011.148977: intel_engine_notify:  dev=0, ring=0, seqno=1704566, waiters=1
+   kworker/u16:3-23049 [006] 19011.148988: i915_reg_rw:          read reg=0x43208, len=4, val=(0x90000000, 0x0)
+   kworker/u16:3-23049 [006] 19011.148988: i915_reg_rw:          write reg=0x43208, len=4, val=(0x10000000, 0x0)
+   kworker/u16:3-23049 [006] 19011.148991: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34388, 0x0)
+   kworker/u16:3-23049 [006] 19011.148992: i915_pipe_update_start: pipe >c<, frame=0, scanline=213896, min=371, max=1073
+   kworker/u16:3-23049 [006] 19011.148993: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34388, 0x0)
+   kworker/u16:3-23049 [006] 19011.148994: i915_pipe_update_vblank_evaded: pipe >c<, frame=0, scanline=213896, min=371, max=1073
+   kworker/u16:3-23049 [006] 19011.148994: i915_reg_rw:          write reg=0x68180, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.148994: i915_reg_rw:          write reg=0x68170, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.148995: i915_reg_rw:          write reg=0x68174, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.148995: i915_reg_rw:          write reg=0x68280, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.148995: i915_reg_rw:          write reg=0x68270, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.148996: i915_reg_rw:          write reg=0x68274, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.148997: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34388, 0x0)
+   kworker/u16:3-23049 [006] 19011.148998: intel_update_plane:   [FAILED TO PARSE] pipe=0 name=0xffff8b0de4fce190 frame=213896 scanline=372 src=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04] dst=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04, 00, 00]
+   kworker/u16:3-23049 [006] 19011.149001: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34388, 0x0)
+   kworker/u16:3-23049 [006] 19011.149002: i915_pipe_update_end: pipe >c<, frame=0, scanline=213896
+   kworker/u16:3-23049 [006] 19011.149003: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34388, 0x0)
+   kworker/u16:3-23049 [006] 19011.149004: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34388, 0x0)
+            code-4146  [002] 19011.155600: i915_gem_object_pwrite: obj=0xffff8b0cfe745b00, offset=0x0, len=0x3c0
+            code-4146  [002] 19011.155691: i915_gem_object_pwrite: obj=0xffff8b0b74ac9200, offset=0x0, len=0xff0
+            code-4146  [002] 19011.155876: i915_gem_object_pwrite: obj=0xffff8b0d53bff300, offset=0x0, len=0xff0
+            code-4146  [002] 19011.155890: i915_gem_object_pwrite: obj=0xffff8b0b72962700, offset=0x0, len=0xff0
+            code-4146  [002] 19011.155897: i915_gem_object_pwrite: obj=0xffff8b0b72960f00, offset=0x0, len=0xff0
+            code-4146  [002] 19011.155904: i915_gem_object_pwrite: obj=0xffff8b0db27e4900, offset=0x0, len=0xff0
+            code-4146  [002] 19011.155910: i915_gem_object_pwrite: obj=0xffff8b0db27e7900, offset=0x0, len=0xff0
+            code-4146  [002] 19011.155915: i915_gem_object_pwrite: obj=0xffff8b0db27e4c00, offset=0x0, len=0xff0
+            code-4146  [002] 19011.155921: i915_gem_object_pwrite: obj=0xffff8b0db27e6400, offset=0x0, len=0xff0
+            code-4146  [002] 19011.155935: i915_gem_object_create: obj=0xffff8b0db25f9b00, size=0x1000
+            code-4146  [002] 19011.155947: i915_gem_object_pwrite: obj=0xffff8b0db25f9b00, offset=0x0, len=0xff0
+            code-4146  [002] 19011.155961: i915_gem_object_create: obj=0xffff8b0db25f9500, size=0x1000
+            code-4146  [002] 19011.155964: i915_gem_object_pwrite: obj=0xffff8b0db25f9500, offset=0x0, len=0xe60
+            code-4146  [002] 19011.155988: i915_gem_object_create: obj=0xffff8b0db25f8600, size=0x1000
+            code-4146  [002] 19011.155991: i915_gem_object_pwrite: obj=0xffff8b0db25f8600, offset=0x0, len=0xb4
+            code-4146  [002] 19011.156437: i915_vma_bind:        obj=0xffff8b0b72961200, offset=0x0000000002570000 size=0x5000 vm=0xffff8b0d5197a000
+            code-4146  [002] 19011.156444: i915_vma_bind:        obj=0xffff8b0ce99a9200, offset=0x000000000126c000 size=0x4000 vm=0xffff8b0d5197a000
+            code-4146  [002] 19011.156454: i915_vma_bind:        obj=0xffff8b0db25f9b00, offset=0x00000000000e7000 size=0x1000 vm=0xffff8b0d5197a000
+            code-4146  [002] 19011.156455: i915_vma_bind:        obj=0xffff8b0db25f9500, offset=0x0000000001281000 size=0x1000 vm=0xffff8b0d5197a000
+            code-4146  [002] 19011.156456: i915_vma_bind:        obj=0xffff8b0db25f8600, offset=0x0000000001282000 size=0x1000 vm=0xffff8b0d5197a000
+            code-4146  [002] 19011.156465: i915_request_queue:   dev=0, hw_id=31, ring=0, ctx=38, seqno=9998, flags=0x0
+            code-4146  [002] 19011.156478: i915_request_add:     dev=0, hw_id=31, ring=0, ctx=38, seqno=9998, global=0
+            code-4146  [002] 19011.156483: i915_request_retire:  dev=0, hw_id=31, ring=0, ctx=38, seqno=9997, global=1704558
+            code-4146  [002] 19011.156546: i915_gem_object_pwrite: obj=0xffff8b0d2f2bbc00, offset=0x0, len=0x80000
+            code-4146  [002] 19011.156672: i915_request_queue:   dev=0, hw_id=22, ring=0, ctx=30, seqno=363411, flags=0x0
+            code-4146  [002] 19011.156676: i915_request_add:     dev=0, hw_id=22, ring=0, ctx=30, seqno=363411, global=0
+            code-4146  [002] 19011.156678: i915_request_retire:  dev=0, hw_id=22, ring=0, ctx=30, seqno=363410, global=1704561
+            code-4146  [002] 19011.156716: i915_gem_object_pwrite: obj=0xffff8b0db24b1500, offset=0x0, len=0x80000
+            code-4146  [002] 19011.156826: i915_request_queue:   dev=0, hw_id=22, ring=0, ctx=30, seqno=363412, flags=0x0
+            code-4146  [002] 19011.156830: i915_request_add:     dev=0, hw_id=22, ring=0, ctx=30, seqno=363412, global=0
+            code-4146  [002] 19011.156867: i915_gem_object_create: obj=0xffff8b0cffc54900, size=0x80000
+            code-4146  [002] 19011.156973: i915_gem_object_pwrite: obj=0xffff8b0cffc54900, offset=0x0, len=0x80000
+            code-4146  [002] 19011.157086: i915_vma_bind:        obj=0xffff8b0cffc54900, offset=0x000000000f630000 size=0x80000 vm=0xffff8b0de337e000
+      Compositor-4187  [006] 19011.157086: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+      Compositor-4187  [006] 19011.157090: intel_engine_notify:  dev=0, ring=0, seqno=1704567, waiters=0
+            code-4146  [002] 19011.157091: i915_request_queue:   dev=0, hw_id=22, ring=0, ctx=30, seqno=363413, flags=0x0
+            code-4146  [002] 19011.157094: i915_request_add:     dev=0, hw_id=22, ring=0, ctx=30, seqno=363413, global=0
+            code-4146  [003] 19011.158438: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423612, global=1704562
+            code-4146  [003] 19011.158450: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423615, flags=0x0
+            code-4146  [003] 19011.158462: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423615, global=0
+            code-4146  [003] 19011.158466: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423613, global=1704563
+            code-4146  [003] 19011.158484: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423614, global=1704564
+            code-4146  [003] 19011.158736: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423616, flags=0x0
+            code-4146  [003] 19011.158748: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423616, global=0
+            code-4146  [003] 19011.159269: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423615, global=1704571
+            code-4146  [003] 19011.159286: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423617, flags=0x0
+            code-4146  [003] 19011.159306: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423617, global=0
+          <idle>-0     [006] 19011.159656: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.159657: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.159659: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34389, 0x0)
+          <idle>-0     [006] 19011.159661: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34389, 0x0)
+            Xorg-1255  [004] 19011.159801: i915_request_queue:   dev=0, hw_id=4, ring=0, ctx=23, seqno=259834, flags=0x0
+            Xorg-1255  [004] 19011.159808: i915_request_add:     dev=0, hw_id=4, ring=0, ctx=23, seqno=259834, global=0
+            Xorg-1255  [004] 19011.159812: i915_request_retire:  dev=0, hw_id=4, ring=0, ctx=23, seqno=259833, global=1704565
+            code-4146  [003] 19011.163015: i915_vma_bind:        obj=0xffff8b0ce99aa100, offset=0x0000000000072000 size=0x5000 vm=0xffff8b0d5197a000
+            code-4146  [003] 19011.163033: i915_request_queue:   dev=0, hw_id=31, ring=0, ctx=38, seqno=9999, flags=0x0
+            code-4146  [003] 19011.163042: i915_request_add:     dev=0, hw_id=31, ring=0, ctx=38, seqno=9999, global=0
+            code-4146  [003] 19011.163051: i915_request_retire:  dev=0, hw_id=31, ring=0, ctx=38, seqno=9998, global=1704567
+            code-4146  [003] 19011.163849: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423616, global=1704572
+            code-4146  [003] 19011.163872: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423618, flags=0x0
+            code-4146  [003] 19011.163890: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423618, global=0
+            code-4146  [003] 19011.163893: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423617, global=1704573
+     gnome-shell-1394  [000] 19011.163966: i915_request_queue:   dev=0, hw_id=19, ring=0, ctx=26, seqno=244649, flags=0x0
+     gnome-shell-1394  [000] 19011.163975: i915_request_add:     dev=0, hw_id=19, ring=0, ctx=26, seqno=244649, global=0
+     gnome-shell-1394  [000] 19011.163979: i915_request_retire:  dev=0, hw_id=19, ring=0, ctx=26, seqno=244648, global=1704566
+            Xorg-1255  [004] 19011.164073: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+            code-4146  [003] 19011.164162: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423619, flags=0x0
+            code-4146  [003] 19011.164173: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423619, global=0
+          <idle>-0     [006] 19011.164418: intel_engine_notify:  dev=0, ring=0, seqno=1704576, waiters=1
+            code-4146  [003] 19011.164885: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423618, global=1704576
+            code-4146  [003] 19011.164920: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423620, flags=0x0
+            code-4146  [003] 19011.164967: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423620, global=0
+          <idle>-0     [006] 19011.168943: intel_engine_notify:  dev=0, ring=0, seqno=1704577, waiters=1
+   kworker/u16:3-23049 [006] 19011.168955: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34389, 0x0)
+   kworker/u16:3-23049 [006] 19011.168957: i915_pipe_update_start: pipe >c<, frame=0, scanline=213897, min=592, max=1073
+   kworker/u16:3-23049 [006] 19011.168958: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34389, 0x0)
+   kworker/u16:3-23049 [006] 19011.168959: i915_pipe_update_vblank_evaded: pipe >c<, frame=0, scanline=213897, min=592, max=1073
+   kworker/u16:3-23049 [006] 19011.168959: i915_reg_rw:          write reg=0x68180, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.168960: i915_reg_rw:          write reg=0x68170, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.168960: i915_reg_rw:          write reg=0x68174, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.168960: i915_reg_rw:          write reg=0x68280, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.168961: i915_reg_rw:          write reg=0x68270, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.168961: i915_reg_rw:          write reg=0x68274, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.168962: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34389, 0x0)
+   kworker/u16:3-23049 [006] 19011.168963: intel_update_plane:   [FAILED TO PARSE] pipe=0 name=0xffff8b0de4fce190 frame=213897 scanline=592 src=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04] dst=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04, 00, 00]
+   kworker/u16:3-23049 [006] 19011.168967: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34389, 0x0)
+   kworker/u16:3-23049 [006] 19011.168968: i915_pipe_update_end: pipe >c<, frame=0, scanline=213897
+   kworker/u16:3-23049 [006] 19011.168969: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34389, 0x0)
+   kworker/u16:3-23049 [006] 19011.168970: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34389, 0x0)
+          <idle>-0     [006] 19011.170234: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+          <idle>-0     [006] 19011.170239: intel_engine_notify:  dev=0, ring=0, seqno=1704578, waiters=0
+          <idle>-0     [006] 19011.176311: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.176313: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.176315: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438a, 0x0)
+          <idle>-0     [006] 19011.176316: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438a, 0x0)
+            Xorg-1255  [004] 19011.176462: i915_request_queue:   dev=0, hw_id=4, ring=0, ctx=23, seqno=259835, flags=0x0
+            Xorg-1255  [004] 19011.176469: i915_request_add:     dev=0, hw_id=4, ring=0, ctx=23, seqno=259835, global=0
+            Xorg-1255  [004] 19011.176474: i915_request_retire:  dev=0, hw_id=4, ring=0, ctx=23, seqno=259834, global=1704574
+     gnome-shell-1394  [000] 19011.180440: i915_request_queue:   dev=0, hw_id=19, ring=0, ctx=26, seqno=244650, flags=0x0
+     gnome-shell-1394  [000] 19011.180449: i915_request_add:     dev=0, hw_id=19, ring=0, ctx=26, seqno=244650, global=0
+     gnome-shell-1394  [000] 19011.180453: i915_request_retire:  dev=0, hw_id=19, ring=0, ctx=26, seqno=244649, global=1704577
+            Xorg-1255  [004] 19011.180543: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+          <idle>-0     [006] 19011.185127: intel_engine_notify:  dev=0, ring=0, seqno=1704581, waiters=1
+   kworker/u16:3-23049 [007] 19011.185160: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438a, 0x0)
+   kworker/u16:3-23049 [007] 19011.185163: i915_pipe_update_start: pipe >c<, frame=0, scanline=213898, min=561, max=1073
+   kworker/u16:3-23049 [007] 19011.185164: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438a, 0x0)
+   kworker/u16:3-23049 [007] 19011.185165: i915_pipe_update_vblank_evaded: pipe >c<, frame=0, scanline=213898, min=561, max=1073
+   kworker/u16:3-23049 [007] 19011.185165: i915_reg_rw:          write reg=0x68180, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [007] 19011.185165: i915_reg_rw:          write reg=0x68170, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [007] 19011.185166: i915_reg_rw:          write reg=0x68174, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [007] 19011.185166: i915_reg_rw:          write reg=0x68280, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [007] 19011.185166: i915_reg_rw:          write reg=0x68270, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [007] 19011.185167: i915_reg_rw:          write reg=0x68274, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [007] 19011.185168: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438a, 0x0)
+   kworker/u16:3-23049 [007] 19011.185169: intel_update_plane:   [FAILED TO PARSE] pipe=0 name=0xffff8b0de4fce190 frame=213898 scanline=562 src=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04] dst=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04, 00, 00]
+   kworker/u16:3-23049 [007] 19011.185172: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438a, 0x0)
+   kworker/u16:3-23049 [007] 19011.185173: i915_pipe_update_end: pipe >c<, frame=0, scanline=213898
+   kworker/u16:3-23049 [007] 19011.185174: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438a, 0x0)
+   kworker/u16:3-23049 [007] 19011.185175: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438a, 0x0)
+          <idle>-0     [006] 19011.192974: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.192975: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.192977: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438b, 0x0)
+          <idle>-0     [006] 19011.192979: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438b, 0x0)
+          <idle>-0     [006] 19011.209602: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.209603: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.209604: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438c, 0x0)
+          <idle>-0     [006] 19011.209606: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438c, 0x0)
+     kworker/7:3-19957 [007] 19011.209641: i915_reg_rw:          read reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/7:3-19957 [007] 19011.209643: i915_reg_rw:          write reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/7:3-19957 [007] 19011.209643: i915_reg_rw:          write reg=0x100100, len=4, val=(0x20000010, 0x0)
+     kworker/7:3-19957 [007] 19011.209643: i915_reg_rw:          write reg=0x100104, len=4, val=(0x0, 0x0)
+     kworker/7:3-19957 [007] 19011.209644: i915_reg_rw:          write reg=0x43208, len=4, val=(0x90000000, 0x0)
+     kworker/7:3-19957 [007] 19011.209644: i915_reg_rw:          write reg=0x50380, len=4, val=(0x4, 0x0)
+            code-4146  [005] 19011.213288: i915_gem_object_pwrite: obj=0xffff8b0cfe745b00, offset=0x0, len=0x140
+            code-4146  [005] 19011.213392: i915_gem_object_pwrite: obj=0xffff8b0b74ac9200, offset=0x0, len=0xff0
+            code-4146  [005] 19011.213410: i915_gem_object_pwrite: obj=0xffff8b0d53bff300, offset=0x0, len=0xff0
+            code-4146  [005] 19011.213420: i915_gem_object_pwrite: obj=0xffff8b0b72962700, offset=0x0, len=0xff0
+            code-4146  [005] 19011.213429: i915_gem_object_pwrite: obj=0xffff8b0b72960f00, offset=0x0, len=0xff0
+            code-4146  [005] 19011.213439: i915_gem_object_pwrite: obj=0xffff8b0db27e4900, offset=0x0, len=0xff0
+            code-4146  [005] 19011.213448: i915_gem_object_pwrite: obj=0xffff8b0db27e7900, offset=0x0, len=0xff0
+            code-4146  [005] 19011.213457: i915_gem_object_pwrite: obj=0xffff8b0db27e4c00, offset=0x0, len=0xff0
+            code-4146  [005] 19011.213466: i915_gem_object_pwrite: obj=0xffff8b0db27e6400, offset=0x0, len=0xff0
+            code-4146  [005] 19011.213482: i915_gem_object_pwrite: obj=0xffff8b0db25f9b00, offset=0x0, len=0xaa0
+            code-4146  [005] 19011.213522: i915_gem_object_pwrite: obj=0xffff8b0db25f9500, offset=0x0, len=0xb4
+            code-4146  [005] 19011.214212: i915_vma_bind:        obj=0xffff8b0d2ffaea00, offset=0x0000000001293000 size=0x4000 vm=0xffff8b0d5197a000
+            code-4146  [005] 19011.214222: i915_request_queue:   dev=0, hw_id=31, ring=0, ctx=38, seqno=10000, flags=0x0
+            code-4146  [005] 19011.214235: i915_request_add:     dev=0, hw_id=31, ring=0, ctx=38, seqno=10000, global=0
+            code-4146  [005] 19011.214239: i915_request_retire:  dev=0, hw_id=31, ring=0, ctx=38, seqno=9999, global=1704575
+            code-4146  [005] 19011.214299: i915_gem_object_pwrite: obj=0xffff8b0d2f2bbc00, offset=0x0, len=0x80000
+            code-4146  [005] 19011.214441: i915_request_retire:  dev=0, hw_id=22, ring=0, ctx=30, seqno=363411, global=1704568
+            code-4146  [005] 19011.214444: i915_request_queue:   dev=0, hw_id=22, ring=0, ctx=30, seqno=363414, flags=0x0
+            code-4146  [005] 19011.214448: i915_request_add:     dev=0, hw_id=22, ring=0, ctx=30, seqno=363414, global=0
+            code-4146  [005] 19011.214449: i915_request_retire:  dev=0, hw_id=22, ring=0, ctx=30, seqno=363412, global=1704569
+            code-4146  [005] 19011.214451: i915_request_retire:  dev=0, hw_id=22, ring=0, ctx=30, seqno=363413, global=1704570
+            code-4146  [005] 19011.214488: i915_gem_object_pwrite: obj=0xffff8b0db24b1500, offset=0x0, len=0x80000
+            code-4146  [005] 19011.214601: i915_request_queue:   dev=0, hw_id=22, ring=0, ctx=30, seqno=363415, flags=0x0
+            code-4146  [005] 19011.214605: i915_request_add:     dev=0, hw_id=22, ring=0, ctx=30, seqno=363415, global=0
+            code-4146  [005] 19011.214659: i915_gem_object_pwrite: obj=0xffff8b0cffc54900, offset=0x0, len=0x80000
+            code-4146  [005] 19011.214811: i915_vma_bind:        obj=0xffff8b0b72961200, offset=0x0000000001263000 size=0x5000 vm=0xffff8b0de337e000
+            code-4146  [005] 19011.214815: i915_request_queue:   dev=0, hw_id=22, ring=0, ctx=30, seqno=363416, flags=0x0
+            code-4146  [005] 19011.214819: i915_request_add:     dev=0, hw_id=22, ring=0, ctx=30, seqno=363416, global=0
+ Chrome_IOThread-4125  [006] 19011.214836: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+ Chrome_IOThread-4125  [006] 19011.214840: intel_engine_notify:  dev=0, ring=0, seqno=1704582, waiters=0
+            code-4146  [005] 19011.216027: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423619, global=1704578
+            code-4146  [005] 19011.216049: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423621, flags=0x0
+            code-4146  [005] 19011.216070: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423621, global=0
+            code-4146  [005] 19011.216075: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423620, global=1704579
+            code-4146  [005] 19011.216513: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423622, flags=0x0
+            code-4146  [005] 19011.216532: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423622, global=0
+            code-4146  [005] 19011.217310: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423621, global=1704586
+            code-4146  [005] 19011.217331: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423623, flags=0x0
+            code-4146  [005] 19011.217361: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423623, global=0
+          <idle>-0     [006] 19011.226294: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.226296: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.226297: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438d, 0x0)
+          <idle>-0     [006] 19011.226299: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438d, 0x0)
+            Xorg-1255  [004] 19011.226419: i915_request_queue:   dev=0, hw_id=4, ring=0, ctx=23, seqno=259836, flags=0x0
+            Xorg-1255  [004] 19011.226427: i915_request_add:     dev=0, hw_id=4, ring=0, ctx=23, seqno=259836, global=0
+            Xorg-1255  [004] 19011.226430: i915_request_retire:  dev=0, hw_id=4, ring=0, ctx=23, seqno=259835, global=1704580
+     gnome-shell-1394  [000] 19011.230296: i915_request_queue:   dev=0, hw_id=19, ring=0, ctx=26, seqno=244651, flags=0x0
+     gnome-shell-1394  [000] 19011.230306: i915_request_add:     dev=0, hw_id=19, ring=0, ctx=26, seqno=244651, global=0
+     gnome-shell-1394  [000] 19011.230310: i915_request_retire:  dev=0, hw_id=19, ring=0, ctx=26, seqno=244650, global=1704581
+            Xorg-1255  [004] 19011.230393: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+            code-4146  [005] 19011.232387: i915_gem_object_create: obj=0xffff8b0cfe615200, size=0xc000
+            code-4146  [005] 19011.232519: i915_gem_object_create: obj=0xffff8b0db2523900, size=0xc000
+            code-4146  [005] 19011.232538: i915_gem_object_pwrite: obj=0xffff8b0db2523900, offset=0x0, len=0xc000
+            code-4146  [005] 19011.232601: i915_vma_bind:        obj=0xffff8b0cfe615200, offset=0x0000000000eef000 size=0xc000 vm=0xffff8b0de337e000
+            code-4146  [005] 19011.232605: i915_vma_bind:        obj=0xffff8b0db25f8600, offset=0x00000000001e7000 size=0x1000 vm=0xffff8b0de337e000
+            code-4146  [005] 19011.232607: i915_vma_bind:        obj=0xffff8b0db2523900, offset=0x000000000aea0000 size=0xc000 vm=0xffff8b0de337e000
+            code-4146  [005] 19011.232613: i915_request_retire:  dev=0, hw_id=22, ring=0, ctx=30, seqno=363414, global=1704583
+            code-4146  [005] 19011.232619: i915_request_queue:   dev=0, hw_id=22, ring=0, ctx=30, seqno=363417, flags=0x0
+            code-4146  [005] 19011.232623: i915_request_add:     dev=0, hw_id=22, ring=0, ctx=30, seqno=363417, global=0
+            code-4146  [005] 19011.232628: i915_request_retire:  dev=0, hw_id=22, ring=0, ctx=30, seqno=363415, global=1704584
+            code-4146  [005] 19011.232631: i915_request_retire:  dev=0, hw_id=22, ring=0, ctx=30, seqno=363416, global=1704585
+            code-4146  [005] 19011.234266: i915_vma_bind:        obj=0xffff8b0ce99aa100, offset=0x000000000e9a0000 size=0x5000 vm=0xffff8b0de583e000
+            code-4146  [005] 19011.234277: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423622, global=1704587
+            code-4146  [005] 19011.234301: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423624, flags=0x0
+            code-4146  [005] 19011.234324: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423624, global=0
+            code-4146  [005] 19011.234326: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423623, global=1704588
+            code-4146  [005] 19011.234743: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423625, flags=0x0
+            code-4146  [005] 19011.234759: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423625, global=0
+          <idle>-0     [006] 19011.234986: intel_engine_notify:  dev=0, ring=0, seqno=1704590, waiters=1
+   kworker/u16:3-23049 [006] 19011.234994: i915_reg_rw:          read reg=0x43208, len=4, val=(0x90000000, 0x0)
+   kworker/u16:3-23049 [006] 19011.234995: i915_reg_rw:          write reg=0x43208, len=4, val=(0x10000000, 0x0)
+   kworker/u16:3-23049 [006] 19011.234997: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438d, 0x0)
+   kworker/u16:3-23049 [006] 19011.234998: i915_pipe_update_start: pipe >c<, frame=0, scanline=213901, min=551, max=1073
+   kworker/u16:3-23049 [006] 19011.235000: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438d, 0x0)
+   kworker/u16:3-23049 [006] 19011.235000: i915_pipe_update_vblank_evaded: pipe >c<, frame=0, scanline=213901, min=552, max=1073
+   kworker/u16:3-23049 [006] 19011.235000: i915_reg_rw:          write reg=0x68180, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.235001: i915_reg_rw:          write reg=0x68170, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.235001: i915_reg_rw:          write reg=0x68174, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.235001: i915_reg_rw:          write reg=0x68280, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.235002: i915_reg_rw:          write reg=0x68270, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.235002: i915_reg_rw:          write reg=0x68274, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.235003: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438d, 0x0)
+   kworker/u16:3-23049 [006] 19011.235004: intel_update_plane:   [FAILED TO PARSE] pipe=0 name=0xffff8b0de4fce190 frame=213901 scanline=552 src=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04] dst=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04, 00, 00]
+   kworker/u16:3-23049 [006] 19011.235008: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438d, 0x0)
+   kworker/u16:3-23049 [006] 19011.235008: i915_pipe_update_end: pipe >c<, frame=0, scanline=213901
+   kworker/u16:3-23049 [006] 19011.235009: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438d, 0x0)
+   kworker/u16:3-23049 [006] 19011.235010: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438d, 0x0)
+          <idle>-0     [006] 19011.235069: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+          <idle>-0     [006] 19011.235073: intel_engine_notify:  dev=0, ring=0, seqno=1704591, waiters=0
+            code-4146  [005] 19011.235320: i915_vma_bind:        obj=0xffff8b0db25f8600, offset=0x00000000001e7000 size=0x1000 vm=0xffff8b0de583e000
+            code-4146  [005] 19011.235330: i915_vma_bind:        obj=0xffff8b0cfe615200, offset=0x0000000000144000 size=0xc000 vm=0xffff8b0de583e000
+            code-4146  [005] 19011.235337: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423626, flags=0x0
+            code-4146  [005] 19011.235391: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423626, global=0
+          <idle>-0     [006] 19011.242955: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.242956: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.242959: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438e, 0x0)
+          <idle>-0     [006] 19011.242960: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438e, 0x0)
+            Xorg-1255  [004] 19011.243119: i915_request_queue:   dev=0, hw_id=4, ring=0, ctx=23, seqno=259837, flags=0x0
+            Xorg-1255  [004] 19011.243126: i915_request_add:     dev=0, hw_id=4, ring=0, ctx=23, seqno=259837, global=0
+            Xorg-1255  [004] 19011.243130: i915_request_retire:  dev=0, hw_id=4, ring=0, ctx=23, seqno=259836, global=1704589
+     gnome-shell-1394  [000] 19011.246934: i915_request_queue:   dev=0, hw_id=19, ring=0, ctx=26, seqno=244652, flags=0x0
+     gnome-shell-1394  [000] 19011.246944: i915_request_add:     dev=0, hw_id=19, ring=0, ctx=26, seqno=244652, global=0
+     gnome-shell-1394  [000] 19011.246947: i915_request_retire:  dev=0, hw_id=19, ring=0, ctx=26, seqno=244651, global=1704590
+            Xorg-1255  [004] 19011.247026: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+          <idle>-0     [006] 19011.251694: intel_engine_notify:  dev=0, ring=0, seqno=1704596, waiters=1
+   kworker/u16:3-23049 [006] 19011.251707: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438e, 0x0)
+   kworker/u16:3-23049 [006] 19011.251709: i915_pipe_update_start: pipe >c<, frame=0, scanline=213902, min=555, max=1073
+   kworker/u16:3-23049 [006] 19011.251710: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438e, 0x0)
+   kworker/u16:3-23049 [006] 19011.251711: i915_pipe_update_vblank_evaded: pipe >c<, frame=0, scanline=213902, min=555, max=1073
+   kworker/u16:3-23049 [006] 19011.251711: i915_reg_rw:          write reg=0x68180, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.251711: i915_reg_rw:          write reg=0x68170, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.251711: i915_reg_rw:          write reg=0x68174, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.251712: i915_reg_rw:          write reg=0x68280, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.251712: i915_reg_rw:          write reg=0x68270, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.251712: i915_reg_rw:          write reg=0x68274, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.251713: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438e, 0x0)
+   kworker/u16:3-23049 [006] 19011.251714: intel_update_plane:   [FAILED TO PARSE] pipe=0 name=0xffff8b0de4fce190 frame=213902 scanline=555 src=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04] dst=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04, 00, 00]
+   kworker/u16:3-23049 [006] 19011.251718: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438e, 0x0)
+   kworker/u16:3-23049 [006] 19011.251718: i915_pipe_update_end: pipe >c<, frame=0, scanline=213902
+   kworker/u16:3-23049 [006] 19011.251719: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438e, 0x0)
+   kworker/u16:3-23049 [006] 19011.251720: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438e, 0x0)
+          <idle>-0     [006] 19011.259612: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.259612: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.259613: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438f, 0x0)
+          <idle>-0     [006] 19011.259633: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3438f, 0x0)
+          <idle>-0     [006] 19011.276276: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.276276: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.276277: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34390, 0x0)
+          <idle>-0     [006] 19011.276279: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34390, 0x0)
+     kworker/7:3-19957 [007] 19011.276320: i915_reg_rw:          read reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/7:3-19957 [007] 19011.276320: i915_reg_rw:          write reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/7:3-19957 [007] 19011.276321: i915_reg_rw:          write reg=0x100100, len=4, val=(0x20000000, 0x0)
+     kworker/7:3-19957 [007] 19011.276321: i915_reg_rw:          write reg=0x100104, len=4, val=(0x0, 0x0)
+     kworker/7:3-19957 [007] 19011.276321: i915_reg_rw:          write reg=0x43208, len=4, val=(0x90000000, 0x0)
+     kworker/7:3-19957 [007] 19011.276321: i915_reg_rw:          write reg=0x50380, len=4, val=(0x4, 0x0)
+          <idle>-0     [006] 19011.292937: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.292937: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.292938: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34391, 0x0)
+          <idle>-0     [006] 19011.292939: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34391, 0x0)
+          <idle>-0     [006] 19011.292939: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34391, 0x0)
+          <idle>-0     [006] 19011.292940: i915_reg_rw:          read reg=0x70040, len=4, val=(0x34391, 0x0)
+          <idle>-0     [006] 19011.292940: i915_reg_rw:          write reg=0x44404, len=4, val=(0x6ffff07f, 0x0)
+           vaocl-23226 [001] 19011.434261: i915_vma_bind:        obj=0xffff8b0b7eb91b00, offset=0x00007f60007e5000 size=0x2000 vm=0xffff8b0d2f9f0000
+           vaocl-23226 [001] 19011.434270: i915_vma_bind:        obj=0xffff8b0cfffc5500, offset=0x00007f5ff3ffd000 size=0x1000 vm=0xffff8b0d2f9f0000
+           vaocl-23226 [001] 19011.434275: i915_vma_bind:        obj=0xffff8b0cfffc6700, offset=0x000055788dbf1000 size=0x10000 vm=0xffff8b0d2f9f0000
+           vaocl-23226 [001] 19011.434286: i915_vma_bind:        obj=0xffff8b0cfffc6d00, offset=0x000055788dbc8000 size=0x10000 vm=0xffff8b0d2f9f0000
+           vaocl-23226 [001] 19011.434288: i915_vma_bind:        obj=0xffff8b0cfffc5800, offset=0x000055788d6b4000 size=0x1000 vm=0xffff8b0d2f9f0000
+           vaocl-23226 [001] 19011.434293: i915_vma_bind:        obj=0xffff8b0cfffc7600, offset=0x00007f5ff3ffe000 size=0x2000 vm=0xffff8b0d2f9f0000
+           vaocl-23226 [001] 19011.434297: i915_vma_bind:        obj=0xffff8b0cfffc4900, offset=0x000055788df00000 size=0x10000 vm=0xffff8b0d2f9f0000
+           vaocl-23226 [001] 19011.434301: i915_vma_bind:        obj=0xffff8b0cfffc4600, offset=0x000055788decf000 size=0x10000 vm=0xffff8b0d2f9f0000
+           vaocl-23226 [001] 19011.435461: i915_vma_bind:        obj=0xffff8b0cfffc4c00, offset=0x00007f5ff3fed000 size=0x10000 vm=0xffff8b0d2f9f0000
+           vaocl-23226 [001] 19011.435463: i915_vma_bind:        obj=0xffff8b0cfffc7c00, offset=0x00007f5ff8c40000 size=0x800000 vm=0xffff8b0d2f9f0000
+           vaocl-23226 [001] 19011.435476: i915_gem_object_create: obj=0xffff8b0d995cde00, size=0x17000
+           vaocl-23226 [001] 19011.435566: i915_vma_bind:        obj=0xffff8b0d995cde00, offset=0x00000000ffed4000 size=0x17000 vm=0xffff8b0de7dcd740
+           vaocl-23226 [001] 19011.435568: i915_reg_rw:          write reg=0x101008, len=4, val=(0x1, 0x0)
+           vaocl-23226 [001] 19011.435571: i915_vma_bind:        obj=0xffff8b0d995cd500, offset=0x00000000018b6000 size=0x4000 vm=0xffff8b0de7dcd740
+           vaocl-23226 [001] 19011.435571: i915_reg_rw:          write reg=0x101008, len=4, val=(0x1, 0x0)
+           vaocl-23226 [001] 19011.435573: i915_request_queue:   dev=0, hw_id=40, ring=0, ctx=495, seqno=1, flags=0x0
+           vaocl-23226 [001] 19011.435577: i915_request_add:     dev=0, hw_id=40, ring=0, ctx=495, seqno=1, global=0
+           vaocl-23226 [001] 19011.435625: i915_request_wait_begin: dev=0, hw_id=40, ring=0, ctx=495, seqno=1, global=1704597, blocking=0, flags=0x5
+           vaocl-23227 [006] 19011.435633: i915_request_wait_begin: dev=0, hw_id=40, ring=0, ctx=495, seqno=1, global=1704597, blocking=0, flags=0x5
+          <idle>-0     [006] 19011.435916: intel_engine_notify:  dev=0, ring=0, seqno=1704597, waiters=1
+           vaocl-23227 [006] 19011.435919: i915_request_wait_end: dev=0, hw_id=40, ring=0, ctx=495, seqno=1, global=1704597
+           vaocl-23226 [001] 19011.435920: i915_request_wait_end: dev=0, hw_id=40, ring=0, ctx=495, seqno=1, global=1704597
+           vaocl-23226 [001] 19011.436266: i915_vma_bind:        obj=0xffff8b0d494a4000, offset=0x00007fff0c0df000 size=0x1000 vm=0xffff8b0d2f9f0000
+           vaocl-23226 [001] 19011.436272: i915_vma_bind:        obj=0xffff8b0d51a26a00, offset=0x000055788d6b0000 size=0x1000 vm=0xffff8b0d2f9f0000
+           vaocl-23226 [001] 19011.436273: i915_request_queue:   dev=0, hw_id=40, ring=0, ctx=495, seqno=2, flags=0x0
+           vaocl-23226 [001] 19011.436273: i915_request_add:     dev=0, hw_id=40, ring=0, ctx=495, seqno=2, global=0
+           vaocl-23226 [001] 19011.436276: i915_request_retire:  dev=0, hw_id=40, ring=0, ctx=495, seqno=1, global=1704597
+           vaocl-23226 [001] 19011.436354: i915_vma_bind:        obj=0xffff8b0d494a7000, offset=0x00007f5ff3fec000 size=0x1000 vm=0xffff8b0d2f9f0000
+           vaocl-23226 [001] 19011.436356: i915_request_queue:   dev=0, hw_id=40, ring=0, ctx=495, seqno=3, flags=0x0
+           vaocl-23226 [001] 19011.436357: i915_request_add:     dev=0, hw_id=40, ring=0, ctx=495, seqno=3, global=0
+          <idle>-0     [006] 19011.436357: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+           vaocl-23226 [001] 19011.436360: i915_request_retire:  dev=0, hw_id=40, ring=0, ctx=495, seqno=2, global=1704598
+          <idle>-0     [006] 19011.436361: intel_engine_notify:  dev=0, ring=0, seqno=1704598, waiters=0
+           vaocl-23226 [001] 19011.436370: i915_request_wait_begin: dev=0, hw_id=40, ring=0, ctx=495, seqno=3, global=1704599, blocking=0, flags=0x5
+           vaocl-23227 [006] 19011.436372: i915_request_wait_begin: dev=0, hw_id=40, ring=0, ctx=495, seqno=3, global=1704599, blocking=0, flags=0x5
+           vaocl-23226 [001] 19011.436376: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+          <idle>-0     [006] 19011.436425: intel_engine_notify:  dev=0, ring=0, seqno=1704599, waiters=1
+           vaocl-23227 [006] 19011.436427: i915_request_wait_end: dev=0, hw_id=40, ring=0, ctx=495, seqno=3, global=1704599
+           vaocl-23226 [001] 19011.436429: i915_request_wait_end: dev=0, hw_id=40, ring=0, ctx=495, seqno=3, global=1704599
+           vaocl-23226 [001] 19011.436709: i915_context_free:    dev=0, ctx=0xffff8b0cffd08a00, ctx_vm=0xffff8b0d90630000, hw_id=35
+   kworker/u16:3-23049 [007] 19011.436755: i915_ppgtt_release:   dev=0, vm=0xffff8b0d90630000
+           vaocl-23226 [001] 19011.436883: i915_context_free:    dev=0, ctx=0xffff8b0cffd09c00, ctx_vm=0xffff8b0d90632000, hw_id=28
+   kworker/u16:3-23049 [007] 19011.436925: i915_ppgtt_release:   dev=0, vm=0xffff8b0d90632000
+           vaocl-23226 [001] 19011.440846: i915_context_free:    dev=0, ctx=0xffff8b0cffd0bc00, ctx_vm=0xffff8b0d2f9f4000, hw_id=39
+           vaocl-23226 [001] 19011.440849: i915_context_free:    dev=0, ctx=0xffff8b0cffd09800, ctx_vm=0xffff8b0c011b6000, hw_id=41
+   kworker/u16:3-23049 [007] 19011.440890: i915_ppgtt_release:   dev=0, vm=0xffff8b0c011b6000
+   kworker/u16:3-23049 [007] 19011.440897: i915_ppgtt_release:   dev=0, vm=0xffff8b0d2f9f4000
+            code-4146  [006] 19011.445456: i915_gem_object_pwrite: obj=0xffff8b0cfe745b00, offset=0x0, len=0x500
+            code-4146  [006] 19011.445569: i915_gem_object_pwrite: obj=0xffff8b0b74ac9200, offset=0x0, len=0xff0
+            code-4146  [006] 19011.445580: i915_gem_object_pwrite: obj=0xffff8b0d53bff300, offset=0x0, len=0xff0
+            code-4146  [006] 19011.445585: i915_gem_object_pwrite: obj=0xffff8b0b72962700, offset=0x0, len=0xff0
+            code-4146  [006] 19011.445591: i915_gem_object_pwrite: obj=0xffff8b0b72960f00, offset=0x0, len=0xff0
+            code-4146  [006] 19011.445596: i915_gem_object_pwrite: obj=0xffff8b0db27e4900, offset=0x0, len=0xff0
+            code-4146  [006] 19011.445601: i915_gem_object_pwrite: obj=0xffff8b0db27e7900, offset=0x0, len=0xff0
+            code-4146  [006] 19011.445606: i915_gem_object_pwrite: obj=0xffff8b0db27e4c00, offset=0x0, len=0xff0
+            code-4146  [006] 19011.445611: i915_gem_object_pwrite: obj=0xffff8b0db27e6400, offset=0x0, len=0xff0
+            code-4146  [006] 19011.445621: i915_gem_object_pwrite: obj=0xffff8b0db25f9b00, offset=0x0, len=0x640
+            code-4146  [006] 19011.445640: i915_gem_object_pwrite: obj=0xffff8b0db25f9500, offset=0x0, len=0xb4
+            code-4146  [006] 19011.446124: i915_vma_bind:        obj=0xffff8b0d2f378600, offset=0x0000000000191000 size=0x5000 vm=0xffff8b0d5197a000
+            code-4146  [006] 19011.446127: i915_vma_bind:        obj=0xffff8b0cfe746a00, offset=0x000000000007b000 size=0x4000 vm=0xffff8b0d5197a000
+            code-4146  [006] 19011.446135: i915_request_queue:   dev=0, hw_id=31, ring=0, ctx=38, seqno=10001, flags=0x0
+            code-4146  [006] 19011.446145: i915_request_add:     dev=0, hw_id=31, ring=0, ctx=38, seqno=10001, global=0
+            code-4146  [006] 19011.446150: i915_request_retire:  dev=0, hw_id=31, ring=0, ctx=38, seqno=10000, global=1704582
+            code-4146  [006] 19011.446202: i915_gem_object_pwrite: obj=0xffff8b0d2f2bbc00, offset=0x0, len=0x80000
+            code-4146  [006] 19011.446300: i915_request_queue:   dev=0, hw_id=22, ring=0, ctx=30, seqno=363418, flags=0x0
+            code-4146  [006] 19011.446303: i915_request_add:     dev=0, hw_id=22, ring=0, ctx=30, seqno=363418, global=0
+            code-4146  [006] 19011.446305: i915_request_retire:  dev=0, hw_id=22, ring=0, ctx=30, seqno=363417, global=1704591
+            code-4146  [006] 19011.446335: i915_gem_object_pwrite: obj=0xffff8b0db24b1500, offset=0x0, len=0x80000
+            code-4146  [006] 19011.446445: i915_request_queue:   dev=0, hw_id=22, ring=0, ctx=30, seqno=363419, flags=0x0
+            code-4146  [006] 19011.446448: i915_request_add:     dev=0, hw_id=22, ring=0, ctx=30, seqno=363419, global=0
+            code-4146  [006] 19011.446482: i915_gem_object_pwrite: obj=0xffff8b0cffc54900, offset=0x0, len=0x80000
+            code-4146  [006] 19011.446588: i915_request_queue:   dev=0, hw_id=22, ring=0, ctx=30, seqno=363420, flags=0x0
+            code-4146  [006] 19011.446591: i915_request_add:     dev=0, hw_id=22, ring=0, ctx=30, seqno=363420, global=0
+          <idle>-0     [006] 19011.446789: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+          <idle>-0     [006] 19011.446792: intel_engine_notify:  dev=0, ring=0, seqno=1704600, waiters=0
+            code-4146  [006] 19011.447951: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423624, global=1704592
+            code-4146  [006] 19011.447962: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423627, flags=0x0
+            code-4146  [006] 19011.447973: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423627, global=0
+            code-4146  [006] 19011.447976: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423625, global=1704593
+            code-4146  [006] 19011.447992: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423626, global=1704594
+            code-4146  [006] 19011.448210: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423628, flags=0x0
+            code-4146  [006] 19011.448220: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423628, global=0
+            Xorg-1255  [004] 19011.448530: i915_reg_rw:          write reg=0x44404, len=4, val=(0x6ffff07e, 0x0)
+            Xorg-1255  [004] 19011.448531: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3439a, 0x0)
+            Xorg-1255  [004] 19011.448533: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3439a, 0x0)
+            Xorg-1255  [004] 19011.448533: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3439a, 0x0)
+            Xorg-1255  [004] 19011.448534: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3439a, 0x0)
+            code-4146  [006] 19011.448792: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423627, global=1704604
+            code-4146  [006] 19011.448808: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423629, flags=0x0
+            code-4146  [006] 19011.448826: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423629, global=0
+          <idle>-0     [006] 19011.459538: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.459542: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.459545: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3439b, 0x0)
+          <idle>-0     [006] 19011.459549: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3439b, 0x0)
+            Xorg-1255  [004] 19011.459646: i915_request_queue:   dev=0, hw_id=4, ring=0, ctx=23, seqno=259838, flags=0x0
+            Xorg-1255  [004] 19011.459654: i915_request_add:     dev=0, hw_id=4, ring=0, ctx=23, seqno=259838, global=0
+            Xorg-1255  [004] 19011.459658: i915_request_retire:  dev=0, hw_id=4, ring=0, ctx=23, seqno=259837, global=1704595
+     gnome-shell-1394  [000] 19011.460382: i915_request_queue:   dev=0, hw_id=19, ring=0, ctx=26, seqno=244653, flags=0x0
+     gnome-shell-1394  [000] 19011.460404: i915_request_add:     dev=0, hw_id=19, ring=0, ctx=26, seqno=244653, global=0
+     gnome-shell-1394  [000] 19011.460410: i915_request_retire:  dev=0, hw_id=19, ring=0, ctx=26, seqno=244652, global=1704596
+            Xorg-1255  [001] 19011.460600: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+          <idle>-0     [006] 19011.461080: intel_engine_notify:  dev=0, ring=0, seqno=1704607, waiters=1
+            code-4146  [007] 19011.462534: i915_gem_object_pwrite: obj=0xffff8b0cfe745b00, offset=0x0, len=0x9c4
+            code-4146  [007] 19011.462669: i915_gem_object_pwrite: obj=0xffff8b0b74ac9200, offset=0x0, len=0x910
+            code-4146  [007] 19011.462701: i915_gem_object_pwrite: obj=0xffff8b0d53bff300, offset=0x0, len=0xb4
+            code-4146  [007] 19011.463590: i915_vma_bind:        obj=0xffff8b0d529ac600, offset=0x0000000000174000 size=0x5000 vm=0xffff8b0d5197a000
+            code-4146  [007] 19011.463593: i915_vma_bind:        obj=0xffff8b0d53a61800, offset=0x000000000015d000 size=0x4000 vm=0xffff8b0d5197a000
+            code-4146  [007] 19011.463601: i915_request_queue:   dev=0, hw_id=31, ring=0, ctx=38, seqno=10002, flags=0x0
+            code-4146  [007] 19011.463613: i915_request_add:     dev=0, hw_id=31, ring=0, ctx=38, seqno=10002, global=0
+            code-4146  [007] 19011.463618: i915_request_retire:  dev=0, hw_id=31, ring=0, ctx=38, seqno=10001, global=1704600
+            code-4146  [007] 19011.464318: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423628, global=1704605
+            code-4146  [007] 19011.464341: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423630, flags=0x0
+            code-4146  [007] 19011.464361: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423630, global=0
+            code-4146  [007] 19011.464362: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423629, global=1704606
+            code-4146  [007] 19011.464623: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423631, flags=0x0
+            code-4146  [007] 19011.464634: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423631, global=0
+            code-4146  [007] 19011.465635: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423632, flags=0x0
+            code-4146  [007] 19011.465665: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423632, global=0
+          <idle>-0     [006] 19011.465951: intel_engine_notify:  dev=0, ring=0, seqno=1704608, waiters=1
+   kworker/u16:3-23049 [007] 19011.465972: i915_reg_rw:          read reg=0x43208, len=4, val=(0x90000000, 0x0)
+   kworker/u16:3-23049 [007] 19011.465972: i915_reg_rw:          write reg=0x43208, len=4, val=(0x10000000, 0x0)
+   kworker/u16:3-23049 [007] 19011.465975: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3439b, 0x0)
+   kworker/u16:3-23049 [007] 19011.465976: i915_pipe_update_start: pipe >c<, frame=0, scanline=213915, min=400, max=1073
+   kworker/u16:3-23049 [007] 19011.465977: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3439b, 0x0)
+   kworker/u16:3-23049 [007] 19011.465978: i915_pipe_update_vblank_evaded: pipe >c<, frame=0, scanline=213915, min=400, max=1073
+   kworker/u16:3-23049 [007] 19011.465978: i915_reg_rw:          write reg=0x68180, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [007] 19011.465978: i915_reg_rw:          write reg=0x68170, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [007] 19011.465979: i915_reg_rw:          write reg=0x68174, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [007] 19011.465979: i915_reg_rw:          write reg=0x68280, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [007] 19011.465979: i915_reg_rw:          write reg=0x68270, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [007] 19011.465979: i915_reg_rw:          write reg=0x68274, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [007] 19011.465981: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3439b, 0x0)
+   kworker/u16:3-23049 [007] 19011.465982: intel_update_plane:   [FAILED TO PARSE] pipe=0 name=0xffff8b0de4fce190 frame=213915 scanline=400 src=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04] dst=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04, 00, 00]
+   kworker/u16:3-23049 [007] 19011.465985: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3439b, 0x0)
+   kworker/u16:3-23049 [007] 19011.465986: i915_pipe_update_end: pipe >c<, frame=0, scanline=213915
+   kworker/u16:3-23049 [007] 19011.465987: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3439b, 0x0)
+   kworker/u16:3-23049 [007] 19011.465988: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3439b, 0x0)
+          <idle>-0     [006] 19011.466416: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+          <idle>-0     [006] 19011.466424: intel_engine_notify:  dev=0, ring=0, seqno=1704609, waiters=0
+   kworker/u16:0-19287 [005] 19011.475542: i915_gem_object_destroy: obj=0xffff8b0b7eb90300
+   kworker/u16:0-19287 [005] 19011.475546: i915_gem_object_destroy: obj=0xffff8b0b7eb90f00
+   kworker/u16:0-19287 [005] 19011.475547: i915_gem_object_destroy: obj=0xffff8b0b7eb90600
+   kworker/u16:0-19287 [005] 19011.475547: i915_gem_object_destroy: obj=0xffff8b0b7eb91e00
+   kworker/u16:0-19287 [005] 19011.475547: i915_gem_object_destroy: obj=0xffff8b0ce9b90000
+   kworker/u16:0-19287 [005] 19011.475548: i915_gem_object_destroy: obj=0xffff8b0ce9b93300
+   kworker/u16:0-19287 [005] 19011.475548: i915_gem_object_destroy: obj=0xffff8b0ce9b90600
+   kworker/u16:0-19287 [005] 19011.475549: i915_gem_object_destroy: obj=0xffff8b0ce9b93900
+   kworker/u16:0-19287 [005] 19011.475549: i915_gem_object_destroy: obj=0xffff8b0ce9b91e00
+   kworker/u16:0-19287 [005] 19011.475550: i915_gem_object_destroy: obj=0xffff8b0ce9b90c00
+   kworker/u16:0-19287 [005] 19011.475550: i915_gem_object_destroy: obj=0xffff8b0ce9b92d00
+   kworker/u16:0-19287 [005] 19011.475551: i915_gem_object_destroy: obj=0xffff8b0ce9b92400
+   kworker/u16:0-19287 [005] 19011.475551: i915_gem_object_destroy: obj=0xffff8b0ce9b91b00
+   kworker/u16:0-19287 [005] 19011.475552: i915_gem_object_destroy: obj=0xffff8b0ce9b91500
+   kworker/u16:0-19287 [005] 19011.475552: i915_gem_object_destroy: obj=0xffff8b0ce9b90f00
+   kworker/u16:0-19287 [005] 19011.475553: i915_gem_object_destroy: obj=0xffff8b0d51b18000
+   kworker/u16:0-19287 [005] 19011.475553: i915_gem_object_destroy: obj=0xffff8b0d51b18c00
+   kworker/u16:0-19287 [005] 19011.475553: i915_gem_object_destroy: obj=0xffff8b0d51b19200
+   kworker/u16:0-19287 [005] 19011.475554: i915_gem_object_destroy: obj=0xffff8b0d51b1a100
+   kworker/u16:0-19287 [005] 19011.475554: i915_gem_object_destroy: obj=0xffff8b0d51b18600
+   kworker/u16:0-19287 [005] 19011.475555: i915_gem_object_destroy: obj=0xffff8b0d51b1ad00
+   kworker/u16:0-19287 [005] 19011.475555: i915_gem_object_destroy: obj=0xffff8b0d51b19b00
+   kworker/u16:0-19287 [005] 19011.475555: i915_gem_object_destroy: obj=0xffff8b0d51b1b300
+   kworker/u16:0-19287 [005] 19011.475556: i915_gem_object_destroy: obj=0xffff8b0d51b1bc00
+   kworker/u16:0-19287 [005] 19011.475556: i915_gem_object_destroy: obj=0xffff8b0d51b18f00
+   kworker/u16:0-19287 [005] 19011.475557: i915_gem_object_destroy: obj=0xffff8b0d51b1aa00
+   kworker/u16:0-19287 [005] 19011.475557: i915_gem_object_destroy: obj=0xffff8b0d51b1b900
+   kworker/u16:0-19287 [005] 19011.475558: i915_gem_object_destroy: obj=0xffff8b0cfe6cfc00
+   kworker/u16:0-19287 [005] 19011.475558: i915_gem_object_destroy: obj=0xffff8b0cfe6ce400
+   kworker/u16:0-19287 [005] 19011.475559: i915_gem_object_destroy: obj=0xffff8b0cfe6cd800
+   kworker/u16:0-19287 [005] 19011.475559: i915_gem_object_destroy: obj=0xffff8b0cfe6cde00
+   kworker/u16:0-19287 [005] 19011.475560: i915_gem_object_destroy: obj=0xffff8b0d907e9e00
+   kworker/u16:0-19287 [005] 19011.475560: i915_gem_object_destroy: obj=0xffff8b0d907ea400
+   kworker/u16:0-19287 [005] 19011.475561: i915_gem_object_destroy: obj=0xffff8b0cfffc5500
+   kworker/u16:0-19287 [005] 19011.475568: i915_gem_object_destroy: obj=0xffff8b0b7eb93600
+   kworker/u16:0-19287 [005] 19011.475577: i915_gem_object_destroy: obj=0xffff8b0d907e8600
+   kworker/u16:0-19287 [005] 19011.475579: i915_gem_object_destroy: obj=0xffff8b0d907ea700
+   kworker/u16:0-19287 [005] 19011.475581: i915_gem_object_destroy: obj=0xffff8b0d907e8000
+   kworker/u16:0-19287 [005] 19011.475582: i915_gem_object_destroy: obj=0xffff8b0d907e8900
+   kworker/u16:0-19287 [005] 19011.475583: i915_gem_object_destroy: obj=0xffff8b0b7eb91200
+   kworker/u16:0-19287 [005] 19011.475584: i915_gem_object_destroy: obj=0xffff8b0d907e9b00
+   kworker/u16:0-19287 [005] 19011.475585: i915_gem_object_destroy: obj=0xffff8b0d907ead00
+   kworker/u16:0-19287 [005] 19011.475586: i915_gem_object_destroy: obj=0xffff8b0d907eb000
+   kworker/u16:0-19287 [005] 19011.475587: i915_gem_object_destroy: obj=0xffff8b0b7eb90c00
+   kworker/u16:0-19287 [005] 19011.475588: i915_gem_object_destroy: obj=0xffff8b0b7eb92a00
+   kworker/u16:0-19287 [005] 19011.475589: i915_gem_object_destroy: obj=0xffff8b0d494a5b00
+   kworker/u16:0-19287 [005] 19011.475590: i915_gem_object_destroy: obj=0xffff8b0d494a5800
+   kworker/u16:0-19287 [005] 19011.475590: i915_gem_object_destroy: obj=0xffff8b0d494a4600
+   kworker/u16:0-19287 [005] 19011.475591: i915_gem_object_destroy: obj=0xffff8b0d494a6d00
+   kworker/u16:0-19287 [005] 19011.475591: i915_gem_object_destroy: obj=0xffff8b0cfffc4600
+   kworker/u16:0-19287 [005] 19011.475596: i915_gem_object_destroy: obj=0xffff8b0cfffc5e00
+   kworker/u16:0-19287 [005] 19011.475597: i915_gem_object_destroy: obj=0xffff8b0d51a26a00
+          <idle>-0     [006] 19011.476245: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.476260: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.476261: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3439c, 0x0)
+          <idle>-0     [006] 19011.476263: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3439c, 0x0)
+            Xorg-1255  [001] 19011.476426: i915_request_queue:   dev=0, hw_id=4, ring=0, ctx=23, seqno=259839, flags=0x0
+            Xorg-1255  [001] 19011.476431: i915_request_add:     dev=0, hw_id=4, ring=0, ctx=23, seqno=259839, global=0
+            Xorg-1255  [001] 19011.476435: i915_request_retire:  dev=0, hw_id=4, ring=0, ctx=23, seqno=259838, global=1704607
+     gnome-shell-1394  [000] 19011.477676: i915_request_queue:   dev=0, hw_id=19, ring=0, ctx=26, seqno=244654, flags=0x0
+     gnome-shell-1394  [000] 19011.477690: i915_request_add:     dev=0, hw_id=19, ring=0, ctx=26, seqno=244654, global=0
+     gnome-shell-1394  [000] 19011.477697: i915_request_retire:  dev=0, hw_id=19, ring=0, ctx=26, seqno=244653, global=1704608
+            Xorg-1255  [001] 19011.477899: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+   kworker/u16:0-19287 [005] 19011.479450: i915_gem_object_destroy: obj=0xffff8b0cffc24c00
+   kworker/u16:0-19287 [005] 19011.479453: i915_vma_unbind:      obj=0xffff8b0cffc24c00, offset=0x00000000026ea000 size=0x60000 vm=0xffff8b0d5197a000
+   kworker/u16:0-19287 [005] 19011.479470: i915_gem_object_destroy: obj=0xffff8b0d52bfc300
+   kworker/u16:0-19287 [005] 19011.479471: i915_vma_unbind:      obj=0xffff8b0d52bfc300, offset=0x000000000b000000 size=0x200000 vm=0xffff8b0de337e000
+   kworker/u16:0-19287 [005] 19011.479475: i915_vma_unbind:      obj=0xffff8b0d52bfc300, offset=0x000000000b000000 size=0x50000 vm=0xffff8b0d5197a000
+   kworker/u16:0-19287 [005] 19011.479478: i915_vma_unbind:      obj=0xffff8b0d52bfc300, offset=0x000000000ea00000 size=0x200000 vm=0xffff8b0de583e000
+   kworker/u16:0-19287 [005] 19011.479488: i915_gem_object_destroy: obj=0xffff8b0ce99a8f00
+   kworker/u16:0-19287 [005] 19011.479489: i915_vma_unbind:      obj=0xffff8b0ce99a8f00, offset=0x00000000022c6000 size=0x40000 vm=0xffff8b0de337e000
+   kworker/u16:0-19287 [005] 19011.479497: i915_gem_object_destroy: obj=0xffff8b0d53808600
+   kworker/u16:0-19287 [005] 19011.479497: i915_vma_unbind:      obj=0xffff8b0d53808600, offset=0x000000000f550000 size=0x40000 vm=0xffff8b0de337e000
+   kworker/u16:0-19287 [005] 19011.479505: i915_gem_object_destroy: obj=0xffff8b0d99439800
+   kworker/u16:0-19287 [005] 19011.479505: i915_vma_unbind:      obj=0xffff8b0d99439800, offset=0x000000000fbc0000 size=0x40000 vm=0xffff8b0de337e000
+   kworker/u16:0-19287 [005] 19011.479512: i915_gem_object_destroy: obj=0xffff8b0d2f6f9e00
+   kworker/u16:0-19287 [005] 19011.479512: i915_vma_unbind:      obj=0xffff8b0d2f6f9e00, offset=0x000000000fb80000 size=0x40000 vm=0xffff8b0de337e000
+   kworker/u16:0-19287 [005] 19011.479517: i915_gem_object_destroy: obj=0xffff8b0cffc24600
+   kworker/u16:0-19287 [005] 19011.479518: i915_vma_unbind:      obj=0xffff8b0cffc24600, offset=0x0000000000184000 size=0x2000 vm=0xffff8b0d5197a000
+   kworker/u16:0-19287 [005] 19011.479521: i915_gem_object_destroy: obj=0xffff8b0d2fcbb300
+   kworker/u16:0-19287 [005] 19011.479521: i915_vma_unbind:      obj=0xffff8b0d2fcbb300, offset=0x000000000015b000 size=0x2000 vm=0xffff8b0d5197a000
+   kworker/u16:0-19287 [005] 19011.479523: i915_vma_unbind:      obj=0xffff8b0d2fcbb300, offset=0x0000000000152000 size=0x2000 vm=0xffff8b0de583e000
+   kworker/u16:0-19287 [005] 19011.479526: i915_gem_object_destroy: obj=0xffff8b0db27b4000
+   kworker/u16:0-19287 [005] 19011.479526: i915_vma_unbind:      obj=0xffff8b0db27b4000, offset=0x000000000af53000 size=0x2000 vm=0xffff8b0d5197a000
+   kworker/u16:0-19287 [005] 19011.479528: i915_vma_unbind:      obj=0xffff8b0db27b4000, offset=0x000000000ae5c000 size=0x2000 vm=0xffff8b0de583e000
+          <idle>-0     [006] 19011.482552: intel_engine_notify:  dev=0, ring=0, seqno=1704614, waiters=1
+   kworker/u16:3-23049 [007] 19011.482622: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3439c, 0x0)
+   kworker/u16:3-23049 [007] 19011.482623: i915_pipe_update_start: pipe >c<, frame=0, scanline=213916, min=399, max=1073
+   kworker/u16:3-23049 [007] 19011.482625: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3439c, 0x0)
+   kworker/u16:3-23049 [007] 19011.482625: i915_pipe_update_vblank_evaded: pipe >c<, frame=0, scanline=213916, min=399, max=1073
+   kworker/u16:3-23049 [007] 19011.482626: i915_reg_rw:          write reg=0x68180, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [007] 19011.482626: i915_reg_rw:          write reg=0x68170, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [007] 19011.482626: i915_reg_rw:          write reg=0x68174, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [007] 19011.482627: i915_reg_rw:          write reg=0x68280, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [007] 19011.482627: i915_reg_rw:          write reg=0x68270, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [007] 19011.482627: i915_reg_rw:          write reg=0x68274, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [007] 19011.482629: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3439c, 0x0)
+   kworker/u16:3-23049 [007] 19011.482629: intel_update_plane:   [FAILED TO PARSE] pipe=0 name=0xffff8b0de4fce190 frame=213916 scanline=399 src=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04] dst=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04, 00, 00]
+   kworker/u16:3-23049 [007] 19011.482633: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3439c, 0x0)
+   kworker/u16:3-23049 [007] 19011.482634: i915_pipe_update_end: pipe >c<, frame=0, scanline=213916
+   kworker/u16:3-23049 [007] 19011.482635: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3439c, 0x0)
+   kworker/u16:3-23049 [007] 19011.482636: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3439c, 0x0)
+          <idle>-0     [006] 19011.492970: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.492972: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.492974: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3439d, 0x0)
+          <idle>-0     [006] 19011.492975: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3439d, 0x0)
+          <idle>-0     [006] 19011.509622: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.509624: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.509628: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3439e, 0x0)
+          <idle>-0     [006] 19011.509632: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3439e, 0x0)
+     kworker/7:3-19957 [007] 19011.509684: i915_reg_rw:          read reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/7:3-19957 [007] 19011.509686: i915_reg_rw:          write reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/7:3-19957 [007] 19011.509688: i915_reg_rw:          write reg=0x100100, len=4, val=(0x20000017, 0x0)
+     kworker/7:3-19957 [007] 19011.509688: i915_reg_rw:          write reg=0x100104, len=4, val=(0x0, 0x0)
+     kworker/7:3-19957 [007] 19011.509689: i915_reg_rw:          write reg=0x43208, len=4, val=(0x90000000, 0x0)
+     kworker/7:3-19957 [007] 19011.509690: i915_reg_rw:          write reg=0x50380, len=4, val=(0x4, 0x0)
+          <idle>-0     [006] 19011.526297: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.526300: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.526303: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3439f, 0x0)
+          <idle>-0     [006] 19011.526307: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3439f, 0x0)
+          <idle>-0     [006] 19011.526309: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3439f, 0x0)
+          <idle>-0     [006] 19011.526311: i915_reg_rw:          read reg=0x70040, len=4, val=(0x3439f, 0x0)
+          <idle>-0     [006] 19011.526312: i915_reg_rw:          write reg=0x44404, len=4, val=(0x6ffff07f, 0x0)
+            code-4146  [007] 19011.620437: i915_gem_object_pwrite: obj=0xffff8b0db2523900, offset=0x0, len=0xc000
+            code-4146  [007] 19011.620480: i915_request_retire:  dev=0, hw_id=22, ring=0, ctx=30, seqno=363418, global=1704601
+            code-4146  [007] 19011.620485: i915_request_queue:   dev=0, hw_id=22, ring=0, ctx=30, seqno=363421, flags=0x0
+            code-4146  [007] 19011.620490: i915_request_add:     dev=0, hw_id=22, ring=0, ctx=30, seqno=363421, global=0
+            code-4146  [007] 19011.620493: i915_request_retire:  dev=0, hw_id=22, ring=0, ctx=30, seqno=363419, global=1704602
+            code-4146  [007] 19011.620495: i915_request_retire:  dev=0, hw_id=22, ring=0, ctx=30, seqno=363420, global=1704603
+      Compositor-4187  [006] 19011.620839: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+      Compositor-4187  [006] 19011.620843: intel_engine_notify:  dev=0, ring=0, seqno=1704615, waiters=0
+            code-4146  [007] 19011.622351: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423630, global=1704610
+            code-4146  [007] 19011.622365: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423633, flags=0x0
+            code-4146  [007] 19011.622378: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423633, global=0
+            code-4146  [007] 19011.622381: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423631, global=1704611
+            code-4146  [007] 19011.622398: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423632, global=1704612
+            code-4146  [007] 19011.622703: i915_vma_bind:        obj=0xffff8b0b72961e00, offset=0x0000000000073000 size=0x5000 vm=0xffff8b0de583e000
+            code-4146  [007] 19011.622709: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423634, flags=0x0
+            code-4146  [007] 19011.622720: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423634, global=0
+            Xorg-1255  [001] 19011.623100: i915_reg_rw:          write reg=0x44404, len=4, val=(0x6ffff07e, 0x0)
+            Xorg-1255  [001] 19011.623102: i915_reg_rw:          read reg=0x70040, len=4, val=(0x343a4, 0x0)
+            Xorg-1255  [001] 19011.623104: i915_reg_rw:          read reg=0x70040, len=4, val=(0x343a4, 0x0)
+            Xorg-1255  [001] 19011.623104: i915_reg_rw:          read reg=0x70040, len=4, val=(0x343a4, 0x0)
+            Xorg-1255  [001] 19011.623105: i915_reg_rw:          read reg=0x70040, len=4, val=(0x343a4, 0x0)
+            code-4146  [007] 19011.623406: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423633, global=1704616
+            code-4146  [007] 19011.623422: i915_request_queue:   dev=0, hw_id=21, ring=0, ctx=29, seqno=423635, flags=0x0
+            code-4146  [007] 19011.623444: i915_request_add:     dev=0, hw_id=21, ring=0, ctx=29, seqno=423635, global=0
+          <idle>-0     [006] 19011.626191: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.626192: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.626194: i915_reg_rw:          read reg=0x70040, len=4, val=(0x343a5, 0x0)
+          <idle>-0     [006] 19011.626196: i915_reg_rw:          read reg=0x70040, len=4, val=(0x343a5, 0x0)
+            Xorg-1255  [001] 19011.626390: i915_request_queue:   dev=0, hw_id=4, ring=0, ctx=23, seqno=259840, flags=0x0
+            Xorg-1255  [001] 19011.626397: i915_request_add:     dev=0, hw_id=4, ring=0, ctx=23, seqno=259840, global=0
+            Xorg-1255  [001] 19011.626402: i915_request_retire:  dev=0, hw_id=4, ring=0, ctx=23, seqno=259839, global=1704613
+     gnome-shell-1394  [000] 19011.631032: i915_request_queue:   dev=0, hw_id=19, ring=0, ctx=26, seqno=244655, flags=0x0
+     gnome-shell-1394  [000] 19011.631045: i915_request_add:     dev=0, hw_id=19, ring=0, ctx=26, seqno=244655, global=0
+     gnome-shell-1394  [000] 19011.631051: i915_request_retire:  dev=0, hw_id=19, ring=0, ctx=26, seqno=244654, global=1704614
+            Xorg-1255  [001] 19011.631262: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+          <idle>-0     [006] 19011.635877: intel_engine_notify:  dev=0, ring=0, seqno=1704620, waiters=1
+   kworker/u16:3-23049 [006] 19011.635897: i915_reg_rw:          read reg=0x43208, len=4, val=(0x90000000, 0x0)
+   kworker/u16:3-23049 [006] 19011.635898: i915_reg_rw:          write reg=0x43208, len=4, val=(0x10000000, 0x0)
+   kworker/u16:3-23049 [006] 19011.635902: i915_reg_rw:          read reg=0x70040, len=4, val=(0x343a5, 0x0)
+   kworker/u16:3-23049 [006] 19011.635903: i915_pipe_update_start: pipe >c<, frame=0, scanline=213925, min=621, max=1073
+   kworker/u16:3-23049 [006] 19011.635905: i915_reg_rw:          read reg=0x70040, len=4, val=(0x343a5, 0x0)
+   kworker/u16:3-23049 [006] 19011.635906: i915_pipe_update_vblank_evaded: pipe >c<, frame=0, scanline=213925, min=621, max=1073
+   kworker/u16:3-23049 [006] 19011.635907: i915_reg_rw:          write reg=0x68180, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.635907: i915_reg_rw:          write reg=0x68170, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.635908: i915_reg_rw:          write reg=0x68174, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.635908: i915_reg_rw:          write reg=0x68280, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.635909: i915_reg_rw:          write reg=0x68270, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.635909: i915_reg_rw:          write reg=0x68274, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19011.635911: i915_reg_rw:          read reg=0x70040, len=4, val=(0x343a5, 0x0)
+   kworker/u16:3-23049 [006] 19011.635912: intel_update_plane:   [FAILED TO PARSE] pipe=0 name=0xffff8b0de4fce190 frame=213925 scanline=621 src=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04] dst=ARRAY[00, 00, 00, 00, 00, 00, 00, 00, 80, 07, 00, 00, 38, 04, 00, 00]
+   kworker/u16:3-23049 [006] 19011.635918: i915_reg_rw:          read reg=0x70040, len=4, val=(0x343a5, 0x0)
+   kworker/u16:3-23049 [006] 19011.635919: i915_pipe_update_end: pipe >c<, frame=0, scanline=213925
+   kworker/u16:3-23049 [006] 19011.635920: i915_reg_rw:          read reg=0x70040, len=4, val=(0x343a5, 0x0)
+   kworker/u16:3-23049 [006] 19011.635922: i915_reg_rw:          read reg=0x70040, len=4, val=(0x343a5, 0x0)
+          <idle>-0     [006] 19011.642946: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.642948: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.642951: i915_reg_rw:          read reg=0x70040, len=4, val=(0x343a6, 0x0)
+          <idle>-0     [006] 19011.642954: i915_reg_rw:          read reg=0x70040, len=4, val=(0x343a6, 0x0)
+          <idle>-0     [006] 19011.659589: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.659591: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.659595: i915_reg_rw:          read reg=0x70040, len=4, val=(0x343a7, 0x0)
+          <idle>-0     [006] 19011.659598: i915_reg_rw:          read reg=0x70040, len=4, val=(0x343a7, 0x0)
+     kworker/6:0-20814 [006] 19011.659628: i915_reg_rw:          read reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/6:0-20814 [006] 19011.659630: i915_reg_rw:          write reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/6:0-20814 [006] 19011.659631: i915_reg_rw:          write reg=0x100100, len=4, val=(0x20000000, 0x0)
+     kworker/6:0-20814 [006] 19011.659632: i915_reg_rw:          write reg=0x100104, len=4, val=(0x0, 0x0)
+     kworker/6:0-20814 [006] 19011.659632: i915_reg_rw:          write reg=0x43208, len=4, val=(0x90000000, 0x0)
+     kworker/6:0-20814 [006] 19011.659633: i915_reg_rw:          write reg=0x50380, len=4, val=(0x4, 0x0)
+          <idle>-0     [006] 19011.676151: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.676154: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [006] 19011.676157: i915_reg_rw:          read reg=0x70040, len=4, val=(0x343a8, 0x0)
+          <idle>-0     [006] 19011.676161: i915_reg_rw:          read reg=0x70040, len=4, val=(0x343a8, 0x0)
+          <idle>-0     [006] 19011.676165: i915_reg_rw:          read reg=0x70040, len=4, val=(0x343a8, 0x0)
+          <idle>-0     [006] 19011.676172: i915_reg_rw:          read reg=0x70040, len=4, val=(0x343a8, 0x0)
+          <idle>-0     [006] 19011.676173: i915_reg_rw:          write reg=0x44404, len=4, val=(0x6ffff07f, 0x0)
+     kworker/5:0-14970 [005] 19012.019715: i915_reg_rw:          read reg=0x205c, len=4, val=(0x0, 0x0)
+     kworker/5:0-14970 [005] 19012.019718: i915_reg_rw:          read reg=0x2074, len=4, val=(0x3d90, 0x0)
+     kworker/5:0-14970 [005] 19012.019720: i915_reg_rw:          read reg=0x205c, len=4, val=(0x0, 0x0)
+     kworker/5:0-14970 [005] 19012.019725: i915_reg_rw:          read reg=0x2205c, len=4, val=(0x0, 0x0)
+     kworker/5:0-14970 [005] 19012.019726: i915_reg_rw:          read reg=0x22074, len=4, val=(0x38, 0x0)
+     kworker/5:0-14970 [005] 19012.019728: i915_reg_rw:          read reg=0x2205c, len=4, val=(0x0, 0x0)
+     kworker/5:0-14970 [005] 19012.019731: i915_reg_rw:          read reg=0x22034, len=4, val=(0x38, 0x0)
+     kworker/5:0-14970 [005] 19012.019732: i915_reg_rw:          read reg=0x22030, len=4, val=(0x38, 0x0)
+     kworker/5:0-14970 [005] 19012.019733: i915_reg_rw:          read reg=0x2209c, len=4, val=(0x200, 0x0)
+     kworker/5:0-14970 [005] 19012.019754: i915_reg_rw:          read reg=0x1205c, len=4, val=(0x0, 0x0)
+     kworker/5:0-14970 [005] 19012.019755: i915_reg_rw:          read reg=0x12074, len=4, val=(0x50, 0x0)
+     kworker/5:0-14970 [005] 19012.019756: i915_reg_rw:          read reg=0x1205c, len=4, val=(0x0, 0x0)
+     kworker/5:0-14970 [005] 19012.019758: i915_reg_rw:          read reg=0x1a05c, len=4, val=(0x0, 0x0)
+     kworker/5:0-14970 [005] 19012.019760: i915_reg_rw:          read reg=0x1a074, len=4, val=(0x38, 0x0)
+     kworker/5:0-14970 [005] 19012.019761: i915_reg_rw:          read reg=0x1a05c, len=4, val=(0x0, 0x0)
+     kworker/5:0-14970 [005] 19012.019763: i915_reg_rw:          read reg=0x1a034, len=4, val=(0x38, 0x0)
+     kworker/5:0-14970 [005] 19012.019764: i915_reg_rw:          read reg=0x1a030, len=4, val=(0x38, 0x0)
+     kworker/5:0-14970 [005] 19012.019765: i915_reg_rw:          read reg=0x1a09c, len=4, val=(0x200, 0x0)
+   kworker/u16:3-23049 [006] 19013.011487: i915_request_retire:  dev=0, hw_id=40, ring=0, ctx=495, seqno=3, global=1704599
+   kworker/u16:3-23049 [006] 19013.011509: i915_context_free:    dev=0, ctx=0xffff8b0cffd0b000, ctx_vm=0xffff8b0d2f9f0000, hw_id=40
+   kworker/u16:3-23049 [006] 19013.011526: i915_request_retire:  dev=0, hw_id=19, ring=0, ctx=26, seqno=244655, global=1704620
+   kworker/u16:3-23049 [006] 19013.011548: i915_request_retire:  dev=0, hw_id=4, ring=0, ctx=23, seqno=259840, global=1704619
+   kworker/u16:3-23049 [006] 19013.011558: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423634, global=1704617
+   kworker/u16:3-23049 [006] 19013.011596: i915_request_retire:  dev=0, hw_id=21, ring=0, ctx=29, seqno=423635, global=1704618
+   kworker/u16:3-23049 [006] 19013.011647: i915_request_retire:  dev=0, hw_id=22, ring=0, ctx=30, seqno=363421, global=1704615
+   kworker/u16:3-23049 [006] 19013.011654: i915_request_retire:  dev=0, hw_id=31, ring=0, ctx=38, seqno=10002, global=1704609
+   kworker/u16:3-23049 [006] 19013.027491: i915_gem_object_destroy: obj=0xffff8b0d995cde00
+   kworker/u16:3-23049 [006] 19013.027496: i915_vma_unbind:      obj=0xffff8b0d995cde00, offset=0x00000000ffed4000 size=0x17000 vm=0xffff8b0de7dcd740
+   kworker/u16:3-23049 [006] 19013.027520: i915_gem_object_destroy: obj=0xffff8b0d995cd500
+   kworker/u16:3-23049 [006] 19013.027522: i915_vma_unbind:      obj=0xffff8b0d995cd500, offset=0x00000000018b6000 size=0x4000 vm=0xffff8b0de7dcd740
+   kworker/u16:3-23049 [006] 19013.027529: i915_gem_object_destroy: obj=0xffff8b0b7eb91b00
+   kworker/u16:3-23049 [006] 19013.027540: i915_gem_object_destroy: obj=0xffff8b0d494a4000
+   kworker/u16:3-23049 [006] 19013.027550: i915_gem_object_destroy: obj=0xffff8b0d494a7000
+   kworker/u16:3-23049 [006] 19013.027554: i915_gem_object_destroy: obj=0xffff8b0cfffc6700
+   kworker/u16:3-23049 [006] 19013.027568: i915_gem_object_destroy: obj=0xffff8b0cfffc4c00
+   kworker/u16:3-23049 [006] 19013.027582: i915_gem_object_destroy: obj=0xffff8b0cfffc6d00
+   kworker/u16:3-23049 [006] 19013.027594: i915_gem_object_destroy: obj=0xffff8b0cfffc5800
+   kworker/u16:3-23049 [006] 19013.027599: i915_gem_object_destroy: obj=0xffff8b0cfffc7c00
+   kworker/u16:3-23049 [006] 19013.028807: i915_gem_object_destroy: obj=0xffff8b0cfffc7600
+   kworker/u16:3-23049 [006] 19013.028812: i915_gem_object_destroy: obj=0xffff8b0cfffc4900
+   kworker/u16:3-23049 [006] 19013.028814: i915_ppgtt_release:   dev=0, vm=0xffff8b0d2f9f0000
+   kworker/u16:3-23049 [006] 19013.115578: i915_reg_rw:          read reg=0x2034, len=4, val=(0x3d90, 0x0)
+   kworker/u16:3-23049 [006] 19013.115581: i915_reg_rw:          read reg=0x2030, len=4, val=(0x3d90, 0x0)
+   kworker/u16:3-23049 [006] 19013.115582: i915_reg_rw:          read reg=0x209c, len=4, val=(0x200, 0x0)
+   kworker/u16:3-23049 [006] 19013.115587: i915_reg_rw:          read reg=0x22034, len=4, val=(0x38, 0x0)
+   kworker/u16:3-23049 [006] 19013.115588: i915_reg_rw:          read reg=0x22030, len=4, val=(0x38, 0x0)
+   kworker/u16:3-23049 [006] 19013.115590: i915_reg_rw:          read reg=0x2209c, len=4, val=(0x200, 0x0)
+   kworker/u16:3-23049 [006] 19013.115610: i915_reg_rw:          read reg=0x12034, len=4, val=(0x50, 0x0)
+   kworker/u16:3-23049 [006] 19013.115611: i915_reg_rw:          read reg=0x12030, len=4, val=(0x50, 0x0)
+   kworker/u16:3-23049 [006] 19013.115613: i915_reg_rw:          read reg=0x1209c, len=4, val=(0x200, 0x0)
+   kworker/u16:3-23049 [006] 19013.115615: i915_reg_rw:          read reg=0x1a034, len=4, val=(0x38, 0x0)
+   kworker/u16:3-23049 [006] 19013.115616: i915_reg_rw:          read reg=0x1a030, len=4, val=(0x38, 0x0)
+   kworker/u16:3-23049 [006] 19013.115618: i915_reg_rw:          read reg=0x1a09c, len=4, val=(0x200, 0x0)
+   kworker/u16:3-23049 [006] 19013.115622: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+   kworker/u16:3-23049 [006] 19013.115626: i915_reg_rw:          read reg=0x2034, len=4, val=(0x3d90, 0x0)
+   kworker/u16:3-23049 [006] 19013.115627: i915_reg_rw:          read reg=0x2030, len=4, val=(0x3d90, 0x0)
+   kworker/u16:3-23049 [006] 19013.115628: i915_reg_rw:          read reg=0x209c, len=4, val=(0x200, 0x0)
+   kworker/u16:3-23049 [006] 19013.115631: i915_reg_rw:          read reg=0x22034, len=4, val=(0x38, 0x0)
+   kworker/u16:3-23049 [006] 19013.115632: i915_reg_rw:          read reg=0x22030, len=4, val=(0x38, 0x0)
+   kworker/u16:3-23049 [006] 19013.115634: i915_reg_rw:          read reg=0x2209c, len=4, val=(0x200, 0x0)
+   kworker/u16:3-23049 [006] 19013.115636: i915_reg_rw:          read reg=0x12034, len=4, val=(0x50, 0x0)
+   kworker/u16:3-23049 [006] 19013.115637: i915_reg_rw:          read reg=0x12030, len=4, val=(0x50, 0x0)
+   kworker/u16:3-23049 [006] 19013.115638: i915_reg_rw:          read reg=0x1209c, len=4, val=(0x200, 0x0)
+   kworker/u16:3-23049 [006] 19013.115641: i915_reg_rw:          read reg=0x1a034, len=4, val=(0x38, 0x0)
+   kworker/u16:3-23049 [006] 19013.115642: i915_reg_rw:          read reg=0x1a030, len=4, val=(0x38, 0x0)
+   kworker/u16:3-23049 [006] 19013.115643: i915_reg_rw:          read reg=0x1a09c, len=4, val=(0x200, 0x0)
+   kworker/u16:3-23049 [006] 19013.115657: i915_reg_rw:          write reg=0xa168, len=4, val=(0x7fffffff, 0x0)
+   kworker/u16:3-23049 [006] 19013.115659: i915_reg_rw:          write reg=0x44324, len=4, val=(0xffffffff, 0x0)
+   kworker/u16:3-23049 [006] 19013.115660: i915_reg_rw:          write reg=0x4432c, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19013.115662: i915_reg_rw:          write reg=0x44328, len=4, val=(0x70, 0x0)
+   kworker/u16:3-23049 [006] 19013.115662: i915_reg_rw:          write reg=0x44328, len=4, val=(0x70, 0x0)
+   kworker/u16:3-23049 [006] 19013.115664: i915_reg_rw:          write reg=0xa014, len=4, val=(0x1f854000, 0x0)
+   kworker/u16:3-23049 [006] 19013.115665: i915_reg_rw:          write reg=0xa168, len=4, val=(0x7fffffdf, 0x0)
+   kworker/u16:3-23049 [006] 19013.115667: intel_gpu_freq_change: new_freq=350
+   kworker/u16:3-23049 [006] 19013.115667: i915_reg_rw:          write reg=0xa168, len=4, val=(0x7fffffff, 0x0)
+   kworker/u16:3-23049 [006] 19013.115670: i915_reg_rw:          read reg=0x48400, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19013.115671: i915_reg_rw:          read reg=0x45504, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19013.115672: i915_reg_rw:          read reg=0x80000, len=4, val=(0x9004040, 0x0)
+   kworker/u16:3-23049 [006] 19013.115673: i915_reg_rw:          read reg=0x8f074, len=4, val=(0x2fc0, 0x0)
+   kworker/u16:3-23049 [006] 19013.115674: i915_reg_rw:          read reg=0x8f004, len=4, val=(0xb40068, 0x0)
+   kworker/u16:3-23049 [006] 19013.115675: i915_reg_rw:          read reg=0x46430, len=4, val=(0x40002008, 0x0)
+   kworker/u16:3-23049 [006] 19013.115675: i915_reg_rw:          write reg=0x46430, len=4, val=(0x40002008, 0x0)
+   kworker/u16:3-23049 [006] 19013.115677: i915_reg_rw:          read reg=0x45504, len=4, val=(0x0, 0x0)
+   kworker/u16:3-23049 [006] 19013.115677: i915_reg_rw:          write reg=0x45504, len=4, val=(0x2, 0x0)
+   kworker/u16:3-23049 [006] 19013.115679: i915_reg_rw:          read reg=0x45504, len=4, val=(0x2, 0x0)
+   kworker/u16:3-23049 [006] 19013.115679: i915_reg_rw:          read reg=0x45504, len=4, val=(0x2, 0x0)
+   kworker/u16:3-23049 [006] 19013.115680: i915_reg_rw:          read reg=0x45504, len=4, val=(0x2, 0x0)
+   kworker/u16:3-23049 [006] 19013.115681: i915_reg_rw:          read reg=0x45504, len=4, val=(0x2, 0x0)
+   kworker/u16:3-23049 [006] 19013.115682: i915_reg_rw:          read reg=0x45504, len=4, val=(0x2, 0x0)
+   kworker/u16:3-23049 [006] 19013.115683: i915_reg_rw:          read reg=0x45504, len=4, val=(0x2, 0x0)
+   kworker/u16:3-23049 [006] 19013.115684: i915_reg_rw:          read reg=0x45504, len=4, val=(0x2, 0x0)
