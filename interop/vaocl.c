@@ -142,7 +142,7 @@ int getVASharingFunc(cl_platform_id platform)
 }
 
 
-int compute()
+int compute(VADisplay va_dpy)
 {
     /* Host/device data structures */
     cl_platform_id platform;
@@ -192,6 +192,24 @@ int compute()
         return -1;
     }
 
+    cl_device_id *devices = NULL;
+    cl_uint device_num = 0;
+
+    err = clGetDeviceIDsFromVA(platform, CL_VA_API_DISPLAY_INTEL, va_dpy,
+        CL_PREFERRED_DEVICES_FOR_VA_API_INTEL, NULL, NULL, &device_num);
+    if (CL_SUCCESS != err || 0 == device_num)
+    {
+        printf("ERROR: Can’t get OpenCL device for media sharing");
+        return -1;
+    }
+
+    devices = (cl_device_id *)malloc(sizeof(cl_device_id) * device_num);
+    CHECK_NULL_AND_RETURN(devices);
+
+    err = clGetDeviceIDsFromVA(platform, CL_VA_API_DISPLAY_INTEL, va_dpy, 
+        CL_PREFERRED_DEVICES_FOR_VA_API_INTEL, device_num, devices, NULL);
+
+#if 0
     /* Access a device */
     err = clGetDeviceIDs(platform, CL_DEVICE_TYPE_GPU, 1, &device, NULL);
     if (err < 0)
@@ -326,6 +344,7 @@ int compute()
     clReleaseCommandQueue(queue);
     clReleaseProgram(program);
     clReleaseContext(context);
+#endif
 
     return 0;
 }
@@ -500,7 +519,7 @@ int main(int argc, char **argv)
         CHECK_VASTATUS(va_status, "vaPutSurface");
     }
 
-    compute();
+    compute(va_dpy);
 
     vaDestroySurfaces(va_dpy, &surface_id, 1);
     vaDestroyConfig(va_dpy, config_id);
