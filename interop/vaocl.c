@@ -178,7 +178,6 @@ int compute(VADisplay va_dpy)
         correct[3] += mat[i + 12] * vec[i];
     }
 
-    /* Identify a platform */
     err = clGetPlatformIDs(1, &platform, NULL);
     if (err < 0)
     {
@@ -208,6 +207,27 @@ int compute(VADisplay va_dpy)
 
     err = clGetDeviceIDsFromVA(platform, CL_VA_API_DISPLAY_INTEL, va_dpy, 
         CL_PREFERRED_DEVICES_FOR_VA_API_INTEL, device_num, devices, NULL);
+    if (CL_SUCCESS != err)
+    {
+        printf("ERROR: Can’t get OpenCL device for media sharing\n");
+        return -1;
+    }
+
+    cl_context_properties props[] = 
+    {
+        CL_CONTEXT_VA_API_DISPLAY_INTEL,
+        (cl_context_properties)va_dpy,
+        CL_CONTEXT_INTEROP_USER_SYNC,
+        CL_FALSE,
+        0
+    };
+
+    context = clCreateContext(props, device_num, devices, NULL, NULL, &err);
+    if (CL_SUCCESS != err)
+    {
+        printf("ERROR: Can’t create OpenCL context\n");
+        return -1;
+    }
 
 #if 0
     /* Access a device */
