@@ -1,7 +1,7 @@
 
 constant sampler_t sampler = CLK_NORMALIZED_COORDS_FALSE | CLK_ADDRESS_CLAMP | CLK_FILTER_NEAREST;
 
-__kernel void scale(read_write image2d_t image) 
+__kernel void scale(__read_write image2d_t image) 
 {
    int2 coord = (int2)(get_global_id(0), get_global_id(1));
 
