@@ -408,10 +408,13 @@ int main(int argc, char **argv)
     va_status = vaEndPicture(va_dpy, context_id);
     CHECK_VASTATUS(va_status, "vaEndPicture");
 
-    va_status = vaSyncSurface(va_dpy, surface_id);
-    CHECK_VASTATUS(va_status, "vaSyncSurface");
+    if (1) 
+    {
+        va_status = vaSyncSurface(va_dpy, surface_id);
+        CHECK_VASTATUS(va_status, "vaSyncSurface");
+    }
 
-    if (1)
+    if (0)
     {
         uint8_t *buffer = NULL;
         VAImage image = {};
