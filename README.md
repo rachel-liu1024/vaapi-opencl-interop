@@ -74,6 +74,6 @@ libigdrcl.so!OCLRT::SharingHandler::synchronizeHandler(OCLRT::SharingHandler * c
 libigdrcl.so!OCLRT::SharingHandler::acquire(OCLRT::SharingHandler * const this, OCLRT::MemObj * memObj) (/home/fresh/data/work/intel_opencl_linux/source/compute-runtime/runtime/sharings/sharing.cpp:24)
 libigdrcl.so!OCLRT::CommandQueue::enqueueAcquireSharedObjects(OCLRT::CommandQueue * const this, cl_uint numObjects, const cl_mem * memObjects, cl_uint numEventsInWaitList, const cl_event * eventWaitList, cl_event * oclEvent, cl_uint cmdType) (/home/fresh/data/work/intel_opencl_linux/source/compute-runtime/runtime/command_queue/command_queue.cpp:219)
 libigdrcl.so!clEnqueueAcquireVA_APIMediaSurfacesINTEL(cl_command_queue commandQueue, cl_uint numObjects, const cl_mem * memObjects, cl_uint numEventsInWaitList, const cl_event * eventWaitList, cl_event * event) (/home/fresh/data/work/intel_opencl_linux/source/compute-runtime/runtime/sharings/va/cl_va_api.cpp:94)
-oclProcessDecodeOutput(VADisplay vaDpy, VASurfaceID * vaSurfID) (/home/fresh/data/work/intel_opencl_linux/source/vaapi-opencl-interop/interop/vaocl.c:260)
-main(int argc, char ** argv) (/home/fresh/data/work/intel_opencl_linux/source/vaapi-opencl-interop/interop/vaocl.c:465)
+oclProcessDecodeOutput(VADisplay vaDpy, VASurfaceID * vaSurfID) (/home/fresh/data/work/intel_opencl_linux/source/vaapi-opencl-interop/interop/vaocl.c:279)
+main(int argc, char ** argv) (/home/fresh/data/work/intel_opencl_linux/source/vaapi-opencl-interop/interop/vaocl.c:508)
 ```
