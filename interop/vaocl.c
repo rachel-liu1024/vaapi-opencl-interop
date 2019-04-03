@@ -234,7 +234,8 @@ int oclProcessDecodeOutput(VADisplay vaDpy, VASurfaceID *vaSurfID)
     cl_context_properties props[] =
         {
             CL_CONTEXT_VA_API_DISPLAY_INTEL, (cl_context_properties)vaDpy,
-            CL_CONTEXT_INTEROP_USER_SYNC, CL_FALSE,
+            //CL_CONTEXT_INTEROP_USER_SYNC, CL_FALSE, // driver handle sync
+            CL_CONTEXT_INTEROP_USER_SYNC, CL_TRUE, // app handle sync
             0
         };
 
