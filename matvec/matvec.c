@@ -8,6 +8,14 @@
 
 #include <CL/cl.h>
 
+char kernel_code[] = 
+"__kernel void matvec_mult(__global float4* matrix, \
+                          __global float4* vector, \
+                          __global float* result) { \
+   int i = get_global_id(0); \
+   result[i] = dot(matrix[i], vector[0]); \
+}";
+
 int main()
 {
    /* Host/device data structures */
@@ -19,7 +27,6 @@ int main()
 
    /* Program/kernel data structures */
    cl_program program;
-   FILE *program_handle;
    char *program_buffer, *program_log;
    size_t program_size, log_size;
    cl_kernel kernel;
@@ -68,21 +75,10 @@ int main()
       exit(1);
    }
 
-   /* Read program file and place content into buffer */
-   program_handle = fopen(PROGRAM_FILE, "r");
-   if (program_handle == NULL)
-   {
-      perror("Couldn't find the program file");
-      exit(1);
-   }
-   fseek(program_handle, 0, SEEK_END);
-   program_size = ftell(program_handle);
-   rewind(program_handle);
-   program_buffer = (char *)malloc(program_size + 1);
-   memset(program_buffer, 0, program_size + 1);
-   //program_buffer[program_size] = '\0';
-   fread(program_buffer, sizeof(char), program_size, program_handle);
-   fclose(program_handle);
+   program_size = sizeof(kernel_code) + 1;
+   program_buffer = (char *)malloc(program_size);
+   memset(program_buffer, 0, program_size);
+   memcpy(program_buffer, kernel_code, sizeof(kernel_code));
 
    /* Create program from file */
    program = clCreateProgramWithSource(context, 1,
