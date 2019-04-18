@@ -180,7 +180,7 @@ int getVASharingFunc(cl_platform_id platform)
     return 0;
 }
 
-int oclProcessDecodeOutput(VADisplay vaDpy, VASurfaceID *vaSurfID)
+int oclProcessDecodeOutput(VADisplay vaDpy, VAContextID context_id, VASurfaceID *vaSurfID)
 {
     cl_platform_id platform;
     cl_device_id device;
@@ -286,6 +286,13 @@ int oclProcessDecodeOutput(VADisplay vaDpy, VASurfaceID *vaSurfID)
     err = clSetKernelArg(kernel, 0, sizeof(cl_mem), &sharedSurfY);
     CHECK_OCL_ERROR(err, "clSetKernelArg failed");
 
+    if(1)
+    {
+        VAStatus va_status;
+        va_status = vaEndPicture(vaDpy, context_id);
+        CHECK_VASTATUS(va_status, "vaEndPicture");
+    }
+    
     size_t global_size[2] = {CLIP_WIDTH, CLIP_HEIGHT};
     err = clEnqueueNDRangeKernel(queue, kernel, 2, NULL, global_size, NULL, 0, NULL, NULL);
     CHECK_OCL_ERROR(err, "clEnqueueNDRangeKernel failed");
@@ -446,8 +453,8 @@ int main(int argc, char **argv)
     va_status = vaRenderPicture(va_dpy, context_id, &slice_data_buf, 1);
     CHECK_VASTATUS(va_status, "vaRenderPicture");
 
-    va_status = vaEndPicture(va_dpy, context_id);
-    CHECK_VASTATUS(va_status, "vaEndPicture");
+    //va_status = vaEndPicture(va_dpy, context_id);
+    //CHECK_VASTATUS(va_status, "vaEndPicture");
 
     if (0) 
     {
@@ -506,7 +513,7 @@ int main(int argc, char **argv)
         CHECK_VASTATUS(va_status, "vaPutSurface");
     }
 
-    if (oclProcessDecodeOutput(va_dpy, &surface_id) != 0)
+    if (oclProcessDecodeOutput(va_dpy, context_id, &surface_id) != 0)
     {
         printf("ERROR: OCL execution failed\n");
         return -1;
