@@ -140,6 +140,8 @@ clCreateFromVA_APIMediaSurfaceINTEL_fn clCreateFromVA = NULL;
 clEnqueueAcquireVA_APIMediaSurfacesINTEL_fn clEnqueueAcquireVA = NULL;
 clEnqueueReleaseVA_APIMediaSurfacesINTEL_fn clEnqueueReleaseVA = NULL;
 
+static int enableReadWriteKernel = 1;
+
 char kernel_code[] =
     "__kernel void scale(__read_write image2d_t image) \
 { \
@@ -147,6 +149,15 @@ char kernel_code[] =
     float4 pixel = read_imagef(image, coord); \
     float4 pixel2 = pixel/4; \
     write_imagef(image, coord, pixel2); \
+}";
+
+char kernel_code2[] =
+    "__kernel void scale(__read_only image2d_t image, __write_only image2d_t result) \
+{ \
+    int2 coord = (int2)(get_global_id(0), get_global_id(1)); \
+    float4 pixel = read_imagef(image, coord); \
+    float4 pixel2 = pixel/4; \
+    write_imagef(result, coord, pixel2); \
 }";
 
 int getVASharingFunc(cl_platform_id platform)
@@ -242,12 +253,13 @@ int oclProcessDecodeOutput(VADisplay vaDpy, VAContextID context_id, VASurfaceID 
     context = clCreateContext(props, device_num, device_list, NULL, NULL, &err);
     CHECK_OCL_ERROR(err, "clCreateContext failed");
 
+    char* kernel_source = (enableReadWriteKernel) ? kernel_code : kernel_code2;
     char *program_buffer, *program_log;
     size_t program_size, log_size;
-    program_size = sizeof(kernel_code) + 1;
+    program_size = strlen(kernel_source) + 1;
     program_buffer = (char *)malloc(program_size);
     memset(program_buffer, 0, program_size + 1);
-    memcpy(program_buffer, kernel_code, program_size);
+    memcpy(program_buffer, kernel_source, program_size);
     program = clCreateProgramWithSource(context, 1, (const char **)&program_buffer, &program_size, &err);
     CHECK_OCL_ERROR(err, "clCreateProgramWithSource failed");
     free(program_buffer);
@@ -271,6 +283,12 @@ int oclProcessDecodeOutput(VADisplay vaDpy, VAContextID context_id, VASurfaceID 
         return -1;
     }
 
+    cl_image_format imgFormat = {};
+    imgFormat.image_channel_order = CL_R;
+    imgFormat.image_channel_data_type = CL_UNORM_INT8;
+    cl_mem outSurf = clCreateImage2D(context, CL_MEM_WRITE_ONLY, &imgFormat, CLIP_WIDTH, CLIP_HEIGHT, 0, NULL, &err);
+    CHECK_OCL_ERROR(err, "clCreateImage2D failed");
+
     queue = clCreateCommandQueue(context, device, 0, &err);
     CHECK_OCL_ERROR(err, "clCreateCommandQueue failed");
 
@@ -286,6 +304,12 @@ int oclProcessDecodeOutput(VADisplay vaDpy, VAContextID context_id, VASurfaceID 
     err = clSetKernelArg(kernel, 0, sizeof(cl_mem), &sharedSurfY);
     CHECK_OCL_ERROR(err, "clSetKernelArg failed");
 
+    if (!enableReadWriteKernel) 
+    {
+        err = clSetKernelArg(kernel, 1, sizeof(cl_mem), &outSurf);
+        CHECK_OCL_ERROR(err, "clSetKernelArg failed");
+    }
+    
     if(1)
     {
         VAStatus va_status;
@@ -304,7 +328,8 @@ int oclProcessDecodeOutput(VADisplay vaDpy, VAContextID context_id, VASurfaceID 
     size_t origin[3] = {0, 0, 0};
     size_t region[3] = {CLIP_WIDTH, CLIP_HEIGHT, 1};
     unsigned char hostMem[CLIP_WIDTH * CLIP_HEIGHT] = {};
-    err = clEnqueueReadImage(queue, sharedSurfY, CL_TRUE, origin, region, 0, 0, (void *)&hostMem[0], 0, NULL, NULL);
+    cl_mem readSurf = (enableReadWriteKernel) ? sharedSurfY : outSurf;
+    err = clEnqueueReadImage(queue, readSurf, CL_TRUE, origin, region, 0, 0, (void *)&hostMem[0], 0, NULL, NULL);
     CHECK_OCL_ERROR(err, "clEnqueueReadImage failed");
 
     // validate output
@@ -332,6 +357,7 @@ int oclProcessDecodeOutput(VADisplay vaDpy, VAContextID context_id, VASurfaceID 
     CHECK_OCL_ERROR(err, "clEnqueueReleaseVA failed");
 
     free(device_list);
+    clReleaseMemObject(outSurf);
     clReleaseKernel(kernel);
     clReleaseCommandQueue(queue);
     clReleaseProgram(program);
