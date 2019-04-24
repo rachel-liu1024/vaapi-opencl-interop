@@ -12,6 +12,11 @@ gmmlib https://github.com/intel/gmmlib
 
 media-driver https://github.com/intel/media-driver
 
+## install tools
+```bash
+sudo apt install cmake automake autoconf libtool libdrm-dev xorg xorg-dev openbox libx11-dev libgl1-mesa-glx libgl1-mesa-dev
+```
+
 ## dependencies
 download intel-graphics-compiler offical release binaries
 
