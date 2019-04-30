@@ -8,6 +8,8 @@ intel-graphics-compiler https://github.com/intel/intel-graphics-compiler
 
 libva https://github.com/intel/libva
 
+libva-utils https://github.com/intel/libva-utils
+
 gmmlib https://github.com/intel/gmmlib
 
 media-driver https://github.com/intel/media-driver
