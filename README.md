@@ -28,6 +28,7 @@ https://github.com/intel/intel-graphics-compiler/releases
 sudo apt install ocl-icd-opencl-dev
 sudo ln -s /usr/lib/x86_64-linux-gnu/libOpenCL.so.1 /usr/lib/libOpenCL.so
 
+# install igc compiler
 sudo dpkg -i ./intel-igc-core_1.0-0_amd64.deb
 sudo dpkg -i ./intel-igc-media_1.0-0_amd64.deb
 sudo dpkg -i ./intel-igc-opencl-devel_1.0-0_amd64.deb
