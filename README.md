@@ -24,6 +24,10 @@ download intel-graphics-compiler offical release binaries
 
 https://github.com/intel/intel-graphics-compiler/releases
 ```bash
+# install libopencl.so
+sudo apt install ocl-icd-opencl-dev
+sudo ln -s /usr/lib/x86_64-linux-gnu/libOpenCL.so.1 /usr/lib/libOpenCL.so
+
 sudo dpkg -i ./intel-igc-core_1.0-0_amd64.deb
 sudo dpkg -i ./intel-igc-media_1.0-0_amd64.deb
 sudo dpkg -i ./intel-igc-opencl-devel_1.0-0_amd64.deb
@@ -38,7 +42,6 @@ mkdir build & cd build & mkdir neo & cd neo
 cmake ../../source/compute-runtime
 make -j8
 sudo make install
-sudo ln -s /usr/lib/x86_64-linux-gnu/libOpenCL.so.1 /usr/lib/libOpenCL.so
 
 # build interop sample app
 cd build & mkdir interop & cd interop
