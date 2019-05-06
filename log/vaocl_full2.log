@@ -1,0 +1,1548 @@
+CPU 3 is empty
+cpus=8
+            Xorg-1460  [006] 703094.667871: i915_gem_object_create: obj=0xffff92bc0b6ad500, size=0x180000
+            Xorg-1460  [006] 703094.668080: i915_gem_object_create: obj=0xffff92bc0b6af300, size=0x2000
+            Xorg-1460  [006] 703094.668147: i915_gem_object_create: obj=0xffff92bc0b6aed00, size=0x14000
+            Xorg-1460  [006] 703094.668236: i915_gem_object_create: obj=0xffff92bc0b6ae400, size=0xc000
+            Xorg-1460  [006] 703094.668258: i915_gem_object_fault: obj=0xffff92bc0b6ae400, GTT index=0 , writable
+            Xorg-1460  [006] 703094.668270: i915_vma_bind:        obj=0xffff92bc0b6ae400, offset=0x0000000000906000 size=0xc000 vm=0xffff92bc46465740
+            Xorg-1460  [006] 703094.668272: i915_reg_rw:          write reg=0x101008, len=4, val=(0x1, 0x0)
+            Xorg-1460  [006] 703094.668274: i915_reg_rw:          write reg=0x100040, len=4, val=(0x0, 0x0)
+            Xorg-1460  [006] 703094.668274: i915_reg_rw:          write reg=0x100044, len=4, val=(0x911000, 0x0)
+            Xorg-1460  [006] 703094.668274: i915_reg_rw:          write reg=0x100040, len=4, val=(0x906003, 0x0)
+            Xorg-1460  [006] 703094.668310: i915_gem_object_create: obj=0xffff92bc0b6ac300, size=0x180000
+            Xorg-1460  [006] 703094.668477: i915_gem_object_create: obj=0xffff92bc0b6af000, size=0x2000
+            Xorg-1460  [006] 703094.668520: i915_gem_object_pwrite: obj=0xffff92bc1a4f2400, offset=0x0, len=0x1000
+            Xorg-1460  [006] 703094.668623: i915_gem_object_pwrite: obj=0xffff92bc1a4f3900, offset=0x0, len=0x1000
+            Xorg-1460  [006] 703094.668712: i915_gem_object_pwrite: obj=0xffff92bc1a4f2100, offset=0x0, len=0x1000
+            Xorg-1460  [006] 703094.668762: i915_vma_bind:        obj=0xffff92bc0b6ad500, offset=0x000000000ca00000 size=0x180000 vm=0xffff92bc006c8000
+            Xorg-1460  [006] 703094.668765: i915_vma_bind:        obj=0xffff92bc0b6af300, offset=0x00000000033dd000 size=0x2000 vm=0xffff92bc006c8000
+            Xorg-1460  [006] 703094.668765: i915_vma_bind:        obj=0xffff92bc0b6aed00, offset=0x00000000000e1000 size=0x14000 vm=0xffff92bc006c8000
+            Xorg-1460  [006] 703094.668766: i915_vma_bind:        obj=0xffff92bc0b6ae400, offset=0x00000000020c0000 size=0xc000 vm=0xffff92bc006c8000
+            Xorg-1460  [006] 703094.668767: i915_vma_bind:        obj=0xffff92bc0b6ac300, offset=0x0000000003000000 size=0x180000 vm=0xffff92bc006c8000
+            Xorg-1460  [006] 703094.668768: i915_vma_bind:        obj=0xffff92bc0b6af000, offset=0x00000000000f5000 size=0x2000 vm=0xffff92bc006c8000
+            Xorg-1460  [006] 703094.668774: i915_request_queue:   dev=0, hw_id=15, ring=0, ctx=23, seqno=231174, flags=0x0
+            Xorg-1460  [006] 703094.668779: i915_request_add:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231174, global=0
+            Xorg-1460  [006] 703094.668780: i915_request_submit:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231174, global=0
+            Xorg-1460  [006] 703094.668782: i915_request_execute: dev=0, hw_id=15, ring=0, ctx=23, seqno=231174, global=1269370
+            Xorg-1460  [006] 703094.668782: i915_request_in:      dev=0, hw_id=15, ring=0, ctx=23, seqno=231174, prio=0, global=1269370, port=0
+            Xorg-1460  [006] 703094.668784: i915_request_retire:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231173, global=1269368
+            Xorg-1460  [006] 703094.668864: i915_gem_object_pwrite: obj=0xffff92bc0ca15500, offset=0x0, len=0x1000
+            Xorg-1460  [006] 703094.668977: i915_gem_object_pwrite: obj=0xffff92bc0ca15e00, offset=0x0, len=0x1000
+            Xorg-1460  [006] 703094.669083: i915_gem_object_pwrite: obj=0xffff92bc0ca16400, offset=0x0, len=0x1000
+            Xorg-1460  [006] 703094.669126: i915_request_queue:   dev=0, hw_id=15, ring=0, ctx=23, seqno=231175, flags=0x0
+            Xorg-1460  [006] 703094.669128: i915_request_add:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231175, global=0
+            Xorg-1460  [006] 703094.669145: i915_request_submit:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231175, global=0
+          <idle>-0     [005] 703094.669152: i915_request_execute: dev=0, hw_id=15, ring=0, ctx=23, seqno=231175, global=1269371
+          <idle>-0     [005] 703094.669153: i915_request_in:      dev=0, hw_id=15, ring=0, ctx=23, seqno=231175, prio=0, global=1269371, port=0
+            Xorg-1460  [006] 703094.669210: i915_gem_object_pwrite: obj=0xffff92bc0b745b00, offset=0x0, len=0x1000
+            Xorg-1460  [006] 703094.669283: i915_gem_object_pwrite: obj=0xffff92bc0b744300, offset=0x0, len=0x1000
+            Xorg-1460  [006] 703094.669355: i915_gem_object_pwrite: obj=0xffff92bc0b745800, offset=0x0, len=0x1000
+            Xorg-1460  [006] 703094.669376: i915_request_queue:   dev=0, hw_id=15, ring=0, ctx=23, seqno=231176, flags=0x0
+            Xorg-1460  [006] 703094.669379: i915_request_add:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231176, global=0
+            Xorg-1460  [006] 703094.669379: i915_request_submit:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231176, global=0
+            Xorg-1460  [006] 703094.669380: i915_request_execute: dev=0, hw_id=15, ring=0, ctx=23, seqno=231176, global=1269372
+            Xorg-1460  [006] 703094.669380: i915_request_in:      dev=0, hw_id=15, ring=0, ctx=23, seqno=231176, prio=0, global=1269372, port=0
+            Xorg-1460  [006] 703094.669449: i915_gem_object_pwrite: obj=0xffff92bc0b745500, offset=0x0, len=0x1000
+            Xorg-1460  [006] 703094.669525: i915_gem_object_pwrite: obj=0xffff92bc0b747000, offset=0x0, len=0x1000
+            Xorg-1460  [006] 703094.669596: i915_gem_object_pwrite: obj=0xffff92bc05ed9500, offset=0x0, len=0x1000
+            Xorg-1460  [006] 703094.669617: i915_request_queue:   dev=0, hw_id=15, ring=0, ctx=23, seqno=231177, flags=0x0
+            Xorg-1460  [006] 703094.669620: i915_request_add:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231177, global=0
+            Xorg-1460  [006] 703094.669620: i915_request_submit:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231177, global=0
+            Xorg-1460  [006] 703094.669621: i915_request_execute: dev=0, hw_id=15, ring=0, ctx=23, seqno=231177, global=1269373
+            Xorg-1460  [006] 703094.669621: i915_request_in:      dev=0, hw_id=15, ring=0, ctx=23, seqno=231177, prio=0, global=1269373, port=0
+            Xorg-1460  [006] 703094.669635: i915_gem_object_create: obj=0xffff92bc3b2c5b00, size=0x10000
+            Xorg-1460  [006] 703094.669714: i915_gem_object_pwrite: obj=0xffff92bc05ed8c00, offset=0x0, len=0xc80
+          <idle>-0     [005] 703094.669776: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+            Xorg-1460  [006] 703094.669779: i915_gem_object_create: obj=0xffff92bc3b2c4600, size=0xe000
+          <idle>-0     [005] 703094.669779: intel_engine_notify:  dev=0, ring=0, seqno=1269370, waiters=0
+            Xorg-1460  [006] 703094.669831: i915_gem_object_create: obj=0xffff92bc3b2c5200, size=0xe000
+            Xorg-1460  [006] 703094.669859: i915_gem_object_create: obj=0xffff92bc3b2c6100, size=0xe000
+            Xorg-1460  [006] 703094.669950: i915_vma_bind:        obj=0xffff92bc3b2c5b00, offset=0x0000000003350000 size=0x10000 vm=0xffff92bc006c8000
+            Xorg-1460  [006] 703094.669951: i915_vma_bind:        obj=0xffff92bc3b2c4600, offset=0x000000000cb80000 size=0xe000 vm=0xffff92bc006c8000
+            Xorg-1460  [006] 703094.669951: i915_vma_bind:        obj=0xffff92bc3b2c5200, offset=0x000000000cb8e000 size=0xe000 vm=0xffff92bc006c8000
+            Xorg-1460  [006] 703094.669951: i915_vma_bind:        obj=0xffff92bc3b2c6100, offset=0x000000000cb9c000 size=0xe000 vm=0xffff92bc006c8000
+            Xorg-1460  [006] 703094.669957: i915_request_retire:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231174, global=1269370
+            Xorg-1460  [006] 703094.669959: i915_request_queue:   dev=0, hw_id=15, ring=0, ctx=23, seqno=231178, flags=0x0
+            Xorg-1460  [006] 703094.669962: i915_request_add:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231178, global=0
+            Xorg-1460  [006] 703094.669963: i915_request_submit:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231178, global=0
+            Xorg-1460  [006] 703094.669963: i915_request_execute: dev=0, hw_id=15, ring=0, ctx=23, seqno=231178, global=1269374
+            Xorg-1460  [006] 703094.669964: i915_request_in:      dev=0, hw_id=15, ring=0, ctx=23, seqno=231178, prio=0, global=1269374, port=0
+            Xorg-1460  [006] 703094.669998: i915_gem_object_pwrite: obj=0xffff92bc05ebe100, offset=0x0, len=0x400
+            Xorg-1460  [006] 703094.670087: i915_gem_object_create: obj=0xffff92bc19f70000, size=0x3000
+            Xorg-1460  [006] 703094.670146: i915_gem_object_create: obj=0xffff92bc19f70c00, size=0x3000
+            Xorg-1460  [006] 703094.670210: i915_gem_object_pwrite: obj=0xffff92bc1a4f2400, offset=0x0, len=0x400
+            Xorg-1460  [006] 703094.670239: i915_gem_object_create: obj=0xffff92bc413d4000, size=0x3000
+            Xorg-1460  [006] 703094.670287: i915_gem_object_create: obj=0xffff92bc413d5800, size=0x3000
+            Xorg-1460  [006] 703094.670309: i915_gem_object_create: obj=0xffff92bc413d5500, size=0x3000
+            Xorg-1460  [006] 703094.670347: i915_gem_object_create: obj=0xffff92bc413d6700, size=0x3000
+            Xorg-1460  [006] 703094.670390: i915_vma_bind:        obj=0xffff92bc19f70000, offset=0x00000000020cc000 size=0x3000 vm=0xffff92bc006c8000
+            Xorg-1460  [006] 703094.670391: i915_vma_bind:        obj=0xffff92bc19f70c00, offset=0x00000000033df000 size=0x3000 vm=0xffff92bc006c8000
+            Xorg-1460  [006] 703094.670391: i915_vma_bind:        obj=0xffff92bc413d4000, offset=0x00000000033e2000 size=0x3000 vm=0xffff92bc006c8000
+            Xorg-1460  [006] 703094.670392: i915_vma_bind:        obj=0xffff92bc413d5800, offset=0x000000000331e000 size=0x3000 vm=0xffff92bc006c8000
+            Xorg-1460  [006] 703094.670392: i915_vma_bind:        obj=0xffff92bc413d5500, offset=0x0000000003321000 size=0x3000 vm=0xffff92bc006c8000
+            Xorg-1460  [006] 703094.670392: i915_vma_bind:        obj=0xffff92bc413d6700, offset=0x0000000003360000 size=0x3000 vm=0xffff92bc006c8000
+            Xorg-1460  [006] 703094.670395: i915_request_retire:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231175, global=1269371
+            Xorg-1460  [006] 703094.670397: i915_request_queue:   dev=0, hw_id=15, ring=0, ctx=23, seqno=231179, flags=0x0
+            Xorg-1460  [006] 703094.670401: i915_request_add:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231179, global=0
+            Xorg-1460  [006] 703094.670401: i915_request_submit:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231179, global=0
+            Xorg-1460  [006] 703094.670402: i915_request_execute: dev=0, hw_id=15, ring=0, ctx=23, seqno=231179, global=1269375
+            Xorg-1460  [006] 703094.670402: i915_request_in:      dev=0, hw_id=15, ring=0, ctx=23, seqno=231179, prio=0, global=1269375, port=0
+            Xorg-1460  [006] 703094.670458: i915_gem_object_pwrite: obj=0xffff92bc0ca17600, offset=0x0, len=0x400
+            Xorg-1460  [006] 703094.670485: i915_gem_object_create: obj=0xffff92bc413d5b00, size=0x3000
+            Xorg-1460  [006] 703094.670498: i915_gem_object_fault: obj=0xffff92bc413d5b00, GTT index=0 , writable
+            Xorg-1460  [006] 703094.670500: i915_vma_bind:        obj=0xffff92bc413d5b00, offset=0x0000000000887000 size=0x3000 vm=0xffff92bc46465740
+            Xorg-1460  [006] 703094.670501: i915_reg_rw:          write reg=0x101008, len=4, val=(0x1, 0x0)
+            Xorg-1460  [006] 703094.670501: i915_reg_rw:          write reg=0x100090, len=4, val=(0x0, 0x0)
+            Xorg-1460  [006] 703094.670501: i915_reg_rw:          write reg=0x100094, len=4, val=(0x889002, 0x0)
+            Xorg-1460  [006] 703094.670502: i915_reg_rw:          write reg=0x100090, len=4, val=(0x887003, 0x0)
+            Xorg-1460  [006] 703094.670560: i915_vma_bind:        obj=0xffff92bc413d5b00, offset=0x0000000003363000 size=0x3000 vm=0xffff92bc006c8000
+            Xorg-1460  [006] 703094.670560: i915_vma_bind:        obj=0xffff92bc43e2ea00, offset=0x000000000d4ec000 size=0x300000 vm=0xffff92bc006c8000
+            Xorg-1460  [006] 703094.670565: i915_request_retire:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231176, global=1269372
+            Xorg-1460  [006] 703094.670567: i915_request_queue:   dev=0, hw_id=15, ring=0, ctx=23, seqno=231180, flags=0x0
+            Xorg-1460  [006] 703094.670569: i915_request_add:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231180, global=0
+            Xorg-1460  [006] 703094.670569: i915_request_submit:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231180, global=0
+            Xorg-1460  [006] 703094.670570: i915_request_execute: dev=0, hw_id=15, ring=0, ctx=23, seqno=231180, global=1269376
+            Xorg-1460  [006] 703094.670570: i915_request_in:      dev=0, hw_id=15, ring=0, ctx=23, seqno=231180, prio=0, global=1269376, port=0
+          <idle>-0     [005] 703094.671361: i915_request_out:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231180, global=1269376, completed?=1
+     gnome-shell-1592  [007] 703094.671621: i915_request_queue:   dev=0, hw_id=19, ring=0, ctx=26, seqno=222624, flags=0x0
+     gnome-shell-1592  [007] 703094.671632: i915_request_add:     dev=0, hw_id=19, ring=0, ctx=26, seqno=222624, global=0
+     gnome-shell-1592  [007] 703094.671633: i915_request_submit:  dev=0, hw_id=19, ring=0, ctx=26, seqno=222624, global=0
+     gnome-shell-1592  [007] 703094.671634: i915_request_execute: dev=0, hw_id=19, ring=0, ctx=26, seqno=222624, global=1269377
+     gnome-shell-1592  [007] 703094.671634: i915_request_in:      dev=0, hw_id=19, ring=0, ctx=26, seqno=222624, prio=0, global=1269377, port=0
+     gnome-shell-1592  [007] 703094.671652: i915_request_retire:  dev=0, hw_id=19, ring=0, ctx=26, seqno=222623, global=1269369
+            Xorg-1460  [006] 703094.671748: i915_reg_rw:          write reg=0x44404, len=4, val=(0x6ffff07e, 0x0)
+            Xorg-1460  [006] 703094.671765: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c3a, 0x0)
+            Xorg-1460  [006] 703094.671766: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c3a, 0x0)
+            Xorg-1460  [006] 703094.671766: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c3a, 0x0)
+            Xorg-1460  [006] 703094.671767: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c3a, 0x0)
+            Xorg-1460  [006] 703094.671815: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+          <idle>-0     [005] 703094.673551: intel_engine_notify:  dev=0, ring=0, seqno=1269377, waiters=1
+          <idle>-0     [005] 703094.673570: i915_request_out:     dev=0, hw_id=19, ring=0, ctx=26, seqno=222624, global=1269377, completed?=1
+   kworker/u16:0-24531 [007] 703094.673590: i915_reg_rw:          read reg=0x43208, len=4, val=(0x90000000, 0x0)
+   kworker/u16:0-24531 [007] 703094.673606: i915_reg_rw:          write reg=0x43208, len=4, val=(0x10000000, 0x0)
+   kworker/u16:0-24531 [007] 703094.673608: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c3a, 0x0)
+   kworker/u16:0-24531 [007] 703094.673609: i915_pipe_update_start: pipe >c<, frame=0, scanline=72762, min=820, max=1073
+   kworker/u16:0-24531 [007] 703094.673610: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c3a, 0x0)
+   kworker/u16:0-24531 [007] 703094.673611: i915_pipe_update_vblank_evaded: pipe >c<, frame=0, scanline=72762, min=820, max=1073
+   kworker/u16:0-24531 [007] 703094.673611: i915_reg_rw:          write reg=0x68180, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [007] 703094.673611: i915_reg_rw:          write reg=0x68170, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [007] 703094.673612: i915_reg_rw:          write reg=0x68174, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [007] 703094.673612: i915_reg_rw:          write reg=0x68280, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [007] 703094.673612: i915_reg_rw:          write reg=0x68270, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [007] 703094.673612: i915_reg_rw:          write reg=0x68274, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [007] 703094.673616: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c3a, 0x0)
+   kworker/u16:0-24531 [007] 703094.673616: i915_pipe_update_end: pipe >c<, frame=0, scanline=72762
+   kworker/u16:0-24531 [007] 703094.673617: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c3a, 0x0)
+   kworker/u16:0-24531 [007] 703094.673618: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c3a, 0x0)
+          <idle>-0     [005] 703094.677638: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703094.677639: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703094.677640: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c3b, 0x0)
+          <idle>-0     [005] 703094.677641: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c3b, 0x0)
+          <idle>-0     [005] 703094.694338: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703094.694338: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703094.694340: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c3c, 0x0)
+          <idle>-0     [005] 703094.694341: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c3c, 0x0)
+     kworker/7:8-25603 [007] 703094.694378: i915_reg_rw:          read reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/7:8-25603 [007] 703094.694379: i915_reg_rw:          write reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/7:8-25603 [007] 703094.694379: i915_reg_rw:          write reg=0x100100, len=4, val=(0x20000016, 0x0)
+     kworker/7:8-25603 [007] 703094.694379: i915_reg_rw:          write reg=0x100104, len=4, val=(0x0, 0x0)
+     kworker/7:8-25603 [007] 703094.694379: i915_reg_rw:          write reg=0x43208, len=4, val=(0x90000000, 0x0)
+     kworker/7:8-25603 [007] 703094.694380: i915_reg_rw:          write reg=0x50380, len=4, val=(0x4, 0x0)
+          <idle>-0     [005] 703094.711007: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703094.711008: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703094.711010: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c3d, 0x0)
+          <idle>-0     [005] 703094.711011: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c3d, 0x0)
+          <idle>-0     [005] 703094.711012: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c3d, 0x0)
+          <idle>-0     [005] 703094.711013: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c3d, 0x0)
+          <idle>-0     [005] 703094.711013: i915_reg_rw:          write reg=0x44404, len=4, val=(0x6ffff07f, 0x0)
+           vaocl-26050 [004] 703094.802017: i915_ppgtt_create:    dev=0, vm=0xffff92bc43ac8000
+           vaocl-26050 [004] 703094.802029: i915_context_create:  dev=0, ctx=0xffff92bc0b7c1600, ctx_vm=0xffff92bc43ac8000, hw_id=46
+           vaocl-26050 [004] 703094.807300: i915_reg_rw:          read reg=0xd3b0, len=4, val=(0x6000, 0x0)
+           vaocl-26050 [004] 703094.807332: i915_reg_rw:          read reg=0xd3b0, len=4, val=(0x6000, 0x0)
+           vaocl-26050 [004] 703094.807436: i915_ppgtt_create:    dev=0, vm=0xffff92baf067e000
+           vaocl-26050 [004] 703094.807436: i915_context_create:  dev=0, ctx=0xffff92bc0b7c2c00, ctx_vm=0xffff92baf067e000, hw_id=48
+           vaocl-26050 [004] 703094.807447: i915_gem_object_create: obj=0xffff92bc413d3c00, size=0x4000
+           vaocl-26050 [004] 703094.807450: i915_gem_object_create: obj=0xffff92bc413d0900, size=0x4000
+           vaocl-26050 [004] 703094.807454: i915_gem_object_create: obj=0xffff92bc413d3900, size=0x4000
+           vaocl-26050 [004] 703094.807456: i915_gem_object_create: obj=0xffff92bc413d1b00, size=0x4000
+           vaocl-26050 [004] 703094.807459: i915_gem_object_create: obj=0xffff92bc413d3000, size=0x4000
+           vaocl-26050 [004] 703094.807461: i915_gem_object_create: obj=0xffff92bc413d1500, size=0x4000
+           vaocl-26050 [004] 703094.807463: i915_gem_object_create: obj=0xffff92bc413d1800, size=0x4000
+           vaocl-26050 [004] 703094.807466: i915_gem_object_create: obj=0xffff92bc413d3300, size=0x4000
+           vaocl-26050 [004] 703094.807469: i915_gem_object_create: obj=0xffff92bc413d2400, size=0x4000
+           vaocl-26050 [004] 703094.807472: i915_gem_object_create: obj=0xffff92bc413d0f00, size=0x4000
+           vaocl-26050 [004] 703094.807475: i915_gem_object_create: obj=0xffff92bc413d2d00, size=0x4000
+           vaocl-26050 [004] 703094.807477: i915_gem_object_create: obj=0xffff92bc413d2a00, size=0x4000
+           vaocl-26050 [004] 703094.807480: i915_gem_object_create: obj=0xffff92bc413d0000, size=0x4000
+           vaocl-26050 [004] 703094.807483: i915_gem_object_create: obj=0xffff92bc413d1200, size=0x4000
+           vaocl-26050 [004] 703094.807485: i915_gem_object_create: obj=0xffff92bc413d0600, size=0x4000
+           vaocl-26050 [004] 703094.807488: i915_gem_object_create: obj=0xffff92ba8de9ad00, size=0x4000
+           vaocl-26050 [004] 703094.807491: i915_gem_object_create: obj=0xffff92ba8de9a700, size=0x4000
+           vaocl-26050 [004] 703094.807493: i915_gem_object_create: obj=0xffff92ba8de98900, size=0x4000
+           vaocl-26050 [004] 703094.807496: i915_gem_object_create: obj=0xffff92ba8de9b000, size=0x4000
+           vaocl-26050 [004] 703094.807498: i915_gem_object_create: obj=0xffff92ba8de99800, size=0x4000
+           vaocl-26050 [004] 703094.807500: i915_gem_object_create: obj=0xffff92ba8de99500, size=0x4000
+           vaocl-26050 [004] 703094.807505: i915_gem_object_create: obj=0xffff92ba8de9bc00, size=0x4000
+           vaocl-26050 [004] 703094.807508: i915_gem_object_create: obj=0xffff92ba8de9a100, size=0x4000
+           vaocl-26050 [004] 703094.807510: i915_gem_object_create: obj=0xffff92ba8de98000, size=0x4000
+           vaocl-26050 [004] 703094.807512: i915_gem_object_create: obj=0xffff92ba8de99e00, size=0x4000
+           vaocl-26050 [004] 703094.807514: i915_gem_object_create: obj=0xffff92ba8de9b300, size=0x4000
+           vaocl-26050 [004] 703094.807517: i915_gem_object_create: obj=0xffff92ba8de98600, size=0x4000
+           vaocl-26050 [004] 703094.807520: i915_gem_object_create: obj=0xffff92ba8de98c00, size=0x4000
+           vaocl-26050 [004] 703094.807522: i915_gem_object_create: obj=0xffff92ba8de98f00, size=0x4000
+           vaocl-26050 [004] 703094.807524: i915_gem_object_create: obj=0xffff92ba8de9b600, size=0x4000
+           vaocl-26050 [004] 703094.807527: i915_gem_object_create: obj=0xffff92ba8de9b900, size=0x4000
+           vaocl-26050 [004] 703094.807529: i915_gem_object_create: obj=0xffff92ba8de99200, size=0x4000
+           vaocl-26050 [004] 703094.807559: i915_gem_object_create: obj=0xffff92ba8de98300, size=0x2000
+           vaocl-26050 [004] 703094.807594: i915_ppgtt_create:    dev=0, vm=0xffff92bc3bea0000
+           vaocl-26050 [004] 703094.807594: i915_context_create:  dev=0, ctx=0xffff92bc0b7c3600, ctx_vm=0xffff92bc3bea0000, hw_id=49
+           vaocl-26050 [004] 703094.807655: i915_gem_object_create: obj=0xffff92ba8de99b00, size=0x60000
+           vaocl-26050 [004] 703094.807785: i915_gem_object_create: obj=0xffff92bb1a524900, size=0x1000
+           vaocl-26050 [004] 703094.807913: i915_gem_object_create: obj=0xffff92bb1a524c00, size=0xa00000
+           vaocl-26050 [004] 703094.807916: i915_gem_object_create: obj=0xffff92bb1a527300, size=0xa00000
+           vaocl-26050 [004] 703094.807919: i915_gem_object_create: obj=0xffff92bb1a526a00, size=0xa00000
+           vaocl-26050 [004] 703094.807921: i915_gem_object_create: obj=0xffff92bb1a524600, size=0x1000
+           vaocl-26050 [004] 703094.807924: i915_gem_object_create: obj=0xffff92bb1a526400, size=0x1000
+           vaocl-26050 [004] 703094.807926: i915_gem_object_create: obj=0xffff92bb1a524000, size=0x1000
+           vaocl-26050 [004] 703094.807939: i915_gem_object_create: obj=0xffff92bb1a527c00, size=0x1000
+           vaocl-26050 [004] 703094.807958: i915_gem_object_create: obj=0xffff92bb1a526700, size=0x1000
+           vaocl-26050 [004] 703094.807986: i915_gem_object_create: obj=0xffff92bb1a525200, size=0x3000
+           vaocl-26050 [004] 703094.807995: i915_gem_object_pwrite: obj=0xffff92bb1a525200, offset=0x0, len=0x96
+           vaocl-26050 [004] 703094.808691: i915_ppgtt_create:    dev=0, vm=0xffff92bc45f84000
+           vaocl-26050 [004] 703094.808691: i915_context_create:  dev=0, ctx=0xffff92bc0b7c3a00, ctx_vm=0xffff92bc45f84000, hw_id=50
+            Xorg-1460  [007] 703094.809069: i915_request_retire:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231177, global=1269373
+            Xorg-1460  [007] 703094.809078: i915_request_queue:   dev=0, hw_id=15, ring=0, ctx=23, seqno=231181, flags=0x0
+            Xorg-1460  [007] 703094.809082: i915_request_add:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231181, global=0
+            Xorg-1460  [007] 703094.809083: i915_request_submit:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231181, global=0
+            Xorg-1460  [007] 703094.809110: i915_request_execute: dev=0, hw_id=15, ring=0, ctx=23, seqno=231181, global=1269378
+            Xorg-1460  [007] 703094.809111: i915_request_in:      dev=0, hw_id=15, ring=0, ctx=23, seqno=231181, prio=0, global=1269378, port=0
+            Xorg-1460  [007] 703094.809112: i915_request_retire:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231178, global=1269374
+            Xorg-1460  [007] 703094.809116: i915_request_retire:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231179, global=1269375
+            Xorg-1460  [007] 703094.809140: i915_request_retire:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231180, global=1269376
+            Xorg-1460  [007] 703094.809223: i915_gem_object_create: obj=0xffff92ba8dfb0000, size=0x6000
+           vaocl-26050 [004] 703094.809246: i915_ppgtt_create:    dev=0, vm=0xffff92b876482000
+            Xorg-1460  [007] 703094.809247: i915_gem_object_fault: obj=0xffff92ba8dfb0000, GTT index=0 , writable
+           vaocl-26050 [004] 703094.809247: i915_context_create:  dev=0, ctx=0xffff92bc0b7c0400, ctx_vm=0xffff92b876482000, hw_id=52
+            Xorg-1460  [007] 703094.809252: i915_vma_bind:        obj=0xffff92ba8dfb0000, offset=0x0000000000912000 size=0x6000 vm=0xffff92bc46465740
+            Xorg-1460  [007] 703094.809254: i915_reg_rw:          write reg=0x101008, len=4, val=(0x1, 0x0)
+            Xorg-1460  [007] 703094.809255: i915_reg_rw:          write reg=0x100008, len=4, val=(0x0, 0x0)
+            Xorg-1460  [007] 703094.809255: i915_reg_rw:          write reg=0x10000c, len=4, val=(0x917000, 0x0)
+            Xorg-1460  [007] 703094.809255: i915_reg_rw:          write reg=0x100008, len=4, val=(0x912003, 0x0)
+           vaocl-26050 [004] 703094.809265: i915_ppgtt_create:    dev=0, vm=0xffff92b88479a000
+           vaocl-26050 [004] 703094.809265: i915_context_create:  dev=0, ctx=0xffff92bc0b7c2200, ctx_vm=0xffff92b88479a000, hw_id=53
+           vaocl-26050 [004] 703094.809272: i915_reg_rw:          read reg=0x235c, len=4, val=(0xc, 0x0)
+           vaocl-26050 [004] 703094.809272: i915_reg_rw:          read reg=0x2358, len=4, val=(0x76831936, 0x0)
+           vaocl-26050 [004] 703094.809272: i915_reg_rw:          read reg=0x235c, len=4, val=(0xc, 0x0)
+            Xorg-1460  [007] 703094.809349: i915_vma_bind:        obj=0xffff92ba8dfb0000, offset=0x000000000d7ec000 size=0x6000 vm=0xffff92bc006c8000
+            Xorg-1460  [007] 703094.809353: i915_request_queue:   dev=0, hw_id=15, ring=0, ctx=23, seqno=231182, flags=0x0
+            Xorg-1460  [007] 703094.809357: i915_request_add:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231182, global=0
+            Xorg-1460  [007] 703094.809357: i915_request_submit:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231182, global=0
+            Xorg-1460  [007] 703094.809358: i915_request_execute: dev=0, hw_id=15, ring=0, ctx=23, seqno=231182, global=1269379
+            Xorg-1460  [007] 703094.809358: i915_request_in:      dev=0, hw_id=15, ring=0, ctx=23, seqno=231182, prio=0, global=1269379, port=0
+          <idle>-0     [005] 703094.811115: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+          <idle>-0     [005] 703094.811117: intel_engine_notify:  dev=0, ring=0, seqno=1269378, waiters=0
+          <idle>-0     [005] 703094.811806: i915_request_out:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231182, global=1269379, completed?=1
+     gnome-shell-1592  [001] 703094.816112: i915_request_queue:   dev=0, hw_id=19, ring=0, ctx=26, seqno=222625, flags=0x0
+     gnome-shell-1592  [001] 703094.816141: i915_request_add:     dev=0, hw_id=19, ring=0, ctx=26, seqno=222625, global=0
+     gnome-shell-1592  [001] 703094.816143: i915_request_submit:  dev=0, hw_id=19, ring=0, ctx=26, seqno=222625, global=0
+     gnome-shell-1592  [001] 703094.816145: i915_request_execute: dev=0, hw_id=19, ring=0, ctx=26, seqno=222625, global=1269380
+     gnome-shell-1592  [001] 703094.816146: i915_request_in:      dev=0, hw_id=19, ring=0, ctx=26, seqno=222625, prio=0, global=1269380, port=0
+     gnome-shell-1592  [001] 703094.816147: i915_request_retire:  dev=0, hw_id=19, ring=0, ctx=26, seqno=222624, global=1269377
+            Xorg-1460  [007] 703094.816192: i915_reg_rw:          write reg=0x44404, len=4, val=(0x6ffff07e, 0x0)
+            Xorg-1460  [007] 703094.816193: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c43, 0x0)
+            Xorg-1460  [007] 703094.816195: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c43, 0x0)
+            Xorg-1460  [007] 703094.816195: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c43, 0x0)
+            Xorg-1460  [007] 703094.816196: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c43, 0x0)
+            Xorg-1460  [007] 703094.816236: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+          <idle>-0     [005] 703094.818293: intel_engine_notify:  dev=0, ring=0, seqno=1269380, waiters=1
+          <idle>-0     [005] 703094.818314: i915_request_out:     dev=0, hw_id=19, ring=0, ctx=26, seqno=222625, global=1269380, completed?=1
+   kworker/u16:0-24531 [002] 703094.818317: i915_reg_rw:          read reg=0x43208, len=4, val=(0x90000000, 0x0)
+   kworker/u16:0-24531 [002] 703094.818322: i915_reg_rw:          write reg=0x43208, len=4, val=(0x10000000, 0x0)
+   kworker/u16:0-24531 [002] 703094.818325: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c43, 0x0)
+   kworker/u16:0-24531 [002] 703094.818343: i915_pipe_update_start: pipe >c<, frame=0, scanline=72771, min=463, max=1073
+   kworker/u16:0-24531 [002] 703094.818344: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c43, 0x0)
+   kworker/u16:0-24531 [002] 703094.818344: i915_pipe_update_vblank_evaded: pipe >c<, frame=0, scanline=72771, min=465, max=1073
+   kworker/u16:0-24531 [002] 703094.818345: i915_reg_rw:          write reg=0x68180, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [002] 703094.818345: i915_reg_rw:          write reg=0x68170, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [002] 703094.818345: i915_reg_rw:          write reg=0x68174, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [002] 703094.818345: i915_reg_rw:          write reg=0x68280, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [002] 703094.818346: i915_reg_rw:          write reg=0x68270, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [002] 703094.818346: i915_reg_rw:          write reg=0x68274, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [002] 703094.818350: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c43, 0x0)
+   kworker/u16:0-24531 [002] 703094.818350: i915_pipe_update_end: pipe >c<, frame=0, scanline=72771
+   kworker/u16:0-24531 [002] 703094.818351: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c43, 0x0)
+   kworker/u16:0-24531 [002] 703094.818368: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c43, 0x0)
+            Xorg-1460  [007] 703094.821279: i915_gem_object_fault: obj=0xffff92bc0ca15200, GTT index=0 , writable
+            Xorg-1460  [007] 703094.821283: i915_vma_bind:        obj=0xffff92bc0ca15200, offset=0x000000000081e000 size=0x1000 vm=0xffff92bc46465740
+            Xorg-1460  [007] 703094.821284: i915_reg_rw:          write reg=0x101008, len=4, val=(0x1, 0x0)
+            Xorg-1460  [007] 703094.821285: i915_reg_rw:          write reg=0x1000c8, len=4, val=(0x0, 0x0)
+            Xorg-1460  [007] 703094.821286: i915_reg_rw:          write reg=0x1000cc, len=4, val=(0x81e000, 0x0)
+            Xorg-1460  [007] 703094.821286: i915_reg_rw:          write reg=0x1000c8, len=4, val=(0x81e003, 0x0)
+            Xorg-1460  [007] 703094.821359: i915_gem_object_fault: obj=0xffff92bc0ca15500, GTT index=0 , writable
+            Xorg-1460  [007] 703094.821360: i915_vma_bind:        obj=0xffff92bc0ca15500, offset=0x0000000000824000 size=0x1000 vm=0xffff92bc46465740
+            Xorg-1460  [007] 703094.821361: i915_reg_rw:          write reg=0x101008, len=4, val=(0x1, 0x0)
+            Xorg-1460  [007] 703094.821362: i915_reg_rw:          write reg=0x100098, len=4, val=(0x0, 0x0)
+            Xorg-1460  [007] 703094.821362: i915_reg_rw:          write reg=0x10009c, len=4, val=(0x824000, 0x0)
+            Xorg-1460  [007] 703094.821362: i915_reg_rw:          write reg=0x100098, len=4, val=(0x824003, 0x0)
+            Xorg-1460  [007] 703094.821467: i915_gem_object_fault: obj=0xffff92bc0ca16100, GTT index=0 , writable
+            Xorg-1460  [007] 703094.821469: i915_vma_bind:        obj=0xffff92bc0ca16100, offset=0x000000000082d000 size=0x1000 vm=0xffff92bc46465740
+            Xorg-1460  [007] 703094.821469: i915_reg_rw:          write reg=0x101008, len=4, val=(0x1, 0x0)
+            Xorg-1460  [007] 703094.821470: i915_reg_rw:          write reg=0x1000f8, len=4, val=(0x0, 0x0)
+            Xorg-1460  [007] 703094.821470: i915_reg_rw:          write reg=0x1000fc, len=4, val=(0x82d000, 0x0)
+            Xorg-1460  [007] 703094.821470: i915_reg_rw:          write reg=0x1000f8, len=4, val=(0x82d003, 0x0)
+            Xorg-1460  [007] 703094.821505: i915_gem_object_fault: obj=0xffff92bc0ca15e00, GTT index=0 , writable
+            Xorg-1460  [007] 703094.821506: i915_vma_bind:        obj=0xffff92bc0ca15e00, offset=0x000000000082e000 size=0x1000 vm=0xffff92bc46465740
+            Xorg-1460  [007] 703094.821507: i915_reg_rw:          write reg=0x101008, len=4, val=(0x1, 0x0)
+            Xorg-1460  [007] 703094.821507: i915_reg_rw:          write reg=0x1000e0, len=4, val=(0x0, 0x0)
+            Xorg-1460  [007] 703094.821508: i915_reg_rw:          write reg=0x1000e4, len=4, val=(0x82e000, 0x0)
+            Xorg-1460  [007] 703094.821508: i915_reg_rw:          write reg=0x1000e0, len=4, val=(0x82e003, 0x0)
+            Xorg-1460  [007] 703094.821564: i915_gem_object_fault: obj=0xffff92bc0ca17c00, GTT index=0 , writable
+            Xorg-1460  [007] 703094.821566: i915_vma_bind:        obj=0xffff92bc0ca17c00, offset=0x0000000000834000 size=0x1000 vm=0xffff92bc46465740
+            Xorg-1460  [007] 703094.821566: i915_reg_rw:          write reg=0x101008, len=4, val=(0x1, 0x0)
+            Xorg-1460  [007] 703094.821567: i915_reg_rw:          write reg=0x1000d8, len=4, val=(0x0, 0x0)
+            Xorg-1460  [007] 703094.821567: i915_reg_rw:          write reg=0x1000dc, len=4, val=(0x834000, 0x0)
+            Xorg-1460  [007] 703094.821567: i915_reg_rw:          write reg=0x1000d8, len=4, val=(0x834003, 0x0)
+            Xorg-1460  [007] 703094.821630: i915_gem_object_fault: obj=0xffff92bc0ca15b00, GTT index=0 , writable
+            Xorg-1460  [007] 703094.821631: i915_vma_bind:        obj=0xffff92bc0ca15b00, offset=0x0000000000835000 size=0x1000 vm=0xffff92bc46465740
+            Xorg-1460  [007] 703094.821631: i915_reg_rw:          write reg=0x101008, len=4, val=(0x1, 0x0)
+            Xorg-1460  [007] 703094.821632: i915_reg_rw:          write reg=0x1000a0, len=4, val=(0x0, 0x0)
+            Xorg-1460  [007] 703094.821632: i915_reg_rw:          write reg=0x1000a4, len=4, val=(0x835000, 0x0)
+            Xorg-1460  [007] 703094.821632: i915_reg_rw:          write reg=0x1000a0, len=4, val=(0x835003, 0x0)
+            Xorg-1460  [007] 703094.821696: i915_gem_object_fault: obj=0xffff92bc0ca16400, GTT index=0 , writable
+            Xorg-1460  [007] 703094.821697: i915_vma_bind:        obj=0xffff92bc0ca16400, offset=0x000000000083e000 size=0x1000 vm=0xffff92bc46465740
+            Xorg-1460  [007] 703094.821698: i915_reg_rw:          write reg=0x101008, len=4, val=(0x1, 0x0)
+            Xorg-1460  [007] 703094.821702: i915_reg_rw:          write reg=0x100000, len=4, val=(0x0, 0x0)
+            Xorg-1460  [007] 703094.821702: i915_reg_rw:          write reg=0x100004, len=4, val=(0x83e000, 0x0)
+            Xorg-1460  [007] 703094.821703: i915_reg_rw:          write reg=0x100000, len=4, val=(0x83e003, 0x0)
+            Xorg-1460  [007] 703094.821771: i915_request_retire:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231181, global=1269378
+            Xorg-1460  [007] 703094.821775: i915_request_queue:   dev=0, hw_id=15, ring=0, ctx=23, seqno=231183, flags=0x0
+            Xorg-1460  [007] 703094.821780: i915_request_add:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231183, global=0
+            Xorg-1460  [007] 703094.821781: i915_request_submit:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231183, global=0
+            Xorg-1460  [007] 703094.821782: i915_request_execute: dev=0, hw_id=15, ring=0, ctx=23, seqno=231183, global=1269381
+            Xorg-1460  [007] 703094.821783: i915_request_in:      dev=0, hw_id=15, ring=0, ctx=23, seqno=231183, prio=0, global=1269381, port=0
+            Xorg-1460  [007] 703094.821784: i915_request_retire:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231182, global=1269379
+          <idle>-0     [005] 703094.822555: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+          <idle>-0     [005] 703094.822558: intel_engine_notify:  dev=0, ring=0, seqno=1269381, waiters=0
+          <idle>-0     [005] 703094.822559: i915_request_out:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231183, global=1269381, completed?=1
+            Xorg-1460  [007] 703094.823828: i915_request_queue:   dev=0, hw_id=15, ring=0, ctx=23, seqno=231184, flags=0x0
+            Xorg-1460  [007] 703094.823832: i915_request_add:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231184, global=0
+            Xorg-1460  [007] 703094.823833: i915_request_submit:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231184, global=0
+            Xorg-1460  [007] 703094.823834: i915_request_execute: dev=0, hw_id=15, ring=0, ctx=23, seqno=231184, global=1269382
+            Xorg-1460  [007] 703094.823835: i915_request_in:      dev=0, hw_id=15, ring=0, ctx=23, seqno=231184, prio=0, global=1269382, port=0
+            Xorg-1460  [007] 703094.823836: i915_request_retire:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231183, global=1269381
+            Xorg-1460  [007] 703094.823908: i915_request_queue:   dev=0, hw_id=15, ring=0, ctx=23, seqno=231185, flags=0x0
+            Xorg-1460  [007] 703094.823910: i915_request_add:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231185, global=0
+            Xorg-1460  [007] 703094.823911: i915_request_submit:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231185, global=0
+            Xorg-1460  [007] 703094.823912: i915_request_execute: dev=0, hw_id=15, ring=0, ctx=23, seqno=231185, global=1269383
+            Xorg-1460  [007] 703094.823912: i915_request_in:      dev=0, hw_id=15, ring=0, ctx=23, seqno=231185, prio=0, global=1269383, port=0
+          <idle>-0     [005] 703094.826439: i915_request_out:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231185, global=1269383, completed?=1
+          <idle>-0     [005] 703094.827486: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703094.827487: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703094.827491: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c44, 0x0)
+          <idle>-0     [005] 703094.827493: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c44, 0x0)
+     gnome-shell-1592  [001] 703094.831523: i915_request_queue:   dev=0, hw_id=19, ring=0, ctx=26, seqno=222626, flags=0x0
+     gnome-shell-1592  [001] 703094.831533: i915_request_add:     dev=0, hw_id=19, ring=0, ctx=26, seqno=222626, global=0
+     gnome-shell-1592  [001] 703094.831533: i915_request_submit:  dev=0, hw_id=19, ring=0, ctx=26, seqno=222626, global=0
+     gnome-shell-1592  [001] 703094.831535: i915_request_execute: dev=0, hw_id=19, ring=0, ctx=26, seqno=222626, global=1269384
+     gnome-shell-1592  [001] 703094.831535: i915_request_in:      dev=0, hw_id=19, ring=0, ctx=26, seqno=222626, prio=0, global=1269384, port=0
+     gnome-shell-1592  [001] 703094.831536: i915_request_retire:  dev=0, hw_id=19, ring=0, ctx=26, seqno=222625, global=1269380
+            Xorg-1460  [007] 703094.831634: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+          <idle>-0     [005] 703094.833692: intel_engine_notify:  dev=0, ring=0, seqno=1269384, waiters=1
+          <idle>-0     [005] 703094.833696: i915_request_out:     dev=0, hw_id=19, ring=0, ctx=26, seqno=222626, global=1269384, completed?=1
+   kworker/u16:0-24531 [002] 703094.833720: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c44, 0x0)
+   kworker/u16:0-24531 [002] 703094.833722: i915_pipe_update_start: pipe >c<, frame=0, scanline=72772, min=378, max=1073
+   kworker/u16:0-24531 [002] 703094.833723: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c44, 0x0)
+   kworker/u16:0-24531 [002] 703094.833724: i915_pipe_update_vblank_evaded: pipe >c<, frame=0, scanline=72772, min=378, max=1073
+   kworker/u16:0-24531 [002] 703094.833724: i915_reg_rw:          write reg=0x68180, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [002] 703094.833724: i915_reg_rw:          write reg=0x68170, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [002] 703094.833724: i915_reg_rw:          write reg=0x68174, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [002] 703094.833725: i915_reg_rw:          write reg=0x68280, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [002] 703094.833725: i915_reg_rw:          write reg=0x68270, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [002] 703094.833725: i915_reg_rw:          write reg=0x68274, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [002] 703094.833728: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c44, 0x0)
+   kworker/u16:0-24531 [002] 703094.833729: i915_pipe_update_end: pipe >c<, frame=0, scanline=72772
+   kworker/u16:0-24531 [002] 703094.833730: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c44, 0x0)
+   kworker/u16:0-24531 [002] 703094.833731: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c44, 0x0)
+          <idle>-0     [005] 703094.844162: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703094.844163: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703094.844165: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c45, 0x0)
+          <idle>-0     [005] 703094.844166: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c45, 0x0)
+          <idle>-0     [005] 703094.860828: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703094.860828: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703094.860830: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c46, 0x0)
+          <idle>-0     [005] 703094.860832: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c46, 0x0)
+     kworker/2:0-23988 [002] 703094.860865: i915_reg_rw:          read reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/2:0-23988 [002] 703094.860866: i915_reg_rw:          write reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/2:0-23988 [002] 703094.860866: i915_reg_rw:          write reg=0x100100, len=4, val=(0x20000009, 0x0)
+     kworker/2:0-23988 [002] 703094.860866: i915_reg_rw:          write reg=0x100104, len=4, val=(0x0, 0x0)
+     kworker/2:0-23988 [002] 703094.860866: i915_reg_rw:          write reg=0x43208, len=4, val=(0x90000000, 0x0)
+     kworker/2:0-23988 [002] 703094.860866: i915_reg_rw:          write reg=0x50380, len=4, val=(0x4, 0x0)
+            Xorg-1460  [007] 703094.868283: i915_request_retire:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231184, global=1269382
+            Xorg-1460  [007] 703094.868289: i915_request_queue:   dev=0, hw_id=15, ring=0, ctx=23, seqno=231186, flags=0x0
+            Xorg-1460  [007] 703094.868294: i915_request_add:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231186, global=0
+            Xorg-1460  [007] 703094.868295: i915_request_submit:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231186, global=0
+            Xorg-1460  [007] 703094.868297: i915_request_execute: dev=0, hw_id=15, ring=0, ctx=23, seqno=231186, global=1269385
+            Xorg-1460  [007] 703094.868299: i915_request_in:      dev=0, hw_id=15, ring=0, ctx=23, seqno=231186, prio=0, global=1269385, port=0
+            Xorg-1460  [007] 703094.868314: i915_request_retire:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231185, global=1269383
+          <idle>-0     [005] 703094.868723: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+          <idle>-0     [005] 703094.868726: intel_engine_notify:  dev=0, ring=0, seqno=1269385, waiters=0
+          <idle>-0     [005] 703094.868728: i915_request_out:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231186, global=1269385, completed?=1
+          <idle>-0     [005] 703094.877482: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703094.877483: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703094.877484: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c47, 0x0)
+          <idle>-0     [005] 703094.877485: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c47, 0x0)
+          <idle>-0     [005] 703094.877486: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c47, 0x0)
+          <idle>-0     [005] 703094.877486: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c47, 0x0)
+          <idle>-0     [005] 703094.877487: i915_reg_rw:          write reg=0x44404, len=4, val=(0x6ffff07f, 0x0)
+     gnome-shell-1592  [001] 703094.881117: i915_request_queue:   dev=0, hw_id=19, ring=0, ctx=26, seqno=222627, flags=0x0
+     gnome-shell-1592  [001] 703094.881125: i915_request_add:     dev=0, hw_id=19, ring=0, ctx=26, seqno=222627, global=0
+     gnome-shell-1592  [001] 703094.881126: i915_request_submit:  dev=0, hw_id=19, ring=0, ctx=26, seqno=222627, global=0
+     gnome-shell-1592  [001] 703094.881126: i915_request_execute: dev=0, hw_id=19, ring=0, ctx=26, seqno=222627, global=1269386
+     gnome-shell-1592  [001] 703094.881127: i915_request_in:      dev=0, hw_id=19, ring=0, ctx=26, seqno=222627, prio=0, global=1269386, port=0
+     gnome-shell-1592  [001] 703094.881128: i915_request_retire:  dev=0, hw_id=19, ring=0, ctx=26, seqno=222626, global=1269384
+            Xorg-1460  [007] 703094.881187: i915_reg_rw:          write reg=0x44404, len=4, val=(0x6ffff07e, 0x0)
+            Xorg-1460  [007] 703094.881188: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c47, 0x0)
+            Xorg-1460  [007] 703094.881189: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c47, 0x0)
+            Xorg-1460  [007] 703094.881190: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c47, 0x0)
+            Xorg-1460  [007] 703094.881190: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c47, 0x0)
+            Xorg-1460  [007] 703094.881226: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+          <idle>-0     [005] 703094.883449: intel_engine_notify:  dev=0, ring=0, seqno=1269386, waiters=1
+          <idle>-0     [005] 703094.883453: i915_request_out:     dev=0, hw_id=19, ring=0, ctx=26, seqno=222627, global=1269386, completed?=1
+   kworker/u16:0-24531 [006] 703094.883462: i915_reg_rw:          read reg=0x43208, len=4, val=(0x90000000, 0x0)
+   kworker/u16:0-24531 [006] 703094.883463: i915_reg_rw:          write reg=0x43208, len=4, val=(0x10000000, 0x0)
+   kworker/u16:0-24531 [006] 703094.883465: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c47, 0x0)
+   kworker/u16:0-24531 [006] 703094.883466: i915_pipe_update_start: pipe >c<, frame=0, scanline=72775, min=360, max=1073
+   kworker/u16:0-24531 [006] 703094.883467: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c47, 0x0)
+   kworker/u16:0-24531 [006] 703094.883468: i915_pipe_update_vblank_evaded: pipe >c<, frame=0, scanline=72775, min=360, max=1073
+   kworker/u16:0-24531 [006] 703094.883468: i915_reg_rw:          write reg=0x68180, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [006] 703094.883468: i915_reg_rw:          write reg=0x68170, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [006] 703094.883468: i915_reg_rw:          write reg=0x68174, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [006] 703094.883469: i915_reg_rw:          write reg=0x68280, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [006] 703094.883469: i915_reg_rw:          write reg=0x68270, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [006] 703094.883469: i915_reg_rw:          write reg=0x68274, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [006] 703094.883473: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c47, 0x0)
+   kworker/u16:0-24531 [006] 703094.883473: i915_pipe_update_end: pipe >c<, frame=0, scanline=72775
+   kworker/u16:0-24531 [006] 703094.883474: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c47, 0x0)
+   kworker/u16:0-24531 [006] 703094.883475: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c47, 0x0)
+            Xorg-1460  [007] 703094.883673: i915_request_queue:   dev=0, hw_id=15, ring=0, ctx=23, seqno=231187, flags=0x0
+            Xorg-1460  [007] 703094.883678: i915_request_add:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231187, global=0
+            Xorg-1460  [007] 703094.883678: i915_request_submit:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231187, global=0
+            Xorg-1460  [007] 703094.883680: i915_request_execute: dev=0, hw_id=15, ring=0, ctx=23, seqno=231187, global=1269387
+            Xorg-1460  [007] 703094.883680: i915_request_in:      dev=0, hw_id=15, ring=0, ctx=23, seqno=231187, prio=0, global=1269387, port=0
+            Xorg-1460  [007] 703094.883682: i915_request_retire:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231186, global=1269385
+            Xorg-1460  [007] 703094.883764: i915_request_queue:   dev=0, hw_id=15, ring=0, ctx=23, seqno=231188, flags=0x0
+            Xorg-1460  [007] 703094.883767: i915_request_add:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231188, global=0
+            Xorg-1460  [007] 703094.883768: i915_request_submit:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231188, global=0
+            Xorg-1460  [007] 703094.883769: i915_request_execute: dev=0, hw_id=15, ring=0, ctx=23, seqno=231188, global=1269388
+            Xorg-1460  [007] 703094.883769: i915_request_in:      dev=0, hw_id=15, ring=0, ctx=23, seqno=231188, prio=0, global=1269388, port=0
+          <idle>-0     [005] 703094.885597: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+          <idle>-0     [005] 703094.885601: intel_engine_notify:  dev=0, ring=0, seqno=1269387, waiters=0
+          <idle>-0     [005] 703094.886202: i915_request_out:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231188, global=1269388, completed?=1
+          <idle>-0     [005] 703094.894128: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703094.894129: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703094.894131: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c48, 0x0)
+          <idle>-0     [005] 703094.894133: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c48, 0x0)
+     gnome-shell-1592  [001] 703094.897566: i915_request_queue:   dev=0, hw_id=19, ring=0, ctx=26, seqno=222628, flags=0x0
+     gnome-shell-1592  [001] 703094.897574: i915_request_add:     dev=0, hw_id=19, ring=0, ctx=26, seqno=222628, global=0
+     gnome-shell-1592  [001] 703094.897575: i915_request_submit:  dev=0, hw_id=19, ring=0, ctx=26, seqno=222628, global=0
+     gnome-shell-1592  [001] 703094.897577: i915_request_execute: dev=0, hw_id=19, ring=0, ctx=26, seqno=222628, global=1269389
+     gnome-shell-1592  [001] 703094.897578: i915_request_in:      dev=0, hw_id=19, ring=0, ctx=26, seqno=222628, prio=0, global=1269389, port=0
+     gnome-shell-1592  [001] 703094.897579: i915_request_retire:  dev=0, hw_id=19, ring=0, ctx=26, seqno=222627, global=1269386
+            Xorg-1460  [000] 703094.897665: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+          <idle>-0     [005] 703094.899706: intel_engine_notify:  dev=0, ring=0, seqno=1269389, waiters=1
+   kworker/u16:0-24531 [001] 703094.899710: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c48, 0x0)
+          <idle>-0     [005] 703094.899711: i915_request_out:     dev=0, hw_id=19, ring=0, ctx=26, seqno=222628, global=1269389, completed?=1
+   kworker/u16:0-24531 [001] 703094.899711: i915_pipe_update_start: pipe >c<, frame=0, scanline=72776, min=332, max=1073
+   kworker/u16:0-24531 [001] 703094.899712: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c48, 0x0)
+   kworker/u16:0-24531 [001] 703094.899713: i915_pipe_update_vblank_evaded: pipe >c<, frame=0, scanline=72776, min=332, max=1073
+   kworker/u16:0-24531 [001] 703094.899713: i915_reg_rw:          write reg=0x68180, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [001] 703094.899714: i915_reg_rw:          write reg=0x68170, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [001] 703094.899714: i915_reg_rw:          write reg=0x68174, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [001] 703094.899714: i915_reg_rw:          write reg=0x68280, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [001] 703094.899714: i915_reg_rw:          write reg=0x68270, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [001] 703094.899715: i915_reg_rw:          write reg=0x68274, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [001] 703094.899719: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c48, 0x0)
+   kworker/u16:0-24531 [001] 703094.899719: i915_pipe_update_end: pipe >c<, frame=0, scanline=72776
+   kworker/u16:0-24531 [001] 703094.899720: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c48, 0x0)
+   kworker/u16:0-24531 [001] 703094.899721: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c48, 0x0)
+          <idle>-0     [005] 703094.910816: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703094.910817: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703094.910818: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c49, 0x0)
+          <idle>-0     [005] 703094.910818: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c49, 0x0)
+          <idle>-0     [005] 703094.927488: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703094.927488: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703094.927490: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c4a, 0x0)
+          <idle>-0     [005] 703094.927491: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c4a, 0x0)
+     kworker/6:1-21452 [006] 703094.927522: i915_reg_rw:          read reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/6:1-21452 [006] 703094.927523: i915_reg_rw:          write reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/6:1-21452 [006] 703094.927523: i915_reg_rw:          write reg=0x100100, len=4, val=(0x2000000d, 0x0)
+     kworker/6:1-21452 [006] 703094.927523: i915_reg_rw:          write reg=0x100104, len=4, val=(0x0, 0x0)
+     kworker/6:1-21452 [006] 703094.927523: i915_reg_rw:          write reg=0x43208, len=4, val=(0x90000000, 0x0)
+     kworker/6:1-21452 [006] 703094.927523: i915_reg_rw:          write reg=0x50380, len=4, val=(0x4, 0x0)
+          <idle>-0     [005] 703094.944149: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703094.944149: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703094.944150: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c4b, 0x0)
+          <idle>-0     [005] 703094.944151: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c4b, 0x0)
+          <idle>-0     [005] 703094.944152: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c4b, 0x0)
+          <idle>-0     [005] 703094.944153: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c4b, 0x0)
+          <idle>-0     [005] 703094.944154: i915_reg_rw:          write reg=0x44404, len=4, val=(0x6ffff07f, 0x0)
+           vaocl-26050 [004] 703095.038979: i915_gem_object_create: obj=0xffff92bb1a525e00, size=0x1000
+           vaocl-26050 [004] 703095.039039: i915_gem_object_create: obj=0xffff92bb1a527000, size=0x8000
+           vaocl-26050 [004] 703095.042538: i915_vma_bind:        obj=0xffff92ba8de99b00, offset=0x0000000000000000 size=0x60000 vm=0xffff92bc3bea0000
+           vaocl-26050 [004] 703095.042552: i915_vma_bind:        obj=0xffff92ba8de98300, offset=0x0000000000060000 size=0x2000 vm=0xffff92bc3bea0000
+           vaocl-26050 [004] 703095.042552: i915_vma_bind:        obj=0xffff92bb1a524600, offset=0x0000000000062000 size=0x1000 vm=0xffff92bc3bea0000
+           vaocl-26050 [004] 703095.042553: i915_vma_bind:        obj=0xffff92bb1a525200, offset=0x0000000000063000 size=0x3000 vm=0xffff92bc3bea0000
+           vaocl-26050 [004] 703095.042553: i915_vma_bind:        obj=0xffff92bb1a526400, offset=0x0000000000066000 size=0x1000 vm=0xffff92bc3bea0000
+           vaocl-26050 [004] 703095.042553: i915_vma_bind:        obj=0xffff92bb1a524c00, offset=0x0000000000067000 size=0xa00000 vm=0xffff92bc3bea0000
+           vaocl-26050 [004] 703095.042557: i915_vma_bind:        obj=0xffff92bb1a527300, offset=0x0000000000a67000 size=0xa00000 vm=0xffff92bc3bea0000
+           vaocl-26050 [004] 703095.042561: i915_vma_bind:        obj=0xffff92bb1a526a00, offset=0x0000000001467000 size=0xa00000 vm=0xffff92bc3bea0000
+           vaocl-26050 [004] 703095.042564: i915_vma_bind:        obj=0xffff92bb1a527000, offset=0x0000000001e67000 size=0x8000 vm=0xffff92bc3bea0000
+           vaocl-26050 [004] 703095.042571: i915_gem_object_create: obj=0xffff92bc0482f000, size=0x3000
+           vaocl-26050 [004] 703095.042665: i915_vma_bind:        obj=0xffff92bc0482f000, offset=0x00000000ffefc000 size=0x3000 vm=0xffff92bc46465740
+           vaocl-26050 [004] 703095.042667: i915_reg_rw:          write reg=0x101008, len=4, val=(0x1, 0x0)
+           vaocl-26050 [004] 703095.042669: i915_vma_bind:        obj=0xffff92bc2614b600, offset=0x00000000008aa000 size=0x4000 vm=0xffff92bc46465740
+           vaocl-26050 [004] 703095.042670: i915_reg_rw:          write reg=0x101008, len=4, val=(0x1, 0x0)
+           vaocl-26050 [004] 703095.042672: i915_request_queue:   dev=0, hw_id=49, ring=2, ctx=339, seqno=1, flags=0x0
+           vaocl-26050 [004] 703095.042674: i915_request_add:     dev=0, hw_id=49, ring=2, ctx=339, seqno=1, global=0
+           vaocl-26050 [004] 703095.042675: i915_request_submit:  dev=0, hw_id=49, ring=2, ctx=339, seqno=1, global=0
+           vaocl-26050 [004] 703095.042677: i915_request_execute: dev=0, hw_id=49, ring=2, ctx=339, seqno=1, global=35
+           vaocl-26050 [004] 703095.042678: i915_request_in:      dev=0, hw_id=49, ring=2, ctx=339, seqno=1, prio=0, global=35, port=0
+           vaocl-26050 [004] 703095.042727: i915_vma_bind:        obj=0xffff92ba8de98300, offset=0x00007fc03575a000 size=0x2000 vm=0xffff92b876482000
+           vaocl-26050 [004] 703095.042733: i915_vma_bind:        obj=0xffff92bb1a526100, offset=0x00008000ffffd000 size=0x1000 vm=0xffff92b876482000
+           vaocl-26050 [004] 703095.042736: i915_vma_bind:        obj=0xffff92bc2614b900, offset=0x000056071e458000 size=0x10000 vm=0xffff92b876482000
+           vaocl-26050 [004] 703095.042740: i915_vma_bind:        obj=0xffff92bc06dfc600, offset=0x00008000fffed000 size=0x10000 vm=0xffff92b876482000
+           vaocl-26050 [004] 703095.042742: i915_vma_bind:        obj=0xffff92bc06dfc300, offset=0x000056071e04c000 size=0x10000 vm=0xffff92b876482000
+           vaocl-26050 [004] 703095.042743: i915_vma_bind:        obj=0xffff92bb1a524f00, offset=0x000056071dfa3000 size=0x1000 vm=0xffff92b876482000
+           vaocl-26050 [004] 703095.042750: i915_vma_bind:        obj=0xffff92bb1a527900, offset=0x00008000ffffe000 size=0x2000 vm=0xffff92b876482000
+           vaocl-26050 [004] 703095.042752: i915_vma_bind:        obj=0xffff92bb1a525b00, offset=0x000056071e776000 size=0x10000 vm=0xffff92b876482000
+           vaocl-26050 [004] 703095.042754: i915_vma_bind:        obj=0xffff92bc06dff000, offset=0x000056071e5f1000 size=0x10000 vm=0xffff92b876482000
+           vaocl-26050 [004] 703095.043692: i915_vma_bind:        obj=0xffff92bb1a525500, offset=0x00007fc02f140000 size=0x800000 vm=0xffff92b876482000
+           vaocl-26050 [004] 703095.043720: i915_gem_object_create: obj=0xffff92baf2095b00, size=0x17000
+           vaocl-26050 [004] 703095.043751: i915_vma_bind:        obj=0xffff92baf2095b00, offset=0x00000000ffe5e000 size=0x17000 vm=0xffff92bc46465740
+           vaocl-26050 [004] 703095.043752: i915_reg_rw:          write reg=0x101008, len=4, val=(0x1, 0x0)
+           vaocl-26050 [004] 703095.043756: i915_vma_bind:        obj=0xffff92bc3b535e00, offset=0x0000000000918000 size=0x4000 vm=0xffff92bc46465740
+           vaocl-26050 [004] 703095.043756: i915_reg_rw:          write reg=0x101008, len=4, val=(0x1, 0x0)
+           vaocl-26050 [004] 703095.043757: i915_request_queue:   dev=0, hw_id=52, ring=0, ctx=340, seqno=1, flags=0x0
+           vaocl-26050 [004] 703095.043759: i915_reg_rw:          write reg=0x120a8, len=4, val=(0xfffffefe, 0x0)
+           vaocl-26050 [004] 703095.043766: i915_request_add:     dev=0, hw_id=52, ring=0, ctx=340, seqno=1, global=0
+     kworker/4:1-23087 [004] 703095.043809: i915_reg_rw:          write reg=0xa068, len=4, val=(0x1d4c, 0x0)
+     kworker/4:1-23087 [004] 703095.043810: i915_reg_rw:          write reg=0xa02c, len=4, val=(0x18e7, 0x0)
+     kworker/4:1-23087 [004] 703095.043811: i915_reg_rw:          write reg=0xa06c, len=4, val=(0x5dc0, 0x0)
+     kworker/4:1-23087 [004] 703095.043811: i915_reg_rw:          write reg=0xa030, len=4, val=(0x3840, 0x0)
+     kworker/4:1-23087 [004] 703095.043811: i915_reg_rw:          write reg=0xa024, len=4, val=(0xd92, 0x0)
+     kworker/4:1-23087 [004] 703095.043811: i915_reg_rw:          write reg=0xa008, len=4, val=(0x22800000, 0x0)
+     kworker/4:1-23087 [004] 703095.043812: i915_reg_rw:          write reg=0xa014, len=4, val=(0x22800000, 0x0)
+     kworker/4:1-23087 [004] 703095.043812: i915_reg_rw:          write reg=0xa168, len=4, val=(0x7fffffaf, 0x0)
+     kworker/4:1-23087 [004] 703095.043813: intel_gpu_freq_change: new_freq=1150
+           vaocl-26050 [004] 703095.043815: i915_request_wait_begin: dev=0, hw_id=52, ring=0, ctx=340, seqno=1, global=0, blocking=0, flags=0x5
+           vaocl-26051 [001] 703095.043816: i915_request_wait_begin: dev=0, hw_id=52, ring=0, ctx=340, seqno=1, global=0, blocking=0, flags=0x5
+          <idle>-0     [005] 703095.048832: i915_request_submit:  dev=0, hw_id=52, ring=0, ctx=340, seqno=1, global=0
+          <idle>-0     [005] 703095.048834: intel_engine_notify:  dev=0, ring=2, seqno=35, waiters=1
+          <idle>-0     [005] 703095.048836: i915_request_execute: dev=0, hw_id=52, ring=0, ctx=340, seqno=1, global=1269390
+          <idle>-0     [005] 703095.048842: i915_request_in:      dev=0, hw_id=52, ring=0, ctx=340, seqno=1, prio=0, global=1269390, port=0
+          <idle>-0     [005] 703095.048844: i915_request_out:     dev=0, hw_id=49, ring=2, ctx=339, seqno=1, global=35, completed?=1
+          <idle>-0     [005] 703095.048984: intel_engine_notify:  dev=0, ring=0, seqno=1269390, waiters=1
+          <idle>-0     [005] 703095.048988: i915_request_out:     dev=0, hw_id=52, ring=0, ctx=340, seqno=1, global=1269390, completed?=1
+           vaocl-26050 [004] 703095.049009: i915_request_wait_end: dev=0, hw_id=52, ring=0, ctx=340, seqno=1, global=1269390
+           vaocl-26051 [001] 703095.049046: i915_request_wait_end: dev=0, hw_id=52, ring=0, ctx=340, seqno=1, global=1269390
+           vaocl-26050 [004] 703095.049222: i915_vma_bind:        obj=0xffff92bc07bff600, offset=0x00007fff61dae000 size=0x1000 vm=0xffff92b876482000
+           vaocl-26050 [004] 703095.049229: i915_vma_bind:        obj=0xffff92bb1a524300, offset=0x000056071df96000 size=0x1000 vm=0xffff92b876482000
+           vaocl-26050 [004] 703095.049232: i915_request_queue:   dev=0, hw_id=52, ring=0, ctx=340, seqno=2, flags=0x0
+           vaocl-26050 [004] 703095.049234: i915_request_add:     dev=0, hw_id=52, ring=0, ctx=340, seqno=2, global=0
+           vaocl-26050 [004] 703095.049235: i915_request_submit:  dev=0, hw_id=52, ring=0, ctx=340, seqno=2, global=0
+           vaocl-26050 [004] 703095.049243: i915_request_execute: dev=0, hw_id=52, ring=0, ctx=340, seqno=2, global=1269391
+           vaocl-26050 [004] 703095.049243: i915_request_in:      dev=0, hw_id=52, ring=0, ctx=340, seqno=2, prio=0, global=1269391, port=0
+           vaocl-26050 [004] 703095.049246: i915_request_retire:  dev=0, hw_id=52, ring=0, ctx=340, seqno=1, global=1269390
+           vaocl-26050 [004] 703095.049290: i915_vma_bind:        obj=0xffff92bc3b536100, offset=0x00008000fffec000 size=0x1000 vm=0xffff92b876482000
+           vaocl-26050 [004] 703095.049294: i915_request_queue:   dev=0, hw_id=52, ring=0, ctx=340, seqno=3, flags=0x0
+           vaocl-26050 [004] 703095.049296: i915_request_add:     dev=0, hw_id=52, ring=0, ctx=340, seqno=3, global=0
+          <idle>-0     [005] 703095.049297: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+           vaocl-26050 [004] 703095.049297: i915_request_submit:  dev=0, hw_id=52, ring=0, ctx=340, seqno=3, global=0
+           vaocl-26050 [004] 703095.049299: i915_request_out:     dev=0, hw_id=52, ring=0, ctx=340, seqno=2, global=1269391, completed?=1
+           vaocl-26050 [004] 703095.049299: i915_request_execute: dev=0, hw_id=52, ring=0, ctx=340, seqno=3, global=1269392
+           vaocl-26050 [004] 703095.049300: i915_request_in:      dev=0, hw_id=52, ring=0, ctx=340, seqno=3, prio=0, global=1269392, port=0
+          <idle>-0     [005] 703095.049301: intel_engine_notify:  dev=0, ring=0, seqno=1269391, waiters=0
+           vaocl-26050 [004] 703095.049302: i915_request_retire:  dev=0, hw_id=52, ring=0, ctx=340, seqno=2, global=1269391
+           vaocl-26050 [004] 703095.049315: i915_request_wait_begin: dev=0, hw_id=52, ring=0, ctx=340, seqno=3, global=1269392, blocking=0, flags=0x5
+           vaocl-26051 [001] 703095.049322: i915_request_wait_begin: dev=0, hw_id=52, ring=0, ctx=340, seqno=3, global=1269392, blocking=0, flags=0x5
+           vaocl-26050 [004] 703095.049322: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+           vaocl-26051 [001] 703095.049327: i915_request_wait_end: dev=0, hw_id=52, ring=0, ctx=340, seqno=3, global=1269392
+           vaocl-26050 [004] 703095.049327: i915_request_wait_end: dev=0, hw_id=52, ring=0, ctx=340, seqno=3, global=1269392
+          <idle>-0     [005] 703095.049330: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+          <idle>-0     [005] 703095.049331: intel_engine_notify:  dev=0, ring=0, seqno=1269392, waiters=0
+          <idle>-0     [005] 703095.049339: i915_request_out:     dev=0, hw_id=52, ring=0, ctx=340, seqno=3, global=1269392, completed?=1
+           vaocl-26050 [004] 703095.049718: i915_context_free:    dev=0, ctx=0xffff92bc0b7c2c00, ctx_vm=0xffff92baf067e000, hw_id=48
+   kworker/u16:1-21596 [006] 703095.049753: i915_ppgtt_release:   dev=0, vm=0xffff92baf067e000
+           vaocl-26050 [004] 703095.049923: i915_context_free:    dev=0, ctx=0xffff92bc0b7c1600, ctx_vm=0xffff92bc43ac8000, hw_id=46
+   kworker/u16:1-21596 [006] 703095.049956: i915_ppgtt_release:   dev=0, vm=0xffff92bc43ac8000
+           vaocl-26051 [002] 703095.055712: i915_context_free:    dev=0, ctx=0xffff92bc0b7c3a00, ctx_vm=0xffff92bc45f84000, hw_id=50
+           vaocl-26051 [002] 703095.055717: i915_context_free:    dev=0, ctx=0xffff92bc0b7c2200, ctx_vm=0xffff92b88479a000, hw_id=53
+   kworker/u16:1-21596 [006] 703095.055721: i915_ppgtt_release:   dev=0, vm=0xffff92b88479a000
+   kworker/u16:1-21596 [006] 703095.055728: i915_ppgtt_release:   dev=0, vm=0xffff92bc45f84000
+            Xorg-1460  [000] 703095.063128: i915_request_retire:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231187, global=1269387
+            Xorg-1460  [000] 703095.063135: i915_request_queue:   dev=0, hw_id=15, ring=0, ctx=23, seqno=231189, flags=0x0
+            Xorg-1460  [000] 703095.063142: i915_request_add:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231189, global=0
+            Xorg-1460  [000] 703095.063145: i915_request_submit:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231189, global=0
+            Xorg-1460  [000] 703095.063147: i915_request_execute: dev=0, hw_id=15, ring=0, ctx=23, seqno=231189, global=1269393
+            Xorg-1460  [000] 703095.063148: i915_request_in:      dev=0, hw_id=15, ring=0, ctx=23, seqno=231189, prio=0, global=1269393, port=0
+            Xorg-1460  [000] 703095.063150: i915_request_retire:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231188, global=1269388
+          <idle>-0     [005] 703095.063376: i915_reg_rw:          write reg=0x44324, len=4, val=(0xffffff9f, 0x0)
+     kworker/5:2-25625 [005] 703095.063383: i915_reg_rw:          write reg=0xa008, len=4, val=(0x22000000, 0x0)
+     kworker/5:2-25625 [005] 703095.063385: i915_reg_rw:          write reg=0xa014, len=4, val=(0x22800000, 0x0)
+     kworker/5:2-25625 [005] 703095.063392: i915_reg_rw:          write reg=0xa168, len=4, val=(0x7fffff8f, 0x0)
+     kworker/5:2-25625 [005] 703095.063393: intel_gpu_freq_change: new_freq=1133
+     kworker/5:2-25625 [005] 703095.063393: i915_reg_rw:          write reg=0x44324, len=4, val=(0xffffff8f, 0x0)
+            Xorg-1460  [000] 703095.063559: i915_request_queue:   dev=0, hw_id=15, ring=0, ctx=23, seqno=231190, flags=0x0
+            Xorg-1460  [000] 703095.063566: i915_request_add:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231190, global=0
+            Xorg-1460  [000] 703095.063567: i915_request_submit:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231190, global=0
+            Xorg-1460  [000] 703095.063569: i915_request_execute: dev=0, hw_id=15, ring=0, ctx=23, seqno=231190, global=1269394
+            Xorg-1460  [000] 703095.063570: i915_request_in:      dev=0, hw_id=15, ring=0, ctx=23, seqno=231190, prio=0, global=1269394, port=0
+          <idle>-0     [005] 703095.064296: i915_request_out:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231190, global=1269394, completed?=1
+     gnome-shell-1592  [004] 703095.070459: i915_request_queue:   dev=0, hw_id=19, ring=0, ctx=26, seqno=222629, flags=0x0
+     gnome-shell-1592  [004] 703095.070471: i915_request_add:     dev=0, hw_id=19, ring=0, ctx=26, seqno=222629, global=0
+     gnome-shell-1592  [004] 703095.070472: i915_request_submit:  dev=0, hw_id=19, ring=0, ctx=26, seqno=222629, global=0
+     gnome-shell-1592  [004] 703095.070474: i915_request_execute: dev=0, hw_id=19, ring=0, ctx=26, seqno=222629, global=1269395
+     gnome-shell-1592  [004] 703095.070475: i915_request_in:      dev=0, hw_id=19, ring=0, ctx=26, seqno=222629, prio=0, global=1269395, port=0
+     gnome-shell-1592  [004] 703095.070477: i915_request_retire:  dev=0, hw_id=19, ring=0, ctx=26, seqno=222628, global=1269389
+            Xorg-1460  [000] 703095.070543: i915_reg_rw:          write reg=0x44404, len=4, val=(0x6ffff07e, 0x0)
+            Xorg-1460  [000] 703095.070545: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c52, 0x0)
+            Xorg-1460  [000] 703095.070546: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c52, 0x0)
+            Xorg-1460  [000] 703095.070547: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c52, 0x0)
+            Xorg-1460  [000] 703095.070548: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c52, 0x0)
+            Xorg-1460  [000] 703095.070597: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+          <idle>-0     [005] 703095.071802: intel_engine_notify:  dev=0, ring=0, seqno=1269395, waiters=1
+          <idle>-0     [005] 703095.071807: i915_request_out:     dev=0, hw_id=19, ring=0, ctx=26, seqno=222629, global=1269395, completed?=1
+   kworker/u16:1-21596 [007] 703095.071840: i915_reg_rw:          read reg=0x43208, len=4, val=(0x90000000, 0x0)
+   kworker/u16:1-21596 [007] 703095.071841: i915_reg_rw:          write reg=0x43208, len=4, val=(0x10000000, 0x0)
+   kworker/u16:1-21596 [007] 703095.071844: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c52, 0x0)
+   kworker/u16:1-21596 [007] 703095.071845: i915_pipe_update_start: pipe >c<, frame=0, scanline=72786, min=701, max=1073
+   kworker/u16:1-21596 [007] 703095.071846: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c52, 0x0)
+   kworker/u16:1-21596 [007] 703095.071847: i915_pipe_update_vblank_evaded: pipe >c<, frame=0, scanline=72786, min=701, max=1073
+   kworker/u16:1-21596 [007] 703095.071847: i915_reg_rw:          write reg=0x68180, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [007] 703095.071847: i915_reg_rw:          write reg=0x68170, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [007] 703095.071848: i915_reg_rw:          write reg=0x68174, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [007] 703095.071848: i915_reg_rw:          write reg=0x68280, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [007] 703095.071848: i915_reg_rw:          write reg=0x68270, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [007] 703095.071849: i915_reg_rw:          write reg=0x68274, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [007] 703095.071853: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c52, 0x0)
+   kworker/u16:1-21596 [007] 703095.071854: i915_pipe_update_end: pipe >c<, frame=0, scanline=72786
+   kworker/u16:1-21596 [007] 703095.071855: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c52, 0x0)
+   kworker/u16:1-21596 [007] 703095.071856: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c52, 0x0)
+   kworker/u16:0-24531 [001] 703095.072385: i915_gem_object_destroy: obj=0xffff92bc07bfde00
+   kworker/u16:0-24531 [001] 703095.072387: i915_gem_object_destroy: obj=0xffff92bc07bfcf00
+   kworker/u16:0-24531 [001] 703095.072388: i915_gem_object_destroy: obj=0xffff92bc486e4600
+   kworker/u16:0-24531 [001] 703095.072388: i915_gem_object_destroy: obj=0xffff92bc3b535b00
+   kworker/u16:0-24531 [001] 703095.072389: i915_gem_object_destroy: obj=0xffff92bb1a525800
+   kworker/u16:0-24531 [001] 703095.072390: i915_gem_object_destroy: obj=0xffff92bb1a524300
+   kworker/u16:0-24531 [001] 703095.076504: i915_gem_object_destroy: obj=0xffff92ba8de99200
+   kworker/u16:0-24531 [001] 703095.076507: i915_gem_object_destroy: obj=0xffff92ba8de9b900
+   kworker/u16:0-24531 [001] 703095.076508: i915_gem_object_destroy: obj=0xffff92ba8de9b600
+   kworker/u16:0-24531 [001] 703095.076508: i915_gem_object_destroy: obj=0xffff92ba8de98f00
+   kworker/u16:0-24531 [001] 703095.076509: i915_gem_object_destroy: obj=0xffff92ba8de98c00
+   kworker/u16:0-24531 [001] 703095.076509: i915_gem_object_destroy: obj=0xffff92ba8de98600
+   kworker/u16:0-24531 [001] 703095.076510: i915_gem_object_destroy: obj=0xffff92ba8de9b300
+   kworker/u16:0-24531 [001] 703095.076510: i915_gem_object_destroy: obj=0xffff92ba8de99e00
+   kworker/u16:0-24531 [001] 703095.076510: i915_gem_object_destroy: obj=0xffff92ba8de98000
+   kworker/u16:0-24531 [001] 703095.076511: i915_gem_object_destroy: obj=0xffff92ba8de9a100
+   kworker/u16:0-24531 [001] 703095.076511: i915_gem_object_destroy: obj=0xffff92ba8de9bc00
+   kworker/u16:0-24531 [001] 703095.076512: i915_gem_object_destroy: obj=0xffff92ba8de99500
+   kworker/u16:0-24531 [001] 703095.076512: i915_gem_object_destroy: obj=0xffff92ba8de99800
+   kworker/u16:0-24531 [001] 703095.076512: i915_gem_object_destroy: obj=0xffff92ba8de9b000
+   kworker/u16:0-24531 [001] 703095.076513: i915_gem_object_destroy: obj=0xffff92ba8de98900
+   kworker/u16:0-24531 [001] 703095.076513: i915_gem_object_destroy: obj=0xffff92ba8de9a700
+   kworker/u16:0-24531 [001] 703095.076513: i915_gem_object_destroy: obj=0xffff92ba8de9ad00
+   kworker/u16:0-24531 [001] 703095.076514: i915_gem_object_destroy: obj=0xffff92bc413d0600
+   kworker/u16:0-24531 [001] 703095.076514: i915_gem_object_destroy: obj=0xffff92bc413d1200
+   kworker/u16:0-24531 [001] 703095.076515: i915_gem_object_destroy: obj=0xffff92bc413d0000
+   kworker/u16:0-24531 [001] 703095.076515: i915_gem_object_destroy: obj=0xffff92bc413d2a00
+   kworker/u16:0-24531 [001] 703095.076516: i915_gem_object_destroy: obj=0xffff92bc413d2d00
+   kworker/u16:0-24531 [001] 703095.076516: i915_gem_object_destroy: obj=0xffff92bc413d0f00
+   kworker/u16:0-24531 [001] 703095.076517: i915_gem_object_destroy: obj=0xffff92bc413d2400
+   kworker/u16:0-24531 [001] 703095.076517: i915_gem_object_destroy: obj=0xffff92bc413d3300
+   kworker/u16:0-24531 [001] 703095.076518: i915_gem_object_destroy: obj=0xffff92bc413d1800
+   kworker/u16:0-24531 [001] 703095.076518: i915_gem_object_destroy: obj=0xffff92bc413d1500
+   kworker/u16:0-24531 [001] 703095.076518: i915_gem_object_destroy: obj=0xffff92bc413d3000
+   kworker/u16:0-24531 [001] 703095.076519: i915_gem_object_destroy: obj=0xffff92bc413d1b00
+   kworker/u16:0-24531 [001] 703095.076519: i915_gem_object_destroy: obj=0xffff92bc413d3900
+   kworker/u16:0-24531 [001] 703095.076519: i915_gem_object_destroy: obj=0xffff92bc413d0900
+   kworker/u16:0-24531 [001] 703095.076520: i915_gem_object_destroy: obj=0xffff92bc413d3c00
+   kworker/u16:0-24531 [001] 703095.076520: i915_gem_object_destroy: obj=0xffff92bb1a526100
+   kworker/u16:0-24531 [001] 703095.076528: i915_gem_object_destroy: obj=0xffff92bb1a525e00
+   kworker/u16:0-24531 [001] 703095.076529: i915_gem_object_destroy: obj=0xffff92bb1a526700
+   kworker/u16:0-24531 [001] 703095.076530: i915_gem_object_destroy: obj=0xffff92bb1a527c00
+   kworker/u16:0-24531 [001] 703095.076531: i915_gem_object_destroy: obj=0xffff92bb1a524900
+   kworker/u16:0-24531 [001] 703095.076532: i915_gem_object_destroy: obj=0xffff92bb1a524000
+          <idle>-0     [005] 703095.077498: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703095.077499: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703095.077501: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c53, 0x0)
+          <idle>-0     [005] 703095.077502: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c53, 0x0)
+            Xorg-1460  [000] 703095.077657: i915_request_retire:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231189, global=1269393
+            Xorg-1460  [000] 703095.077663: i915_request_queue:   dev=0, hw_id=15, ring=0, ctx=23, seqno=231191, flags=0x0
+            Xorg-1460  [000] 703095.077669: i915_request_add:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231191, global=0
+            Xorg-1460  [000] 703095.077670: i915_request_submit:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231191, global=0
+            Xorg-1460  [000] 703095.077672: i915_request_execute: dev=0, hw_id=15, ring=0, ctx=23, seqno=231191, global=1269396
+            Xorg-1460  [000] 703095.077673: i915_request_in:      dev=0, hw_id=15, ring=0, ctx=23, seqno=231191, prio=0, global=1269396, port=0
+            Xorg-1460  [000] 703095.077674: i915_request_retire:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231190, global=1269394
+            Xorg-1460  [000] 703095.077812: i915_request_queue:   dev=0, hw_id=15, ring=0, ctx=23, seqno=231192, flags=0x0
+            Xorg-1460  [000] 703095.077817: i915_request_add:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231192, global=0
+            Xorg-1460  [000] 703095.077817: i915_request_submit:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231192, global=0
+          <idle>-0     [005] 703095.077990: i915_request_execute: dev=0, hw_id=15, ring=0, ctx=23, seqno=231192, global=1269397
+          <idle>-0     [005] 703095.077990: i915_request_in:      dev=0, hw_id=15, ring=0, ctx=23, seqno=231192, prio=0, global=1269397, port=0
+          <idle>-0     [005] 703095.078577: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+          <idle>-0     [005] 703095.078580: intel_engine_notify:  dev=0, ring=0, seqno=1269396, waiters=0
+          <idle>-0     [005] 703095.078772: i915_request_out:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231192, global=1269397, completed?=1
+     gnome-shell-1592  [004] 703095.086790: i915_request_queue:   dev=0, hw_id=19, ring=0, ctx=26, seqno=222630, flags=0x0
+     gnome-shell-1592  [004] 703095.086801: i915_request_add:     dev=0, hw_id=19, ring=0, ctx=26, seqno=222630, global=0
+     gnome-shell-1592  [004] 703095.086802: i915_request_submit:  dev=0, hw_id=19, ring=0, ctx=26, seqno=222630, global=0
+     gnome-shell-1592  [004] 703095.086804: i915_request_execute: dev=0, hw_id=19, ring=0, ctx=26, seqno=222630, global=1269398
+     gnome-shell-1592  [004] 703095.086804: i915_request_in:      dev=0, hw_id=19, ring=0, ctx=26, seqno=222630, prio=0, global=1269398, port=0
+     gnome-shell-1592  [004] 703095.086806: i915_request_retire:  dev=0, hw_id=19, ring=0, ctx=26, seqno=222629, global=1269395
+            Xorg-1460  [000] 703095.086915: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+          <idle>-0     [005] 703095.087053: i915_reg_rw:          write reg=0x44324, len=4, val=(0xffffff9f, 0x0)
+     kworker/5:2-25625 [005] 703095.087060: i915_reg_rw:          write reg=0xa008, len=4, val=(0x21000000, 0x0)
+     kworker/5:2-25625 [005] 703095.087061: i915_reg_rw:          write reg=0xa014, len=4, val=(0x22800000, 0x0)
+     kworker/5:2-25625 [005] 703095.087063: i915_reg_rw:          write reg=0xa168, len=4, val=(0x7fffff8f, 0x0)
+     kworker/5:2-25625 [005] 703095.087064: intel_gpu_freq_change: new_freq=1100
+     kworker/5:2-25625 [005] 703095.087064: i915_reg_rw:          write reg=0x44324, len=4, val=(0xffffff8f, 0x0)
+          <idle>-0     [005] 703095.088357: intel_engine_notify:  dev=0, ring=0, seqno=1269398, waiters=1
+          <idle>-0     [005] 703095.088362: i915_request_out:     dev=0, hw_id=19, ring=0, ctx=26, seqno=222630, global=1269398, completed?=1
+   kworker/u16:1-21596 [007] 703095.088404: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c53, 0x0)
+   kworker/u16:1-21596 [007] 703095.088406: i915_pipe_update_start: pipe >c<, frame=0, scanline=72787, min=694, max=1073
+   kworker/u16:1-21596 [007] 703095.088407: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c53, 0x0)
+   kworker/u16:1-21596 [007] 703095.088408: i915_pipe_update_vblank_evaded: pipe >c<, frame=0, scanline=72787, min=694, max=1073
+   kworker/u16:1-21596 [007] 703095.088408: i915_reg_rw:          write reg=0x68180, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [007] 703095.088408: i915_reg_rw:          write reg=0x68170, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [007] 703095.088409: i915_reg_rw:          write reg=0x68174, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [007] 703095.088409: i915_reg_rw:          write reg=0x68280, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [007] 703095.088409: i915_reg_rw:          write reg=0x68270, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [007] 703095.088410: i915_reg_rw:          write reg=0x68274, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [007] 703095.088414: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c53, 0x0)
+   kworker/u16:1-21596 [007] 703095.088415: i915_pipe_update_end: pipe >c<, frame=0, scanline=72787
+   kworker/u16:1-21596 [007] 703095.088416: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c53, 0x0)
+   kworker/u16:1-21596 [007] 703095.088417: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c53, 0x0)
+   kworker/u16:0-24531 [001] 703095.092341: i915_gem_object_destroy: obj=0xffff92ba9c58c600
+   kworker/u16:0-24531 [001] 703095.092343: i915_vma_unbind:      obj=0xffff92ba9c58c600, offset=0x0000000001780000 size=0x80000 vm=0xffff92bc006c8000
+   kworker/u16:0-24531 [001] 703095.092358: i915_gem_object_destroy: obj=0xffff92ba9c58f300
+   kworker/u16:0-24531 [001] 703095.092358: i915_vma_unbind:      obj=0xffff92ba9c58f300, offset=0x0000000000081000 size=0x40000 vm=0xffff92bc006c8000
+   kworker/u16:0-24531 [001] 703095.092363: i915_gem_object_destroy: obj=0xffff92bc0b6af600
+   kworker/u16:0-24531 [001] 703095.092363: i915_vma_unbind:      obj=0xffff92bc0b6af600, offset=0x0000000000001000 size=0x40000 vm=0xffff92bc006c8000
+   kworker/u16:0-24531 [001] 703095.092367: i915_gem_object_destroy: obj=0xffff92bc1a4f1800
+   kworker/u16:0-24531 [001] 703095.092367: i915_vma_unbind:      obj=0xffff92bc1a4f1800, offset=0x00000000000c1000 size=0x20000 vm=0xffff92bc006c8000
+   kworker/u16:0-24531 [001] 703095.092369: i915_gem_object_destroy: obj=0xffff92baf20ee100
+   kworker/u16:0-24531 [001] 703095.092374: i915_reg_rw:          write reg=0x1000d0, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [001] 703095.092375: i915_reg_rw:          write reg=0x1000d4, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [001] 703095.092375: i915_reg_rw:          write reg=0x1000d0, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [001] 703095.092376: i915_vma_unbind:      obj=0xffff92baf20ee100, offset=0x00000000008f0000 size=0xa000 vm=0xffff92bc46465740
+   kworker/u16:0-24531 [001] 703095.092379: i915_vma_unbind:      obj=0xffff92baf20ee100, offset=0x0000000003346000 size=0xa000 vm=0xffff92bc006c8000
+   kworker/u16:0-24531 [001] 703095.092383: i915_gem_object_destroy: obj=0xffff92baf20efc00
+   kworker/u16:0-24531 [001] 703095.092384: i915_reg_rw:          write reg=0x100080, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [001] 703095.092385: i915_reg_rw:          write reg=0x100084, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [001] 703095.092385: i915_reg_rw:          write reg=0x100080, len=4, val=(0x0, 0x0)
+   kworker/u16:0-24531 [001] 703095.092385: i915_vma_unbind:      obj=0xffff92baf20efc00, offset=0x00000000008ff000 size=0x7000 vm=0xffff92bc46465740
+   kworker/u16:0-24531 [001] 703095.092387: i915_vma_unbind:      obj=0xffff92baf20efc00, offset=0x00000000033d6000 size=0x7000 vm=0xffff92bc006c8000
+          <idle>-0     [005] 703095.094315: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703095.094316: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703095.094318: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c54, 0x0)
+          <idle>-0     [005] 703095.094319: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c54, 0x0)
+          <idle>-0     [005] 703095.110994: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703095.110995: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703095.110997: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c55, 0x0)
+          <idle>-0     [005] 703095.110998: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c55, 0x0)
+     kworker/7:8-25603 [007] 703095.111048: i915_reg_rw:          read reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/7:8-25603 [007] 703095.111049: i915_reg_rw:          write reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/7:8-25603 [007] 703095.111050: i915_reg_rw:          write reg=0x100100, len=4, val=(0x20000016, 0x0)
+     kworker/7:8-25603 [007] 703095.111050: i915_reg_rw:          write reg=0x100104, len=4, val=(0x0, 0x0)
+     kworker/7:8-25603 [007] 703095.111050: i915_reg_rw:          write reg=0x43208, len=4, val=(0x90000000, 0x0)
+     kworker/7:8-25603 [007] 703095.111051: i915_reg_rw:          write reg=0x50380, len=4, val=(0x4, 0x0)
+          <idle>-0     [005] 703095.127665: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703095.127667: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703095.127669: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c56, 0x0)
+          <idle>-0     [005] 703095.127672: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c56, 0x0)
+          <idle>-0     [005] 703095.127675: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c56, 0x0)
+          <idle>-0     [005] 703095.127676: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c56, 0x0)
+          <idle>-0     [005] 703095.127677: i915_reg_rw:          write reg=0x44404, len=4, val=(0x6ffff07f, 0x0)
+            Xorg-1460  [000] 703095.399308: i915_request_retire:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231191, global=1269396
+            Xorg-1460  [000] 703095.399323: i915_request_queue:   dev=0, hw_id=15, ring=0, ctx=23, seqno=231193, flags=0x0
+            Xorg-1460  [000] 703095.399337: i915_request_add:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231193, global=0
+            Xorg-1460  [000] 703095.399340: i915_request_submit:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231193, global=0
+            Xorg-1460  [000] 703095.399346: i915_request_execute: dev=0, hw_id=15, ring=0, ctx=23, seqno=231193, global=1269399
+            Xorg-1460  [000] 703095.399347: i915_request_in:      dev=0, hw_id=15, ring=0, ctx=23, seqno=231193, prio=0, global=1269399, port=0
+            Xorg-1460  [000] 703095.399351: i915_request_retire:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231192, global=1269397
+          <idle>-0     [005] 703095.399584: i915_reg_rw:          write reg=0x44324, len=4, val=(0xffffff9f, 0x0)
+     kworker/5:2-25625 [005] 703095.399605: i915_reg_rw:          write reg=0xa008, len=4, val=(0x1f000000, 0x0)
+     kworker/5:2-25625 [005] 703095.399616: i915_reg_rw:          write reg=0xa014, len=4, val=(0x22800000, 0x0)
+     kworker/5:2-25625 [005] 703095.399619: i915_reg_rw:          write reg=0xa168, len=4, val=(0x7fffff8f, 0x0)
+     kworker/5:2-25625 [005] 703095.399620: intel_gpu_freq_change: new_freq=1033
+     kworker/5:2-25625 [005] 703095.399621: i915_reg_rw:          write reg=0x44324, len=4, val=(0xffffff8f, 0x0)
+          <idle>-0     [005] 703095.399667: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+          <idle>-0     [005] 703095.399672: intel_engine_notify:  dev=0, ring=0, seqno=1269399, waiters=0
+          <idle>-0     [005] 703095.399678: i915_request_out:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231193, global=1269399, completed?=1
+     gnome-shell-1592  [004] 703095.400945: i915_request_queue:   dev=0, hw_id=19, ring=0, ctx=26, seqno=222631, flags=0x0
+     gnome-shell-1592  [004] 703095.400960: i915_request_add:     dev=0, hw_id=19, ring=0, ctx=26, seqno=222631, global=0
+     gnome-shell-1592  [004] 703095.400961: i915_request_submit:  dev=0, hw_id=19, ring=0, ctx=26, seqno=222631, global=0
+     gnome-shell-1592  [004] 703095.400964: i915_request_execute: dev=0, hw_id=19, ring=0, ctx=26, seqno=222631, global=1269400
+     gnome-shell-1592  [004] 703095.400964: i915_request_in:      dev=0, hw_id=19, ring=0, ctx=26, seqno=222631, prio=0, global=1269400, port=0
+     gnome-shell-1592  [004] 703095.400967: i915_request_retire:  dev=0, hw_id=19, ring=0, ctx=26, seqno=222630, global=1269398
+            Xorg-1460  [000] 703095.401069: i915_reg_rw:          write reg=0x44404, len=4, val=(0x6ffff07e, 0x0)
+            Xorg-1460  [000] 703095.401071: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c66, 0x0)
+            Xorg-1460  [000] 703095.401074: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c66, 0x0)
+            Xorg-1460  [000] 703095.401076: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c66, 0x0)
+            Xorg-1460  [000] 703095.401077: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c66, 0x0)
+            Xorg-1460  [000] 703095.401197: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+          <idle>-0     [005] 703095.402023: intel_engine_notify:  dev=0, ring=0, seqno=1269400, waiters=1
+          <idle>-0     [005] 703095.402031: i915_request_out:     dev=0, hw_id=19, ring=0, ctx=26, seqno=222631, global=1269400, completed?=1
+   kworker/u16:1-21596 [005] 703095.402051: i915_reg_rw:          read reg=0x43208, len=4, val=(0x90000000, 0x0)
+   kworker/u16:1-21596 [005] 703095.402052: i915_reg_rw:          write reg=0x43208, len=4, val=(0x10000000, 0x0)
+   kworker/u16:1-21596 [005] 703095.402056: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c66, 0x0)
+   kworker/u16:1-21596 [005] 703095.402057: i915_pipe_update_start: pipe >c<, frame=0, scanline=72806, min=490, max=1073
+   kworker/u16:1-21596 [005] 703095.402059: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c66, 0x0)
+   kworker/u16:1-21596 [005] 703095.402060: i915_pipe_update_vblank_evaded: pipe >c<, frame=0, scanline=72806, min=490, max=1073
+   kworker/u16:1-21596 [005] 703095.402061: i915_reg_rw:          write reg=0x68180, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [005] 703095.402062: i915_reg_rw:          write reg=0x68170, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [005] 703095.402062: i915_reg_rw:          write reg=0x68174, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [005] 703095.402063: i915_reg_rw:          write reg=0x68280, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [005] 703095.402063: i915_reg_rw:          write reg=0x68270, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [005] 703095.402064: i915_reg_rw:          write reg=0x68274, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [005] 703095.402070: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c66, 0x0)
+   kworker/u16:1-21596 [005] 703095.402071: i915_pipe_update_end: pipe >c<, frame=0, scanline=72806
+   kworker/u16:1-21596 [005] 703095.402073: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c66, 0x0)
+   kworker/u16:1-21596 [005] 703095.402075: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c66, 0x0)
+          <idle>-0     [005] 703095.410989: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703095.410991: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703095.410994: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c67, 0x0)
+          <idle>-0     [005] 703095.410997: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c67, 0x0)
+          <idle>-0     [005] 703095.427674: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703095.427675: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703095.427679: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c68, 0x0)
+          <idle>-0     [005] 703095.427682: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c68, 0x0)
+     kworker/5:2-25625 [005] 703095.427707: i915_reg_rw:          read reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/5:2-25625 [005] 703095.427708: i915_reg_rw:          write reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/5:2-25625 [005] 703095.427709: i915_reg_rw:          write reg=0x100100, len=4, val=(0x2000000d, 0x0)
+     kworker/5:2-25625 [005] 703095.427710: i915_reg_rw:          write reg=0x100104, len=4, val=(0x0, 0x0)
+     kworker/5:2-25625 [005] 703095.427710: i915_reg_rw:          write reg=0x43208, len=4, val=(0x90000000, 0x0)
+     kworker/5:2-25625 [005] 703095.427711: i915_reg_rw:          write reg=0x50380, len=4, val=(0x4, 0x0)
+          <idle>-0     [005] 703095.444311: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703095.444313: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703095.444316: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c69, 0x0)
+          <idle>-0     [005] 703095.444319: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c69, 0x0)
+          <idle>-0     [005] 703095.444321: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c69, 0x0)
+          <idle>-0     [005] 703095.444323: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c69, 0x0)
+          <idle>-0     [005] 703095.444324: i915_reg_rw:          write reg=0x44404, len=4, val=(0x6ffff07f, 0x0)
+   kworker/u16:1-21596 [006] 703095.720554: i915_request_retire:  dev=0, hw_id=52, ring=0, ctx=340, seqno=3, global=1269392
+   kworker/u16:1-21596 [006] 703095.720777: i915_context_free:    dev=0, ctx=0xffff92bc0b7c0400, ctx_vm=0xffff92b876482000, hw_id=52
+     kworker/5:2-25625 [005] 703095.720782: i915_reg_rw:          write reg=0x44324, len=4, val=(0xffffff9f, 0x0)
+   kworker/u16:1-21596 [006] 703095.720785: i915_request_retire:  dev=0, hw_id=49, ring=2, ctx=339, seqno=1, global=35
+     kworker/5:2-25625 [005] 703095.720789: i915_reg_rw:          read reg=0x205c, len=4, val=(0x0, 0x0)
+     kworker/5:2-25625 [005] 703095.720790: i915_reg_rw:          read reg=0x2074, len=4, val=(0xa90, 0x0)
+     kworker/5:2-25625 [005] 703095.720791: i915_reg_rw:          read reg=0x205c, len=4, val=(0x0, 0x0)
+     kworker/5:2-25625 [005] 703095.720795: i915_reg_rw:          read reg=0x2205c, len=4, val=(0x0, 0x0)
+     kworker/5:2-25625 [005] 703095.720796: i915_reg_rw:          read reg=0x22074, len=4, val=(0x38, 0x0)
+   kworker/u16:1-21596 [006] 703095.720796: i915_context_free:    dev=0, ctx=0xffff92bc4207f200, ctx_vm=0xffff92bc4720c000, hw_id=51
+     kworker/5:2-25625 [005] 703095.720797: i915_reg_rw:          read reg=0x2205c, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [006] 703095.720797: i915_request_retire:  dev=0, hw_id=19, ring=0, ctx=26, seqno=222631, global=1269400
+   kworker/u16:1-21596 [006] 703095.720813: i915_request_retire:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231193, global=1269399
+     kworker/5:2-25625 [005] 703095.720819: i915_reg_rw:          read reg=0x1205c, len=4, val=(0x0, 0x0)
+     kworker/5:2-25625 [005] 703095.720820: i915_reg_rw:          read reg=0x12074, len=4, val=(0x50, 0x0)
+     kworker/5:2-25625 [005] 703095.720821: i915_reg_rw:          read reg=0x1205c, len=4, val=(0x0, 0x0)
+     kworker/5:2-25625 [005] 703095.720822: i915_reg_rw:          read reg=0x1a05c, len=4, val=(0x0, 0x0)
+     kworker/5:2-25625 [005] 703095.720823: i915_reg_rw:          read reg=0x1a074, len=4, val=(0x38, 0x0)
+   kworker/u16:1-21596 [006] 703095.720824: i915_ppgtt_release:   dev=0, vm=0xffff92bc4720c000
+     kworker/5:2-25625 [005] 703095.720824: i915_reg_rw:          read reg=0x1a05c, len=4, val=(0x0, 0x0)
+     kworker/5:2-25625 [005] 703095.720831: i915_reg_rw:          write reg=0xa008, len=4, val=(0x1b000000, 0x0)
+     kworker/5:2-25625 [005] 703095.720832: i915_reg_rw:          write reg=0xa014, len=4, val=(0x22800000, 0x0)
+     kworker/5:2-25625 [005] 703095.720832: i915_reg_rw:          write reg=0xa168, len=4, val=(0x7fffff8f, 0x0)
+     kworker/5:2-25625 [005] 703095.720834: intel_gpu_freq_change: new_freq=900
+     kworker/5:2-25625 [005] 703095.720834: i915_reg_rw:          write reg=0x44324, len=4, val=(0xffffff8f, 0x0)
+   kworker/u16:1-21596 [006] 703095.736525: i915_gem_object_destroy: obj=0xffff92baf2095b00
+   kworker/u16:1-21596 [006] 703095.736528: i915_vma_unbind:      obj=0xffff92baf2095b00, offset=0x00000000ffe5e000 size=0x17000 vm=0xffff92bc46465740
+   kworker/u16:1-21596 [006] 703095.736547: i915_gem_object_destroy: obj=0xffff92bc3b535e00
+   kworker/u16:1-21596 [006] 703095.736548: i915_vma_unbind:      obj=0xffff92bc3b535e00, offset=0x0000000000918000 size=0x4000 vm=0xffff92bc46465740
+   kworker/u16:1-21596 [006] 703095.736557: i915_gem_object_destroy: obj=0xffff92baf23c2700
+   kworker/u16:1-21596 [006] 703095.736558: i915_vma_unbind:      obj=0xffff92baf23c2700, offset=0x00000000fff44000 size=0x3000 vm=0xffff92bc46465740
+   kworker/u16:1-21596 [006] 703095.736566: i915_gem_object_destroy: obj=0xffff92baf23c0900
+   kworker/u16:1-21596 [006] 703095.736566: i915_vma_unbind:      obj=0xffff92baf23c0900, offset=0x00000000008ae000 size=0x4000 vm=0xffff92bc46465740
+   kworker/u16:1-21596 [006] 703095.736570: i915_gem_object_destroy: obj=0xffff92ba8de99b00
+   kworker/u16:1-21596 [006] 703095.736578: i915_gem_object_destroy: obj=0xffff92ba8de98300
+   kworker/u16:1-21596 [006] 703095.736584: i915_gem_object_destroy: obj=0xffff92bb1a524600
+   kworker/u16:1-21596 [006] 703095.736587: i915_gem_object_destroy: obj=0xffff92bb1a525200
+   kworker/u16:1-21596 [006] 703095.736590: i915_gem_object_destroy: obj=0xffff92bb1a526400
+   kworker/u16:1-21596 [006] 703095.736592: i915_gem_object_destroy: obj=0xffff92bb1a524c00
+   kworker/u16:1-21596 [006] 703095.736675: i915_gem_object_destroy: obj=0xffff92bb1a527300
+   kworker/u16:1-21596 [006] 703095.736749: i915_gem_object_destroy: obj=0xffff92bb1a526a00
+   kworker/u16:1-21596 [006] 703095.736827: i915_gem_object_destroy: obj=0xffff92bb1a527000
+   kworker/u16:1-21596 [006] 703095.736831: i915_gem_object_destroy: obj=0xffff92bc07bff600
+   kworker/u16:1-21596 [006] 703095.736839: i915_gem_object_destroy: obj=0xffff92bc3b536100
+   kworker/u16:1-21596 [006] 703095.736842: i915_gem_object_destroy: obj=0xffff92bc2614b900
+   kworker/u16:1-21596 [006] 703095.736855: i915_gem_object_destroy: obj=0xffff92bc06dfc600
+   kworker/u16:1-21596 [006] 703095.736866: i915_gem_object_destroy: obj=0xffff92bc06dfc300
+   kworker/u16:1-21596 [006] 703095.736875: i915_gem_object_destroy: obj=0xffff92bb1a524f00
+   kworker/u16:1-21596 [006] 703095.736879: i915_gem_object_destroy: obj=0xffff92bb1a525500
+   kworker/u16:1-21596 [006] 703095.737826: i915_gem_object_destroy: obj=0xffff92bb1a527900
+   kworker/u16:1-21596 [006] 703095.737830: i915_gem_object_destroy: obj=0xffff92bb1a525b00
+   kworker/u16:1-21596 [006] 703095.737844: i915_gem_object_destroy: obj=0xffff92bc06dff000
+   kworker/u16:1-21596 [006] 703095.737847: i915_ppgtt_release:   dev=0, vm=0xffff92b876482000
+            Xorg-1460  [007] 703095.824154: i915_gem_object_fault: obj=0xffff92bc0b745b00, GTT index=0 , writable
+            Xorg-1460  [007] 703095.824159: i915_vma_bind:        obj=0xffff92bc0b745b00, offset=0x0000000000882000 size=0x1000 vm=0xffff92bc46465740
+            Xorg-1460  [007] 703095.824161: i915_reg_rw:          write reg=0x101008, len=4, val=(0x1, 0x0)
+            Xorg-1460  [007] 703095.824163: i915_reg_rw:          write reg=0x100080, len=4, val=(0x0, 0x0)
+            Xorg-1460  [007] 703095.824163: i915_reg_rw:          write reg=0x100084, len=4, val=(0x882000, 0x0)
+            Xorg-1460  [007] 703095.824163: i915_reg_rw:          write reg=0x100080, len=4, val=(0x882003, 0x0)
+            Xorg-1460  [007] 703095.824223: i915_gem_object_fault: obj=0xffff92bc0b747900, GTT index=0 , writable
+            Xorg-1460  [007] 703095.824225: i915_vma_bind:        obj=0xffff92bc0b747900, offset=0x000000000088a000 size=0x1000 vm=0xffff92bc46465740
+            Xorg-1460  [007] 703095.824225: i915_reg_rw:          write reg=0x101008, len=4, val=(0x1, 0x0)
+            Xorg-1460  [007] 703095.824226: i915_reg_rw:          write reg=0x1000d0, len=4, val=(0x0, 0x0)
+            Xorg-1460  [007] 703095.824226: i915_reg_rw:          write reg=0x1000d4, len=4, val=(0x88a000, 0x0)
+            Xorg-1460  [007] 703095.824226: i915_reg_rw:          write reg=0x1000d0, len=4, val=(0x88a003, 0x0)
+            Xorg-1460  [007] 703095.824349: i915_gem_object_fault: obj=0xffff92bc0b744300, GTT index=0 , writable
+            Xorg-1460  [007] 703095.824351: i915_vma_bind:        obj=0xffff92bc0b744300, offset=0x000000000088f000 size=0x1000 vm=0xffff92bc46465740
+            Xorg-1460  [007] 703095.824351: i915_reg_rw:          write reg=0x101008, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703095.824450: i915_reg_rw:          write reg=0x44324, len=4, val=(0xffffff9f, 0x0)
+   kworker/u16:1-21596 [002] 703095.824498: i915_reg_rw:          read reg=0x2034, len=4, val=(0xa90, 0x0)
+   kworker/u16:1-21596 [002] 703095.824499: i915_reg_rw:          read reg=0x2030, len=4, val=(0xa90, 0x0)
+   kworker/u16:1-21596 [002] 703095.824499: i915_reg_rw:          read reg=0x209c, len=4, val=(0x200, 0x0)
+   kworker/u16:1-21596 [002] 703095.824501: i915_reg_rw:          read reg=0x22034, len=4, val=(0x38, 0x0)
+   kworker/u16:1-21596 [002] 703095.824502: i915_reg_rw:          read reg=0x22030, len=4, val=(0x38, 0x0)
+            Xorg-1460  [007] 703095.824502: i915_reg_rw:          write reg=0x1000c0, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703095.824502: i915_reg_rw:          read reg=0x2209c, len=4, val=(0x200, 0x0)
+            Xorg-1460  [007] 703095.824502: i915_reg_rw:          write reg=0x1000c4, len=4, val=(0x88f000, 0x0)
+            Xorg-1460  [007] 703095.824503: i915_reg_rw:          write reg=0x1000c0, len=4, val=(0x88f003, 0x0)
+     kworker/5:2-25625 [005] 703095.824505: i915_reg_rw:          write reg=0xa068, len=4, val=(0x2616, 0x0)
+   kworker/u16:1-21596 [002] 703095.824519: i915_reg_rw:          read reg=0x12034, len=4, val=(0x50, 0x0)
+     kworker/5:2-25625 [005] 703095.824520: i915_reg_rw:          write reg=0xa02c, len=4, val=(0x2247, 0x0)
+   kworker/u16:1-21596 [002] 703095.824520: i915_reg_rw:          read reg=0x12030, len=4, val=(0x50, 0x0)
+     kworker/5:2-25625 [005] 703095.824521: i915_reg_rw:          write reg=0xa06c, len=4, val=(0x5dc0, 0x0)
+   kworker/u16:1-21596 [002] 703095.824521: i915_reg_rw:          read reg=0x1209c, len=4, val=(0x200, 0x0)
+     kworker/5:2-25625 [005] 703095.824521: i915_reg_rw:          write reg=0xa030, len=4, val=(0x4650, 0x0)
+     kworker/5:2-25625 [005] 703095.824522: i915_reg_rw:          write reg=0xa024, len=4, val=(0xd92, 0x0)
+   kworker/u16:1-21596 [002] 703095.824522: i915_reg_rw:          read reg=0x1a034, len=4, val=(0x38, 0x0)
+     kworker/5:2-25625 [005] 703095.824522: i915_reg_rw:          write reg=0xa008, len=4, val=(0x13000000, 0x0)
+   kworker/u16:1-21596 [002] 703095.824522: i915_reg_rw:          read reg=0x1a030, len=4, val=(0x38, 0x0)
+     kworker/5:2-25625 [005] 703095.824523: i915_reg_rw:          write reg=0xa014, len=4, val=(0x22800000, 0x0)
+   kworker/u16:1-21596 [002] 703095.824523: i915_reg_rw:          read reg=0x1a09c, len=4, val=(0x200, 0x0)
+     kworker/5:2-25625 [005] 703095.824523: i915_reg_rw:          write reg=0xa168, len=4, val=(0x7fffff8f, 0x0)
+     kworker/5:2-25625 [005] 703095.824524: intel_gpu_freq_change: new_freq=633
+     kworker/5:2-25625 [005] 703095.824524: i915_reg_rw:          write reg=0x44324, len=4, val=(0xffffff8f, 0x0)
+   kworker/u16:1-21596 [002] 703095.824525: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+   kworker/u16:1-21596 [002] 703095.824526: i915_reg_rw:          read reg=0x2034, len=4, val=(0xa90, 0x0)
+   kworker/u16:1-21596 [002] 703095.824526: i915_reg_rw:          read reg=0x2030, len=4, val=(0xa90, 0x0)
+   kworker/u16:1-21596 [002] 703095.824527: i915_reg_rw:          read reg=0x209c, len=4, val=(0x200, 0x0)
+   kworker/u16:1-21596 [002] 703095.824540: i915_reg_rw:          read reg=0x22034, len=4, val=(0x38, 0x0)
+   kworker/u16:1-21596 [002] 703095.824541: i915_reg_rw:          read reg=0x22030, len=4, val=(0x38, 0x0)
+   kworker/u16:1-21596 [002] 703095.824541: i915_reg_rw:          read reg=0x2209c, len=4, val=(0x200, 0x0)
+   kworker/u16:1-21596 [002] 703095.824542: i915_reg_rw:          write reg=0x120a8, len=4, val=(0xfffffeff, 0x0)
+   kworker/u16:1-21596 [002] 703095.824542: i915_reg_rw:          read reg=0x12034, len=4, val=(0x50, 0x0)
+   kworker/u16:1-21596 [002] 703095.824543: i915_reg_rw:          read reg=0x12030, len=4, val=(0x50, 0x0)
+   kworker/u16:1-21596 [002] 703095.824543: i915_reg_rw:          read reg=0x1209c, len=4, val=(0x200, 0x0)
+   kworker/u16:1-21596 [002] 703095.824544: i915_reg_rw:          read reg=0x1a034, len=4, val=(0x38, 0x0)
+   kworker/u16:1-21596 [002] 703095.824544: i915_reg_rw:          read reg=0x1a030, len=4, val=(0x38, 0x0)
+   kworker/u16:1-21596 [002] 703095.824545: i915_reg_rw:          read reg=0x1a09c, len=4, val=(0x200, 0x0)
+   kworker/u16:1-21596 [002] 703095.824550: i915_reg_rw:          write reg=0xa168, len=4, val=(0x7fffffff, 0x0)
+   kworker/u16:1-21596 [002] 703095.824551: i915_reg_rw:          write reg=0x44324, len=4, val=(0xffffffff, 0x0)
+   kworker/u16:1-21596 [002] 703095.824551: i915_reg_rw:          write reg=0x4432c, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703095.824552: i915_reg_rw:          write reg=0x44328, len=4, val=(0x70, 0x0)
+   kworker/u16:1-21596 [002] 703095.824552: i915_reg_rw:          write reg=0x44328, len=4, val=(0x70, 0x0)
+   kworker/u16:1-21596 [002] 703095.824553: i915_reg_rw:          write reg=0xa068, len=4, val=(0x2ee0, 0x0)
+   kworker/u16:1-21596 [002] 703095.824553: i915_reg_rw:          write reg=0xa02c, len=4, val=(0x2c88, 0x0)
+   kworker/u16:1-21596 [002] 703095.824553: i915_reg_rw:          write reg=0xa06c, len=4, val=(0x5dc0, 0x0)
+   kworker/u16:1-21596 [002] 703095.824554: i915_reg_rw:          write reg=0xa030, len=4, val=(0x4fb0, 0x0)
+   kworker/u16:1-21596 [002] 703095.824554: i915_reg_rw:          write reg=0xa024, len=4, val=(0xd92, 0x0)
+   kworker/u16:1-21596 [002] 703095.824554: i915_reg_rw:          write reg=0xa008, len=4, val=(0xa800000, 0x0)
+   kworker/u16:1-21596 [002] 703095.824555: i915_reg_rw:          write reg=0xa014, len=4, val=(0x22854000, 0x0)
+   kworker/u16:1-21596 [002] 703095.824555: i915_reg_rw:          write reg=0xa168, len=4, val=(0x7fffffdf, 0x0)
+   kworker/u16:1-21596 [002] 703095.824555: intel_gpu_freq_change: new_freq=350
+   kworker/u16:1-21596 [002] 703095.824555: i915_reg_rw:          write reg=0xa168, len=4, val=(0x7fffffff, 0x0)
+            Xorg-1460  [007] 703095.824556: i915_gem_object_fault: obj=0xffff92bc0b744900, GTT index=0 , writable
+            Xorg-1460  [007] 703095.824557: i915_vma_bind:        obj=0xffff92bc0b744900, offset=0x0000000000894000 size=0x1000 vm=0xffff92bc46465740
+            Xorg-1460  [007] 703095.824558: i915_reg_rw:          write reg=0x101008, len=4, val=(0x1, 0x0)
+            Xorg-1460  [007] 703095.824560: i915_reg_rw:          write reg=0x100070, len=4, val=(0x0, 0x0)
+            Xorg-1460  [007] 703095.824561: i915_reg_rw:          write reg=0x100074, len=4, val=(0x894000, 0x0)
+            Xorg-1460  [007] 703095.824561: i915_reg_rw:          write reg=0x100070, len=4, val=(0x894003, 0x0)
+            Xorg-1460  [007] 703095.824621: i915_gem_object_fault: obj=0xffff92bc0b744f00, GTT index=0 , writable
+            Xorg-1460  [007] 703095.824622: i915_vma_bind:        obj=0xffff92bc0b744f00, offset=0x0000000000897000 size=0x1000 vm=0xffff92bc46465740
+            Xorg-1460  [007] 703095.824622: i915_reg_rw:          write reg=0x101008, len=4, val=(0x1, 0x0)
+            Xorg-1460  [007] 703095.824625: i915_reg_rw:          write reg=0x1000e8, len=4, val=(0x0, 0x0)
+            Xorg-1460  [007] 703095.824625: i915_reg_rw:          write reg=0x1000ec, len=4, val=(0x897000, 0x0)
+            Xorg-1460  [007] 703095.824625: i915_reg_rw:          write reg=0x1000e8, len=4, val=(0x897003, 0x0)
+            Xorg-1460  [007] 703095.824689: i915_gem_object_fault: obj=0xffff92bc0b745800, GTT index=0 , writable
+            Xorg-1460  [007] 703095.824691: i915_vma_bind:        obj=0xffff92bc0b745800, offset=0x00000000008ae000 size=0x1000 vm=0xffff92bc46465740
+            Xorg-1460  [007] 703095.824691: i915_reg_rw:          write reg=0x101008, len=4, val=(0x1, 0x0)
+            Xorg-1460  [007] 703095.824693: i915_reg_rw:          write reg=0x100078, len=4, val=(0x0, 0x0)
+            Xorg-1460  [007] 703095.824694: i915_reg_rw:          write reg=0x10007c, len=4, val=(0x8ae000, 0x0)
+            Xorg-1460  [007] 703095.824694: i915_reg_rw:          write reg=0x100078, len=4, val=(0x8ae003, 0x0)
+            Xorg-1460  [007] 703095.824760: i915_gem_object_fault: obj=0xffff92bc0b746d00, GTT index=0 , writable
+            Xorg-1460  [007] 703095.824761: i915_vma_bind:        obj=0xffff92bc0b746d00, offset=0x00000000008af000 size=0x1000 vm=0xffff92bc46465740
+            Xorg-1460  [007] 703095.824761: i915_reg_rw:          write reg=0x101008, len=4, val=(0x1, 0x0)
+            Xorg-1460  [007] 703095.824763: i915_reg_rw:          write reg=0x100050, len=4, val=(0x0, 0x0)
+            Xorg-1460  [007] 703095.824763: i915_reg_rw:          write reg=0x100054, len=4, val=(0x8af000, 0x0)
+            Xorg-1460  [007] 703095.824764: i915_reg_rw:          write reg=0x100050, len=4, val=(0x8af003, 0x0)
+            Xorg-1460  [007] 703095.824844: i915_reg_rw:          write reg=0xa168, len=4, val=(0x7fffffdf, 0x0)
+            Xorg-1460  [007] 703095.824844: i915_reg_rw:          read reg=0x44328, len=4, val=(0x0, 0x0)
+            Xorg-1460  [007] 703095.824844: i915_reg_rw:          write reg=0x4432c, len=4, val=(0x70, 0x0)
+            Xorg-1460  [007] 703095.824845: i915_reg_rw:          write reg=0x44324, len=4, val=(0xffffff8f, 0x0)
+            Xorg-1460  [007] 703095.824845: i915_reg_rw:          write reg=0xa014, len=4, val=(0x22854000, 0x0)
+            Xorg-1460  [007] 703095.824846: i915_reg_rw:          write reg=0xa168, len=4, val=(0x7fffffdf, 0x0)
+            Xorg-1460  [007] 703095.824846: intel_gpu_freq_change: new_freq=350
+            Xorg-1460  [007] 703095.824848: i915_request_queue:   dev=0, hw_id=15, ring=0, ctx=23, seqno=231194, flags=0x0
+            Xorg-1460  [007] 703095.824855: i915_request_add:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231194, global=0
+            Xorg-1460  [007] 703095.824856: i915_request_submit:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231194, global=0
+            Xorg-1460  [007] 703095.824858: i915_request_execute: dev=0, hw_id=15, ring=0, ctx=23, seqno=231194, global=1269401
+            Xorg-1460  [007] 703095.824858: i915_request_in:      dev=0, hw_id=15, ring=0, ctx=23, seqno=231194, prio=0, global=1269401, port=0
+          <idle>-0     [005] 703095.825485: i915_request_out:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231194, global=1269401, completed?=1
+            Xorg-1460  [007] 703096.000530: i915_request_queue:   dev=0, hw_id=15, ring=0, ctx=23, seqno=231195, flags=0x0
+            Xorg-1460  [007] 703096.000543: i915_request_add:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231195, global=0
+            Xorg-1460  [007] 703096.000545: i915_request_submit:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231195, global=0
+            Xorg-1460  [007] 703096.000550: i915_request_execute: dev=0, hw_id=15, ring=0, ctx=23, seqno=231195, global=1269402
+            Xorg-1460  [007] 703096.000551: i915_request_in:      dev=0, hw_id=15, ring=0, ctx=23, seqno=231195, prio=0, global=1269402, port=0
+            Xorg-1460  [007] 703096.000555: i915_request_retire:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231194, global=1269401
+          <idle>-0     [005] 703096.000946: i915_request_out:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231195, global=1269402, completed?=1
+     gnome-shell-1592  [004] 703096.002357: i915_request_queue:   dev=0, hw_id=19, ring=0, ctx=26, seqno=222632, flags=0x0
+     gnome-shell-1592  [004] 703096.002374: i915_request_add:     dev=0, hw_id=19, ring=0, ctx=26, seqno=222632, global=0
+     gnome-shell-1592  [004] 703096.002376: i915_request_submit:  dev=0, hw_id=19, ring=0, ctx=26, seqno=222632, global=0
+     gnome-shell-1592  [004] 703096.002379: i915_request_execute: dev=0, hw_id=19, ring=0, ctx=26, seqno=222632, global=1269403
+     gnome-shell-1592  [004] 703096.002380: i915_request_in:      dev=0, hw_id=19, ring=0, ctx=26, seqno=222632, prio=0, global=1269403, port=0
+            Xorg-1460  [007] 703096.002511: i915_reg_rw:          write reg=0x44404, len=4, val=(0x6ffff07e, 0x0)
+            Xorg-1460  [007] 703096.002514: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c8a, 0x0)
+            Xorg-1460  [007] 703096.002517: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c8a, 0x0)
+            Xorg-1460  [007] 703096.002518: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c8a, 0x0)
+            Xorg-1460  [007] 703096.002519: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c8a, 0x0)
+            Xorg-1460  [007] 703096.002616: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+          <idle>-0     [005] 703096.004482: intel_engine_notify:  dev=0, ring=0, seqno=1269403, waiters=1
+          <idle>-0     [005] 703096.004490: i915_request_out:     dev=0, hw_id=19, ring=0, ctx=26, seqno=222632, global=1269403, completed?=1
+   kworker/u16:1-21596 [002] 703096.004517: i915_reg_rw:          read reg=0x43208, len=4, val=(0x90000000, 0x0)
+   kworker/u16:1-21596 [002] 703096.004519: i915_reg_rw:          write reg=0x43208, len=4, val=(0x10000000, 0x0)
+   kworker/u16:1-21596 [002] 703096.004525: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c8a, 0x0)
+   kworker/u16:1-21596 [002] 703096.004528: i915_pipe_update_start: pipe >c<, frame=0, scanline=72842, min=657, max=1073
+   kworker/u16:1-21596 [002] 703096.004530: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c8a, 0x0)
+   kworker/u16:1-21596 [002] 703096.004531: i915_pipe_update_vblank_evaded: pipe >c<, frame=0, scanline=72842, min=657, max=1073
+   kworker/u16:1-21596 [002] 703096.004532: i915_reg_rw:          write reg=0x68180, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.004533: i915_reg_rw:          write reg=0x68170, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.004533: i915_reg_rw:          write reg=0x68174, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.004534: i915_reg_rw:          write reg=0x68280, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.004534: i915_reg_rw:          write reg=0x68270, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.004535: i915_reg_rw:          write reg=0x68274, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.004542: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c8a, 0x0)
+   kworker/u16:1-21596 [002] 703096.004543: i915_pipe_update_end: pipe >c<, frame=0, scanline=72842
+   kworker/u16:1-21596 [002] 703096.004545: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c8a, 0x0)
+   kworker/u16:1-21596 [002] 703096.004548: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c8a, 0x0)
+          <idle>-0     [005] 703096.010991: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703096.010992: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703096.010996: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c8b, 0x0)
+          <idle>-0     [005] 703096.010998: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c8b, 0x0)
+   kworker/u16:1-21596 [002] 703096.012388: i915_gem_object_destroy: obj=0xffff92bc0b6ad500
+   kworker/u16:1-21596 [002] 703096.012391: i915_vma_unbind:      obj=0xffff92bc0b6ad500, offset=0x000000000ca00000 size=0x180000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012425: i915_gem_object_destroy: obj=0xffff92bc3d187600
+   kworker/u16:1-21596 [002] 703096.012425: i915_vma_unbind:      obj=0xffff92bc3d187600, offset=0x0000000001f80000 size=0x140000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012444: i915_gem_object_destroy: obj=0xffff92bc1a4f3300
+   kworker/u16:1-21596 [002] 703096.012445: i915_vma_unbind:      obj=0xffff92bc1a4f3300, offset=0x00000000033b3000 size=0x20000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012451: i915_gem_object_destroy: obj=0xffff92bc0b6aed00
+   kworker/u16:1-21596 [002] 703096.012451: i915_vma_unbind:      obj=0xffff92bc0b6aed00, offset=0x00000000000e1000 size=0x14000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012456: i915_gem_object_destroy: obj=0xffff92bc3b2c6100
+   kworker/u16:1-21596 [002] 703096.012457: i915_vma_unbind:      obj=0xffff92bc3b2c6100, offset=0x000000000cb9c000 size=0xe000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012461: i915_gem_object_destroy: obj=0xffff92bc3b2c5200
+   kworker/u16:1-21596 [002] 703096.012462: i915_vma_unbind:      obj=0xffff92bc3b2c5200, offset=0x000000000cb8e000 size=0xe000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012465: i915_gem_object_destroy: obj=0xffff92bc3b2c4600
+   kworker/u16:1-21596 [002] 703096.012466: i915_vma_unbind:      obj=0xffff92bc3b2c4600, offset=0x000000000cb80000 size=0xe000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012469: i915_gem_object_destroy: obj=0xffff92bc0b6ae400
+   kworker/u16:1-21596 [002] 703096.012476: i915_reg_rw:          write reg=0x100040, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012477: i915_reg_rw:          write reg=0x100044, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012478: i915_reg_rw:          write reg=0x100040, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012479: i915_vma_unbind:      obj=0xffff92bc0b6ae400, offset=0x0000000000906000 size=0xc000 vm=0xffff92bc46465740
+   kworker/u16:1-21596 [002] 703096.012483: i915_vma_unbind:      obj=0xffff92bc0b6ae400, offset=0x00000000020c0000 size=0xc000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012488: i915_gem_object_destroy: obj=0xffff92baf20ed800
+   kworker/u16:1-21596 [002] 703096.012489: i915_vma_unbind:      obj=0xffff92baf20ed800, offset=0x00000000020d9000 size=0x3000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012493: i915_gem_object_destroy: obj=0xffff92bc413d5b00
+   kworker/u16:1-21596 [002] 703096.012496: i915_reg_rw:          write reg=0x100090, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012497: i915_reg_rw:          write reg=0x100094, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012498: i915_reg_rw:          write reg=0x100090, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012499: i915_vma_unbind:      obj=0xffff92bc413d5b00, offset=0x0000000000887000 size=0x3000 vm=0xffff92bc46465740
+   kworker/u16:1-21596 [002] 703096.012502: i915_vma_unbind:      obj=0xffff92bc413d5b00, offset=0x0000000003363000 size=0x3000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012508: i915_gem_object_destroy: obj=0xffff92bc413d6700
+   kworker/u16:1-21596 [002] 703096.012508: i915_vma_unbind:      obj=0xffff92bc413d6700, offset=0x0000000003360000 size=0x3000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012511: i915_gem_object_destroy: obj=0xffff92bc413d5500
+   kworker/u16:1-21596 [002] 703096.012511: i915_vma_unbind:      obj=0xffff92bc413d5500, offset=0x0000000003321000 size=0x3000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012514: i915_gem_object_destroy: obj=0xffff92bc413d5800
+   kworker/u16:1-21596 [002] 703096.012514: i915_vma_unbind:      obj=0xffff92bc413d5800, offset=0x000000000331e000 size=0x3000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012517: i915_gem_object_destroy: obj=0xffff92bc413d4000
+   kworker/u16:1-21596 [002] 703096.012517: i915_vma_unbind:      obj=0xffff92bc413d4000, offset=0x00000000033e2000 size=0x3000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012520: i915_gem_object_destroy: obj=0xffff92bc19f70c00
+   kworker/u16:1-21596 [002] 703096.012520: i915_vma_unbind:      obj=0xffff92bc19f70c00, offset=0x00000000033df000 size=0x3000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012523: i915_gem_object_destroy: obj=0xffff92bc19f70000
+   kworker/u16:1-21596 [002] 703096.012524: i915_vma_unbind:      obj=0xffff92bc19f70000, offset=0x00000000020cc000 size=0x3000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012527: i915_gem_object_destroy: obj=0xffff92bc0ca16400
+   kworker/u16:1-21596 [002] 703096.012530: i915_reg_rw:          write reg=0x100000, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012531: i915_reg_rw:          write reg=0x100004, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012532: i915_reg_rw:          write reg=0x100000, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012545: i915_vma_unbind:      obj=0xffff92bc0ca16400, offset=0x000000000083e000 size=0x1000 vm=0xffff92bc46465740
+   kworker/u16:1-21596 [002] 703096.012547: i915_vma_unbind:      obj=0xffff92bc0ca16400, offset=0x00000000033ad000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012552: i915_gem_object_destroy: obj=0xffff92bc0ca15b00
+   kworker/u16:1-21596 [002] 703096.012554: i915_reg_rw:          write reg=0x1000a0, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012555: i915_reg_rw:          write reg=0x1000a4, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012556: i915_reg_rw:          write reg=0x1000a0, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012557: i915_vma_unbind:      obj=0xffff92bc0ca15b00, offset=0x0000000000835000 size=0x1000 vm=0xffff92bc46465740
+   kworker/u16:1-21596 [002] 703096.012559: i915_vma_unbind:      obj=0xffff92bc0ca15b00, offset=0x00000000033ac000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012562: i915_gem_object_destroy: obj=0xffff92bc0ca17c00
+   kworker/u16:1-21596 [002] 703096.012564: i915_reg_rw:          write reg=0x1000d8, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012565: i915_reg_rw:          write reg=0x1000dc, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012566: i915_reg_rw:          write reg=0x1000d8, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012567: i915_vma_unbind:      obj=0xffff92bc0ca17c00, offset=0x0000000000834000 size=0x1000 vm=0xffff92bc46465740
+   kworker/u16:1-21596 [002] 703096.012569: i915_vma_unbind:      obj=0xffff92bc0ca17c00, offset=0x00000000033ab000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012572: i915_gem_object_destroy: obj=0xffff92bc0ca15e00
+   kworker/u16:1-21596 [002] 703096.012574: i915_reg_rw:          write reg=0x1000e0, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012575: i915_reg_rw:          write reg=0x1000e4, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012575: i915_reg_rw:          write reg=0x1000e0, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012576: i915_vma_unbind:      obj=0xffff92bc0ca15e00, offset=0x000000000082e000 size=0x1000 vm=0xffff92bc46465740
+   kworker/u16:1-21596 [002] 703096.012579: i915_vma_unbind:      obj=0xffff92bc0ca15e00, offset=0x00000000033f3000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012583: i915_gem_object_destroy: obj=0xffff92bc0ca16100
+   kworker/u16:1-21596 [002] 703096.012585: i915_reg_rw:          write reg=0x1000f8, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012586: i915_reg_rw:          write reg=0x1000fc, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012586: i915_reg_rw:          write reg=0x1000f8, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012587: i915_vma_unbind:      obj=0xffff92bc0ca16100, offset=0x000000000082d000 size=0x1000 vm=0xffff92bc46465740
+   kworker/u16:1-21596 [002] 703096.012589: i915_vma_unbind:      obj=0xffff92bc0ca16100, offset=0x00000000033f2000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012593: i915_gem_object_destroy: obj=0xffff92bc0ca16700
+   kworker/u16:1-21596 [002] 703096.012595: i915_reg_rw:          write reg=0x100028, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012596: i915_reg_rw:          write reg=0x10002c, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012600: i915_reg_rw:          write reg=0x100028, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012601: i915_vma_unbind:      obj=0xffff92bc0ca16700, offset=0x000000000080c000 size=0x1000 vm=0xffff92bc46465740
+   kworker/u16:1-21596 [002] 703096.012604: i915_vma_unbind:      obj=0xffff92bc0ca16700, offset=0x00000000033f1000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012607: i915_gem_object_destroy: obj=0xffff92bc0ca15500
+   kworker/u16:1-21596 [002] 703096.012610: i915_reg_rw:          write reg=0x100098, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012611: i915_reg_rw:          write reg=0x10009c, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012612: i915_reg_rw:          write reg=0x100098, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012613: i915_vma_unbind:      obj=0xffff92bc0ca15500, offset=0x0000000000824000 size=0x1000 vm=0xffff92bc46465740
+   kworker/u16:1-21596 [002] 703096.012614: i915_vma_unbind:      obj=0xffff92bc0ca15500, offset=0x00000000033f0000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012619: i915_gem_object_destroy: obj=0xffff92bc0ca15200
+   kworker/u16:1-21596 [002] 703096.012621: i915_reg_rw:          write reg=0x1000c8, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012622: i915_reg_rw:          write reg=0x1000cc, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012622: i915_reg_rw:          write reg=0x1000c8, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012623: i915_vma_unbind:      obj=0xffff92bc0ca15200, offset=0x000000000081e000 size=0x1000 vm=0xffff92bc46465740
+   kworker/u16:1-21596 [002] 703096.012625: i915_vma_unbind:      obj=0xffff92bc0ca15200, offset=0x00000000033ef000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012628: i915_gem_object_destroy: obj=0xffff92bc0ca17600
+   kworker/u16:1-21596 [002] 703096.012629: i915_vma_unbind:      obj=0xffff92bc0ca17600, offset=0x00000000033ee000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012631: i915_gem_object_destroy: obj=0xffff92bc1a4f2100
+   kworker/u16:1-21596 [002] 703096.012632: i915_vma_unbind:      obj=0xffff92bc1a4f2100, offset=0x00000000043ff000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012635: i915_gem_object_destroy: obj=0xffff92bc1a4f1b00
+   kworker/u16:1-21596 [002] 703096.012636: i915_vma_unbind:      obj=0xffff92bc1a4f1b00, offset=0x00000000043fb000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012638: i915_gem_object_destroy: obj=0xffff92bc1a4f1200
+   kworker/u16:1-21596 [002] 703096.012639: i915_vma_unbind:      obj=0xffff92bc1a4f1200, offset=0x0000000003318000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012642: i915_gem_object_destroy: obj=0xffff92bc1a4f3900
+   kworker/u16:1-21596 [002] 703096.012643: i915_vma_unbind:      obj=0xffff92bc1a4f3900, offset=0x0000000003317000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012645: i915_gem_object_destroy: obj=0xffff92bc1a4f1500
+   kworker/u16:1-21596 [002] 703096.012647: i915_reg_rw:          write reg=0x100010, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012648: i915_reg_rw:          write reg=0x100014, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012649: i915_reg_rw:          write reg=0x100010, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012650: i915_vma_unbind:      obj=0xffff92bc1a4f1500, offset=0x0000000000805000 size=0x1000 vm=0xffff92bc46465740
+   kworker/u16:1-21596 [002] 703096.012652: i915_vma_unbind:      obj=0xffff92bc1a4f1500, offset=0x0000000003316000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012655: i915_gem_object_destroy: obj=0xffff92bc1a4f3000
+   kworker/u16:1-21596 [002] 703096.012656: i915_vma_unbind:      obj=0xffff92bc1a4f3000, offset=0x0000000003315000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012659: i915_gem_object_destroy: obj=0xffff92bc1a4f2400
+   kworker/u16:1-21596 [002] 703096.012660: i915_vma_unbind:      obj=0xffff92bc1a4f2400, offset=0x00000000020ff000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012662: i915_gem_object_destroy: obj=0xffff92bc1a4f0600
+   kworker/u16:1-21596 [002] 703096.012662: i915_vma_unbind:      obj=0xffff92bc1a4f0600, offset=0x00000000020fe000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012664: i915_gem_object_destroy: obj=0xffff92bc1a4f2d00
+   kworker/u16:1-21596 [002] 703096.012665: i915_vma_unbind:      obj=0xffff92bc1a4f2d00, offset=0x000000000333a000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012667: i915_gem_object_destroy: obj=0xffff92bc1a4f0300
+   kworker/u16:1-21596 [002] 703096.012668: i915_vma_unbind:      obj=0xffff92bc1a4f0300, offset=0x0000000003372000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012670: i915_gem_object_destroy: obj=0xffff92bc01e24900
+   kworker/u16:1-21596 [002] 703096.012672: i915_reg_rw:          write reg=0x100038, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012673: i915_reg_rw:          write reg=0x10003c, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012673: i915_reg_rw:          write reg=0x100038, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012675: i915_vma_unbind:      obj=0xffff92bc01e24900, offset=0x00000000008e8000 size=0x1000 vm=0xffff92bc46465740
+   kworker/u16:1-21596 [002] 703096.012678: i915_vma_unbind:      obj=0xffff92bc01e24900, offset=0x0000000003339000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012682: i915_gem_object_destroy: obj=0xffff92bc0b60a700
+   kworker/u16:1-21596 [002] 703096.012682: i915_vma_unbind:      obj=0xffff92bc0b60a700, offset=0x00000000008e4000 size=0x1000 vm=0xffff92bc46465740
+   kworker/u16:1-21596 [002] 703096.012685: i915_vma_unbind:      obj=0xffff92bc0b60a700, offset=0x0000000003336000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012689: i915_gem_object_destroy: obj=0xffff92bc0b609200
+   kworker/u16:1-21596 [002] 703096.012690: i915_reg_rw:          write reg=0x100020, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012691: i915_reg_rw:          write reg=0x100024, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012692: i915_reg_rw:          write reg=0x100020, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012693: i915_vma_unbind:      obj=0xffff92bc0b609200, offset=0x00000000008e7000 size=0x1000 vm=0xffff92bc46465740
+   kworker/u16:1-21596 [002] 703096.012694: i915_vma_unbind:      obj=0xffff92bc0b609200, offset=0x0000000003335000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012697: i915_gem_object_destroy: obj=0xffff92bc0b608000
+   kworker/u16:1-21596 [002] 703096.012698: i915_vma_unbind:      obj=0xffff92bc0b608000, offset=0x00000000008e6000 size=0x1000 vm=0xffff92bc46465740
+   kworker/u16:1-21596 [002] 703096.012699: i915_vma_unbind:      obj=0xffff92bc0b608000, offset=0x0000000003334000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012702: i915_gem_object_destroy: obj=0xffff92bc05ebd800
+   kworker/u16:1-21596 [002] 703096.012703: i915_vma_unbind:      obj=0xffff92bc05ebd800, offset=0x00000000008e5000 size=0x1000 vm=0xffff92bc46465740
+   kworker/u16:1-21596 [002] 703096.012704: i915_vma_unbind:      obj=0xffff92bc05ebd800, offset=0x0000000003333000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012708: i915_gem_object_destroy: obj=0xffff92bc05ebe100
+   kworker/u16:1-21596 [002] 703096.012709: i915_reg_rw:          write reg=0x1000b8, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012710: i915_reg_rw:          write reg=0x1000bc, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012711: i915_reg_rw:          write reg=0x1000b8, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012712: i915_vma_unbind:      obj=0xffff92bc05ebe100, offset=0x0000000000804000 size=0x1000 vm=0xffff92bc46465740
+   kworker/u16:1-21596 [002] 703096.012713: i915_vma_unbind:      obj=0xffff92bc05ebe100, offset=0x0000000003332000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012716: i915_gem_object_destroy: obj=0xffff92bc05ebe400
+   kworker/u16:1-21596 [002] 703096.012717: i915_vma_unbind:      obj=0xffff92bc05ebe400, offset=0x0000000000833000 size=0x1000 vm=0xffff92bc46465740
+   kworker/u16:1-21596 [002] 703096.012718: i915_vma_unbind:      obj=0xffff92bc05ebe400, offset=0x0000000003331000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012722: i915_gem_object_destroy: obj=0xffff92bc05ebe700
+   kworker/u16:1-21596 [002] 703096.012723: i915_reg_rw:          write reg=0x100088, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012724: i915_reg_rw:          write reg=0x10008c, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012725: i915_reg_rw:          write reg=0x100088, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012726: i915_vma_unbind:      obj=0xffff92bc05ebe700, offset=0x00000000008d6000 size=0x1000 vm=0xffff92bc46465740
+   kworker/u16:1-21596 [002] 703096.012728: i915_vma_unbind:      obj=0xffff92bc05ebe700, offset=0x0000000003330000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012731: i915_gem_object_destroy: obj=0xffff92bc05ebc000
+   kworker/u16:1-21596 [002] 703096.012732: i915_reg_rw:          write reg=0x100058, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012733: i915_reg_rw:          write reg=0x10005c, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012734: i915_reg_rw:          write reg=0x100058, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012735: i915_vma_unbind:      obj=0xffff92bc05ebc000, offset=0x0000000000803000 size=0x1000 vm=0xffff92bc46465740
+   kworker/u16:1-21596 [002] 703096.012736: i915_vma_unbind:      obj=0xffff92bc05ebc000, offset=0x000000000332f000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012739: i915_gem_object_destroy: obj=0xffff92bc05ebf900
+   kworker/u16:1-21596 [002] 703096.012741: i915_reg_rw:          write reg=0x100018, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012742: i915_reg_rw:          write reg=0x10001c, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012742: i915_reg_rw:          write reg=0x100018, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012743: i915_vma_unbind:      obj=0xffff92bc05ebf900, offset=0x0000000000802000 size=0x1000 vm=0xffff92bc46465740
+   kworker/u16:1-21596 [002] 703096.012745: i915_vma_unbind:      obj=0xffff92bc05ebf900, offset=0x000000000332e000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012748: i915_gem_object_destroy: obj=0xffff92bc05ebdb00
+   kworker/u16:1-21596 [002] 703096.012750: i915_reg_rw:          write reg=0x1000a8, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012751: i915_reg_rw:          write reg=0x1000ac, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012752: i915_reg_rw:          write reg=0x1000a8, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012753: i915_vma_unbind:      obj=0xffff92bc05ebdb00, offset=0x00000000007f4000 size=0x1000 vm=0xffff92bc46465740
+   kworker/u16:1-21596 [002] 703096.012754: i915_vma_unbind:      obj=0xffff92bc05ebdb00, offset=0x000000000332d000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012759: i915_gem_object_destroy: obj=0xffff92bc01e25200
+   kworker/u16:1-21596 [002] 703096.012767: i915_vma_unbind:      obj=0xffff92bc01e25200, offset=0x0000000000823000 size=0x1000 vm=0xffff92bc46465740
+   kworker/u16:1-21596 [002] 703096.012771: i915_vma_unbind:      obj=0xffff92bc01e25200, offset=0x000000000333c000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012777: i915_gem_object_destroy: obj=0xffff92bc01e27900
+   kworker/u16:1-21596 [002] 703096.012780: i915_reg_rw:          write reg=0x1000f0, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012781: i915_reg_rw:          write reg=0x1000f4, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012782: i915_reg_rw:          write reg=0x1000f0, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012783: i915_vma_unbind:      obj=0xffff92bc01e27900, offset=0x0000000000821000 size=0x1000 vm=0xffff92bc46465740
+   kworker/u16:1-21596 [002] 703096.012785: i915_vma_unbind:      obj=0xffff92bc01e27900, offset=0x000000000333b000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012791: i915_gem_object_destroy: obj=0xffff92bc05ed8c00
+   kworker/u16:1-21596 [002] 703096.012791: i915_vma_unbind:      obj=0xffff92bc05ed8c00, offset=0x00000000033d5000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012796: i915_gem_object_destroy: obj=0xffff92bc05ed9800
+   kworker/u16:1-21596 [002] 703096.012797: i915_vma_unbind:      obj=0xffff92bc05ed9800, offset=0x00000000033d4000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012800: i915_gem_object_destroy: obj=0xffff92bc05edb600
+   kworker/u16:1-21596 [002] 703096.012801: i915_vma_unbind:      obj=0xffff92bc05edb600, offset=0x00000000033d3000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012804: i915_gem_object_destroy: obj=0xffff92bc05ed9500
+   kworker/u16:1-21596 [002] 703096.012805: i915_vma_unbind:      obj=0xffff92bc05ed9500, offset=0x000000000339a000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012808: i915_gem_object_destroy: obj=0xffff92bc0b747c00
+   kworker/u16:1-21596 [002] 703096.012811: i915_vma_unbind:      obj=0xffff92bc0b747c00, offset=0x0000000003399000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012814: i915_gem_object_destroy: obj=0xffff92bc0b744600
+   kworker/u16:1-21596 [002] 703096.012815: i915_vma_unbind:      obj=0xffff92bc0b744600, offset=0x0000000003398000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012818: i915_gem_object_destroy: obj=0xffff92bc0b747000
+   kworker/u16:1-21596 [002] 703096.012821: i915_reg_rw:          write reg=0x100060, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012822: i915_reg_rw:          write reg=0x100064, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012823: i915_reg_rw:          write reg=0x100060, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [002] 703096.012824: i915_vma_unbind:      obj=0xffff92bc0b747000, offset=0x0000000000819000 size=0x1000 vm=0xffff92bc46465740
+   kworker/u16:1-21596 [002] 703096.012827: i915_vma_unbind:      obj=0xffff92bc0b747000, offset=0x0000000003397000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012832: i915_gem_object_destroy: obj=0xffff92bc0b744000
+   kworker/u16:1-21596 [002] 703096.012832: i915_vma_unbind:      obj=0xffff92bc0b744000, offset=0x0000000003396000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [002] 703096.012835: i915_gem_object_destroy: obj=0xffff92bc0b745200
+   kworker/u16:1-21596 [002] 703096.012836: i915_vma_unbind:      obj=0xffff92bc0b745200, offset=0x0000000003395000 size=0x1000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [004] 703096.020520: i915_gem_object_destroy: obj=0xffff92bc48f9b600
+   kworker/u16:1-21596 [004] 703096.020524: i915_vma_unbind:      obj=0xffff92bc48f9b600, offset=0x0000000000145000 size=0x1000 vm=0xffff92bc44786000
+   kworker/u16:1-21596 [004] 703096.020541: i915_gem_object_destroy: obj=0xffff92baf2138f00
+   kworker/u16:1-21596 [004] 703096.020541: i915_vma_unbind:      obj=0xffff92baf2138f00, offset=0x000000000dc9b000 size=0x1000 vm=0xffff92bc44786000
+   kworker/u16:1-21596 [004] 703096.020547: i915_gem_object_destroy: obj=0xffff92baf2138600
+   kworker/u16:1-21596 [004] 703096.020548: i915_vma_unbind:      obj=0xffff92baf2138600, offset=0x0000000003dff000 size=0x1000 vm=0xffff92bc44786000
+          <idle>-0     [005] 703096.027581: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703096.027583: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703096.027586: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c8c, 0x0)
+          <idle>-0     [005] 703096.027588: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c8c, 0x0)
+     kworker/2:0-23988 [002] 703096.027650: i915_reg_rw:          read reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/2:0-23988 [002] 703096.027653: i915_reg_rw:          write reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/2:0-23988 [002] 703096.027654: i915_reg_rw:          write reg=0x100100, len=4, val=(0x20000009, 0x0)
+     kworker/2:0-23988 [002] 703096.027655: i915_reg_rw:          write reg=0x100104, len=4, val=(0x0, 0x0)
+     kworker/2:0-23988 [002] 703096.027655: i915_reg_rw:          write reg=0x43208, len=4, val=(0x90000000, 0x0)
+     kworker/2:0-23988 [002] 703096.027656: i915_reg_rw:          write reg=0x50380, len=4, val=(0x4, 0x0)
+          <idle>-0     [005] 703096.044317: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703096.044318: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703096.044321: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c8d, 0x0)
+          <idle>-0     [005] 703096.044324: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c8d, 0x0)
+          <idle>-0     [005] 703096.044327: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c8d, 0x0)
+          <idle>-0     [005] 703096.044328: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11c8d, 0x0)
+          <idle>-0     [005] 703096.044329: i915_reg_rw:          write reg=0x44404, len=4, val=(0x6ffff07f, 0x0)
+            Xorg-1460  [007] 703096.601282: i915_request_queue:   dev=0, hw_id=15, ring=0, ctx=23, seqno=231196, flags=0x0
+            Xorg-1460  [007] 703096.601297: i915_request_add:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231196, global=0
+            Xorg-1460  [007] 703096.601299: i915_request_submit:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231196, global=0
+            Xorg-1460  [007] 703096.601304: i915_request_execute: dev=0, hw_id=15, ring=0, ctx=23, seqno=231196, global=1269404
+            Xorg-1460  [007] 703096.601307: i915_request_in:      dev=0, hw_id=15, ring=0, ctx=23, seqno=231196, prio=0, global=1269404, port=0
+            Xorg-1460  [007] 703096.601324: i915_request_retire:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231195, global=1269402
+          <idle>-0     [005] 703096.601650: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+          <idle>-0     [005] 703096.601660: intel_engine_notify:  dev=0, ring=0, seqno=1269404, waiters=0
+          <idle>-0     [005] 703096.601670: i915_request_out:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231196, global=1269404, completed?=1
+     gnome-shell-1592  [004] 703096.603161: i915_request_queue:   dev=0, hw_id=19, ring=0, ctx=26, seqno=222633, flags=0x0
+     gnome-shell-1592  [004] 703096.603178: i915_request_add:     dev=0, hw_id=19, ring=0, ctx=26, seqno=222633, global=0
+     gnome-shell-1592  [004] 703096.603180: i915_request_submit:  dev=0, hw_id=19, ring=0, ctx=26, seqno=222633, global=0
+     gnome-shell-1592  [004] 703096.603183: i915_request_execute: dev=0, hw_id=19, ring=0, ctx=26, seqno=222633, global=1269405
+     gnome-shell-1592  [004] 703096.603185: i915_request_in:      dev=0, hw_id=19, ring=0, ctx=26, seqno=222633, prio=0, global=1269405, port=0
+     gnome-shell-1592  [004] 703096.603189: i915_request_retire:  dev=0, hw_id=19, ring=0, ctx=26, seqno=222632, global=1269403
+            Xorg-1460  [007] 703096.603350: i915_reg_rw:          write reg=0x44404, len=4, val=(0x6ffff07e, 0x0)
+            Xorg-1460  [007] 703096.603353: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cae, 0x0)
+            Xorg-1460  [007] 703096.603356: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cae, 0x0)
+            Xorg-1460  [007] 703096.603358: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cae, 0x0)
+            Xorg-1460  [007] 703096.603359: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cae, 0x0)
+            Xorg-1460  [007] 703096.603469: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+          <idle>-0     [005] 703096.605039: intel_engine_notify:  dev=0, ring=0, seqno=1269405, waiters=1
+          <idle>-0     [005] 703096.605048: i915_request_out:     dev=0, hw_id=19, ring=0, ctx=26, seqno=222633, global=1269405, completed?=1
+   kworker/u16:1-21596 [004] 703096.605092: i915_reg_rw:          read reg=0x43208, len=4, val=(0x90000000, 0x0)
+   kworker/u16:1-21596 [004] 703096.605094: i915_reg_rw:          write reg=0x43208, len=4, val=(0x10000000, 0x0)
+   kworker/u16:1-21596 [004] 703096.605099: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cae, 0x0)
+   kworker/u16:1-21596 [004] 703096.605101: i915_pipe_update_start: pipe >c<, frame=0, scanline=72878, min=695, max=1073
+   kworker/u16:1-21596 [004] 703096.605103: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cae, 0x0)
+   kworker/u16:1-21596 [004] 703096.605104: i915_pipe_update_vblank_evaded: pipe >c<, frame=0, scanline=72878, min=695, max=1073
+   kworker/u16:1-21596 [004] 703096.605105: i915_reg_rw:          write reg=0x68180, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [004] 703096.605106: i915_reg_rw:          write reg=0x68170, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [004] 703096.605107: i915_reg_rw:          write reg=0x68174, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [004] 703096.605107: i915_reg_rw:          write reg=0x68280, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [004] 703096.605108: i915_reg_rw:          write reg=0x68270, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [004] 703096.605109: i915_reg_rw:          write reg=0x68274, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [004] 703096.605116: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cae, 0x0)
+   kworker/u16:1-21596 [004] 703096.605117: i915_pipe_update_end: pipe >c<, frame=0, scanline=72878
+   kworker/u16:1-21596 [004] 703096.605119: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cae, 0x0)
+   kworker/u16:1-21596 [004] 703096.605121: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cae, 0x0)
+          <idle>-0     [005] 703096.610994: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703096.610996: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703096.610999: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11caf, 0x0)
+          <idle>-0     [005] 703096.611002: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11caf, 0x0)
+          <idle>-0     [005] 703096.627611: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703096.627612: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703096.627616: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cb0, 0x0)
+          <idle>-0     [005] 703096.627618: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cb0, 0x0)
+     kworker/4:1-23087 [004] 703096.627687: i915_reg_rw:          read reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/4:1-23087 [004] 703096.627689: i915_reg_rw:          write reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/4:1-23087 [004] 703096.627690: i915_reg_rw:          write reg=0x100100, len=4, val=(0x20000016, 0x0)
+     kworker/4:1-23087 [004] 703096.627691: i915_reg_rw:          write reg=0x100104, len=4, val=(0x0, 0x0)
+     kworker/4:1-23087 [004] 703096.627691: i915_reg_rw:          write reg=0x43208, len=4, val=(0x90000000, 0x0)
+     kworker/4:1-23087 [004] 703096.627692: i915_reg_rw:          write reg=0x50380, len=4, val=(0x4, 0x0)
+          <idle>-0     [005] 703096.644141: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703096.644144: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703096.644152: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cb1, 0x0)
+          <idle>-0     [005] 703096.644157: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cb1, 0x0)
+          <idle>-0     [005] 703096.644161: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cb1, 0x0)
+          <idle>-0     [005] 703096.644162: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cb1, 0x0)
+          <idle>-0     [005] 703096.644164: i915_reg_rw:          write reg=0x44404, len=4, val=(0x6ffff07f, 0x0)
+            Xorg-1460  [007] 703096.660333: i915_gem_object_create: obj=0xffff92bc4714f900, size=0x80000
+            Xorg-1460  [007] 703096.660524: i915_gem_object_fault: obj=0xffff92bc1a4f2a00, GTT index=0 , writable
+            Xorg-1460  [007] 703096.660529: i915_vma_bind:        obj=0xffff92bc1a4f2a00, offset=0x0000000000802000 size=0x3000 vm=0xffff92bc46465740
+            Xorg-1460  [007] 703096.660530: i915_reg_rw:          write reg=0x101008, len=4, val=(0x1, 0x0)
+            Xorg-1460  [007] 703096.660532: i915_reg_rw:          write reg=0x100060, len=4, val=(0x0, 0x0)
+            Xorg-1460  [007] 703096.660532: i915_reg_rw:          write reg=0x100064, len=4, val=(0x804000, 0x0)
+            Xorg-1460  [007] 703096.660532: i915_reg_rw:          write reg=0x100060, len=4, val=(0x802003, 0x0)
+            Xorg-1460  [007] 703096.660591: i915_gem_object_pwrite: obj=0xffff92bc0b744900, offset=0x0, len=0x1000
+            Xorg-1460  [007] 703096.660686: i915_gem_object_pwrite: obj=0xffff92bc0b746d00, offset=0x0, len=0x1000
+            Xorg-1460  [007] 703096.660770: i915_gem_object_pwrite: obj=0xffff92bc0ca14300, offset=0x0, len=0x1000
+            Xorg-1460  [007] 703096.660771: i915_request_retire:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231196, global=1269404
+            Xorg-1460  [007] 703096.660806: i915_vma_bind:        obj=0xffff92bc4714f900, offset=0x0000000001780000 size=0x80000 vm=0xffff92bc006c8000
+            Xorg-1460  [007] 703096.660823: i915_request_queue:   dev=0, hw_id=15, ring=0, ctx=23, seqno=231197, flags=0x0
+            Xorg-1460  [007] 703096.660833: i915_request_add:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231197, global=0
+            Xorg-1460  [007] 703096.660834: i915_request_submit:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231197, global=0
+            Xorg-1460  [007] 703096.660835: i915_request_execute: dev=0, hw_id=15, ring=0, ctx=23, seqno=231197, global=1269406
+            Xorg-1460  [007] 703096.660836: i915_request_in:      dev=0, hw_id=15, ring=0, ctx=23, seqno=231197, prio=0, global=1269406, port=0
+            Xorg-1460  [007] 703096.660928: i915_request_queue:   dev=0, hw_id=15, ring=0, ctx=23, seqno=231198, flags=0x0
+            Xorg-1460  [007] 703096.660930: i915_request_add:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231198, global=0
+            Xorg-1460  [007] 703096.660931: i915_request_submit:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231198, global=0
+          <idle>-0     [005] 703096.661262: i915_request_execute: dev=0, hw_id=15, ring=0, ctx=23, seqno=231198, global=1269407
+          <idle>-0     [005] 703096.661262: i915_request_in:      dev=0, hw_id=15, ring=0, ctx=23, seqno=231198, prio=0, global=1269407, port=0
+          <idle>-0     [005] 703096.661605: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+          <idle>-0     [005] 703096.661607: intel_engine_notify:  dev=0, ring=0, seqno=1269406, waiters=0
+            code-19916 [005] 703096.661707: i915_request_out:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231198, global=1269407, completed?=1
+     gnome-shell-1592  [002] 703096.665511: i915_request_queue:   dev=0, hw_id=19, ring=0, ctx=26, seqno=222634, flags=0x0
+     gnome-shell-1592  [002] 703096.665518: i915_request_add:     dev=0, hw_id=19, ring=0, ctx=26, seqno=222634, global=0
+     gnome-shell-1592  [002] 703096.665518: i915_request_submit:  dev=0, hw_id=19, ring=0, ctx=26, seqno=222634, global=0
+     gnome-shell-1592  [002] 703096.665519: i915_request_execute: dev=0, hw_id=19, ring=0, ctx=26, seqno=222634, global=1269408
+     gnome-shell-1592  [002] 703096.665520: i915_request_in:      dev=0, hw_id=19, ring=0, ctx=26, seqno=222634, prio=0, global=1269408, port=0
+     gnome-shell-1592  [002] 703096.665521: i915_request_retire:  dev=0, hw_id=19, ring=0, ctx=26, seqno=222633, global=1269405
+            Xorg-1460  [007] 703096.665580: i915_reg_rw:          write reg=0x44404, len=4, val=(0x6ffff07e, 0x0)
+            Xorg-1460  [007] 703096.665581: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cb2, 0x0)
+            Xorg-1460  [007] 703096.665582: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cb2, 0x0)
+            Xorg-1460  [007] 703096.665582: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cb2, 0x0)
+            Xorg-1460  [007] 703096.665583: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cb2, 0x0)
+            Xorg-1460  [007] 703096.665617: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+          <idle>-0     [005] 703096.666526: intel_engine_notify:  dev=0, ring=0, seqno=1269408, waiters=1
+          <idle>-0     [005] 703096.666529: i915_request_out:     dev=0, hw_id=19, ring=0, ctx=26, seqno=222634, global=1269408, completed?=1
+   kworker/u16:1-21596 [004] 703096.666566: i915_reg_rw:          read reg=0x43208, len=4, val=(0x90000000, 0x0)
+   kworker/u16:1-21596 [004] 703096.666566: i915_reg_rw:          write reg=0x43208, len=4, val=(0x10000000, 0x0)
+   kworker/u16:1-21596 [004] 703096.666568: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cb2, 0x0)
+   kworker/u16:1-21596 [004] 703096.666569: i915_pipe_update_start: pipe >c<, frame=0, scanline=72882, min=344, max=1073
+   kworker/u16:1-21596 [004] 703096.666569: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cb2, 0x0)
+   kworker/u16:1-21596 [004] 703096.666570: i915_pipe_update_vblank_evaded: pipe >c<, frame=0, scanline=72882, min=344, max=1073
+   kworker/u16:1-21596 [004] 703096.666570: i915_reg_rw:          write reg=0x68180, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [004] 703096.666570: i915_reg_rw:          write reg=0x68170, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [004] 703096.666571: i915_reg_rw:          write reg=0x68174, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [004] 703096.666571: i915_reg_rw:          write reg=0x68280, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [004] 703096.666571: i915_reg_rw:          write reg=0x68270, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [004] 703096.666571: i915_reg_rw:          write reg=0x68274, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [004] 703096.666574: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cb2, 0x0)
+   kworker/u16:1-21596 [004] 703096.666575: i915_pipe_update_end: pipe >c<, frame=0, scanline=72882
+   kworker/u16:1-21596 [004] 703096.666575: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cb2, 0x0)
+   kworker/u16:1-21596 [004] 703096.666576: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cb2, 0x0)
+          <idle>-0     [005] 703096.677636: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703096.677636: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703096.677638: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cb3, 0x0)
+          <idle>-0     [005] 703096.677639: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cb3, 0x0)
+          <idle>-0     [005] 703096.694320: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703096.694321: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703096.694322: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cb4, 0x0)
+          <idle>-0     [005] 703096.694324: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cb4, 0x0)
+     kworker/4:1-23087 [004] 703096.694364: i915_reg_rw:          read reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/4:1-23087 [004] 703096.694365: i915_reg_rw:          write reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/4:1-23087 [004] 703096.694366: i915_reg_rw:          write reg=0x100100, len=4, val=(0x2000000d, 0x0)
+     kworker/4:1-23087 [004] 703096.694366: i915_reg_rw:          write reg=0x100104, len=4, val=(0x0, 0x0)
+     kworker/4:1-23087 [004] 703096.694366: i915_reg_rw:          write reg=0x43208, len=4, val=(0x90000000, 0x0)
+     kworker/4:1-23087 [004] 703096.694366: i915_reg_rw:          write reg=0x50380, len=4, val=(0x4, 0x0)
+          <idle>-0     [005] 703096.711014: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703096.711015: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703096.711018: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cb5, 0x0)
+          <idle>-0     [005] 703096.711019: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cb5, 0x0)
+          <idle>-0     [005] 703096.711021: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cb5, 0x0)
+          <idle>-0     [005] 703096.711022: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cb5, 0x0)
+          <idle>-0     [005] 703096.711022: i915_reg_rw:          write reg=0x44404, len=4, val=(0x6ffff07f, 0x0)
+            Xorg-1460  [007] 703096.827719: i915_gem_object_fault: obj=0xffff92bc0b747300, GTT index=0 , writable
+            Xorg-1460  [007] 703096.827724: i915_vma_bind:        obj=0xffff92bc0b747300, offset=0x00000000007f4000 size=0x1000 vm=0xffff92bc46465740
+            Xorg-1460  [007] 703096.827726: i915_reg_rw:          write reg=0x101008, len=4, val=(0x1, 0x0)
+            Xorg-1460  [007] 703096.827728: i915_reg_rw:          write reg=0x1000f0, len=4, val=(0x0, 0x0)
+            Xorg-1460  [007] 703096.827728: i915_reg_rw:          write reg=0x1000f4, len=4, val=(0x7f4000, 0x0)
+            Xorg-1460  [007] 703096.827728: i915_reg_rw:          write reg=0x1000f0, len=4, val=(0x7f4003, 0x0)
+            Xorg-1460  [007] 703096.827912: i915_gem_object_fault: obj=0xffff92bc0b744900, GTT index=0 , writable
+            Xorg-1460  [007] 703096.827914: i915_request_retire:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231197, global=1269406
+            Xorg-1460  [007] 703096.827921: i915_reg_rw:          write reg=0x100070, len=4, val=(0x0, 0x0)
+            Xorg-1460  [007] 703096.827921: i915_reg_rw:          write reg=0x100074, len=4, val=(0x894000, 0x0)
+            Xorg-1460  [007] 703096.827921: i915_reg_rw:          write reg=0x100070, len=4, val=(0x894003, 0x0)
+            Xorg-1460  [007] 703096.828090: i915_gem_object_fault: obj=0xffff92bc0b746d00, GTT index=0 , writable
+            Xorg-1460  [007] 703096.828091: i915_reg_rw:          write reg=0x100050, len=4, val=(0x0, 0x0)
+            Xorg-1460  [007] 703096.828091: i915_reg_rw:          write reg=0x100054, len=4, val=(0x8af000, 0x0)
+            Xorg-1460  [007] 703096.828091: i915_reg_rw:          write reg=0x100050, len=4, val=(0x8af003, 0x0)
+            Xorg-1460  [007] 703096.828169: i915_request_queue:   dev=0, hw_id=15, ring=0, ctx=23, seqno=231199, flags=0x0
+            Xorg-1460  [007] 703096.828174: i915_request_add:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231199, global=0
+            Xorg-1460  [007] 703096.828175: i915_request_submit:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231199, global=0
+            Xorg-1460  [007] 703096.828177: i915_request_execute: dev=0, hw_id=15, ring=0, ctx=23, seqno=231199, global=1269409
+            Xorg-1460  [007] 703096.828177: i915_request_in:      dev=0, hw_id=15, ring=0, ctx=23, seqno=231199, prio=0, global=1269409, port=0
+            Xorg-1460  [007] 703096.828178: i915_request_retire:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231198, global=1269407
+          <idle>-0     [005] 703096.828966: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+          <idle>-0     [005] 703096.828970: intel_engine_notify:  dev=0, ring=0, seqno=1269409, waiters=0
+          <idle>-0     [005] 703096.828986: i915_request_out:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231199, global=1269409, completed?=1
+            Xorg-1460  [007] 703097.202444: i915_request_queue:   dev=0, hw_id=15, ring=0, ctx=23, seqno=231200, flags=0x0
+            Xorg-1460  [007] 703097.202460: i915_request_add:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231200, global=0
+            Xorg-1460  [007] 703097.202462: i915_request_submit:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231200, global=0
+            Xorg-1460  [007] 703097.202467: i915_request_execute: dev=0, hw_id=15, ring=0, ctx=23, seqno=231200, global=1269410
+            Xorg-1460  [007] 703097.202469: i915_request_in:      dev=0, hw_id=15, ring=0, ctx=23, seqno=231200, prio=0, global=1269410, port=0
+            Xorg-1460  [007] 703097.202473: i915_request_retire:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231199, global=1269409
+          <idle>-0     [005] 703097.202825: i915_request_out:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231200, global=1269410, completed?=1
+     gnome-shell-1592  [002] 703097.204186: i915_request_queue:   dev=0, hw_id=19, ring=0, ctx=26, seqno=222635, flags=0x0
+     gnome-shell-1592  [002] 703097.204202: i915_request_add:     dev=0, hw_id=19, ring=0, ctx=26, seqno=222635, global=0
+     gnome-shell-1592  [002] 703097.204203: i915_request_submit:  dev=0, hw_id=19, ring=0, ctx=26, seqno=222635, global=0
+     gnome-shell-1592  [002] 703097.204206: i915_request_execute: dev=0, hw_id=19, ring=0, ctx=26, seqno=222635, global=1269411
+     gnome-shell-1592  [002] 703097.204207: i915_request_in:      dev=0, hw_id=19, ring=0, ctx=26, seqno=222635, prio=0, global=1269411, port=0
+     gnome-shell-1592  [002] 703097.204210: i915_request_retire:  dev=0, hw_id=19, ring=0, ctx=26, seqno=222634, global=1269408
+            Xorg-1460  [007] 703097.204364: i915_reg_rw:          write reg=0x44404, len=4, val=(0x6ffff07e, 0x0)
+            Xorg-1460  [007] 703097.204367: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cd2, 0x0)
+            Xorg-1460  [007] 703097.204369: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cd2, 0x0)
+            Xorg-1460  [007] 703097.204371: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cd2, 0x0)
+            Xorg-1460  [007] 703097.204372: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cd2, 0x0)
+            Xorg-1460  [007] 703097.204468: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+          <idle>-0     [005] 703097.205164: intel_engine_notify:  dev=0, ring=0, seqno=1269411, waiters=1
+          <idle>-0     [005] 703097.205171: i915_request_out:     dev=0, hw_id=19, ring=0, ctx=26, seqno=222635, global=1269411, completed?=1
+   kworker/u16:1-21596 [004] 703097.205226: i915_reg_rw:          read reg=0x43208, len=4, val=(0x90000000, 0x0)
+   kworker/u16:1-21596 [004] 703097.205228: i915_reg_rw:          write reg=0x43208, len=4, val=(0x10000000, 0x0)
+   kworker/u16:1-21596 [004] 703097.205232: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cd2, 0x0)
+   kworker/u16:1-21596 [004] 703097.205234: i915_pipe_update_start: pipe >c<, frame=0, scanline=72914, min=704, max=1073
+   kworker/u16:1-21596 [004] 703097.205236: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cd2, 0x0)
+   kworker/u16:1-21596 [004] 703097.205237: i915_pipe_update_vblank_evaded: pipe >c<, frame=0, scanline=72914, min=704, max=1073
+   kworker/u16:1-21596 [004] 703097.205238: i915_reg_rw:          write reg=0x68180, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [004] 703097.205239: i915_reg_rw:          write reg=0x68170, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [004] 703097.205239: i915_reg_rw:          write reg=0x68174, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [004] 703097.205240: i915_reg_rw:          write reg=0x68280, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [004] 703097.205241: i915_reg_rw:          write reg=0x68270, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [004] 703097.205241: i915_reg_rw:          write reg=0x68274, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [004] 703097.205248: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cd2, 0x0)
+   kworker/u16:1-21596 [004] 703097.205249: i915_pipe_update_end: pipe >c<, frame=0, scanline=72914
+   kworker/u16:1-21596 [004] 703097.205251: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cd2, 0x0)
+   kworker/u16:1-21596 [004] 703097.205253: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cd2, 0x0)
+          <idle>-0     [005] 703097.210989: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703097.210991: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703097.210994: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cd3, 0x0)
+          <idle>-0     [005] 703097.210997: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cd3, 0x0)
+   kworker/u16:1-21596 [007] 703097.220520: i915_gem_object_destroy: obj=0xffff92baf20ef300
+   kworker/u16:1-21596 [007] 703097.220524: i915_vma_unbind:      obj=0xffff92baf20ef300, offset=0x000000000d0ec000 size=0x400000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [007] 703097.220596: i915_gem_object_destroy: obj=0xffff92baf20ecc00
+   kworker/u16:1-21596 [007] 703097.220597: i915_vma_unbind:      obj=0xffff92baf20ecc00, offset=0x000000000b800000 size=0x400000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [007] 703097.220639: i915_gem_object_destroy: obj=0xffff92bc0b6af300
+   kworker/u16:1-21596 [007] 703097.220640: i915_vma_unbind:      obj=0xffff92bc0b6af300, offset=0x00000000033dd000 size=0x2000 vm=0xffff92bc006c8000
+   kworker/u16:1-21596 [007] 703097.220645: i915_gem_object_destroy: obj=0xffff92bc3d184600
+   kworker/u16:1-21596 [007] 703097.220646: i915_vma_unbind:      obj=0xffff92bc3d184600, offset=0x0000000003337000 size=0x2000 vm=0xffff92bc006c8000
+          <idle>-0     [005] 703097.227590: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703097.227591: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703097.227595: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cd4, 0x0)
+          <idle>-0     [005] 703097.227597: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cd4, 0x0)
+     kworker/4:1-23087 [004] 703097.227661: i915_reg_rw:          read reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/4:1-23087 [004] 703097.227663: i915_reg_rw:          write reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/4:1-23087 [004] 703097.227664: i915_reg_rw:          write reg=0x100100, len=4, val=(0x20000009, 0x0)
+     kworker/4:1-23087 [004] 703097.227665: i915_reg_rw:          write reg=0x100104, len=4, val=(0x0, 0x0)
+     kworker/4:1-23087 [004] 703097.227666: i915_reg_rw:          write reg=0x43208, len=4, val=(0x90000000, 0x0)
+     kworker/4:1-23087 [004] 703097.227666: i915_reg_rw:          write reg=0x50380, len=4, val=(0x4, 0x0)
+          <idle>-0     [005] 703097.244180: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703097.244182: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703097.244185: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cd5, 0x0)
+          <idle>-0     [005] 703097.244188: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cd5, 0x0)
+          <idle>-0     [005] 703097.244191: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cd5, 0x0)
+          <idle>-0     [005] 703097.244192: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11cd5, 0x0)
+          <idle>-0     [005] 703097.244193: i915_reg_rw:          write reg=0x44404, len=4, val=(0x6ffff07f, 0x0)
+            Xorg-1460  [000] 703097.461597: i915_gem_object_create: obj=0xffff92ba9c58e700, size=0x28000
+            Xorg-1460  [000] 703097.461699: i915_gem_object_create: obj=0xffff92ba9c58e100, size=0x2000
+            Xorg-1460  [000] 703097.461753: i915_gem_object_pwrite: obj=0xffff92bc0b746100, offset=0x0, len=0x1000
+            Xorg-1460  [000] 703097.461849: i915_gem_object_fault: obj=0xffff92bc1a4f2a00, GTT index=0 , writable
+            Xorg-1460  [000] 703097.461851: i915_reg_rw:          write reg=0x100060, len=4, val=(0x0, 0x0)
+            Xorg-1460  [000] 703097.461851: i915_reg_rw:          write reg=0x100064, len=4, val=(0x804002, 0x0)
+            Xorg-1460  [000] 703097.461852: i915_reg_rw:          write reg=0x100060, len=4, val=(0x802003, 0x0)
+            Xorg-1460  [000] 703097.461919: i915_vma_bind:        obj=0xffff92ba9c58e700, offset=0x00000000033b3000 size=0x28000 vm=0xffff92bc006c8000
+            Xorg-1460  [000] 703097.461921: i915_vma_bind:        obj=0xffff92ba9c58e100, offset=0x00000000000f7000 size=0x2000 vm=0xffff92bc006c8000
+            Xorg-1460  [000] 703097.461926: i915_request_queue:   dev=0, hw_id=15, ring=0, ctx=23, seqno=231201, flags=0x0
+            Xorg-1460  [000] 703097.461932: i915_request_add:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231201, global=0
+            Xorg-1460  [000] 703097.461933: i915_request_submit:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231201, global=0
+            Xorg-1460  [000] 703097.461935: i915_request_execute: dev=0, hw_id=15, ring=0, ctx=23, seqno=231201, global=1269412
+            Xorg-1460  [000] 703097.461935: i915_request_in:      dev=0, hw_id=15, ring=0, ctx=23, seqno=231201, prio=0, global=1269412, port=0
+            Xorg-1460  [000] 703097.461936: i915_request_retire:  dev=0, hw_id=15, ring=0, ctx=23, seqno=231200, global=1269410
+          <idle>-0     [005] 703097.462457: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffeff, 0x0)
+          <idle>-0     [005] 703097.462459: intel_engine_notify:  dev=0, ring=0, seqno=1269412, waiters=0
+          <idle>-0     [005] 703097.462462: i915_request_out:     dev=0, hw_id=15, ring=0, ctx=23, seqno=231201, global=1269412, completed?=1
+     gnome-shell-1592  [002] 703097.471160: i915_request_queue:   dev=0, hw_id=19, ring=0, ctx=26, seqno=222636, flags=0x0
+     gnome-shell-1592  [002] 703097.471168: i915_request_add:     dev=0, hw_id=19, ring=0, ctx=26, seqno=222636, global=0
+     gnome-shell-1592  [002] 703097.471169: i915_request_submit:  dev=0, hw_id=19, ring=0, ctx=26, seqno=222636, global=0
+     gnome-shell-1592  [002] 703097.471171: i915_request_execute: dev=0, hw_id=19, ring=0, ctx=26, seqno=222636, global=1269413
+     gnome-shell-1592  [002] 703097.471172: i915_request_in:      dev=0, hw_id=19, ring=0, ctx=26, seqno=222636, prio=0, global=1269413, port=0
+     gnome-shell-1592  [002] 703097.471173: i915_request_retire:  dev=0, hw_id=19, ring=0, ctx=26, seqno=222635, global=1269411
+            Xorg-1460  [000] 703097.471256: i915_reg_rw:          write reg=0x44404, len=4, val=(0x6ffff07e, 0x0)
+            Xorg-1460  [000] 703097.471257: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11ce2, 0x0)
+            Xorg-1460  [000] 703097.471258: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11ce2, 0x0)
+            Xorg-1460  [000] 703097.471258: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11ce2, 0x0)
+            Xorg-1460  [000] 703097.471259: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11ce2, 0x0)
+            Xorg-1460  [000] 703097.471294: i915_reg_rw:          write reg=0x20a8, len=4, val=(0xfffffefe, 0x0)
+          <idle>-0     [005] 703097.472349: intel_engine_notify:  dev=0, ring=0, seqno=1269413, waiters=1
+     ksoftirqd/5-42    [005] 703097.472357: i915_request_out:     dev=0, hw_id=19, ring=0, ctx=26, seqno=222636, global=1269413, completed?=1
+   kworker/u16:1-21596 [007] 703097.472384: i915_reg_rw:          read reg=0x43208, len=4, val=(0x90000000, 0x0)
+   kworker/u16:1-21596 [007] 703097.472384: i915_reg_rw:          write reg=0x43208, len=4, val=(0x10000000, 0x0)
+   kworker/u16:1-21596 [007] 703097.472386: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11ce2, 0x0)
+   kworker/u16:1-21596 [007] 703097.472387: i915_pipe_update_start: pipe >c<, frame=0, scanline=72930, min=737, max=1073
+   kworker/u16:1-21596 [007] 703097.472387: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11ce2, 0x0)
+   kworker/u16:1-21596 [007] 703097.472388: i915_pipe_update_vblank_evaded: pipe >c<, frame=0, scanline=72930, min=737, max=1073
+   kworker/u16:1-21596 [007] 703097.472388: i915_reg_rw:          write reg=0x68180, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [007] 703097.472388: i915_reg_rw:          write reg=0x68170, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [007] 703097.472389: i915_reg_rw:          write reg=0x68174, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [007] 703097.472389: i915_reg_rw:          write reg=0x68280, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [007] 703097.472389: i915_reg_rw:          write reg=0x68270, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [007] 703097.472389: i915_reg_rw:          write reg=0x68274, len=4, val=(0x0, 0x0)
+   kworker/u16:1-21596 [007] 703097.472408: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11ce2, 0x0)
+   kworker/u16:1-21596 [007] 703097.472408: i915_pipe_update_end: pipe >c<, frame=0, scanline=72930
+   kworker/u16:1-21596 [007] 703097.472409: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11ce2, 0x0)
+   kworker/u16:1-21596 [007] 703097.472410: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11ce2, 0x0)
+          <idle>-0     [005] 703097.477644: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703097.477645: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703097.477646: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11ce3, 0x0)
+          <idle>-0     [005] 703097.477647: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11ce3, 0x0)
+          <idle>-0     [005] 703097.494328: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703097.494329: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703097.494331: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11ce4, 0x0)
+          <idle>-0     [005] 703097.494332: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11ce4, 0x0)
+     kworker/7:8-25603 [007] 703097.494372: i915_reg_rw:          read reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/7:8-25603 [007] 703097.494373: i915_reg_rw:          write reg=0x4208c, len=4, val=(0x0, 0x0)
+     kworker/7:8-25603 [007] 703097.494373: i915_reg_rw:          write reg=0x100100, len=4, val=(0x20000016, 0x0)
+     kworker/7:8-25603 [007] 703097.494374: i915_reg_rw:          write reg=0x100104, len=4, val=(0x0, 0x0)
+     kworker/7:8-25603 [007] 703097.494374: i915_reg_rw:          write reg=0x43208, len=4, val=(0x90000000, 0x0)
+     kworker/7:8-25603 [007] 703097.494374: i915_reg_rw:          write reg=0x50380, len=4, val=(0x4, 0x0)
+          <idle>-0     [005] 703097.511011: i915_reg_rw:          read reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703097.511012: i915_reg_rw:          write reg=0x44408, len=4, val=(0x1, 0x0)
+          <idle>-0     [005] 703097.511014: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11ce5, 0x0)
+          <idle>-0     [005] 703097.511016: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11ce5, 0x0)
+          <idle>-0     [005] 703097.511017: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11ce5, 0x0)
+          <idle>-0     [005] 703097.511018: i915_reg_rw:          read reg=0x70040, len=4, val=(0x11ce5, 0x0)
+          <idle>-0     [005] 703097.511018: i915_reg_rw:          write reg=0x44404, len=4, val=(0x6ffff07f, 0x0)
