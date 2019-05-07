@@ -1,0 +1,47 @@
+diff --git a/media_driver/agnostic/common/codec/hal/codechal_decode_mpeg2.cpp b/media_driver/agnostic/common/codec/hal/codechal_decode_mpeg2.cpp
+index 4a195fc2..91e6b777 100644
+--- a/media_driver/agnostic/common/codec/hal/codechal_decode_mpeg2.cpp
++++ b/media_driver/agnostic/common/codec/hal/codechal_decode_mpeg2.cpp
+@@ -383,7 +383,7 @@ MOS_STATUS CodechalDecodeMpeg2::AllocateResources ()
+     for (uint16_t i = 0; i < m_bbAllocated; i++)
+     {
+         MOS_ZeroMemory(&m_mediaObjectBatchBuffer[i], sizeof(MHW_BATCH_BUFFER));
+-        uint32_t size = (m_standardDecodeSizeNeeded * numMacroblocks) + m_hwInterface->m_sizeOfCmdBatchBufferEnd;
++        uint32_t size = 8*1024*1024; //(m_standardDecodeSizeNeeded * numMacroblocks) + m_hwInterface->m_sizeOfCmdBatchBufferEnd;
+         CODECHAL_DECODE_CHK_STATUS_RETURN(Mhw_AllocateBb(
+             m_osInterface,
+             &m_mediaObjectBatchBuffer[i],
+@@ -979,6 +979,33 @@ MOS_STATUS CodechalDecodeMpeg2::SliceLevel()
+         &cmdBuffer,
+         0));
+ 
++    for (size_t i = 0; i < 2; i++)
++    {
++        MHW_BATCH_BUFFER batchBuffer = m_mediaObjectBatchBuffer[m_bbInUse];
++
++        CODECHAL_DECODE_CHK_STATUS_RETURN(m_miInterface->AddMiBatchBufferStartCmd(
++            &cmdBuffer,
++            &batchBuffer));
++
++        CODECHAL_DECODE_CHK_STATUS_RETURN(Mhw_LockBb(
++            m_osInterface,
++            &batchBuffer));
++
++        batchBuffer.iCurrent = 8*1024*1024-4;
++
++        CODECHAL_DECODE_CHK_STATUS_RETURN(m_miInterface->AddMiBatchBufferEnd(
++            nullptr,
++            &batchBuffer));
++
++        CODECHAL_DECODE_CHK_STATUS_RETURN(Mhw_UnlockBb(
++            m_osInterface,
++            &batchBuffer,
++            true));
++
++        m_bbInUse = (m_bbInUse + 1) % m_bbAllocated;
++        m_bbInUsePerFrame++;
++    }
++
+     MHW_BATCH_BUFFER batchBuffer = m_mediaObjectBatchBuffer[m_bbInUse];
+ 
+     CODECHAL_DECODE_CHK_STATUS_RETURN(m_miInterface->AddMiBatchBufferStartCmd(
