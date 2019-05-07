@@ -88,3 +88,6 @@ libigdrcl.so!clEnqueueAcquireVA_APIMediaSurfacesINTEL(cl_command_queue commandQu
 oclProcessDecodeOutput(VADisplay vaDpy, VASurfaceID * vaSurfID) (/home/fresh/data/work/intel_opencl_linux/source/vaapi-opencl-interop/interop/vaocl.c:279)
 main(int argc, char ** argv) (/home/fresh/data/work/intel_opencl_linux/source/vaapi-opencl-interop/interop/vaocl.c:508)
 ```
+
+## KMD handle Media+OCL sync
+![trace](https://github.com/mintaka33/vaapi-opencl-interop/blob/master/log/vaocl_full2.png?raw=true)
