@@ -2,6 +2,8 @@
 
 ## source code
 
+gmmlib https://github.com/intel/gmmlib
+
 compute-runtime https://github.com/intel/compute-runtime
 
 intel-graphics-compiler https://github.com/intel/intel-graphics-compiler
@@ -9,8 +11,6 @@ intel-graphics-compiler https://github.com/intel/intel-graphics-compiler
 libva https://github.com/intel/libva
 
 libva-utils https://github.com/intel/libva-utils
-
-gmmlib https://github.com/intel/gmmlib
 
 media-driver https://github.com/intel/media-driver
 
