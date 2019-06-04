@@ -69,6 +69,90 @@ int getVASharingFunc(cl_platform_id platform)
     return 0;
 }
 
+int getMemInfo(cl_mem m)
+{
+    cl_int err;
+
+    cl_mem_object_type type;
+    err = clGetMemObjectInfo(m, CL_MEM_TYPE, sizeof(type), &type, NULL);
+    CHECK_OCL_ERROR(err, "clGetMemObjectInfo - CL_MEM_TYPE failed");
+    printf("MemINFO: CL_MEM_TYPE = 0x%x\n", type);
+
+    cl_mem_flags flags;
+    err = clGetMemObjectInfo(m, CL_MEM_FLAGS, sizeof(flags), &flags, NULL);
+    CHECK_OCL_ERROR(err, "clGetMemObjectInfo - CL_MEM_FLAGS failed");
+    printf("MemINFO: CL_MEM_FLAGS = 0x%lx\n", flags);
+
+    size_t sz;
+    err = clGetMemObjectInfo(m, CL_MEM_SIZE, sizeof(sz), &sz, NULL);
+    CHECK_OCL_ERROR(err, "clGetMemObjectInfo - CL_MEM_SIZE failed");
+    printf("MemINFO: CL_MEM_SIZE = %d\n", sz);
+
+    void *p;
+    err = clGetMemObjectInfo(m, CL_MEM_HOST_PTR, sizeof(p), &p, NULL);
+    CHECK_OCL_ERROR(err, "clGetMemObjectInfo - CL_MEM_HOST_PTR failed");
+    printf("MemINFO: CL_MEM_HOST_PTR = 0x%x\n", p);
+
+    cl_uint count;
+    err = clGetMemObjectInfo(m, CL_MEM_MAP_COUNT, sizeof(count), &count, NULL);
+    CHECK_OCL_ERROR(err, "clGetMemObjectInfo - CL_MEM_MAP_COUNT failed");
+    printf("MemINFO: CL_MEM_MAP_COUNT = %d\n", count);
+
+    cl_uint ref;
+    err = clGetMemObjectInfo(m, CL_MEM_REFERENCE_COUNT, sizeof(ref), &ref, NULL);
+    CHECK_OCL_ERROR(err, "clGetMemObjectInfo - CL_MEM_REFERENCE_COUNT failed");
+    printf("MemINFO: CL_MEM_REFERENCE_COUNT = %d\n", ref);
+
+    cl_context ctx;
+    err = clGetMemObjectInfo(m, CL_MEM_CONTEXT, sizeof(ctx), &ctx, NULL);
+    CHECK_OCL_ERROR(err, "clGetMemObjectInfo - CL_MEM_CONTEXT failed");
+    printf("MemINFO: CL_MEM_CONTEXT = 0x%x\n", ctx);
+
+    return 0;
+}
+
+int getImageInfo(cl_mem m)
+{
+    cl_int err;
+
+    cl_image_format fmt;
+    err = clGetImageInfo(m, CL_IMAGE_FORMAT, sizeof(fmt), &fmt, NULL);
+    CHECK_OCL_ERROR(err, "clGetImageInfo - CL_IMAGE_FORMAT failed");
+    printf("ImageINFO: CL_IMAGE_FORMAT = 0x%x\n", fmt);
+
+    size_t esz;
+    err = clGetImageInfo(m, CL_IMAGE_ELEMENT_SIZE, sizeof(esz), &esz, NULL);
+    CHECK_OCL_ERROR(err, "clGetImageInfo - CL_IMAGE_ELEMENT_SIZE failed");
+    printf("ImageINFO: CL_IMAGE_ELEMENT_SIZE = %d\n", esz);
+
+    size_t pitch;
+    err = clGetImageInfo(m, CL_IMAGE_ROW_PITCH, sizeof(pitch), &pitch, NULL);
+    CHECK_OCL_ERROR(err, "clGetImageInfo - CL_IMAGE_ROW_PITCH failed");
+    printf("ImageINFO: CL_IMAGE_ROW_PITCH = %d\n", pitch);
+
+    size_t slicep;
+    err = clGetImageInfo(m, CL_IMAGE_SLICE_PITCH, sizeof(slicep), &slicep, NULL);
+    CHECK_OCL_ERROR(err, "clGetImageInfo - CL_IMAGE_SLICE_PITCH failed");
+    printf("ImageINFO: CL_IMAGE_SLICE_PITCH = %d\n", slicep);
+
+    size_t width;
+    err = clGetImageInfo(m, CL_IMAGE_WIDTH, sizeof(width), &width, NULL);
+    CHECK_OCL_ERROR(err, "clGetImageInfo - CL_IMAGE_WIDTH failed");
+    printf("ImageINFO: CL_IMAGE_WIDTH = %d\n", width);
+
+    size_t height;
+    err = clGetImageInfo(m, CL_IMAGE_HEIGHT, sizeof(height), &height, NULL);
+    CHECK_OCL_ERROR(err, "clGetImageInfo - CL_IMAGE_HEIGHT failed");
+    printf("ImageINFO: CL_IMAGE_HEIGHT = %d\n", height);
+
+    size_t depth;
+    err = clGetImageInfo(m, CL_IMAGE_DEPTH, sizeof(depth), &depth, NULL);
+    CHECK_OCL_ERROR(err, "clGetImageInfo - CL_IMAGE_DEPTH failed");
+    printf("ImageINFO: CL_IMAGE_DEPTH = %d\n", depth);
+
+    return 0;
+}
+
 int main(int argc, char **argv)
 {
     VASurfaceID surface_id;
@@ -145,8 +229,12 @@ int main(int argc, char **argv)
     cl_image_format imgFormat = {};
     imgFormat.image_channel_order = CL_R;
     imgFormat.image_channel_data_type = CL_UNORM_INT8;
-    cl_mem outSurf = clCreateImage2D(context, CL_MEM_WRITE_ONLY, &imgFormat, 640, 480, 0, NULL, &err);
+    cl_mem img2d = clCreateImage2D(context, CL_MEM_WRITE_ONLY, &imgFormat, 640, 480, 0, NULL, &err);
     CHECK_OCL_ERROR(err, "clCreateImage2D failed");
+
+    getMemInfo(img2d);
+
+    getImageInfo(img2d);
 
     va_status = vaCreateSurfaces(
         va_dpy,
