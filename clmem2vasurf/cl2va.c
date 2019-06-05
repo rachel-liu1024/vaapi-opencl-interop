@@ -8,10 +8,13 @@
 #include <fcntl.h>
 #include <assert.h>
 #include <va/va.h>
+#include <va/va_drmcommon.h>
 #include "va_display.h"
 
 #include <CL/cl.h>
 #include <CL/cl_va_api_media_sharing_intel.h>
+
+#define CL_MEM_ALLOCATION_HANDLE_INTEL 0x10050
 
 #define CL_STR_LEN 1024
 
@@ -32,6 +35,29 @@
 #define CHECK_NULL_AND_RETURN(ptr) \
     if ((ptr) == NULL)             \
         return -1;
+
+struct clMemInfo
+{
+    cl_mem_object_type type;
+    cl_mem_flags flags;
+    size_t sz;
+    void *p;
+    cl_uint count;
+    cl_uint ref;
+    cl_context ctx;
+    int handle;
+};
+
+struct clImageInfo
+{
+    cl_image_format fmt;
+    size_t esz;
+    size_t pitch;
+    size_t slicep;
+    size_t width;
+    size_t height;
+    size_t depth;
+};
 
 clGetDeviceIDsFromVA_APIMediaAdapterINTEL_fn clGetDeviceIDsFromVA = NULL;
 clCreateFromVA_APIMediaSurfaceINTEL_fn clCreateFromVA = NULL;
@@ -69,7 +95,7 @@ int getVASharingFunc(cl_platform_id platform)
     return 0;
 }
 
-int getMemInfo(cl_mem m)
+int getMemInfo(cl_mem m, struct clMemInfo* info)
 {
     cl_int err;
 
@@ -108,10 +134,24 @@ int getMemInfo(cl_mem m)
     CHECK_OCL_ERROR(err, "clGetMemObjectInfo - CL_MEM_CONTEXT failed");
     printf("MemINFO: CL_MEM_CONTEXT = 0x%x\n", ctx);
 
+    int handle;
+    err = clGetMemObjectInfo(m, CL_MEM_ALLOCATION_HANDLE_INTEL, sizeof(handle), &handle, NULL);
+    CHECK_OCL_ERROR(err, "clGetMemObjectInfo - CL_MEM_ALLOCATION_HANDLE_INTEL failed");
+    printf("MemINFO: CL_MEM_ALLOCATION_HANDLE_INTEL = 0x%lx\n", handle);
+
+    info->type = type;
+    info->flags = flags;
+    info->sz = sz;
+    info->p = p;
+    info->count = count;
+    info->ref = ref;
+    info->ctx = ctx;
+    info->handle = handle;
+
     return 0;
 }
 
-int getImageInfo(cl_mem m)
+int getImageInfo(cl_mem m, struct clImageInfo* info)
 {
     cl_int err;
 
@@ -150,12 +190,19 @@ int getImageInfo(cl_mem m)
     CHECK_OCL_ERROR(err, "clGetImageInfo - CL_IMAGE_DEPTH failed");
     printf("ImageINFO: CL_IMAGE_DEPTH = %d\n", depth);
 
+    info->fmt = fmt;
+    info->esz = esz;
+    info->pitch = pitch;
+    info->slicep = slicep;
+    info->width = width;
+    info->height = height;
+    info->depth = depth;
+
     return 0;
 }
 
 int main(int argc, char **argv)
 {
-    VASurfaceID surface_id;
     int major_ver, minor_ver;
     VADisplay va_dpy;
     VAStatus va_status;
@@ -232,18 +279,41 @@ int main(int argc, char **argv)
     cl_mem img2d = clCreateImage2D(context, CL_MEM_WRITE_ONLY, &imgFormat, 640, 480, 0, NULL, &err);
     CHECK_OCL_ERROR(err, "clCreateImage2D failed");
 
-    getMemInfo(img2d);
+    struct clMemInfo memInfo = {};
+    struct clImageInfo imgInfo = {};
+    getMemInfo(img2d, &memInfo);
+    getImageInfo(img2d, &imgInfo);
 
-    getImageInfo(img2d);
+    VASurfaceID surfExt;
+    VASurfaceAttrib attrib[2] = {};
+    VASurfaceAttribExternalBuffers extBuf = {};
+
+    extBuf.pixel_format = VA_FOURCC_NV12;
+    extBuf.width = imgInfo.width;
+    extBuf.height = imgInfo.height;
+    extBuf.buffers = &memInfo.handle;
+    extBuf.num_buffers = 1;
+    extBuf.flags = 0;
+    extBuf.private_data = NULL;
+
+    attrib[0].type = VASurfaceAttribExternalBufferDescriptor;
+    attrib[0].flags = VA_SURFACE_ATTRIB_SETTABLE;
+    attrib[0].value.type = VAGenericValueTypePointer;
+    attrib[0].value.value.p = &extBuf;
+    attrib[1].type = VASurfaceAttribMemoryType;
+    attrib[1].flags = VA_SURFACE_ATTRIB_SETTABLE;
+    attrib[1].value.type = VAGenericValueTypeInteger;
+    attrib[1].value.value.i = VA_SURFACE_ATTRIB_MEM_TYPE_DRM_PRIME;
 
     va_status = vaCreateSurfaces(
         va_dpy,
         VA_RT_FORMAT_YUV420, 320, 240,
-        &surface_id, 1,
-        NULL, 0);
+        &surfExt, 1,
+        attrib, 2);
     CHECK_VASTATUS(va_status, "vaCreateSurfaces");
 
-    vaDestroySurfaces(va_dpy, &surface_id, 1);
+
+    vaDestroySurfaces(va_dpy, &surfExt, 1);
 
     vaTerminate(va_dpy);
     va_close_display(va_dpy);
