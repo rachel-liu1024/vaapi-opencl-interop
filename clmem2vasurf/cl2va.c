@@ -273,10 +273,15 @@ int main(int argc, char **argv)
     context = clCreateContext(props, device_num, device_list, NULL, NULL, &err);
     CHECK_OCL_ERROR(err, "clCreateContext failed");
 
+    size_t width = 640;
+    size_t height = 480;
+    /* since OCL doesn't have NV12 format, need allocate normal (one channel only) 2D image 
+    that is big enough to hold NV12 surface Y and UV Planes */
+    size_t nv12height = height * 3 / 2; 
     cl_image_format imgFormat = {};
     imgFormat.image_channel_order = CL_R;
     imgFormat.image_channel_data_type = CL_UNORM_INT8;
-    cl_mem img2d = clCreateImage2D(context, CL_MEM_WRITE_ONLY, &imgFormat, 640, 480, 0, NULL, &err);
+    cl_mem img2d = clCreateImage2D(context, CL_MEM_WRITE_ONLY, &imgFormat, width, nv12height, 0, NULL, &err);
     CHECK_OCL_ERROR(err, "clCreateImage2D failed");
 
     struct clMemInfo memInfo = {};
@@ -290,7 +295,8 @@ int main(int argc, char **argv)
 
     extBuf.pixel_format = VA_FOURCC_NV12;
     extBuf.width = imgInfo.width;
-    extBuf.height = imgInfo.height;
+    extBuf.height = height; // use real NV12 height instead of OCL queried height
+    extBuf.pitches[0] = imgInfo.pitch;
     extBuf.buffers = &memInfo.handle;
     extBuf.num_buffers = 1;
     extBuf.flags = 0;
@@ -307,11 +313,12 @@ int main(int argc, char **argv)
 
     va_status = vaCreateSurfaces(
         va_dpy,
-        VA_RT_FORMAT_YUV420, 320, 240,
+        extBuf.pixel_format, 
+        extBuf.width, 
+        extBuf.height,
         &surfExt, 1,
         attrib, 2);
     CHECK_VASTATUS(va_status, "vaCreateSurfaces");
-
 
     vaDestroySurfaces(va_dpy, &surfExt, 1);
 
