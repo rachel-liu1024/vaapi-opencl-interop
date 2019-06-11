@@ -13,10 +13,13 @@
 
 #include <CL/cl.h>
 #include <CL/cl_va_api_media_sharing_intel.h>
+#include <CL/cl_ext_intel.h>
 
 #define CL_MEM_ALLOCATION_HANDLE_INTEL 0x10050
 
 #define CL_STR_LEN 1024
+
+#define USE_CL_NV12 1
 
 #define CHECK_VASTATUS(va_status, func)                                        \
     if (va_status != VA_STATUS_SUCCESS)                                        \
@@ -273,21 +276,49 @@ int main(int argc, char **argv)
     context = clCreateContext(props, device_num, device_list, NULL, NULL, &err);
     CHECK_OCL_ERROR(err, "clCreateContext failed");
 
+    cl_mem img2d;
+    struct clMemInfo memInfo = {};
+    struct clImageInfo imgInfo = {};
     size_t width = 640;
     size_t height = 480;
+
+#if USE_CL_NV12
+    cl_image_format imgFormat = {};
+    imgFormat.image_channel_order = CL_NV12_INTEL;
+    imgFormat.image_channel_data_type = CL_UNORM_INT8;
+
+    cl_image_desc imgDesc = {};
+    imgDesc.image_type = CL_MEM_OBJECT_IMAGE2D;
+    imgDesc.image_width = width;
+    imgDesc.image_height = height;
+    imgDesc.image_array_size = 0;
+    imgDesc.image_row_pitch = 0;
+    imgDesc.image_slice_pitch = 0;
+    imgDesc.num_mip_levels = 0;
+    imgDesc.num_samples = 0;
+    imgDesc.mem_object = NULL;
+
+    // create a CL_NV12_IMAGE
+    img2d = clCreateImage(context, CL_MEM_READ_ONLY | CL_MEM_HOST_NO_ACCESS | CL_MEM_ACCESS_FLAGS_UNRESTRICTED_INTEL,
+        &imgFormat, &imgDesc, NULL, err);
+    CHECK_OCL_ERROR(err, "clCreateImage2D failed");
+
+    getMemInfo(img2d, &memInfo);
+    getImageInfo(img2d, &imgInfo);
+#else
     /* since OCL doesn't have NV12 format, need allocate normal (one channel only) 2D image 
     that is big enough to hold NV12 surface Y and UV Planes */
     size_t nv12height = height * 3 / 2; 
     cl_image_format imgFormat = {};
     imgFormat.image_channel_order = CL_R;
     imgFormat.image_channel_data_type = CL_UNORM_INT8;
-    cl_mem img2d = clCreateImage2D(context, CL_MEM_WRITE_ONLY, &imgFormat, width, nv12height, 0, NULL, &err);
+
+    img2d = clCreateImage2D(context, CL_MEM_WRITE_ONLY, &imgFormat, width, nv12height, 0, NULL, &err);
     CHECK_OCL_ERROR(err, "clCreateImage2D failed");
 
-    struct clMemInfo memInfo = {};
-    struct clImageInfo imgInfo = {};
     getMemInfo(img2d, &memInfo);
     getImageInfo(img2d, &imgInfo);
+#endif
 
     VASurfaceID surfExt;
     VASurfaceAttrib attrib[2] = {};
@@ -295,7 +326,11 @@ int main(int argc, char **argv)
 
     extBuf.pixel_format = VA_FOURCC_NV12;
     extBuf.width = imgInfo.width;
+#if USE_CL_NV12
+    extBuf.height = imgInfo.height;
+#elif
     extBuf.height = height; // use real NV12 height instead of OCL queried height
+#endif
     extBuf.pitches[0] = imgInfo.pitch;
     extBuf.buffers = &memInfo.handle;
     extBuf.num_buffers = 1;
