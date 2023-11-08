@@ -33,6 +33,13 @@
 #include <va/va_drm.h>
 #include "va_display.h"
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <assert.h>
+#include <errno.h>
 
 extern  const char *g_display_name;
 extern const char *g_drm_device_name;
@@ -44,11 +51,13 @@ va_open_display_drm(void)
 {
     VADisplay va_dpy = NULL;
     unsigned int i;
+    if(!g_drm_device_name)
+        g_drm_device_name = "/dev/dri/renderD128";//card0 failed in clGetDeviceIDsFromVA_APIMediaAdapterINTEL
 
     g_drm_fd = open(g_drm_device_name, O_RDWR);
     if (g_drm_fd < 0)
     {
-        printf("Cannot open '/dev/dri/card0': %d, %s.\n", errno, strerror(errno));
+        printf("Cannot open %s: %d, %s.\n", g_drm_device_name, errno, strerror(errno));
         return -1;
     }
     va_dpy = vaGetDisplayDRM(g_drm_fd);
@@ -60,11 +69,11 @@ va_open_display_drm(void)
         fprintf(stderr,"Error: Failed vaInitialize(): in %s %s(line %d)\n", __FILE__, __func__, __LINE__);
         return -1;
     }
-    std::cout<<"libva version: "<<major_ver<<"."<<minor_ver<<std::endl;
+    printf("libva version: %d.%d\n", major_ver, minor_ver);
 
     const char  *driver = NULL;
     driver = vaQueryVendorString(va_dpy);
-    std::cout<<"VAAPI Init complete; Driver version : "<<driver<<std::endl;
+    printf("VAAPI Init complete; Driver version : %d\n", driver);
 
 
     if (!va_dpy)  {
@@ -85,8 +94,8 @@ va_close_display_drm(VADisplay va_dpy)
 
     vaTerminate(va_dpy);
     va_dpy = NULL;
-    close(drm_fd);
-    drm_fd = -1;
+    close(g_drm_fd);
+    g_drm_fd = -1;
 }
 
 const VADisplayHooks va_display_hooks_drm = {
