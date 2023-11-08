@@ -386,8 +386,8 @@ int main(int argc, char **argv)
         putsurface = 1;
 
     va_dpy = va_open_display();
-    va_status = vaInitialize(va_dpy, &major_ver, &minor_ver);
-    assert(va_status == VA_STATUS_SUCCESS);
+    // va_status = vaInitialize(va_dpy, &major_ver, &minor_ver);
+    // assert(va_status == VA_STATUS_SUCCESS);
 
     va_status = vaQueryConfigEntrypoints(va_dpy, VAProfileMPEG2Main, entrypoints,
                                          &num_entrypoints);

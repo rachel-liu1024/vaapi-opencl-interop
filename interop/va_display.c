@@ -45,7 +45,7 @@ static const VADisplayHooks *g_display_hooks_available[] = {
     //&va_display_hooks_drm,
 };
 
-static const char *g_display_name;
+const char *g_display_name;
 const char *g_drm_device_name;
 
 static const char *

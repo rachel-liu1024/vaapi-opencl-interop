@@ -8,6 +8,7 @@ set (SOURCE_FILES
     va_display.c
     va_display.h
     va_display_x11.c
+    va_display_drm.c
 )
 
 include_directories (cl2va /usr/local/include)
@@ -16,4 +17,4 @@ include_directories (cl2va ${CMAKE_CURRENT_LIST_DIR}/../../compute-runtime/third
 find_library(OPENCL_LIBRARY NAMES OpenCL HINTS /usr/local/lib)
 
 add_executable(cl2va ${SOURCE_FILES})
-target_link_libraries(cl2va va va-x11 X11 ${OPENCL_LIBRARY})
+target_link_libraries(cl2va va va-x11 X11 va-drm ${OPENCL_LIBRARY})
